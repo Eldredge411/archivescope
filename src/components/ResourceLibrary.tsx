@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   getResourceFiles,
@@ -79,6 +79,22 @@ const snapshotStatusBadgeClassName = {
     "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300",
   none: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300",
 };
+
+const pinyinSearchAliases: Array<{ pinyin: string; terms: string[] }> = [
+  { pinyin: "zongtong", terms: ["总统", "总统档案", "总统图书馆"] },
+  { pinyin: "dangan", terms: ["档案", "档案馆", "档案资料"] },
+  { pinyin: "shuju", terms: ["数据", "数据资源"] },
+  { pinyin: "dianziji", terms: ["电子记录", "电子档案"] },
+  { pinyin: "jilu", terms: ["记录", "文件"] },
+  { pinyin: "kaifang", terms: ["开放", "开放政府", "开放数据"] },
+  { pinyin: "baocun", terms: ["保存", "保护", "长期保存"] },
+  { pinyin: "falv", terms: ["法律", "法案"] },
+  { pinyin: "fagui", terms: ["法规", "规章"] },
+  { pinyin: "zhengce", terms: ["政策"] },
+  { pinyin: "zhanlue", terms: ["战略"] },
+  { pinyin: "zhinan", terms: ["指南"] },
+  { pinyin: "yinsi", terms: ["隐私"] },
+];
 
 type SnapshotActionMessage = {
   tone: "success" | "error" | "info";
@@ -160,8 +176,16 @@ function matchesText(values: string[], keyword: string, mode: SearchMode) {
   }
 
   const text = normalize(values.join(" "));
+  const compactQuery = compact(query);
+  const aliasTerms = pinyinSearchAliases
+    .filter(({ pinyin }) => compactQuery.includes(pinyin))
+    .flatMap(({ terms }) => terms);
 
   if (text.includes(query)) {
+    return true;
+  }
+
+  if (aliasTerms.some((term) => text.includes(normalize(term)))) {
     return true;
   }
 
@@ -169,7 +193,6 @@ function matchesText(values: string[], keyword: string, mode: SearchMode) {
     return false;
   }
 
-  const compactQuery = compact(query);
   const compactText = compact(text);
 
   if (compactQuery && compactText.includes(compactQuery)) {
@@ -624,7 +647,20 @@ export function ResourceLibrary({
     };
   }, [countries, institutions, searchParamString, topics]);
 
-  const currentState = urlState;
+  const [draftKeyword, setDraftKeyword] = useState(urlState.keyword);
+  const [isKeywordComposing, setIsKeywordComposing] = useState(false);
+
+  useEffect(() => {
+    setDraftKeyword(urlState.keyword);
+  }, [urlState.keyword]);
+
+  const currentState = useMemo(
+    () => ({
+      ...urlState,
+      keyword: draftKeyword,
+    }),
+    [draftKeyword, urlState],
+  );
   const requestedPage = useMemo(() => {
     const params = new URLSearchParams(searchParamString);
 
@@ -653,7 +689,15 @@ export function ResourceLibrary({
     replaceUrl(nextState);
   }
 
+  function commitKeyword(nextKeyword = draftKeyword) {
+    updateState({
+      ...currentState,
+      keyword: nextKeyword,
+    });
+  }
+
   function resetFilters() {
+    setDraftKeyword("");
     router.replace(pathname, { scroll: false });
   }
 
@@ -1070,10 +1114,22 @@ export function ResourceLibrary({
               <label className="archive-ledger-search-field">
                 <span>标题 / 关键词</span>
                 <input
-                  value={keyword}
-                  onChange={(event) =>
-                    updateState({ ...currentState, keyword: event.target.value })
-                  }
+                  value={draftKeyword}
+                  onChange={(event) => setDraftKeyword(event.target.value)}
+                  onCompositionStart={() => setIsKeywordComposing(true)}
+                  onCompositionEnd={(event) => {
+                    setIsKeywordComposing(false);
+                    setDraftKeyword(event.currentTarget.value);
+                  }}
+                  onBlur={() => commitKeyword()}
+                  onKeyDown={(event) => {
+                    if (event.key !== "Enter" || isKeywordComposing) {
+                      return;
+                    }
+
+                    event.preventDefault();
+                    commitKeyword(event.currentTarget.value);
+                  }}
                   placeholder="搜索标题、摘要、标签、机构、国家或专题"
                 />
               </label>
