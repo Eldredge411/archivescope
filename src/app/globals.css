@@ -298,6 +298,19 @@
   transform: translateY(-1px);
 }
 
+.atlas-timeline-date-note {
+  background:
+    linear-gradient(90deg, rgb(131 97 58 / 0.1), transparent 70%),
+    rgb(255 249 234 / 0.72);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  color: rgb(78 59 39);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.72;
+  margin-top: 0.9rem;
+  padding: 0.72rem 0.82rem;
+}
+
 .atlas-topic-file__brief {
   display: grid;
   gap: 1rem;
@@ -13033,6 +13046,7 @@ body {
 
 .archive-ledger-search-strip,
 .archive-ledger-advanced,
+.archive-ledger-snapshot-note,
 .archive-ledger-summary,
 .archive-ledger-table,
 .archive-ledger-empty,
@@ -13083,6 +13097,30 @@ body {
   gap: 0.7rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 0.8rem;
+}
+
+.archive-ledger-snapshot-note {
+  background:
+    linear-gradient(90deg, rgb(104 78 48 / 0.1), transparent 70%),
+    rgb(255 252 242 / 0.64);
+  border: 1px solid rgb(104 78 48 / 0.16);
+  color: rgb(77 60 40);
+  margin-top: 0.86rem;
+  padding: 0.66rem 0.78rem;
+}
+
+.archive-ledger-snapshot-note strong {
+  color: rgb(52 43 35);
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.archive-ledger-snapshot-note p {
+  font-size: 0.76rem;
+  line-height: 1.72;
+  margin-top: 0.26rem;
 }
 
 .archive-ledger-summary {

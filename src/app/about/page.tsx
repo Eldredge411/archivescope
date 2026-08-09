@@ -71,6 +71,19 @@ export default function AboutPage() {
         description="ArchiveScope 当前以美国档案制度为第一期样板，探索如何将分散的档案法规、机构、电子记录政策和数字记忆资源转化为可检索、可理解、可持续扩展的中文知识库。"
       />
 
+      <section className="border-b border-zinc-200 bg-amber-50/70 dark:border-zinc-800 dark:bg-amber-950/20">
+        <div className="mx-auto max-w-6xl px-6 py-6">
+          <div className="rounded-2xl border border-amber-200 bg-white/80 p-5 text-sm leading-7 text-zinc-700 shadow-sm dark:border-amber-900/50 dark:bg-zinc-900/80 dark:text-zinc-300">
+            <strong className="block text-base text-zinc-950 dark:text-zinc-50">
+              试运行说明
+            </strong>
+            <p className="mt-2">
+              ArchiveScope 目前是试运行版本，首期重点建设美国板块，资料范围、网页快照、日期信息、版本沿革和关联关系仍在持续补充。站内中文介绍由 AI 辅助整理并经人工审核后发布，适合作为资料发现、中文导读和研究线索入口；正式引用时，请以官方来源和发布机构最新文本为准。如发现问题，可联系 liangjiayu1223@ruc.edu.cn。
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-zinc-200 dark:border-zinc-800">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>

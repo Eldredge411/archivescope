@@ -173,7 +173,7 @@ function getSnapshotStatusDescription(status: SourceSnapshotStatus) {
     return "本站已保存部分来源快照。";
   }
 
-  return "本站暂未保存来源快照。";
+  return "本站暂未保存来源快照，可能因为官方页面限制自动截图、页面动态加载、需要人工验证，或该批资料仍在分批补充。";
 }
 
 function getResourceShapeLabel(resourceType: string) {
@@ -787,7 +787,7 @@ export default async function ResourceDetailPage({
                       <span>暂无快照</span>
                       <p>
                         {snapshotStatus.status === "none"
-                          ? "本站暂未保存可预览的来源快照。"
+                          ? "本站暂未保存可预览的来源快照，可能是官方页面限制自动截图或仍在分批补充。"
                           : "已保存来源文件，预览待补充。"}
                       </p>
                     </div>

@@ -1225,6 +1225,13 @@ export function ResourceLibrary({
               </SelectField>
             </div>
 
+            <div className="archive-ledger-snapshot-note">
+              <strong>图片与快照说明</strong>
+              <p>
+                部分资料暂无左侧预览图片，是因为官方页面可能限制自动截图、页面采用动态加载、来源文件不适合生成缩略图，或本站仍在分批补充网页快照。这不代表资料不可用；进入详情页后仍可查看官方来源、本站快照状态和可打开的备份文件。
+              </p>
+            </div>
+
             <div className="archive-ledger-summary">
               <div>
                 <span>资料索引</span>

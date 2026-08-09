@@ -753,6 +753,15 @@ export function KnowledgeAtlas({
         institutionById,
       })
     : [];
+  const activeTopicResources = activeTopic
+    ? getTopicResources(resources, activeTopic.id)
+    : [];
+  const missingTopicDateCount = activeTopicResources.filter(
+    (resource) => !resource.publishDate.trim(),
+  ).length;
+  const inferredTimelineDateCount = timelineItems.filter(
+    (item) => item.dateStatus === "inferred",
+  ).length;
   const hiddenTimelineCount = activeTopicSummary
     ? Math.max(activeTopicSummary.count - timelineItems.length, 0)
     : 0;
@@ -831,6 +840,13 @@ export function KnowledgeAtlas({
                 </div>
                 <Link href={`/topics/${activeTopic.slug}`}>打开专题页</Link>
               </header>
+
+              {missingTopicDateCount > 0 || inferredTimelineDateCount > 0 ? (
+                <div className="atlas-timeline-date-note">
+                  当前专题中有 {missingTopicDateCount} 条资料未在元数据中明确记录发布日期。
+                  时间轴优先使用官方发布日期；必要时会根据标题、简介或版本说明中的年份推断，并在节点上标注“推断日期”。尚无可靠日期线索的资料暂不作为关键发展节点展示，可在专题页继续查看。
+                </div>
+              ) : null}
 
               <div className="atlas-topic-file__brief">
                 <div>
