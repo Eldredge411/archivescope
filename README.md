@@ -1,3 +1,13 @@
+ArchiveScope is a Next.js project for building a Chinese-language archive resource knowledge site.
+
+## Deploy
+
+For this project, use `GitHub + Vercel`.
+
+See [DEPLOY_VERCEL.md](./DEPLOY_VERCEL.md) for the recommended deployment flow.
+
+## Development
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

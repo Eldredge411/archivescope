@@ -1,0 +1,269 @@
+
+```diff
+diff --git a/src/data/mockData.ts b/src/data/mockData.ts
+--- a/src/data/mockData.ts
++++ b/src/data/mockData.ts
+@@ -1,3 +1,4 @@
++import acceptedResources from "@/data/imports/us/acceptedResources.json";
+ import type {
+   Country,
+   Institution,
+@@ -357,7 +358,17 @@ export const topics: Topic[] = [
+   },
+ ];
+ 
+-export const resources: Resource[] = [
++type AcceptedResourceInput = Partial<Resource> & {
++  language?: string;
++  status?: string;
++};
++
++type ImportedResource = Resource & {
++  language: string;
++  status: string;
++};
++
++const baseResources: Resource[] = [
+   {
+     id: "res-federal-records-act",
+     slug: "federal-records-act",
+@@ -674,6 +685,87 @@ export const resources: Resource[] = [
+   },
+ ];
+ 
++function slugifyImportedResource(value: string) {
++  const slug = value
++    .normalize("NFKD")
++    .replace(/[\u0300-\u036f]/g, "")
++    .toLowerCase()
++    .replace(/&/g, " and ")
++    .replace(/[^a-z0-9]+/g, "-")
++    .replace(/^-+|-+$/g, "")
++    .slice(0, 96);
++
++  return slug || "imported-resource";
++}
++
++function normalizeStringArray(value: unknown) {
++  return Array.isArray(value)
++    ? value.map((item) => String(item ?? "").trim()).filter(Boolean)
++    : [];
++}
++
++function normalizeAcceptedResource(resource: AcceptedResourceInput): ImportedResource {
++  const primaryTopicId =
++    resource.primaryTopicId ||
++    resource.topicIds?.find((topicId) => Boolean(topicId)) ||
++    "laws-policies-governance";
++  const topicIds = Array.from(
++    new Set([primaryTopicId, ...normalizeStringArray(resource.topicIds)]),
++  );
++  const titleEn = resource.titleEn || "";
++  const slug = resource.slug || slugifyImportedResource(titleEn || resource.id || "");
++
++  return {
++    id: resource.id || `imported-${slug}`,
++    slug,
++    titleZh: resource.titleZh || "",
++    titleEn,
++    countryId: resource.countryId || "usa",
++    institutionId: resource.institutionId || "nara",
++    resourceType: resource.resourceType || "strategy",
++    primaryTopicId,
++    topicIds,
++    tags: normalizeStringArray(resource.tags),
++    summaryZh: resource.summaryZh || "",
++    keyPoints: normalizeStringArray(resource.keyPoints),
++    researchValue: resource.researchValue || "",
++    publishDate: resource.publishDate || "",
++    updatedDate: resource.updatedDate || "",
++    collectedAt: resource.collectedAt || "",
++    sourceUrl: resource.sourceUrl || "",
++    sourceDomain: resource.sourceDomain || "",
++    accessDate: resource.accessDate || "",
++    lastCheckedAt: resource.lastCheckedAt || "",
++    linkStatus: resource.linkStatus || "ok",
++    archivedUrl: resource.archivedUrl ?? "",
++    hasBackup: resource.hasBackup ?? false,
++    backupVisibility: resource.backupVisibility || "private",
++    hasVersions: resource.hasVersions ?? false,
++    currentVersionId: resource.currentVersionId || "",
++    versioningApplicable: resource.versioningApplicable ?? true,
++    versionNote: resource.versionNote || "",
++    language: resource.language || "English",
++    status: resource.status || "imported_draft",
++  };
++}
++
++function mergeResources(
++  baseResourceList: Resource[],
++  importedResourceList: ImportedResource[],
++) {
++  const seenIds = new Set(baseResourceList.map((resource) => resource.id));
++  const seenSourceUrls = new Set(
++    baseResourceList.map((resource) => resource.sourceUrl).filter(Boolean),
++  );
++  const seenTitles = new Set(
++    baseResourceList.map((resource) => resource.titleEn.toLowerCase()).filter(Boolean),
++  );
++  const uniqueImportedResources = importedResourceList.filter((resource) => {
++    const titleKey = resource.titleEn.toLowerCase();
++
++    return (
++      !seenIds.has(resource.id) &&
++      !seenSourceUrls.has(resource.sourceUrl) &&
++      !seenTitles.has(titleKey)
++    );
++  });
++
++  return [...baseResourceList, ...uniqueImportedResources];
++}
++
++const normalizedAcceptedResources = (acceptedResources as AcceptedResourceInput[]).map(
++  normalizeAcceptedResource,
++);
++
++export const resources: Resource[] = mergeResources(
++  baseResources,
++  normalizedAcceptedResources,
++);
++
+ export const resourceFiles: ResourceFile[] = [
+   {
+     id: "file-fra-screenshot",
+diff --git a/src/components/ResourceCard.tsx b/src/components/ResourceCard.tsx
+--- a/src/components/ResourceCard.tsx
++++ b/src/components/ResourceCard.tsx
+@@ -10,12 +10,23 @@ import {
+ type ResourceCardProps = {
+   resource: Resource;
+ };
+ 
++const importedDraftStatuses = new Set(["draft", "published_draft", "imported_draft"]);
++
++function isImportedDraftResource(resource: Resource) {
++  return importedDraftStatuses.has(String((resource as { status?: string }).status));
++}
++
+ export function ResourceCard({ resource }: ResourceCardProps) {
+   const primaryTopic = getPrimaryTopic(resource);
+   const relatedTopicCount = resource.topicIds.filter(
+     (topicId) => topicId !== resource.primaryTopicId,
+   ).length;
++  const showIncompleteBadge = isImportedDraftResource(resource);
++  const displayTitle = resource.titleZh || resource.titleEn;
++  const displaySummary =
++    resource.summaryZh ||
++    "该资料由自动采集流程导入，中文摘要待补充。请优先参考官方原文。";
+ 
+   return (
+     <Link
+       href={`/resources/${resource.slug}`}
+@@ -27,19 +38,28 @@ export function ResourceCard({ resource }: ResourceCardProps) {
+         <div className="flex items-start justify-between gap-3">
+           <div>
+             <h3 className="font-semibold text-zinc-900 group-hover:text-indigo-700 dark:text-zinc-50 dark:group-hover:text-indigo-300">
+-              {resource.titleZh}
++              {displayTitle}
+             </h3>
+             <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+               {resource.titleEn}
+             </p>
+           </div>
+-          <span className="shrink-0 rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+-            {resourceTypeZh[resource.resourceType]}
+-          </span>
++          <div className="flex shrink-0 flex-col items-end gap-1.5">
++            {showIncompleteBadge ? (
++              <span className="rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
++                待完善
++              </span>
++            ) : null}
++            <span className="rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
++              {resourceTypeZh[resource.resourceType]}
++            </span>
++          </div>
+         </div>
+ 
+         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+-          {resource.summaryZh}
++          {displaySummary}
+         </p>
+ 
+         <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+diff --git a/src/app/resources/[slug]/page.tsx b/src/app/resources/[slug]/page.tsx
+--- a/src/app/resources/[slug]/page.tsx
++++ b/src/app/resources/[slug]/page.tsx
+@@ -19,6 +19,18 @@ type ResourceDetailPageProps = {
+   }>;
+ };
+ 
++const importedDraftStatuses = new Set(["draft", "published_draft", "imported_draft"]);
++
++function isImportedDraftResource(resource: NonNullable<ReturnType<typeof getResourceBySlug>>) {
++  return importedDraftStatuses.has(String((resource as { status?: string }).status));
++}
++
++const importedSummaryPlaceholder =
++  "该资料由自动采集流程导入，中文摘要待补充。请优先参考官方原文。";
++const emptyKeyPointPlaceholder = "内容要点待整理。";
++const emptyResearchValuePlaceholder = "研究价值待补充。";
++
+ export function generateStaticParams() {
+   return resources.map((resource) => ({
+     slug: resource.slug,
+@@ -43,6 +55,12 @@ export default async function ResourceDetailPage({
+   const files = getResourceFiles(resource.id);
+   const generalFiles = files.filter((file) => !file.versionId);
+   const versions = getResourceVersions(resource.id);
++  const showIncompleteBadge = isImportedDraftResource(resource);
++  const displayTitle = resource.titleZh || resource.titleEn;
++  const displaySummary = resource.summaryZh || importedSummaryPlaceholder;
++  const displayKeyPoints =
++    resource.keyPoints.length > 0 ? resource.keyPoints : [emptyKeyPointPlaceholder];
++  const displayResearchValue = resource.researchValue || emptyResearchValuePlaceholder;
+ 
+   return (
+     <>
+@@ -50,19 +68,26 @@ export default async function ResourceDetailPage({
+         <div className="mx-auto max-w-6xl px-6 py-12">
+           <span className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+             资料详情 · {resourceTypeZh[resource.resourceType]}
+           </span>
++          {showIncompleteBadge ? (
++            <span className="ml-2 inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 dark:bg-amber-950/40 dark:text-amber-300">
++              待完善
++            </span>
++          ) : null}
+           <h1 className="mt-4 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+-            {resource.titleZh}
++            {displayTitle}
+           </h1>
+           <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+             {resource.titleEn}
+           </p>
+           <p className="mt-4 max-w-3xl text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
+-            {resource.summaryZh}
++            {displaySummary}
+           </p>
+         </div>
+       </section>
+@@ -76,7 +101,7 @@ export default async function ResourceDetailPage({
+                 内容要点
+               </h2>
+               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+-                {resource.keyPoints.map((point) => (
++                {displayKeyPoints.map((point) => (
+                   <li key={point} className="flex gap-3">
+                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-600" />
+                     <span>{point}</span>
+@@ -96,7 +121,7 @@ export default async function ResourceDetailPage({
+                 研究价值
+               </h2>
+               <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+-                {resource.researchValue}
++                {displayResearchValue}
+               </p>
+             </article>
+```
+

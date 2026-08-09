@@ -1,0 +1,443 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const projectRoot = path.resolve(__dirname, "../..");
+
+const federalRegisterBaseUrl =
+  "https://www.federalregister.gov/api/v1/documents.json";
+const agencySlug = "national-archives-and-records-administration";
+const outputPath = path.join(
+  projectRoot,
+  "src/data/drafts/us/federalRegisterDrafts.json",
+);
+
+const keywords = [
+  "records management",
+  "electronic records",
+  "federal records",
+  "digital preservation",
+  "digitization",
+  "FOIA",
+  "public access",
+  "open government",
+  "presidential records",
+  "records schedule",
+  "records disposition",
+  "transfer guidance",
+  "Electronic Records Archives",
+  "NARA Catalog",
+];
+
+const titleKeywordCandidates = [
+  "records management",
+  "electronic records",
+  "federal records",
+  "digital preservation",
+  "digitization",
+  "FOIA",
+  "public access",
+  "open government",
+  "presidential records",
+  "records schedule",
+  "records disposition",
+  "transfer guidance",
+  "Electronic Records Archives",
+  "NARA Catalog",
+  "records",
+  "archives",
+  "information",
+  "privacy",
+  "schedule",
+  "disposition",
+  "access",
+];
+
+function formatDate(date = new Date()) {
+  return date.toISOString().slice(0, 10);
+}
+
+function slugify(value) {
+  const slug = String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 96);
+
+  return slug || "federal-register-document";
+}
+
+function getDocumentNumber(document) {
+  return String(
+    document.document_number || document.documentNumber || document.id || "",
+  ).trim();
+}
+
+function getSourceUrl(document) {
+  return (
+    document.html_url ||
+    document.pdf_url ||
+    document.public_inspection_pdf_url ||
+    ""
+  );
+}
+
+function buildRequestUrl({ term, page, includeAgency }) {
+  const params = new URLSearchParams();
+
+  params.set("per_page", "100");
+  params.set("page", String(page));
+  params.set("order", "newest");
+
+  if (includeAgency) {
+    params.append("conditions[agencies][]", agencySlug);
+  }
+
+  params.set("conditions[term]", term);
+
+  return `${federalRegisterBaseUrl}?${params.toString()}`;
+}
+
+function buildQueryStrategies(keyword) {
+  return [
+    {
+      id: "agency-keyword",
+      label: "agency + keyword",
+      term: keyword,
+      includeAgency: true,
+      isPrimary: true,
+    },
+    {
+      id: "full-agency-name-keyword",
+      label: "National Archives and Records Administration + keyword",
+      term: `National Archives and Records Administration ${keyword}`,
+      includeAgency: false,
+      isPrimary: false,
+    },
+    {
+      id: "nara-keyword",
+      label: "NARA + keyword",
+      term: `NARA ${keyword}`,
+      includeAgency: false,
+      isPrimary: false,
+    },
+  ];
+}
+
+function getCombinedText(document, keyword) {
+  return [
+    keyword,
+    document.title,
+    document.abstract,
+    document.type,
+    document.excerpts,
+    document.agencies?.map((agency) => agency.name).join(" "),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function inferResourceType(document, keyword) {
+  const combinedText = getCombinedText(document, keyword);
+  const type = String(document.type || "").toLowerCase();
+
+  if (/(regulations?|rule|cfr|code of federal regulations)/i.test(combinedText)) {
+    return "law";
+  }
+
+  if (/(rule|proposed rule|notice)/i.test(type)) {
+    return "strategy";
+  }
+
+  return "strategy";
+}
+
+function inferTopics(document, keyword) {
+  const combinedText = getCombinedText(document, keyword);
+  const topicIds = [];
+
+  if (
+    /(records management|electronic records|records schedule|records disposition|disposition|transfer guidance|email records|electronic records archives)/i.test(
+      combinedText,
+    )
+  ) {
+    topicIds.push("electronic-records-management");
+  }
+
+  if (
+    /(digital preservation|digitization|catalog|metadata|digital collections|archival description|nara catalog)/i.test(
+      combinedText,
+    )
+  ) {
+    topicIds.push("digital-resources-preservation");
+  }
+
+  if (/(foia|public access|open government|public inspection)/i.test(combinedText)) {
+    topicIds.push("access-outreach-public-participation");
+  }
+
+  if (
+    /(federal records|presidential records|regulations?|rule|cfr|federal register)/i.test(
+      combinedText,
+    )
+  ) {
+    topicIds.push("laws-policies-governance");
+  }
+
+  const uniqueTopicIds = [...new Set(topicIds)];
+
+  if (uniqueTopicIds.length === 0) {
+    return {
+      primaryTopicId: "laws-policies-governance",
+      topicIds: ["laws-policies-governance"],
+    };
+  }
+
+  return {
+    primaryTopicId: uniqueTopicIds[0],
+    topicIds: uniqueTopicIds,
+  };
+}
+
+function extractTitleTags(title) {
+  const normalizedTitle = String(title || "").toLowerCase();
+
+  return titleKeywordCandidates.filter((candidate) =>
+    normalizedTitle.includes(candidate.toLowerCase()),
+  );
+}
+
+function buildTags(document, keyword) {
+  return [
+    "Federal Register",
+    "NARA",
+    keyword,
+    document.type,
+    ...extractTitleTags(document.title),
+  ]
+    .map((tag) => String(tag || "").trim())
+    .filter(Boolean)
+    .filter((tag, index, tags) => tags.indexOf(tag) === index);
+}
+
+function toResourceDraft(document, keyword, now) {
+  const documentNumber = getDocumentNumber(document);
+  const titleEn = String(document.title || "").trim();
+  const sourceUrl = getSourceUrl(document);
+  const fallbackSlugSource = documentNumber || titleEn;
+  const { primaryTopicId, topicIds } = inferTopics(document, keyword);
+
+  return {
+    id: documentNumber ? `fr-${documentNumber}` : `fr-${slugify(titleEn)}`,
+    sourceId: "source-us-federal-register",
+    sourceType: "api",
+    titleEn,
+    titleZh: "",
+    slug: documentNumber
+      ? `${slugify(titleEn)}-${slugify(documentNumber)}`
+      : slugify(fallbackSlugSource),
+    countryId: "usa",
+    institutionId: "nara",
+    resourceType: inferResourceType(document, keyword),
+    primaryTopicId,
+    topicIds,
+    tags: buildTags(document, keyword),
+    language: "English",
+    summaryZh: "",
+    keyPoints: [],
+    researchValue: "",
+    sourceUrl,
+    sourceDomain: "federalregister.gov",
+    publishDate: document.publication_date || "",
+    updatedDate: "",
+    accessDate: formatDate(now),
+    linkStatus: "ok",
+    hasBackup: false,
+    backupVisibility: "private",
+    archivedUrl: "",
+    versioningApplicable: true,
+    reviewStatus: "pending",
+    duplicateOf: "",
+    rawData: document,
+    createdAt: now.toISOString(),
+    updatedAt: now.toISOString(),
+  };
+}
+
+function dedupeDrafts(drafts) {
+  const seenDocumentNumbers = new Set();
+  const seenSourceUrls = new Set();
+  const seenTitles = new Set();
+  const uniqueDrafts = [];
+
+  for (const draft of drafts) {
+    const documentNumber = getDocumentNumber(draft.rawData);
+    const sourceUrl = String(draft.sourceUrl || "").trim();
+    const titleEn = String(draft.titleEn || "").trim().toLowerCase();
+
+    if (documentNumber && seenDocumentNumbers.has(documentNumber)) {
+      continue;
+    }
+
+    if (sourceUrl && seenSourceUrls.has(sourceUrl)) {
+      continue;
+    }
+
+    if (titleEn && seenTitles.has(titleEn)) {
+      continue;
+    }
+
+    if (documentNumber) {
+      seenDocumentNumbers.add(documentNumber);
+    }
+
+    if (sourceUrl) {
+      seenSourceUrls.add(sourceUrl);
+    }
+
+    if (titleEn) {
+      seenTitles.add(titleEn);
+    }
+
+    uniqueDrafts.push(draft);
+  }
+
+  return uniqueDrafts;
+}
+
+async function fetchKeywordPage({ term, page, includeAgency }) {
+  const requestUrl = buildRequestUrl({ term, page, includeAgency });
+  const response = await fetch(requestUrl, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "ArchiveScope draft ingestion (local research prototype)",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} ${response.statusText}`);
+  }
+
+  return response.json();
+}
+
+async function fetchQueryStrategy(keyword, strategy, now) {
+  const documents = [];
+  let totalPages = 1;
+
+  console.log(`  查询策略：${strategy.label}`);
+  console.log(`  查询词：${strategy.term}`);
+
+  try {
+    const firstPage = await fetchKeywordPage({
+      term: strategy.term,
+      page: 1,
+      includeAgency: strategy.includeAgency,
+    });
+    const firstPageResults = Array.isArray(firstPage.results)
+      ? firstPage.results
+      : [];
+
+    totalPages = Number(firstPage.total_pages || 1);
+    documents.push(...firstPageResults);
+
+    const pagesToFetch = Math.min(Math.max(totalPages, 1), 2);
+
+    for (let page = 2; page <= pagesToFetch; page += 1) {
+      try {
+        const pageData = await fetchKeywordPage({
+          term: strategy.term,
+          page,
+          includeAgency: strategy.includeAgency,
+        });
+        const pageResults = Array.isArray(pageData.results)
+          ? pageData.results
+          : [];
+
+        documents.push(...pageResults);
+      } catch (error) {
+        console.error(
+          `  查询策略 ${strategy.label} 第 ${page} 页请求失败：${error.message}`,
+        );
+      }
+    }
+
+    console.log(`  获取到 ${documents.length} 条。`);
+  } catch (error) {
+    console.error(`  查询策略 ${strategy.label} 请求失败：${error.message}`);
+  }
+
+  return documents.map((document) => toResourceDraft(document, keyword, now));
+}
+
+async function collectFederalRegisterDrafts() {
+  const now = new Date();
+  const drafts = [];
+  let totalFetched = 0;
+
+  console.log("正在采集 Federal Register 数据……");
+
+  for (const keyword of keywords) {
+    console.log(`当前关键词：${keyword}`);
+
+    const [primaryStrategy, ...fallbackStrategies] = buildQueryStrategies(keyword);
+    const primaryDrafts = await fetchQueryStrategy(keyword, primaryStrategy, now);
+    const keywordDrafts = [...primaryDrafts];
+
+    if (primaryDrafts.length === 0) {
+      console.log(
+        "  主查询返回 0 条，开始执行备用查询策略。",
+      );
+
+      for (const fallbackStrategy of fallbackStrategies) {
+        const fallbackDrafts = await fetchQueryStrategy(
+          keyword,
+          fallbackStrategy,
+          now,
+        );
+        keywordDrafts.push(...fallbackDrafts);
+      }
+    }
+
+    totalFetched += keywordDrafts.length;
+    drafts.push(...keywordDrafts);
+
+    console.log(`当前关键词合并后获取到 ${keywordDrafts.length} 条。`);
+  }
+
+  const uniqueDrafts = dedupeDrafts(drafts);
+  const duplicateCount = drafts.length - uniqueDrafts.length;
+
+  await mkdir(path.dirname(outputPath), { recursive: true });
+  await writeFile(
+    outputPath,
+    `${JSON.stringify(uniqueDrafts, null, 2)}\n`,
+    "utf8",
+  );
+
+  console.log(`原始获取结果共 ${totalFetched} 条。`);
+  console.log(`去重后共 ${uniqueDrafts.length} 条草稿。`);
+  console.log(`去除重复 ${duplicateCount} 条。`);
+
+  if (uniqueDrafts.length === 0) {
+    console.log(
+      "未获取到 Federal Register 草稿，请检查 Federal Register API 查询条件。",
+    );
+  }
+
+  console.log(
+    "已写入 src/data/drafts/us/federalRegisterDrafts.json",
+  );
+  console.log(`最终写入 ${uniqueDrafts.length} 条。`);
+}
+
+collectFederalRegisterDrafts().catch((error) => {
+  console.error(`Federal Register 采集脚本执行失败：${error.message}`);
+  process.exitCode = 1;
+});

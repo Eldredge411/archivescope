@@ -1,0 +1,732 @@
+[
+  {
+    "resourceId": "loc-digital-preservation",
+    "sourceUrl": "https://www.loc.gov/preservation/digital/",
+    "sourceDomain": "loc.gov",
+    "attemptedAt": "2026-08-09T06:22:58.873Z",
+    "reason": "http_status_403",
+    "httpStatus": 403,
+    "pageTitle": "Just a moment...",
+    "errorMessage": "页面返回 HTTP 403，已跳过。"
+  },
+  {
+    "resourceId": "loc-digital-scholarship",
+    "sourceUrl": "https://labs.loc.gov/work/",
+    "sourceDomain": "labs.loc.gov",
+    "attemptedAt": "2026-08-09T06:22:18.428Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://labs.loc.gov/work/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "dpla-digital-public-library",
+    "sourceUrl": "https://dp.la/about",
+    "sourceDomain": "dp.la",
+    "attemptedAt": "2026-08-09T06:20:39.505Z",
+    "reason": "http_status_405",
+    "httpStatus": 405,
+    "pageTitle": "Human Verification",
+    "errorMessage": "页面返回 HTTP 405，已跳过。"
+  },
+  {
+    "resourceId": "loc-sustainability-of-digital-formats",
+    "sourceUrl": "https://www.loc.gov/preservation/digital/formats/",
+    "sourceDomain": "loc.gov",
+    "attemptedAt": "2026-08-09T06:20:32.389Z",
+    "reason": "http_status_403",
+    "httpStatus": 403,
+    "pageTitle": "Just a moment...",
+    "errorMessage": "页面返回 HTTP 403，已跳过。"
+  },
+  {
+    "resourceId": "fr-2010-29661",
+    "sourceUrl": "https://www.federalregister.gov/documents/2010/11/24/2010-29661/founding-fathers-advisory-committee-ffac",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:18:25.928Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Founding Fathers Advisory Committee (FFAC)",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-2026-14068",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/07/13/2026-14068/office-of-government-information-services-annual-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:14:55.858Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2025-21698",
+    "sourceUrl": "https://www.federalregister.gov/documents/2025/12/01/2025-21698/notice-of-meeting-chief-freedom-of-information-act-foia-officers-council",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:13:16.495Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "documenting-the-now",
+    "sourceUrl": "https://www.docnow.io",
+    "sourceDomain": "docnow.io",
+    "attemptedAt": "2026-08-09T06:12:56.850Z",
+    "reason": "screenshot_snapshot_failed",
+    "httpStatus": 200,
+    "pageTitle": "Docnow – Docnow",
+    "errorMessage": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n"
+  },
+  {
+    "resourceId": "loc-by-the-people",
+    "sourceUrl": "https://crowd.loc.gov/",
+    "sourceDomain": "crowd.loc.gov",
+    "attemptedAt": "2026-08-09T06:09:25.575Z",
+    "reason": "http_status_403",
+    "httpStatus": 403,
+    "pageTitle": "Just a moment...",
+    "errorMessage": "页面返回 HTTP 403，已跳过。"
+  },
+  {
+    "resourceId": "fr-2021-24395",
+    "sourceUrl": "https://www.federalregister.gov/documents/2021/11/09/2021-24395/meeting-announcement-chief-freedom-of-information-act-foia-officers-council",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:08:33.555Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "loc-collections-as-data",
+    "sourceUrl": "https://labs.loc.gov/work/experiments/collections-as-data/",
+    "sourceDomain": "labs.loc.gov",
+    "attemptedAt": "2026-08-09T06:04:45.780Z",
+    "reason": "http_status_404",
+    "httpStatus": 404,
+    "pageTitle": "Page Not Found -- 404 -- Library of Congress",
+    "errorMessage": "页面返回 HTTP 404，已跳过。"
+  },
+  {
+    "resourceId": "nara-bulletin-2023-02-capstone-electronic-messages",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2023/2023-02",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-08-09T06:04:24.297Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "NARA Bulletin 2023-02 | National Archives",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "nara-capstone-email-management",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/email-management/capstone",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-08-09T06:04:10.296Z",
+    "reason": "http_status_404",
+    "httpStatus": 404,
+    "pageTitle": "Page Not Found | National Archives",
+    "errorMessage": "页面返回 HTTP 404，已跳过。"
+  },
+  {
+    "resourceId": "arma-generally-accepted-recordkeeping-principles",
+    "sourceUrl": "https://arma.org/page/GenerallyAcceptedRecordkeepingPrinciples",
+    "sourceDomain": "arma.org",
+    "attemptedAt": "2026-08-09T06:03:58.505Z",
+    "reason": "http_status_404",
+    "httpStatus": 404,
+    "pageTitle": "Error 404 | Page not found",
+    "errorMessage": "页面返回 HTTP 404，已跳过。"
+  },
+  {
+    "resourceId": "fr-2010-8787",
+    "sourceUrl": "https://www.federalregister.gov/documents/2010/04/15/2010-8787/advisory-committee-on-presidential-libraries-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:03:38.100Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2023-00379",
+    "sourceUrl": "https://www.federalregister.gov/documents/2023/01/11/2023-00379/records-management-general-records-schedule-grs-grs-transmittal-33",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T06:02:19.120Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "loc-recommended-formats-statement",
+    "sourceUrl": "https://www.loc.gov/preservation/resources/rfs/",
+    "sourceDomain": "loc.gov",
+    "attemptedAt": "2026-08-09T05:59:31.368Z",
+    "reason": "http_status_403",
+    "httpStatus": 403,
+    "pageTitle": "Just a moment...",
+    "errorMessage": "页面返回 HTTP 403，已跳过。"
+  },
+  {
+    "resourceId": "fr-2012-2366",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/03/2012-2366/founding-fathers-advisory-committee",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:58:02.258Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Founding Fathers Advisory Committee",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-2020-12495",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/09/2020-12495/national-industrial-security-program-policy-advisory-committee-nisppac-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:57:22.130Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-98-32521",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/12/08/98-32521/privacy-act-of-1974-transfer-of-records",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:55:12.371Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-97-32914",
+    "sourceUrl": "https://www.federalregister.gov/documents/1997/12/17/97-32914/public-evaluation-of-nara-archival-information-locator-nail",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:53:01.826Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-95-21126",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/08/28/95-21126/general-records-schedule-20-disposition-of-electronic-records",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:51:11.194Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2016-30948",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/23/2016-30948/advisory-committee-on-the-presidential-library-foundation-partnerships-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:49:32.230Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2014-12146",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/05/27/2014-12146/office-of-government-information-services-ogis-freedom-of-information-act-advisory-committee-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:46:44.272Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-99-14382",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/06/08/99-14382/records-schedules-for-electronic-copies-previously-covered-by-general-records-schedule-20",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:46:20.742Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2024-18501",
+    "sourceUrl": "https://www.federalregister.gov/documents/2024/08/19/2024-18501/freedom-of-information-act-foia-advisory-committee-meetings",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:45:46.642Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2023-21049",
+    "sourceUrl": "https://www.federalregister.gov/documents/2023/09/27/2023-21049/chief-freedom-of-information-act-officers-council",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:41:16.777Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2015-20363",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/18/2015-20363/records-management-general-records-schedule-grs-grs-transmittal-24",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:33:06.639Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "omb-m-23-07-transition-update",
+    "sourceUrl": "https://www.archives.gov/files/records-mgmt/m-23-07.pdf",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-08-09T05:31:09.546Z",
+    "reason": "http_status_404",
+    "httpStatus": 404,
+    "pageTitle": "Page Not Found | National Archives",
+    "errorMessage": "页面返回 HTTP 404，已跳过。"
+  },
+  {
+    "resourceId": "omb-m-19-21-transition-to-electronic-records",
+    "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2019/08/M-19-21-new-2.pdf",
+    "sourceDomain": "whitehouse.gov",
+    "attemptedAt": "2026-08-09T05:31:01.562Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://www.whitehouse.gov/wp-content/uploads/2019/08/M-19-21-new-2.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "omb-m-14-16-email-management",
+    "sourceUrl": "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2014/m-14-16.pdf",
+    "sourceDomain": "obamawhitehouse.archives.gov",
+    "attemptedAt": "2026-08-09T05:29:16.123Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2014/m-14-16.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "omb-m-12-18-managing-government-records",
+    "sourceUrl": "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2012/m-12-18.pdf",
+    "sourceDomain": "obamawhitehouse.archives.gov",
+    "attemptedAt": "2026-08-09T05:29:10.348Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2012/m-12-18.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "fr-2023-21867",
+    "sourceUrl": "https://www.federalregister.gov/documents/2023/10/03/2023-21867/agency-information-collection-activities-proposed-collection-comment-request-generic-clearance-for",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:26:44.213Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2014-07854",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/04/09/2014-07854/agency-information-collection-activities-proposed-extension-of-collection-comment-request",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:26:34.343Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2016-09991",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/04/28/2016-09991/national-industrial-security-program-policy-advisory-committee-meeting",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:26:23.570Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-E8-17316",
+    "sourceUrl": "https://www.federalregister.gov/documents/2008/07/28/E8-17316/renewal-of-advisory-committee-on-presidential-libraries",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:25:34.896Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2019-03826",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/03/04/2019-03826/change-in-comment-process-for-records-schedules",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:25:25.709Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2015-07184",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/04/01/2015-07184/open-meeting-on-general-records-schedule-grs-61-email-managed-under-a-capstone-approach",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:25:16.010Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2020-12364",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/08/2020-12364/public-interest-declassification-board-revised-bylaws",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:24:57.651Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2020-08755",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/05/06/2020-08755/nara-facilities-locations-hours-and-public-use",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:22:42.351Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: NARA Facilities, Locations, Hours, and Public Use",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-00-26310",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/10/13/00-26310/nara-reproduction-fee-schedule",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-09T05:22:33.747Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "nara-web-nara-catalog",
+    "sourceUrl": "https://www.archives.gov/research/catalog",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-08-08T14:13:48.506Z",
+    "reason": "page_body_too_short",
+    "httpStatus": 200,
+    "pageTitle": "National Archives Catalog",
+    "errorMessage": "页面正文过短（0 字符），疑似空白页或错误页，已跳过。"
+  },
+  {
+    "resourceId": "fr-2011-4612",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/03/02/2011-4612/presidential-library-facilities-correction",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:12:16.271Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2014-19533",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/08/21/2014-19533/location-of-nara-facilities-and-hours-of-use",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:10:53.512Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Location of NARA Facilities and Hours of Use",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-2010-29468",
+    "sourceUrl": "https://www.federalregister.gov/documents/2010/11/24/2010-29468/changes-to-nara-facilities-hours-of-operation",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:07:25.723Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Changes to NARA Facilities' Hours of Operation",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-01-31340",
+    "sourceUrl": "https://www.federalregister.gov/documents/2001/12/20/01-31340/privacy-act-implementation",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:07:07.390Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Privacy Act; Implementation",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "fr-2011-33284",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/12/29/2011-33284/declassification-of-national-security-information",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:06:50.811Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2022-06548",
+    "sourceUrl": "https://www.federalregister.gov/documents/2022/03/29/2022-06548/classified-national-security-information",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:06:39.091Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Classified National Security Information",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "fr-2018-19497",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/09/10/2018-19497/electronic-records",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T14:05:56.102Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "ecfr-36-cfr-1237",
+    "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1237",
+    "sourceDomain": "ecfr.gov",
+    "attemptedAt": "2026-08-08T14:04:52.079Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "eCFR :: 36 CFR Part 1237 -- Audiovisual, Cartographic, and Related Records Management",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "ecfr-36-cfr-1224",
+    "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1224",
+    "sourceDomain": "ecfr.gov",
+    "attemptedAt": "2026-08-08T13:53:18.263Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1224\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "ecfr-36-cfr-1223",
+    "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1223",
+    "sourceDomain": "ecfr.gov",
+    "attemptedAt": "2026-08-08T13:51:46.816Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1223\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "ecfr-36-cfr-1202",
+    "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1202",
+    "sourceDomain": "ecfr.gov",
+    "attemptedAt": "2026-08-08T13:49:02.357Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "eCFR :: 36 CFR Part 1202 -- Regulations Implementing the Privacy Act of 1974",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "fr-2013-30311",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/12/20/2013-30311/privacy-act-of-1974-notice-of-republication-and-alteration-of-systems-of-records-notices-sorns",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:47:57.186Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Privacy Act of 1974; Notice of Republication and Alteration of Systems of Records Notices (SORNs)",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "fr-95-24024",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/09/28/95-24024/audiovisual-records-management",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:47:12.860Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-E8-1947",
+    "sourceUrl": "https://www.federalregister.gov/documents/2008/02/01/E8-1947/locations-and-hours-changes-in-nara-research-room-hours",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:43:49.564Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2011-18675",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/07/22/2011-18675/nara-records-reproduction-fees",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:42:04.060Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-03-28454",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/11/26/03-28454/governmentwide-debarment-and-suspension-nonprocurement-and-governmentwide-requirements-for-drug-free",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:39:23.956Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2012-4399",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/27/2012-4399/incorporation-by-reference",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:37:30.479Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-E8-14706",
+    "sourceUrl": "https://www.federalregister.gov/documents/2008/06/30/E8-14706/use-of-meeting-rooms-and-public-space",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:17:35.275Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-04-14753",
+    "sourceUrl": "https://www.federalregister.gov/documents/2004/06/30/04-14753/revision-of-nara-research-room-procedures",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:17:21.102Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "res-federal-records-act",
+    "sourceUrl": "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter31&edition=prelim",
+    "sourceDomain": "uscode.house.gov",
+    "attemptedAt": "2026-08-08T13:17:05.619Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: net::ERR_TIMED_OUT at https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter31&edition=prelim\nCall log:\n\u001b[2m  - navigating to \"https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter31&edition=prelim\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "fr-2014-28697",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/12/19/2014-28697/federal-awarding-agency-regulatory-implementation-of-office-of-management-and-budgets-uniform",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:15:40.129Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-E9-23613",
+    "sourceUrl": "https://www.federalregister.gov/documents/2009/10/02/E9-23613/federal-records-management-revision",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:15:19.446Z",
+    "reason": "invalid_page_indicator_verification",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Federal Records Management; Revision",
+    "errorMessage": "页面疑似无效，包含提示文本：Verification"
+  },
+  {
+    "resourceId": "fr-2026-10817",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:13:30.389Z",
+    "reason": "invalid_page_indicator_not_found",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Regulation for Federal Financial Assistance",
+    "errorMessage": "页面疑似无效，包含提示文本：Not Found"
+  },
+  {
+    "resourceId": "fr-00-20916",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/08/30/00-20916/nondiscrimination-on-the-basis-of-sex-in-education-programs-or-activities-receiving-federal",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:10:56.360Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-02-32818",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/12/30/02-32818/expanding-transfer-options-for-electronic-records",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:10:28.048Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2022-15821",
+    "sourceUrl": "https://www.federalregister.gov/documents/2022/07/25/2022-15821/records-schedules-availability-and-request-for-comments-corrected",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:08:46.110Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-2022-07580",
+    "sourceUrl": "https://www.federalregister.gov/documents/2022/04/11/2022-07580/agency-guidance-procedures",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T13:07:25.219Z",
+    "reason": "http_status_500",
+    "httpStatus": 500,
+    "pageTitle": "Federal Register :: Something went wrong.",
+    "errorMessage": "页面返回 HTTP 500，已跳过。"
+  },
+  {
+    "resourceId": "fr-00-5674",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/03/16/00-5674/uniform-administrative-requirements-for-grants-and-agreements-with-institutions-of-higher-education",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T12:55:28.640Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Uniform Administrative Requirements for Grants and Agreements With Institutions of Higher Education, Hospitals, and Other Non-Profit Organizations",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "fr-03-24047",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/09/22/03-24047/classified-national-security-information-directive-no-1",
+    "sourceDomain": "federalregister.gov",
+    "attemptedAt": "2026-08-08T12:48:40.362Z",
+    "reason": "invalid_page_indicator_404",
+    "httpStatus": 200,
+    "pageTitle": "Federal Register :: Classified National Security Information Directive No. 1",
+    "errorMessage": "页面疑似无效，包含提示文本：404"
+  },
+  {
+    "resourceId": "nara-web-nara-catalog",
+    "sourceUrl": "https://www.archives.gov/research/catalog",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-08-05T13:06:26.655Z",
+    "reason": "snapshot_generation_failed",
+    "httpStatus": null,
+    "pageTitle": "",
+    "errorMessage": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://catalog.archives.gov/\nCall log:\n\u001b[2m  - navigating to \"https://catalog.archives.gov/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "resourceId": "nara-web-nara-catalog",
+    "sourceUrl": "https://www.archives.gov/research/catalog",
+    "sourceDomain": "archives.gov",
+    "attemptedAt": "2026-07-28T09:50:54.103Z",
+    "reason": "pdf_file_too_small",
+    "httpStatus": 200,
+    "pageTitle": "National Archives Catalog",
+    "errorMessage": "pdf 文件小于 5000 字节，疑似无效。"
+  }
+]

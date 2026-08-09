@@ -1,0 +1,173 @@
+[
+  {
+    "resourceId": "fr-2026-07479",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "人工审核后决定隐藏出资料库。",
+    "reviewedAt": "2026-07-31T05:57:31.277Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2024-12398",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "人工审核后决定隐藏出资料库。",
+    "reviewedAt": "2026-07-31T05:57:37.116Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2024-11910",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:57:42.417Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2024-09396",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:57:46.756Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2024-06406",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:57:48.598Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2023-03401",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "人工审核后决定隐藏出资料库。",
+    "reviewedAt": "2026-07-31T05:57:51.095Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2022-26450",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:57:52.791Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2020-09353",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:57:57.740Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2020-09352",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:01.005Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2017-11895",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:02.697Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2017-00329",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:04.994Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-99-30838",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:07.050Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-05-6410",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:08.408Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "nara-web-records-mgmt",
+    "decision": "needs_enrichment",
+    "hiddenFromLibrary": false,
+    "reason": "该资料内容字段不完整，需要继续完善。",
+    "reviewedAt": "2026-07-31T05:58:12.837Z",
+    "reviewer": "local-admin",
+    "notes": ""
+  },
+  {
+    "resourceId": "fr-2025-18240",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "从前台资料详情页隐藏展示。",
+    "reviewedAt": "2026-08-05T15:26:44.039Z",
+    "reviewer": "local-admin",
+    "notes": "管理员在前台检查时执行隐藏。"
+  },
+  {
+    "resourceId": "fr-2026-12057",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "从前台资料详情页隐藏展示。",
+    "reviewedAt": "2026-08-05T15:28:39.685Z",
+    "reviewer": "local-admin",
+    "notes": "管理员在前台检查时执行隐藏。"
+  },
+  {
+    "resourceId": "fr-03-28454",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "从前台资料详情页隐藏展示。",
+    "reviewedAt": "2026-08-08T13:39:28.962Z",
+    "reviewer": "local-admin",
+    "notes": "管理员在前台检查时执行隐藏。"
+  },
+  {
+    "resourceId": "fr-E8-1947",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "从前台资料详情页隐藏展示。",
+    "reviewedAt": "2026-08-08T13:44:11.774Z",
+    "reviewer": "local-admin",
+    "notes": "管理员在前台检查时执行隐藏。"
+  },
+  {
+    "resourceId": "fr-2010-29661",
+    "decision": "hidden",
+    "hiddenFromLibrary": true,
+    "reason": "从前台资料详情页隐藏展示。",
+    "reviewedAt": "2026-08-09T06:20:14.925Z",
+    "reviewer": "local-admin",
+    "notes": "管理员在前台检查时执行隐藏。"
+  }
+]

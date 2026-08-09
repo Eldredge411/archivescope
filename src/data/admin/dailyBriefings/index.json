@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-08-06T01:43:18.597Z",
+  "reportCount": 1,
+  "latestReport": {
+    "date": "2026-07-29",
+    "checkedAt": "2026-07-29T09:47:45.299Z",
+    "title": "ArchiveScope 每日简报：2026-07-29",
+    "jsonPath": "src/data/admin/dailyBriefings/2026-07-29.json",
+    "markdownPath": "src/data/admin/dailyBriefings/2026-07-29.md",
+    "notFoundInstitutionCount": 3,
+    "suggestionsCreated": 3,
+    "highConfidenceSuggestions": 0,
+    "mediumConfidenceSuggestions": 0,
+    "lowConfidenceSuggestions": 3,
+    "itemCount": 3
+  },
+  "reports": [
+    {
+      "date": "2026-07-29",
+      "checkedAt": "2026-07-29T09:47:45.299Z",
+      "title": "ArchiveScope 每日简报：2026-07-29",
+      "jsonPath": "src/data/admin/dailyBriefings/2026-07-29.json",
+      "markdownPath": "src/data/admin/dailyBriefings/2026-07-29.md",
+      "notFoundInstitutionCount": 3,
+      "suggestionsCreated": 3,
+      "highConfidenceSuggestions": 0,
+      "mediumConfidenceSuggestions": 0,
+      "lowConfidenceSuggestions": 3,
+      "itemCount": 3
+    }
+  ]
+}

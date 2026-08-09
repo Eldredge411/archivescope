@@ -1,0 +1,456 @@
+[
+  {
+    "id": "snapshot-backfill-1786198428633",
+    "startedAt": "2026-08-08T14:13:13.647Z",
+    "finishedAt": "2026-08-08T14:13:48.632Z",
+    "batchSize": 3,
+    "maxRounds": 50,
+    "sourceDomain": "",
+    "includeFederalRegister": false,
+    "force": false,
+    "initialRemaining": 29,
+    "finalRemaining": 28,
+    "stoppedReason": "no_progress",
+    "missingByDomain": [
+      {
+        "sourceDomain": "archives.gov",
+        "resourcesWithoutSnapshots": 4
+      },
+      {
+        "sourceDomain": "arma.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "crowd.loc.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "docnow.io",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "dp.la",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "ecfr.gov",
+        "resourcesWithoutSnapshots": 4
+      },
+      {
+        "sourceDomain": "federalregister.gov",
+        "resourcesWithoutSnapshots": 129
+      },
+      {
+        "sourceDomain": "labs.loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "obamawhitehouse.archives.gov",
+        "resourcesWithoutSnapshots": 2
+      },
+      {
+        "sourceDomain": "statearchivists.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "uscode.house.gov",
+        "resourcesWithoutSnapshots": 5
+      },
+      {
+        "sourceDomain": "whitehouse.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "www2.archivists.org",
+        "resourcesWithoutSnapshots": 1
+      }
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "beforeRemaining": 29,
+        "afterRemaining": 28,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 2,
+        "beforeRemaining": 28,
+        "afterRemaining": 28,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：否\n失败原因：页面正文过短（0 字符），疑似空白页或错误页，已跳过。\n本次新增失败记录数量：3",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "snapshot-backfill-1786197321183",
+    "startedAt": "2026-08-08T13:54:49.570Z",
+    "finishedAt": "2026-08-08T13:55:21.176Z",
+    "batchSize": 3,
+    "maxRounds": 50,
+    "sourceDomain": "",
+    "includeFederalRegister": false,
+    "force": false,
+    "initialRemaining": 39,
+    "finalRemaining": 38,
+    "stoppedReason": "no_progress",
+    "missingByDomain": [
+      {
+        "sourceDomain": "archives.gov",
+        "resourcesWithoutSnapshots": 4
+      },
+      {
+        "sourceDomain": "arma.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "crowd.loc.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "docnow.io",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "dp.la",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "ecfr.gov",
+        "resourcesWithoutSnapshots": 14
+      },
+      {
+        "sourceDomain": "federalregister.gov",
+        "resourcesWithoutSnapshots": 140
+      },
+      {
+        "sourceDomain": "labs.loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "obamawhitehouse.archives.gov",
+        "resourcesWithoutSnapshots": 2
+      },
+      {
+        "sourceDomain": "statearchivists.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "uscode.house.gov",
+        "resourcesWithoutSnapshots": 5
+      },
+      {
+        "sourceDomain": "whitehouse.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "www2.archivists.org",
+        "resourcesWithoutSnapshots": 1
+      }
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "beforeRemaining": 39,
+        "afterRemaining": 38,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 2,
+        "beforeRemaining": 38,
+        "afterRemaining": 38,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：否\n失败原因：页面正文过短（0 字符），疑似空白页或错误页，已跳过。\n本次新增失败记录数量：3",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "snapshot-backfill-1786195712133",
+    "startedAt": "2026-08-08T13:24:22.894Z",
+    "finishedAt": "2026-08-08T13:28:32.129Z",
+    "batchSize": 3,
+    "maxRounds": 50,
+    "sourceDomain": "",
+    "includeFederalRegister": false,
+    "force": false,
+    "initialRemaining": 58,
+    "finalRemaining": 44,
+    "stoppedReason": "no_progress",
+    "missingByDomain": [
+      {
+        "sourceDomain": "archives.gov",
+        "resourcesWithoutSnapshots": 5
+      },
+      {
+        "sourceDomain": "arma.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "crowd.loc.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "docnow.io",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "dp.la",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "ecfr.gov",
+        "resourcesWithoutSnapshots": 19
+      },
+      {
+        "sourceDomain": "federalregister.gov",
+        "resourcesWithoutSnapshots": 152
+      },
+      {
+        "sourceDomain": "labs.loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "obamawhitehouse.archives.gov",
+        "resourcesWithoutSnapshots": 2
+      },
+      {
+        "sourceDomain": "statearchivists.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "uscode.house.gov",
+        "resourcesWithoutSnapshots": 5
+      },
+      {
+        "sourceDomain": "whitehouse.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "www2.archivists.org",
+        "resourcesWithoutSnapshots": 1
+      }
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "beforeRemaining": 58,
+        "afterRemaining": 55,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：是\n是否成功：是\n是否成功：是\n新生成快照记录数量：6",
+        "errorMessage": ""
+      },
+      {
+        "round": 2,
+        "beforeRemaining": 55,
+        "afterRemaining": 53,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：是\n是否成功：是\n本次新增失败记录数量：1\n新生成快照记录数量：4",
+        "errorMessage": ""
+      },
+      {
+        "round": 3,
+        "beforeRemaining": 53,
+        "afterRemaining": 52,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 4,
+        "beforeRemaining": 52,
+        "afterRemaining": 51,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 5,
+        "beforeRemaining": 51,
+        "afterRemaining": 50,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 6,
+        "beforeRemaining": 50,
+        "afterRemaining": 49,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 7,
+        "beforeRemaining": 49,
+        "afterRemaining": 48,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 8,
+        "beforeRemaining": 48,
+        "afterRemaining": 47,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 9,
+        "beforeRemaining": 47,
+        "afterRemaining": 46,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 10,
+        "beforeRemaining": 46,
+        "afterRemaining": 45,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 11,
+        "beforeRemaining": 45,
+        "afterRemaining": 44,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 12,
+        "beforeRemaining": 44,
+        "afterRemaining": 43,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：是\n本次新增失败记录数量：2\n新生成快照记录数量：2",
+        "errorMessage": ""
+      },
+      {
+        "round": 13,
+        "beforeRemaining": 43,
+        "afterRemaining": 44,
+        "success": true,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3\n是否成功：否\n失败原因：页面疑似无效，包含提示文本：Verification\n是否成功：否\n失败原因：页面返回 HTTP 404，已跳过。\n是否成功：否\n失败原因：页面正文过短（0 字符），疑似空白页或错误页，已跳过。\n本次新增失败记录数量：3",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "snapshot-backfill-1786195184704",
+    "startedAt": "2026-08-08T13:19:43.491Z",
+    "finishedAt": "2026-08-08T13:19:44.704Z",
+    "batchSize": 3,
+    "maxRounds": 50,
+    "sourceDomain": "",
+    "includeFederalRegister": false,
+    "force": false,
+    "initialRemaining": 58,
+    "finalRemaining": 58,
+    "stoppedReason": "generate_failed",
+    "missingByDomain": [
+      {
+        "sourceDomain": "archives.gov",
+        "resourcesWithoutSnapshots": 19
+      },
+      {
+        "sourceDomain": "arma.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "crowd.loc.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "docnow.io",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "dp.la",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "ecfr.gov",
+        "resourcesWithoutSnapshots": 19
+      },
+      {
+        "sourceDomain": "federalregister.gov",
+        "resourcesWithoutSnapshots": 153
+      },
+      {
+        "sourceDomain": "labs.loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "loc.gov",
+        "resourcesWithoutSnapshots": 3
+      },
+      {
+        "sourceDomain": "obamawhitehouse.archives.gov",
+        "resourcesWithoutSnapshots": 2
+      },
+      {
+        "sourceDomain": "statearchivists.org",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "uscode.house.gov",
+        "resourcesWithoutSnapshots": 5
+      },
+      {
+        "sourceDomain": "whitehouse.gov",
+        "resourcesWithoutSnapshots": 1
+      },
+      {
+        "sourceDomain": "www2.archivists.org",
+        "resourcesWithoutSnapshots": 1
+      }
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "beforeRemaining": 58,
+        "afterRemaining": 58,
+        "success": false,
+        "command": "node /Users/jovia/Desktop/档案网站/archivescope/scripts/snapshots/generateSnapshots.mjs --limit 3",
+        "outputSummary": "本次待处理数量：3",
+        "errorMessage": "快照生成命令执行失败，已停止。"
+      }
+    ]
+  }
+]

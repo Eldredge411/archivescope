@@ -1,0 +1,2104 @@
+{
+  "generatedAt": "2026-07-30T08:13:00.016Z",
+  "summary": {
+    "acceptedResourcesTotal": 39,
+    "hiddenOrExcludedCount": 0,
+    "excludedByEntityRoutingCount": 3,
+    "visibleCount": 36,
+    "missingTitleZhCount": 0,
+    "missingSummaryShortCount": 39,
+    "missingSummaryZhCount": 0,
+    "missingKeyPointsCount": 0,
+    "missingResearchValueCount": 0,
+    "noSnapshotCount": 0,
+    "partialSnapshotCount": 1,
+    "noOfficialFilesCount": 39,
+    "suspectIrrelevantCount": 2,
+    "suspectInstitutionCount": 3
+  },
+  "missingFields": [
+    {
+      "resourceId": "fr-2026-07479",
+      "slug": "freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee: Charter Renewal and Solicitation of Nominations",
+      "titleZh": "信息自由法咨询委员会：章程续期与成员提名征集",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/17/2026-07479/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2024-12398",
+      "slug": "freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee",
+      "titleZh": "信息自由法咨询委员会公告",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/06/06/2024-12398/freedom-of-information-act-foia-advisory-committee",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2024-11910",
+      "slug": "federal-records-management-digitizing-temporary-records-2024-11910",
+      "titleEn": "Federal Records Management: Digitizing Temporary Records",
+      "titleZh": "联邦记录管理：临时记录数字化",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
+      "detailUrl": "/resources/federal-records-management-digitizing-temporary-records-2024-11910",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2024-09396",
+      "slug": "federal-records-management-gao-concurrence-2024-09396",
+      "titleEn": "Federal Records Management: GAO Concurrence",
+      "titleZh": "联邦记录管理：美国政府问责署同意程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/01/2024-09396/federal-records-management-gao-concurrence",
+      "detailUrl": "/resources/federal-records-management-gao-concurrence-2024-09396",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2024-06406",
+      "slug": "federal-records-management-digital-photographs-2024-06406",
+      "titleEn": "Federal Records Management: Digital Photographs",
+      "titleZh": "联邦记录管理：数字照片",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+      "detailUrl": "/resources/federal-records-management-digital-photographs-2024-06406",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2023-03401",
+      "slug": "freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee; Solicitation for Committee Member Nominations",
+      "titleZh": "信息自由法咨询委员会：征集委员会成员提名",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/02/17/2023-03401/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2022-26450",
+      "slug": "federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "titleEn": "Federal Records Management: Managing Electronic Records, Including Electronic Messages",
+      "titleZh": "联邦记录管理：管理电子记录，包括电子消息",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
+      "detailUrl": "/resources/federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2020-09353",
+      "slug": "administrative-guidance-procedures-2020-09353",
+      "titleEn": "Administrative Guidance Procedures",
+      "titleZh": "行政指导程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/28/2020-09353/administrative-guidance-procedures",
+      "detailUrl": "/resources/administrative-guidance-procedures-2020-09353",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2020-09352",
+      "slug": "records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 31",
+      "titleZh": "记录管理：通用记录处置表第 31 号传递通知",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/04/2020-09352/records-management-general-records-schedule-grs-grs-transmittal-31",
+      "detailUrl": "/resources/records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2017-11895",
+      "slug": "presidential-records-2017-11895",
+      "titleEn": "Presidential Records",
+      "titleZh": "总统记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
+      "detailUrl": "/resources/presidential-records-2017-11895",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-2017-00329",
+      "slug": "nara-records-subject-to-foia-2017-00329",
+      "titleEn": "NARA Records Subject to FOIA",
+      "titleZh": "适用于信息自由法的 NARA 记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-00329/nara-records-subject-to-foia",
+      "detailUrl": "/resources/nara-records-subject-to-foia-2017-00329",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-99-30838",
+      "slug": "storage-of-federal-records-99-30838",
+      "titleEn": "Storage of Federal Records",
+      "titleZh": "联邦记录存储",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30838/storage-of-federal-records",
+      "detailUrl": "/resources/storage-of-federal-records-99-30838",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "fr-05-6410",
+      "slug": "presidential-records-act-procedures-05-6410",
+      "titleEn": "Presidential Records Act Procedures",
+      "titleZh": "总统记录法程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2005/04/01/05-6410/presidential-records-act-procedures",
+      "detailUrl": "/resources/presidential-records-act-procedures-05-6410",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-records-mgmt",
+      "slug": "federal-records-management-national-archives",
+      "titleEn": "Federal Records Management | National Archives",
+      "titleZh": "美国国家档案馆（NARA）联邦记录管理综合门户",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt",
+      "detailUrl": "/resources/federal-records-management-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-policy",
+      "slug": "records-management-regulations-and-guidance-national-archives",
+      "titleEn": "Records Management Regulations and Guidance | National Archives",
+      "titleZh": "NARA 记录管理法规与指导",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+      "detailUrl": "/resources/records-management-regulations-and-guidance-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-bulletins",
+      "slug": "nara-bulletins-national-archives",
+      "titleEn": "NARA Bulletins | National Archives",
+      "titleZh": "NARA 记录管理公告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
+      "detailUrl": "/resources/nara-bulletins-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-electronic-records-preservation",
+      "slug": "digital-preservation-home-national-archives",
+      "titleEn": "Digital Preservation - Home | National Archives",
+      "titleZh": "NARA 数字保存与电子记录保存",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
+      "detailUrl": "/resources/digital-preservation-home-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-nara-catalog",
+      "slug": "nara-catalog",
+      "titleEn": "NARA Catalog",
+      "titleZh": "NARA 档案目录",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/catalog",
+      "detailUrl": "/resources/nara-catalog",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-citizen-archivist",
+      "slug": "citizen-archivist-national-archives",
+      "titleEn": "Citizen Archivist | National Archives",
+      "titleZh": "公民档案员项目",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/citizen-archivist",
+      "detailUrl": "/resources/citizen-archivist-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-strategic-plan",
+      "slug": "national-archives-strategic-plan-national-archives",
+      "titleEn": "National Archives Strategic Plan | National Archives",
+      "titleZh": "NARA 战略规划",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/strategic-plan",
+      "detailUrl": "/resources/national-archives-strategic-plan-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-foia",
+      "slug": "freedom-of-information-act-foia-national-archives",
+      "titleEn": "Freedom of Information Act (FOIA) | National Archives",
+      "titleZh": "NARA 信息自由法服务",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/foia",
+      "detailUrl": "/resources/freedom-of-information-act-foia-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-presidential-libraries",
+      "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "titleZh": "美国总统图书馆与博物馆",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/presidential-libraries",
+      "detailUrl": "/resources/presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-education",
+      "slug": "educator-resources-national-archives",
+      "titleEn": "Educator Resources | National Archives",
+      "titleZh": "NARA 教育资源",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/education",
+      "detailUrl": "/resources/educator-resources-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-research",
+      "slug": "research-our-records-national-archives",
+      "titleEn": "Research Our Records | National Archives",
+      "titleZh": "NARA 档案研究与利用",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research",
+      "detailUrl": "/resources/research-our-records-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-grs",
+      "slug": "what-are-the-general-records-schedules-grs-national-archives",
+      "titleEn": "What are the General Records Schedules (GRS) | National Archives",
+      "titleZh": "通用记录处置表",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
+      "detailUrl": "/resources/what-are-the-general-records-schedules-grs-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-records-scheduling",
+      "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+      "titleZh": "联邦记录清点、排程与处置指南",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
+      "detailUrl": "/resources/guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-email-management",
+      "slug": "e-mail-management-national-archives",
+      "titleEn": "E-mail Management | National Archives",
+      "titleZh": "电子邮件记录管理",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+      "detailUrl": "/resources/e-mail-management-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-digitization",
+      "slug": "digitization-at-the-national-archives-national-archives",
+      "titleEn": "Digitization at the National Archives | National Archives",
+      "titleZh": "NARA 数字化工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/digitization",
+      "detailUrl": "/resources/digitization-at-the-national-archives-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-preservation",
+      "slug": "preservation-national-archives",
+      "titleEn": "Preservation | National Archives",
+      "titleZh": "NARA 保存工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation",
+      "detailUrl": "/resources/preservation-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-research-start",
+      "slug": "getting-started-overview-national-archives",
+      "titleEn": "Getting Started Overview | National Archives",
+      "titleZh": "开始使用 NARA 馆藏",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/start",
+      "detailUrl": "/resources/getting-started-overview-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-alic",
+      "slug": "archives-library-information-center-alic-national-archives",
+      "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+      "titleZh": "档案图书馆信息中心",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/alic",
+      "detailUrl": "/resources/archives-library-information-center-alic-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-exhibits",
+      "slug": "online-exhibits-national-archives",
+      "titleEn": "Online Exhibits | National Archives",
+      "titleZh": "NARA 在线展览",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/exhibits",
+      "detailUrl": "/resources/online-exhibits-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-calendar",
+      "slug": "calendar-of-events-national-archives",
+      "titleEn": "Calendar of Events | National Archives",
+      "titleZh": "NARA 活动日历",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/calendar",
+      "detailUrl": "/resources/calendar-of-events-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-open-government",
+      "slug": "open-government-initiative-national-archives",
+      "titleEn": "Open Government Initiative | National Archives",
+      "titleZh": "NARA 开放政府倡议",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/open",
+      "detailUrl": "/resources/open-government-initiative-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-plans-reports",
+      "slug": "nara-reports-national-archives",
+      "titleEn": "NARA Reports | National Archives",
+      "titleZh": "NARA 规划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports",
+      "detailUrl": "/resources/nara-reports-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-performance-accountability",
+      "slug": "annual-performance-plan-and-report-national-archives",
+      "titleEn": "Annual Performance Plan and Report | National Archives",
+      "titleZh": "NARA 年度绩效计划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/performance-accountability",
+      "detailUrl": "/resources/annual-performance-plan-and-report-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-training",
+      "slug": "records-management-training-program-national-archives",
+      "titleEn": "Records Management Training Program | National Archives",
+      "titleZh": "NARA 记录管理培训",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/training",
+      "detailUrl": "/resources/records-management-training-program-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-declassification",
+      "slug": "national-archives-and-declassification-national-archives",
+      "titleEn": "National Archives and Declassification | National Archives",
+      "titleZh": "NARA 解密工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/declassification",
+      "detailUrl": "/resources/national-archives-and-declassification-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    },
+    {
+      "resourceId": "nara-web-about-nara",
+      "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+      "titleEn": "What is the National Archives and Records Administration? | National Archives",
+      "titleZh": "美国国家档案与文件署机构介绍",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about",
+      "detailUrl": "/resources/what-is-the-national-archives-and-records-administration-national-archives",
+      "missingFields": [
+        "summaryShort"
+      ]
+    }
+  ],
+  "suspectIrrelevantResources": [
+    {
+      "resourceId": "fr-2026-07479",
+      "slug": "freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee: Charter Renewal and Solicitation of Nominations",
+      "titleZh": "信息自由法咨询委员会：章程续期与成员提名征集",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/17/2026-07479/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "matchedTerms": [
+        "nomination",
+        "solicitation of nominations"
+      ],
+      "protectedTerms": [
+        "foia",
+        "records management"
+      ],
+      "suggestedDecision": "needs_review",
+      "issueTags": [
+        "疑似弱相关",
+        "含档案治理关键词，需复核"
+      ],
+      "reason": "命中一般行政公告关键词，但同时包含 FOIA、records management、federal records 或 electronic records 等关键词，建议人工复核。"
+    },
+    {
+      "resourceId": "fr-2023-03401",
+      "slug": "freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee; Solicitation for Committee Member Nominations",
+      "titleZh": "信息自由法咨询委员会：征集委员会成员提名",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/02/17/2023-03401/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "matchedTerms": [
+        "nomination"
+      ],
+      "protectedTerms": [
+        "foia",
+        "records management"
+      ],
+      "suggestedDecision": "needs_review",
+      "issueTags": [
+        "疑似弱相关",
+        "含档案治理关键词，需复核"
+      ],
+      "reason": "命中一般行政公告关键词，但同时包含 FOIA、records management、federal records 或 electronic records 等关键词，建议人工复核。"
+    }
+  ],
+  "suspectInstitutionResources": [
+    {
+      "resourceId": "nara-web-presidential-libraries",
+      "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "titleZh": "美国总统图书馆与博物馆",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/presidential-libraries",
+      "detailUrl": "/resources/presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "matchedTerms": [
+        "Museum",
+        "图书馆",
+        "博物馆"
+      ],
+      "suggestedDecision": "move_to_institution",
+      "issueTags": [
+        "疑似机构资料"
+      ],
+      "reason": "标题命中机构、图书馆、中心、协会、办公室等机构类关键词，可能更适合进入机构模块。"
+    },
+    {
+      "resourceId": "nara-web-alic",
+      "slug": "archives-library-information-center-alic-national-archives",
+      "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+      "titleZh": "档案图书馆信息中心",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/alic",
+      "detailUrl": "/resources/archives-library-information-center-alic-national-archives",
+      "matchedTerms": [
+        "Center",
+        "Library",
+        "图书馆",
+        "中心"
+      ],
+      "suggestedDecision": "move_to_institution",
+      "issueTags": [
+        "疑似机构资料"
+      ],
+      "reason": "标题命中机构、图书馆、中心、协会、办公室等机构类关键词，可能更适合进入机构模块。"
+    },
+    {
+      "resourceId": "nara-web-about-nara",
+      "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+      "titleEn": "What is the National Archives and Records Administration? | National Archives",
+      "titleZh": "美国国家档案与文件署机构介绍",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about",
+      "detailUrl": "/resources/what-is-the-national-archives-and-records-administration-national-archives",
+      "matchedTerms": [
+        "机构"
+      ],
+      "suggestedDecision": "move_to_institution",
+      "issueTags": [
+        "疑似机构资料"
+      ],
+      "reason": "标题命中机构、图书馆、中心、协会、办公室等机构类关键词，可能更适合进入机构模块。"
+    }
+  ],
+  "snapshotStatuses": [
+    {
+      "resourceId": "fr-2026-07479",
+      "slug": "freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee: Charter Renewal and Solicitation of Nominations",
+      "titleZh": "信息自由法咨询委员会：章程续期与成员提名征集",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/17/2026-07479/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2024-12398",
+      "slug": "freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee",
+      "titleZh": "信息自由法咨询委员会公告",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/06/06/2024-12398/freedom-of-information-act-foia-advisory-committee",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2024-11910",
+      "slug": "federal-records-management-digitizing-temporary-records-2024-11910",
+      "titleEn": "Federal Records Management: Digitizing Temporary Records",
+      "titleZh": "联邦记录管理：临时记录数字化",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
+      "detailUrl": "/resources/federal-records-management-digitizing-temporary-records-2024-11910",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2024-09396",
+      "slug": "federal-records-management-gao-concurrence-2024-09396",
+      "titleEn": "Federal Records Management: GAO Concurrence",
+      "titleZh": "联邦记录管理：美国政府问责署同意程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/01/2024-09396/federal-records-management-gao-concurrence",
+      "detailUrl": "/resources/federal-records-management-gao-concurrence-2024-09396",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2024-06406",
+      "slug": "federal-records-management-digital-photographs-2024-06406",
+      "titleEn": "Federal Records Management: Digital Photographs",
+      "titleZh": "联邦记录管理：数字照片",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+      "detailUrl": "/resources/federal-records-management-digital-photographs-2024-06406",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2023-03401",
+      "slug": "freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee; Solicitation for Committee Member Nominations",
+      "titleZh": "信息自由法咨询委员会：征集委员会成员提名",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/02/17/2023-03401/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2022-26450",
+      "slug": "federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "titleEn": "Federal Records Management: Managing Electronic Records, Including Electronic Messages",
+      "titleZh": "联邦记录管理：管理电子记录，包括电子消息",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
+      "detailUrl": "/resources/federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2020-09353",
+      "slug": "administrative-guidance-procedures-2020-09353",
+      "titleEn": "Administrative Guidance Procedures",
+      "titleZh": "行政指导程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/28/2020-09353/administrative-guidance-procedures",
+      "detailUrl": "/resources/administrative-guidance-procedures-2020-09353",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2020-09352",
+      "slug": "records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 31",
+      "titleZh": "记录管理：通用记录处置表第 31 号传递通知",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/04/2020-09352/records-management-general-records-schedule-grs-grs-transmittal-31",
+      "detailUrl": "/resources/records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2017-11895",
+      "slug": "presidential-records-2017-11895",
+      "titleEn": "Presidential Records",
+      "titleZh": "总统记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
+      "detailUrl": "/resources/presidential-records-2017-11895",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-2017-00329",
+      "slug": "nara-records-subject-to-foia-2017-00329",
+      "titleEn": "NARA Records Subject to FOIA",
+      "titleZh": "适用于信息自由法的 NARA 记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-00329/nara-records-subject-to-foia",
+      "detailUrl": "/resources/nara-records-subject-to-foia-2017-00329",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-99-30838",
+      "slug": "storage-of-federal-records-99-30838",
+      "titleEn": "Storage of Federal Records",
+      "titleZh": "联邦记录存储",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30838/storage-of-federal-records",
+      "detailUrl": "/resources/storage-of-federal-records-99-30838",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "fr-05-6410",
+      "slug": "presidential-records-act-procedures-05-6410",
+      "titleEn": "Presidential Records Act Procedures",
+      "titleZh": "总统记录法程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2005/04/01/05-6410/presidential-records-act-procedures",
+      "detailUrl": "/resources/presidential-records-act-procedures-05-6410",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-records-mgmt",
+      "slug": "federal-records-management-national-archives",
+      "titleEn": "Federal Records Management | National Archives",
+      "titleZh": "美国国家档案馆（NARA）联邦记录管理综合门户",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt",
+      "detailUrl": "/resources/federal-records-management-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-policy",
+      "slug": "records-management-regulations-and-guidance-national-archives",
+      "titleEn": "Records Management Regulations and Guidance | National Archives",
+      "titleZh": "NARA 记录管理法规与指导",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+      "detailUrl": "/resources/records-management-regulations-and-guidance-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-bulletins",
+      "slug": "nara-bulletins-national-archives",
+      "titleEn": "NARA Bulletins | National Archives",
+      "titleZh": "NARA 记录管理公告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
+      "detailUrl": "/resources/nara-bulletins-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-electronic-records-preservation",
+      "slug": "digital-preservation-home-national-archives",
+      "titleEn": "Digital Preservation - Home | National Archives",
+      "titleZh": "NARA 数字保存与电子记录保存",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
+      "detailUrl": "/resources/digital-preservation-home-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-nara-catalog",
+      "slug": "nara-catalog",
+      "titleEn": "NARA Catalog",
+      "titleZh": "NARA 档案目录",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/catalog",
+      "detailUrl": "/resources/nara-catalog",
+      "status": "partial",
+      "fileCount": 1,
+      "fileTypes": [
+        "screenshot"
+      ],
+      "missingFileTypes": [
+        "pdf"
+      ]
+    },
+    {
+      "resourceId": "nara-web-citizen-archivist",
+      "slug": "citizen-archivist-national-archives",
+      "titleEn": "Citizen Archivist | National Archives",
+      "titleZh": "公民档案员项目",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/citizen-archivist",
+      "detailUrl": "/resources/citizen-archivist-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-strategic-plan",
+      "slug": "national-archives-strategic-plan-national-archives",
+      "titleEn": "National Archives Strategic Plan | National Archives",
+      "titleZh": "NARA 战略规划",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/strategic-plan",
+      "detailUrl": "/resources/national-archives-strategic-plan-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-foia",
+      "slug": "freedom-of-information-act-foia-national-archives",
+      "titleEn": "Freedom of Information Act (FOIA) | National Archives",
+      "titleZh": "NARA 信息自由法服务",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/foia",
+      "detailUrl": "/resources/freedom-of-information-act-foia-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-presidential-libraries",
+      "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "titleZh": "美国总统图书馆与博物馆",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/presidential-libraries",
+      "detailUrl": "/resources/presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-education",
+      "slug": "educator-resources-national-archives",
+      "titleEn": "Educator Resources | National Archives",
+      "titleZh": "NARA 教育资源",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/education",
+      "detailUrl": "/resources/educator-resources-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-research",
+      "slug": "research-our-records-national-archives",
+      "titleEn": "Research Our Records | National Archives",
+      "titleZh": "NARA 档案研究与利用",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research",
+      "detailUrl": "/resources/research-our-records-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-grs",
+      "slug": "what-are-the-general-records-schedules-grs-national-archives",
+      "titleEn": "What are the General Records Schedules (GRS) | National Archives",
+      "titleZh": "通用记录处置表",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
+      "detailUrl": "/resources/what-are-the-general-records-schedules-grs-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-records-scheduling",
+      "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+      "titleZh": "联邦记录清点、排程与处置指南",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
+      "detailUrl": "/resources/guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-email-management",
+      "slug": "e-mail-management-national-archives",
+      "titleEn": "E-mail Management | National Archives",
+      "titleZh": "电子邮件记录管理",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+      "detailUrl": "/resources/e-mail-management-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-digitization",
+      "slug": "digitization-at-the-national-archives-national-archives",
+      "titleEn": "Digitization at the National Archives | National Archives",
+      "titleZh": "NARA 数字化工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/digitization",
+      "detailUrl": "/resources/digitization-at-the-national-archives-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-preservation",
+      "slug": "preservation-national-archives",
+      "titleEn": "Preservation | National Archives",
+      "titleZh": "NARA 保存工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation",
+      "detailUrl": "/resources/preservation-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-research-start",
+      "slug": "getting-started-overview-national-archives",
+      "titleEn": "Getting Started Overview | National Archives",
+      "titleZh": "开始使用 NARA 馆藏",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/start",
+      "detailUrl": "/resources/getting-started-overview-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-alic",
+      "slug": "archives-library-information-center-alic-national-archives",
+      "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+      "titleZh": "档案图书馆信息中心",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/alic",
+      "detailUrl": "/resources/archives-library-information-center-alic-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-exhibits",
+      "slug": "online-exhibits-national-archives",
+      "titleEn": "Online Exhibits | National Archives",
+      "titleZh": "NARA 在线展览",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/exhibits",
+      "detailUrl": "/resources/online-exhibits-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-calendar",
+      "slug": "calendar-of-events-national-archives",
+      "titleEn": "Calendar of Events | National Archives",
+      "titleZh": "NARA 活动日历",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/calendar",
+      "detailUrl": "/resources/calendar-of-events-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-open-government",
+      "slug": "open-government-initiative-national-archives",
+      "titleEn": "Open Government Initiative | National Archives",
+      "titleZh": "NARA 开放政府倡议",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/open",
+      "detailUrl": "/resources/open-government-initiative-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-plans-reports",
+      "slug": "nara-reports-national-archives",
+      "titleEn": "NARA Reports | National Archives",
+      "titleZh": "NARA 规划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports",
+      "detailUrl": "/resources/nara-reports-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-performance-accountability",
+      "slug": "annual-performance-plan-and-report-national-archives",
+      "titleEn": "Annual Performance Plan and Report | National Archives",
+      "titleZh": "NARA 年度绩效计划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/performance-accountability",
+      "detailUrl": "/resources/annual-performance-plan-and-report-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-training",
+      "slug": "records-management-training-program-national-archives",
+      "titleEn": "Records Management Training Program | National Archives",
+      "titleZh": "NARA 记录管理培训",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/training",
+      "detailUrl": "/resources/records-management-training-program-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-declassification",
+      "slug": "national-archives-and-declassification-national-archives",
+      "titleEn": "National Archives and Declassification | National Archives",
+      "titleZh": "NARA 解密工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/declassification",
+      "detailUrl": "/resources/national-archives-and-declassification-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    },
+    {
+      "resourceId": "nara-web-about-nara",
+      "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+      "titleEn": "What is the National Archives and Records Administration? | National Archives",
+      "titleZh": "美国国家档案与文件署机构介绍",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about",
+      "detailUrl": "/resources/what-is-the-national-archives-and-records-administration-national-archives",
+      "status": "complete",
+      "fileCount": 2,
+      "fileTypes": [
+        "pdf",
+        "screenshot"
+      ],
+      "missingFileTypes": []
+    }
+  ],
+  "officialFileStatuses": [
+    {
+      "resourceId": "fr-2026-07479",
+      "slug": "freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee: Charter Renewal and Solicitation of Nominations",
+      "titleZh": "信息自由法咨询委员会：章程续期与成员提名征集",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/17/2026-07479/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-12398",
+      "slug": "freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee",
+      "titleZh": "信息自由法咨询委员会公告",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/06/06/2024-12398/freedom-of-information-act-foia-advisory-committee",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-11910",
+      "slug": "federal-records-management-digitizing-temporary-records-2024-11910",
+      "titleEn": "Federal Records Management: Digitizing Temporary Records",
+      "titleZh": "联邦记录管理：临时记录数字化",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
+      "detailUrl": "/resources/federal-records-management-digitizing-temporary-records-2024-11910",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-09396",
+      "slug": "federal-records-management-gao-concurrence-2024-09396",
+      "titleEn": "Federal Records Management: GAO Concurrence",
+      "titleZh": "联邦记录管理：美国政府问责署同意程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/01/2024-09396/federal-records-management-gao-concurrence",
+      "detailUrl": "/resources/federal-records-management-gao-concurrence-2024-09396",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-06406",
+      "slug": "federal-records-management-digital-photographs-2024-06406",
+      "titleEn": "Federal Records Management: Digital Photographs",
+      "titleZh": "联邦记录管理：数字照片",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+      "detailUrl": "/resources/federal-records-management-digital-photographs-2024-06406",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2023-03401",
+      "slug": "freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee; Solicitation for Committee Member Nominations",
+      "titleZh": "信息自由法咨询委员会：征集委员会成员提名",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/02/17/2023-03401/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2022-26450",
+      "slug": "federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "titleEn": "Federal Records Management: Managing Electronic Records, Including Electronic Messages",
+      "titleZh": "联邦记录管理：管理电子记录，包括电子消息",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
+      "detailUrl": "/resources/federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2020-09353",
+      "slug": "administrative-guidance-procedures-2020-09353",
+      "titleEn": "Administrative Guidance Procedures",
+      "titleZh": "行政指导程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/28/2020-09353/administrative-guidance-procedures",
+      "detailUrl": "/resources/administrative-guidance-procedures-2020-09353",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2020-09352",
+      "slug": "records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 31",
+      "titleZh": "记录管理：通用记录处置表第 31 号传递通知",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/04/2020-09352/records-management-general-records-schedule-grs-grs-transmittal-31",
+      "detailUrl": "/resources/records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2017-11895",
+      "slug": "presidential-records-2017-11895",
+      "titleEn": "Presidential Records",
+      "titleZh": "总统记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
+      "detailUrl": "/resources/presidential-records-2017-11895",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2017-00329",
+      "slug": "nara-records-subject-to-foia-2017-00329",
+      "titleEn": "NARA Records Subject to FOIA",
+      "titleZh": "适用于信息自由法的 NARA 记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-00329/nara-records-subject-to-foia",
+      "detailUrl": "/resources/nara-records-subject-to-foia-2017-00329",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-99-30838",
+      "slug": "storage-of-federal-records-99-30838",
+      "titleEn": "Storage of Federal Records",
+      "titleZh": "联邦记录存储",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30838/storage-of-federal-records",
+      "detailUrl": "/resources/storage-of-federal-records-99-30838",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-05-6410",
+      "slug": "presidential-records-act-procedures-05-6410",
+      "titleEn": "Presidential Records Act Procedures",
+      "titleZh": "总统记录法程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2005/04/01/05-6410/presidential-records-act-procedures",
+      "detailUrl": "/resources/presidential-records-act-procedures-05-6410",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt",
+      "slug": "federal-records-management-national-archives",
+      "titleEn": "Federal Records Management | National Archives",
+      "titleZh": "美国国家档案馆（NARA）联邦记录管理综合门户",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt",
+      "detailUrl": "/resources/federal-records-management-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-policy",
+      "slug": "records-management-regulations-and-guidance-national-archives",
+      "titleEn": "Records Management Regulations and Guidance | National Archives",
+      "titleZh": "NARA 记录管理法规与指导",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+      "detailUrl": "/resources/records-management-regulations-and-guidance-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-bulletins",
+      "slug": "nara-bulletins-national-archives",
+      "titleEn": "NARA Bulletins | National Archives",
+      "titleZh": "NARA 记录管理公告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
+      "detailUrl": "/resources/nara-bulletins-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-electronic-records-preservation",
+      "slug": "digital-preservation-home-national-archives",
+      "titleEn": "Digital Preservation - Home | National Archives",
+      "titleZh": "NARA 数字保存与电子记录保存",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
+      "detailUrl": "/resources/digital-preservation-home-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-nara-catalog",
+      "slug": "nara-catalog",
+      "titleEn": "NARA Catalog",
+      "titleZh": "NARA 档案目录",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/catalog",
+      "detailUrl": "/resources/nara-catalog",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-citizen-archivist",
+      "slug": "citizen-archivist-national-archives",
+      "titleEn": "Citizen Archivist | National Archives",
+      "titleZh": "公民档案员项目",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/citizen-archivist",
+      "detailUrl": "/resources/citizen-archivist-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-strategic-plan",
+      "slug": "national-archives-strategic-plan-national-archives",
+      "titleEn": "National Archives Strategic Plan | National Archives",
+      "titleZh": "NARA 战略规划",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/strategic-plan",
+      "detailUrl": "/resources/national-archives-strategic-plan-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-foia",
+      "slug": "freedom-of-information-act-foia-national-archives",
+      "titleEn": "Freedom of Information Act (FOIA) | National Archives",
+      "titleZh": "NARA 信息自由法服务",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/foia",
+      "detailUrl": "/resources/freedom-of-information-act-foia-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-presidential-libraries",
+      "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "titleZh": "美国总统图书馆与博物馆",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/presidential-libraries",
+      "detailUrl": "/resources/presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-education",
+      "slug": "educator-resources-national-archives",
+      "titleEn": "Educator Resources | National Archives",
+      "titleZh": "NARA 教育资源",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/education",
+      "detailUrl": "/resources/educator-resources-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-research",
+      "slug": "research-our-records-national-archives",
+      "titleEn": "Research Our Records | National Archives",
+      "titleZh": "NARA 档案研究与利用",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research",
+      "detailUrl": "/resources/research-our-records-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-grs",
+      "slug": "what-are-the-general-records-schedules-grs-national-archives",
+      "titleEn": "What are the General Records Schedules (GRS) | National Archives",
+      "titleZh": "通用记录处置表",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
+      "detailUrl": "/resources/what-are-the-general-records-schedules-grs-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-scheduling",
+      "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+      "titleZh": "联邦记录清点、排程与处置指南",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
+      "detailUrl": "/resources/guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-email-management",
+      "slug": "e-mail-management-national-archives",
+      "titleEn": "E-mail Management | National Archives",
+      "titleZh": "电子邮件记录管理",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+      "detailUrl": "/resources/e-mail-management-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-digitization",
+      "slug": "digitization-at-the-national-archives-national-archives",
+      "titleEn": "Digitization at the National Archives | National Archives",
+      "titleZh": "NARA 数字化工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/digitization",
+      "detailUrl": "/resources/digitization-at-the-national-archives-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-preservation",
+      "slug": "preservation-national-archives",
+      "titleEn": "Preservation | National Archives",
+      "titleZh": "NARA 保存工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation",
+      "detailUrl": "/resources/preservation-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-research-start",
+      "slug": "getting-started-overview-national-archives",
+      "titleEn": "Getting Started Overview | National Archives",
+      "titleZh": "开始使用 NARA 馆藏",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/start",
+      "detailUrl": "/resources/getting-started-overview-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-alic",
+      "slug": "archives-library-information-center-alic-national-archives",
+      "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+      "titleZh": "档案图书馆信息中心",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/alic",
+      "detailUrl": "/resources/archives-library-information-center-alic-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-exhibits",
+      "slug": "online-exhibits-national-archives",
+      "titleEn": "Online Exhibits | National Archives",
+      "titleZh": "NARA 在线展览",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/exhibits",
+      "detailUrl": "/resources/online-exhibits-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-calendar",
+      "slug": "calendar-of-events-national-archives",
+      "titleEn": "Calendar of Events | National Archives",
+      "titleZh": "NARA 活动日历",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/calendar",
+      "detailUrl": "/resources/calendar-of-events-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-open-government",
+      "slug": "open-government-initiative-national-archives",
+      "titleEn": "Open Government Initiative | National Archives",
+      "titleZh": "NARA 开放政府倡议",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/open",
+      "detailUrl": "/resources/open-government-initiative-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-plans-reports",
+      "slug": "nara-reports-national-archives",
+      "titleEn": "NARA Reports | National Archives",
+      "titleZh": "NARA 规划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports",
+      "detailUrl": "/resources/nara-reports-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-performance-accountability",
+      "slug": "annual-performance-plan-and-report-national-archives",
+      "titleEn": "Annual Performance Plan and Report | National Archives",
+      "titleZh": "NARA 年度绩效计划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/performance-accountability",
+      "detailUrl": "/resources/annual-performance-plan-and-report-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-training",
+      "slug": "records-management-training-program-national-archives",
+      "titleEn": "Records Management Training Program | National Archives",
+      "titleZh": "NARA 记录管理培训",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/training",
+      "detailUrl": "/resources/records-management-training-program-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-declassification",
+      "slug": "national-archives-and-declassification-national-archives",
+      "titleEn": "National Archives and Declassification | National Archives",
+      "titleZh": "NARA 解密工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/declassification",
+      "detailUrl": "/resources/national-archives-and-declassification-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-about-nara",
+      "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+      "titleEn": "What is the National Archives and Records Administration? | National Archives",
+      "titleZh": "美国国家档案与文件署机构介绍",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about",
+      "detailUrl": "/resources/what-is-the-national-archives-and-records-administration-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    }
+  ],
+  "noSnapshotResources": [],
+  "partialSnapshotResources": [
+    {
+      "resourceId": "nara-web-nara-catalog",
+      "slug": "nara-catalog",
+      "titleEn": "NARA Catalog",
+      "titleZh": "NARA 档案目录",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/catalog",
+      "detailUrl": "/resources/nara-catalog",
+      "status": "partial",
+      "fileCount": 1,
+      "fileTypes": [
+        "screenshot"
+      ],
+      "missingFileTypes": [
+        "pdf"
+      ]
+    }
+  ],
+  "noOfficialFileResources": [
+    {
+      "resourceId": "fr-2026-07479",
+      "slug": "freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee: Charter Renewal and Solicitation of Nominations",
+      "titleZh": "信息自由法咨询委员会：章程续期与成员提名征集",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2026/04/17/2026-07479/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-charter-renewal-and-solicitation-of-nominatio-2026-07479",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-12398",
+      "slug": "freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee",
+      "titleZh": "信息自由法咨询委员会公告",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/06/06/2024-12398/freedom-of-information-act-foia-advisory-committee",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-2024-12398",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-11910",
+      "slug": "federal-records-management-digitizing-temporary-records-2024-11910",
+      "titleEn": "Federal Records Management: Digitizing Temporary Records",
+      "titleZh": "联邦记录管理：临时记录数字化",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
+      "detailUrl": "/resources/federal-records-management-digitizing-temporary-records-2024-11910",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-09396",
+      "slug": "federal-records-management-gao-concurrence-2024-09396",
+      "titleEn": "Federal Records Management: GAO Concurrence",
+      "titleZh": "联邦记录管理：美国政府问责署同意程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/05/01/2024-09396/federal-records-management-gao-concurrence",
+      "detailUrl": "/resources/federal-records-management-gao-concurrence-2024-09396",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2024-06406",
+      "slug": "federal-records-management-digital-photographs-2024-06406",
+      "titleEn": "Federal Records Management: Digital Photographs",
+      "titleZh": "联邦记录管理：数字照片",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+      "detailUrl": "/resources/federal-records-management-digital-photographs-2024-06406",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2023-03401",
+      "slug": "freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "titleEn": "Freedom of Information Act (FOIA) Advisory Committee; Solicitation for Committee Member Nominations",
+      "titleZh": "信息自由法咨询委员会：征集委员会成员提名",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/02/17/2023-03401/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations",
+      "detailUrl": "/resources/freedom-of-information-act-foia-advisory-committee-solicitation-for-committee-member-nominations-2023-03401",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2022-26450",
+      "slug": "federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "titleEn": "Federal Records Management: Managing Electronic Records, Including Electronic Messages",
+      "titleZh": "联邦记录管理：管理电子记录，包括电子消息",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
+      "detailUrl": "/resources/federal-records-management-managing-electronic-records-including-electronic-messages-2022-26450",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2020-09353",
+      "slug": "administrative-guidance-procedures-2020-09353",
+      "titleEn": "Administrative Guidance Procedures",
+      "titleZh": "行政指导程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/28/2020-09353/administrative-guidance-procedures",
+      "detailUrl": "/resources/administrative-guidance-procedures-2020-09353",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2020-09352",
+      "slug": "records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 31",
+      "titleZh": "记录管理：通用记录处置表第 31 号传递通知",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2020/05/04/2020-09352/records-management-general-records-schedule-grs-grs-transmittal-31",
+      "detailUrl": "/resources/records-management-general-records-schedule-grs-grs-transmittal-31-2020-09352",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2017-11895",
+      "slug": "presidential-records-2017-11895",
+      "titleEn": "Presidential Records",
+      "titleZh": "总统记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
+      "detailUrl": "/resources/presidential-records-2017-11895",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-2017-00329",
+      "slug": "nara-records-subject-to-foia-2017-00329",
+      "titleEn": "NARA Records Subject to FOIA",
+      "titleZh": "适用于信息自由法的 NARA 记录",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-00329/nara-records-subject-to-foia",
+      "detailUrl": "/resources/nara-records-subject-to-foia-2017-00329",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-99-30838",
+      "slug": "storage-of-federal-records-99-30838",
+      "titleEn": "Storage of Federal Records",
+      "titleZh": "联邦记录存储",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30838/storage-of-federal-records",
+      "detailUrl": "/resources/storage-of-federal-records-99-30838",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "fr-05-6410",
+      "slug": "presidential-records-act-procedures-05-6410",
+      "titleEn": "Presidential Records Act Procedures",
+      "titleZh": "总统记录法程序",
+      "sourceDomain": "federalregister.gov",
+      "sourceUrl": "https://www.federalregister.gov/documents/2005/04/01/05-6410/presidential-records-act-procedures",
+      "detailUrl": "/resources/presidential-records-act-procedures-05-6410",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt",
+      "slug": "federal-records-management-national-archives",
+      "titleEn": "Federal Records Management | National Archives",
+      "titleZh": "美国国家档案馆（NARA）联邦记录管理综合门户",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt",
+      "detailUrl": "/resources/federal-records-management-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-policy",
+      "slug": "records-management-regulations-and-guidance-national-archives",
+      "titleEn": "Records Management Regulations and Guidance | National Archives",
+      "titleZh": "NARA 记录管理法规与指导",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+      "detailUrl": "/resources/records-management-regulations-and-guidance-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-bulletins",
+      "slug": "nara-bulletins-national-archives",
+      "titleEn": "NARA Bulletins | National Archives",
+      "titleZh": "NARA 记录管理公告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
+      "detailUrl": "/resources/nara-bulletins-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-electronic-records-preservation",
+      "slug": "digital-preservation-home-national-archives",
+      "titleEn": "Digital Preservation - Home | National Archives",
+      "titleZh": "NARA 数字保存与电子记录保存",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
+      "detailUrl": "/resources/digital-preservation-home-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-nara-catalog",
+      "slug": "nara-catalog",
+      "titleEn": "NARA Catalog",
+      "titleZh": "NARA 档案目录",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/catalog",
+      "detailUrl": "/resources/nara-catalog",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-citizen-archivist",
+      "slug": "citizen-archivist-national-archives",
+      "titleEn": "Citizen Archivist | National Archives",
+      "titleZh": "公民档案员项目",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/citizen-archivist",
+      "detailUrl": "/resources/citizen-archivist-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-strategic-plan",
+      "slug": "national-archives-strategic-plan-national-archives",
+      "titleEn": "National Archives Strategic Plan | National Archives",
+      "titleZh": "NARA 战略规划",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/strategic-plan",
+      "detailUrl": "/resources/national-archives-strategic-plan-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-foia",
+      "slug": "freedom-of-information-act-foia-national-archives",
+      "titleEn": "Freedom of Information Act (FOIA) | National Archives",
+      "titleZh": "NARA 信息自由法服务",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/foia",
+      "detailUrl": "/resources/freedom-of-information-act-foia-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-presidential-libraries",
+      "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "titleZh": "美国总统图书馆与博物馆",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/presidential-libraries",
+      "detailUrl": "/resources/presidential-libraries-and-museums-of-the-national-archives-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-education",
+      "slug": "educator-resources-national-archives",
+      "titleEn": "Educator Resources | National Archives",
+      "titleZh": "NARA 教育资源",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/education",
+      "detailUrl": "/resources/educator-resources-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-research",
+      "slug": "research-our-records-national-archives",
+      "titleEn": "Research Our Records | National Archives",
+      "titleZh": "NARA 档案研究与利用",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research",
+      "detailUrl": "/resources/research-our-records-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-grs",
+      "slug": "what-are-the-general-records-schedules-grs-national-archives",
+      "titleEn": "What are the General Records Schedules (GRS) | National Archives",
+      "titleZh": "通用记录处置表",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
+      "detailUrl": "/resources/what-are-the-general-records-schedules-grs-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-scheduling",
+      "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+      "titleZh": "联邦记录清点、排程与处置指南",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
+      "detailUrl": "/resources/guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-email-management",
+      "slug": "e-mail-management-national-archives",
+      "titleEn": "E-mail Management | National Archives",
+      "titleZh": "电子邮件记录管理",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+      "detailUrl": "/resources/e-mail-management-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-digitization",
+      "slug": "digitization-at-the-national-archives-national-archives",
+      "titleEn": "Digitization at the National Archives | National Archives",
+      "titleZh": "NARA 数字化工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/digitization",
+      "detailUrl": "/resources/digitization-at-the-national-archives-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-preservation",
+      "slug": "preservation-national-archives",
+      "titleEn": "Preservation | National Archives",
+      "titleZh": "NARA 保存工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/preservation",
+      "detailUrl": "/resources/preservation-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-research-start",
+      "slug": "getting-started-overview-national-archives",
+      "titleEn": "Getting Started Overview | National Archives",
+      "titleZh": "开始使用 NARA 馆藏",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/start",
+      "detailUrl": "/resources/getting-started-overview-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-alic",
+      "slug": "archives-library-information-center-alic-national-archives",
+      "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+      "titleZh": "档案图书馆信息中心",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/research/alic",
+      "detailUrl": "/resources/archives-library-information-center-alic-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-exhibits",
+      "slug": "online-exhibits-national-archives",
+      "titleEn": "Online Exhibits | National Archives",
+      "titleZh": "NARA 在线展览",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/exhibits",
+      "detailUrl": "/resources/online-exhibits-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-calendar",
+      "slug": "calendar-of-events-national-archives",
+      "titleEn": "Calendar of Events | National Archives",
+      "titleZh": "NARA 活动日历",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/calendar",
+      "detailUrl": "/resources/calendar-of-events-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-open-government",
+      "slug": "open-government-initiative-national-archives",
+      "titleEn": "Open Government Initiative | National Archives",
+      "titleZh": "NARA 开放政府倡议",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/open",
+      "detailUrl": "/resources/open-government-initiative-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-plans-reports",
+      "slug": "nara-reports-national-archives",
+      "titleEn": "NARA Reports | National Archives",
+      "titleZh": "NARA 规划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports",
+      "detailUrl": "/resources/nara-reports-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-performance-accountability",
+      "slug": "annual-performance-plan-and-report-national-archives",
+      "titleEn": "Annual Performance Plan and Report | National Archives",
+      "titleZh": "NARA 年度绩效计划与报告",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about/plans-reports/performance-accountability",
+      "detailUrl": "/resources/annual-performance-plan-and-report-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-records-mgmt-training",
+      "slug": "records-management-training-program-national-archives",
+      "titleEn": "Records Management Training Program | National Archives",
+      "titleZh": "NARA 记录管理培训",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/records-mgmt/training",
+      "detailUrl": "/resources/records-management-training-program-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-declassification",
+      "slug": "national-archives-and-declassification-national-archives",
+      "titleEn": "National Archives and Declassification | National Archives",
+      "titleZh": "NARA 解密工作",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/declassification",
+      "detailUrl": "/resources/national-archives-and-declassification-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    },
+    {
+      "resourceId": "nara-web-about-nara",
+      "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+      "titleEn": "What is the National Archives and Records Administration? | National Archives",
+      "titleZh": "美国国家档案与文件署机构介绍",
+      "sourceDomain": "archives.gov",
+      "sourceUrl": "https://www.archives.gov/about",
+      "detailUrl": "/resources/what-is-the-national-archives-and-records-administration-national-archives",
+      "hasOfficialFiles": false,
+      "officialFileCount": 0
+    }
+  ],
+  "hiddenOrExcludedResources": []
+}

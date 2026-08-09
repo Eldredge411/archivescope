@@ -1,0 +1,3857 @@
+[
+  {
+    "id": "archive-discovery-1785938680921",
+    "startedAt": "2026-08-05T14:04:40.921Z",
+    "finishedAt": "2026-08-05T14:04:42.337Z",
+    "batchSize": 5,
+    "resourceLimit": 5,
+    "institutionLimit": 5,
+    "dryRun": true,
+    "success": true,
+    "resourcesAdded": 5,
+    "institutionsAdded": 5,
+    "stoppedReason": "completed",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 5 --dry-run",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T14:04:40.929Z",
+        "finishedAt": "2026-08-05T14:04:41.819Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：7\n本次新增资料数量：5\n本次新增中文介绍数量：5\n本次新增官方文件入口数量：5",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 5 --dry-run",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T14:04:41.820Z",
+        "finishedAt": "2026-08-05T14:04:42.337Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：14\n本次新增机构数量：5\n- isoo：信息安全监督办公室",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785938688512",
+    "startedAt": "2026-08-05T14:04:48.512Z",
+    "finishedAt": "2026-08-05T14:04:52.752Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 7,
+    "institutionsAdded": 8,
+    "stoppedReason": "completed",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T14:04:48.520Z",
+        "finishedAt": "2026-08-05T14:04:49.208Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：7\n本次新增资料数量：7\n本次新增中文介绍数量：7\n本次新增官方文件入口数量：7\n已写入资料：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/acceptedResources.json\n已写入中文介绍：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/resourceEnrichments.ts\n已写入官方文件入口：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/resourceOfficialFiles.ts\n已写入智能体消息：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceEnrichmentAutopilotMessages.json",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T14:04:49.215Z",
+        "finishedAt": "2026-08-05T14:04:50.547Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：14\n本次新增机构数量：8\n- isoo：信息安全监督办公室\n已写入机构：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/acceptedInstitutions.json\n已写入机构消息：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/institutionDiscoveryMessages.json",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T14:04:50.548Z",
+        "finishedAt": "2026-08-05T14:04:52.752Z",
+        "outputSummary": "通过数量：17\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785942292170",
+    "startedAt": "2026-08-05T15:04:52.170Z",
+    "finishedAt": "2026-08-05T15:04:59.105Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 6,
+    "stoppedReason": "completed",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T15:04:52.174Z",
+        "finishedAt": "2026-08-05T15:04:52.673Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T15:04:52.674Z",
+        "finishedAt": "2026-08-05T15:04:53.696Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：6\n本次新增机构数量：6\n已写入机构：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/acceptedInstitutions.json\n已写入机构消息：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/institutionDiscoveryMessages.json",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T15:04:53.696Z",
+        "finishedAt": "2026-08-05T15:04:59.105Z",
+        "outputSummary": "通过数量：17\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785945675239",
+    "startedAt": "2026-08-05T16:01:15.239Z",
+    "finishedAt": "2026-08-05T16:01:16.080Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T16:01:15.245Z",
+        "finishedAt": "2026-08-05T16:01:15.605Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T16:01:15.606Z",
+        "finishedAt": "2026-08-05T16:01:15.813Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T16:01:15.813Z",
+        "finishedAt": "2026-08-05T16:01:16.080Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785949248413",
+    "startedAt": "2026-08-05T17:00:48.413Z",
+    "finishedAt": "2026-08-05T17:00:49.078Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T17:00:48.415Z",
+        "finishedAt": "2026-08-05T17:00:48.640Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T17:00:48.640Z",
+        "finishedAt": "2026-08-05T17:00:48.835Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T17:00:48.835Z",
+        "finishedAt": "2026-08-05T17:00:49.078Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785952835091",
+    "startedAt": "2026-08-05T18:00:35.091Z",
+    "finishedAt": "2026-08-05T18:00:35.598Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T18:00:35.093Z",
+        "finishedAt": "2026-08-05T18:00:35.261Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T18:00:35.261Z",
+        "finishedAt": "2026-08-05T18:00:35.407Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T18:00:35.407Z",
+        "finishedAt": "2026-08-05T18:00:35.598Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785957027918",
+    "startedAt": "2026-08-05T19:10:27.918Z",
+    "finishedAt": "2026-08-05T19:10:28.297Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T19:10:27.919Z",
+        "finishedAt": "2026-08-05T19:10:28.044Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T19:10:28.044Z",
+        "finishedAt": "2026-08-05T19:10:28.151Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T19:10:28.151Z",
+        "finishedAt": "2026-08-05T19:10:28.297Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785960987125",
+    "startedAt": "2026-08-05T20:16:27.125Z",
+    "finishedAt": "2026-08-05T20:16:27.479Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T20:16:27.127Z",
+        "finishedAt": "2026-08-05T20:16:27.239Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T20:16:27.239Z",
+        "finishedAt": "2026-08-05T20:16:27.346Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T20:16:27.346Z",
+        "finishedAt": "2026-08-05T20:16:27.479Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785964146124",
+    "startedAt": "2026-08-05T21:09:06.124Z",
+    "finishedAt": "2026-08-05T21:09:06.478Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T21:09:06.125Z",
+        "finishedAt": "2026-08-05T21:09:06.238Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T21:09:06.239Z",
+        "finishedAt": "2026-08-05T21:09:06.347Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T21:09:06.347Z",
+        "finishedAt": "2026-08-05T21:09:06.478Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785968143666",
+    "startedAt": "2026-08-05T22:15:43.666Z",
+    "finishedAt": "2026-08-05T22:15:44.029Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T22:15:43.669Z",
+        "finishedAt": "2026-08-05T22:15:43.790Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T22:15:43.790Z",
+        "finishedAt": "2026-08-05T22:15:43.896Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T22:15:43.896Z",
+        "finishedAt": "2026-08-05T22:15:44.029Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785971229663",
+    "startedAt": "2026-08-05T23:07:09.663Z",
+    "finishedAt": "2026-08-05T23:07:10.065Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T23:07:09.665Z",
+        "finishedAt": "2026-08-05T23:07:09.811Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T23:07:09.812Z",
+        "finishedAt": "2026-08-05T23:07:09.932Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-05T23:07:09.932Z",
+        "finishedAt": "2026-08-05T23:07:10.065Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785975048601",
+    "startedAt": "2026-08-06T00:10:48.601Z",
+    "finishedAt": "2026-08-06T00:10:48.950Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T00:10:48.603Z",
+        "finishedAt": "2026-08-06T00:10:48.713Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T00:10:48.713Z",
+        "finishedAt": "2026-08-06T00:10:48.817Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T00:10:48.818Z",
+        "finishedAt": "2026-08-06T00:10:48.950Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785979525603",
+    "startedAt": "2026-08-06T01:25:25.603Z",
+    "finishedAt": "2026-08-06T01:25:26.436Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T01:25:25.606Z",
+        "finishedAt": "2026-08-06T01:25:25.858Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T01:25:25.858Z",
+        "finishedAt": "2026-08-06T01:25:26.103Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T01:25:26.103Z",
+        "finishedAt": "2026-08-06T01:25:26.436Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785981725057",
+    "startedAt": "2026-08-06T02:02:05.057Z",
+    "finishedAt": "2026-08-06T02:02:06.430Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T02:02:05.061Z",
+        "finishedAt": "2026-08-06T02:02:05.482Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T02:02:05.482Z",
+        "finishedAt": "2026-08-06T02:02:05.953Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T02:02:05.953Z",
+        "finishedAt": "2026-08-06T02:02:06.430Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785985238195",
+    "startedAt": "2026-08-06T03:00:38.195Z",
+    "finishedAt": "2026-08-06T03:00:39.094Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T03:00:38.200Z",
+        "finishedAt": "2026-08-06T03:00:38.423Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T03:00:38.423Z",
+        "finishedAt": "2026-08-06T03:00:38.706Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T03:00:38.706Z",
+        "finishedAt": "2026-08-06T03:00:39.093Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785988894063",
+    "startedAt": "2026-08-06T04:01:34.063Z",
+    "finishedAt": "2026-08-06T04:01:35.091Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T04:01:34.066Z",
+        "finishedAt": "2026-08-06T04:01:34.386Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T04:01:34.386Z",
+        "finishedAt": "2026-08-06T04:01:34.655Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T04:01:34.655Z",
+        "finishedAt": "2026-08-06T04:01:35.090Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785992608378",
+    "startedAt": "2026-08-06T05:03:28.378Z",
+    "finishedAt": "2026-08-06T05:03:28.752Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T05:03:28.379Z",
+        "finishedAt": "2026-08-06T05:03:28.498Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T05:03:28.498Z",
+        "finishedAt": "2026-08-06T05:03:28.605Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T05:03:28.605Z",
+        "finishedAt": "2026-08-06T05:03:28.752Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785996069566",
+    "startedAt": "2026-08-06T06:01:09.566Z",
+    "finishedAt": "2026-08-06T06:01:10.248Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T06:01:09.569Z",
+        "finishedAt": "2026-08-06T06:01:09.795Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T06:01:09.795Z",
+        "finishedAt": "2026-08-06T06:01:10.003Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T06:01:10.003Z",
+        "finishedAt": "2026-08-06T06:01:10.248Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1785999699831",
+    "startedAt": "2026-08-06T07:01:39.831Z",
+    "finishedAt": "2026-08-06T07:01:40.671Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T07:01:39.834Z",
+        "finishedAt": "2026-08-06T07:01:40.102Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T07:01:40.103Z",
+        "finishedAt": "2026-08-06T07:01:40.360Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T07:01:40.360Z",
+        "finishedAt": "2026-08-06T07:01:40.671Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786003289625",
+    "startedAt": "2026-08-06T08:01:29.625Z",
+    "finishedAt": "2026-08-06T08:01:30.201Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T08:01:29.628Z",
+        "finishedAt": "2026-08-06T08:01:29.798Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T08:01:29.799Z",
+        "finishedAt": "2026-08-06T08:01:29.976Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T08:01:29.976Z",
+        "finishedAt": "2026-08-06T08:01:30.201Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786006861119",
+    "startedAt": "2026-08-06T09:01:01.119Z",
+    "finishedAt": "2026-08-06T09:01:02.622Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T09:01:01.123Z",
+        "finishedAt": "2026-08-06T09:01:01.623Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T09:01:01.623Z",
+        "finishedAt": "2026-08-06T09:01:02.089Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T09:01:02.089Z",
+        "finishedAt": "2026-08-06T09:01:02.622Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786010496129",
+    "startedAt": "2026-08-06T10:01:36.129Z",
+    "finishedAt": "2026-08-06T10:01:37.216Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T10:01:36.134Z",
+        "finishedAt": "2026-08-06T10:01:36.555Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T10:01:36.555Z",
+        "finishedAt": "2026-08-06T10:01:36.849Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T10:01:36.849Z",
+        "finishedAt": "2026-08-06T10:01:37.216Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786014808151",
+    "startedAt": "2026-08-06T11:13:28.151Z",
+    "finishedAt": "2026-08-06T11:13:35.929Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T11:13:28.167Z",
+        "finishedAt": "2026-08-06T11:13:31.604Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T11:13:31.605Z",
+        "finishedAt": "2026-08-06T11:13:33.527Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T11:13:33.527Z",
+        "finishedAt": "2026-08-06T11:13:35.929Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786018482032",
+    "startedAt": "2026-08-06T12:14:42.032Z",
+    "finishedAt": "2026-08-06T12:14:45.841Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T12:14:42.043Z",
+        "finishedAt": "2026-08-06T12:14:43.759Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T12:14:43.759Z",
+        "finishedAt": "2026-08-06T12:14:44.827Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T12:14:44.827Z",
+        "finishedAt": "2026-08-06T12:14:45.840Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786021611784",
+    "startedAt": "2026-08-06T13:06:51.785Z",
+    "finishedAt": "2026-08-06T13:06:55.374Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T13:06:51.796Z",
+        "finishedAt": "2026-08-06T13:06:53.718Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T13:06:53.720Z",
+        "finishedAt": "2026-08-06T13:06:54.400Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T13:06:54.400Z",
+        "finishedAt": "2026-08-06T13:06:55.374Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786024849125",
+    "startedAt": "2026-08-06T14:00:49.125Z",
+    "finishedAt": "2026-08-06T14:00:49.747Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T14:00:49.128Z",
+        "finishedAt": "2026-08-06T14:00:49.326Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T14:00:49.326Z",
+        "finishedAt": "2026-08-06T14:00:49.516Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T14:00:49.516Z",
+        "finishedAt": "2026-08-06T14:00:49.747Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786028485924",
+    "startedAt": "2026-08-06T15:01:25.924Z",
+    "finishedAt": "2026-08-06T15:01:26.551Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T15:01:25.926Z",
+        "finishedAt": "2026-08-06T15:01:26.119Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T15:01:26.119Z",
+        "finishedAt": "2026-08-06T15:01:26.317Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T15:01:26.317Z",
+        "finishedAt": "2026-08-06T15:01:26.550Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786032088595",
+    "startedAt": "2026-08-06T16:01:28.595Z",
+    "finishedAt": "2026-08-06T16:01:29.216Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T16:01:28.599Z",
+        "finishedAt": "2026-08-06T16:01:28.815Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T16:01:28.815Z",
+        "finishedAt": "2026-08-06T16:01:28.990Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T16:01:28.990Z",
+        "finishedAt": "2026-08-06T16:01:29.216Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786040278878",
+    "startedAt": "2026-08-06T18:17:58.878Z",
+    "finishedAt": "2026-08-06T18:18:00.677Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T18:17:58.882Z",
+        "finishedAt": "2026-08-06T18:17:59.743Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T18:17:59.744Z",
+        "finishedAt": "2026-08-06T18:18:00.242Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T18:18:00.242Z",
+        "finishedAt": "2026-08-06T18:18:00.677Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786043239929",
+    "startedAt": "2026-08-06T19:07:19.929Z",
+    "finishedAt": "2026-08-06T19:07:20.576Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T19:07:19.932Z",
+        "finishedAt": "2026-08-06T19:07:20.132Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T19:07:20.132Z",
+        "finishedAt": "2026-08-06T19:07:20.319Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T19:07:20.319Z",
+        "finishedAt": "2026-08-06T19:07:20.576Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786046601910",
+    "startedAt": "2026-08-06T20:03:21.910Z",
+    "finishedAt": "2026-08-06T20:03:22.508Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T20:03:21.915Z",
+        "finishedAt": "2026-08-06T20:03:22.112Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T20:03:22.112Z",
+        "finishedAt": "2026-08-06T20:03:22.290Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T20:03:22.290Z",
+        "finishedAt": "2026-08-06T20:03:22.508Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786050743320",
+    "startedAt": "2026-08-06T21:12:23.320Z",
+    "finishedAt": "2026-08-06T21:12:24.081Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T21:12:23.322Z",
+        "finishedAt": "2026-08-06T21:12:23.555Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T21:12:23.555Z",
+        "finishedAt": "2026-08-06T21:12:23.781Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T21:12:23.782Z",
+        "finishedAt": "2026-08-06T21:12:24.081Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786055896786",
+    "startedAt": "2026-08-06T22:38:16.786Z",
+    "finishedAt": "2026-08-06T22:38:17.747Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T22:38:16.789Z",
+        "finishedAt": "2026-08-06T22:38:17.091Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T22:38:17.091Z",
+        "finishedAt": "2026-08-06T22:38:17.397Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T22:38:17.397Z",
+        "finishedAt": "2026-08-06T22:38:17.747Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786058148569",
+    "startedAt": "2026-08-06T23:15:48.569Z",
+    "finishedAt": "2026-08-06T23:15:49.139Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T23:15:48.571Z",
+        "finishedAt": "2026-08-06T23:15:48.750Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T23:15:48.751Z",
+        "finishedAt": "2026-08-06T23:15:48.925Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-06T23:15:48.925Z",
+        "finishedAt": "2026-08-06T23:15:49.139Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786061040593",
+    "startedAt": "2026-08-07T00:04:00.593Z",
+    "finishedAt": "2026-08-07T00:04:01.543Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T00:04:00.596Z",
+        "finishedAt": "2026-08-07T00:04:00.874Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T00:04:00.874Z",
+        "finishedAt": "2026-08-07T00:04:01.162Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T00:04:01.163Z",
+        "finishedAt": "2026-08-07T00:04:01.543Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786066992775",
+    "startedAt": "2026-08-07T01:43:12.775Z",
+    "finishedAt": "2026-08-07T01:43:13.592Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T01:43:12.777Z",
+        "finishedAt": "2026-08-07T01:43:13.041Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T01:43:13.041Z",
+        "finishedAt": "2026-08-07T01:43:13.282Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T01:43:13.282Z",
+        "finishedAt": "2026-08-07T01:43:13.592Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786068989092",
+    "startedAt": "2026-08-07T02:16:29.092Z",
+    "finishedAt": "2026-08-07T02:16:31.323Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T02:16:29.099Z",
+        "finishedAt": "2026-08-07T02:16:29.894Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T02:16:29.895Z",
+        "finishedAt": "2026-08-07T02:16:30.691Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T02:16:30.692Z",
+        "finishedAt": "2026-08-07T02:16:31.323Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786071718588",
+    "startedAt": "2026-08-07T03:01:58.588Z",
+    "finishedAt": "2026-08-07T03:01:59.183Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T03:01:58.590Z",
+        "finishedAt": "2026-08-07T03:01:58.779Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T03:01:58.780Z",
+        "finishedAt": "2026-08-07T03:01:58.956Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T03:01:58.956Z",
+        "finishedAt": "2026-08-07T03:01:59.183Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786075225486",
+    "startedAt": "2026-08-07T04:00:25.486Z",
+    "finishedAt": "2026-08-07T04:00:25.993Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T04:00:25.488Z",
+        "finishedAt": "2026-08-07T04:00:25.638Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T04:00:25.638Z",
+        "finishedAt": "2026-08-07T04:00:25.806Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T04:00:25.806Z",
+        "finishedAt": "2026-08-07T04:00:25.993Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786079036015",
+    "startedAt": "2026-08-07T05:03:56.015Z",
+    "finishedAt": "2026-08-07T05:03:56.385Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T05:03:56.017Z",
+        "finishedAt": "2026-08-07T05:03:56.139Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T05:03:56.139Z",
+        "finishedAt": "2026-08-07T05:03:56.247Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T05:03:56.247Z",
+        "finishedAt": "2026-08-07T05:03:56.385Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786083423479",
+    "startedAt": "2026-08-07T06:17:03.479Z",
+    "finishedAt": "2026-08-07T06:17:03.831Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T06:17:03.480Z",
+        "finishedAt": "2026-08-07T06:17:03.590Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T06:17:03.590Z",
+        "finishedAt": "2026-08-07T06:17:03.695Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T06:17:03.695Z",
+        "finishedAt": "2026-08-07T06:17:03.831Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786086025405",
+    "startedAt": "2026-08-07T07:00:25.405Z",
+    "finishedAt": "2026-08-07T07:00:26.028Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T07:00:25.407Z",
+        "finishedAt": "2026-08-07T07:00:25.604Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T07:00:25.604Z",
+        "finishedAt": "2026-08-07T07:00:25.787Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T07:00:25.787Z",
+        "finishedAt": "2026-08-07T07:00:26.028Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786089683958",
+    "startedAt": "2026-08-07T08:01:23.958Z",
+    "finishedAt": "2026-08-07T08:01:24.395Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T08:01:23.959Z",
+        "finishedAt": "2026-08-07T08:01:24.098Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T08:01:24.098Z",
+        "finishedAt": "2026-08-07T08:01:24.232Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T08:01:24.233Z",
+        "finishedAt": "2026-08-07T08:01:24.395Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786093241320",
+    "startedAt": "2026-08-07T09:00:41.321Z",
+    "finishedAt": "2026-08-07T09:00:41.963Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T09:00:41.324Z",
+        "finishedAt": "2026-08-07T09:00:41.602Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T09:00:41.602Z",
+        "finishedAt": "2026-08-07T09:00:41.764Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T09:00:41.764Z",
+        "finishedAt": "2026-08-07T09:00:41.963Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786097371337",
+    "startedAt": "2026-08-07T10:09:31.337Z",
+    "finishedAt": "2026-08-07T10:09:31.918Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T10:09:31.339Z",
+        "finishedAt": "2026-08-07T10:09:31.524Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T10:09:31.524Z",
+        "finishedAt": "2026-08-07T10:09:31.702Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T10:09:31.702Z",
+        "finishedAt": "2026-08-07T10:09:31.918Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786101544757",
+    "startedAt": "2026-08-07T11:19:04.757Z",
+    "finishedAt": "2026-08-07T11:19:05.365Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T11:19:04.759Z",
+        "finishedAt": "2026-08-07T11:19:04.940Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T11:19:04.941Z",
+        "finishedAt": "2026-08-07T11:19:05.114Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T11:19:05.114Z",
+        "finishedAt": "2026-08-07T11:19:05.365Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786105421672",
+    "startedAt": "2026-08-07T12:23:41.672Z",
+    "finishedAt": "2026-08-07T12:23:42.363Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T12:23:41.674Z",
+        "finishedAt": "2026-08-07T12:23:41.879Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T12:23:41.879Z",
+        "finishedAt": "2026-08-07T12:23:42.085Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T12:23:42.085Z",
+        "finishedAt": "2026-08-07T12:23:42.363Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786108487357",
+    "startedAt": "2026-08-07T13:14:47.357Z",
+    "finishedAt": "2026-08-07T13:14:51.525Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T13:14:47.362Z",
+        "finishedAt": "2026-08-07T13:14:48.199Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T13:14:48.200Z",
+        "finishedAt": "2026-08-07T13:14:49.096Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T13:14:49.096Z",
+        "finishedAt": "2026-08-07T13:14:51.525Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786111332894",
+    "startedAt": "2026-08-07T14:02:12.894Z",
+    "finishedAt": "2026-08-07T14:02:14.114Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T14:02:12.897Z",
+        "finishedAt": "2026-08-07T14:02:13.097Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T14:02:13.097Z",
+        "finishedAt": "2026-08-07T14:02:13.288Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T14:02:13.288Z",
+        "finishedAt": "2026-08-07T14:02:14.114Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786114871523",
+    "startedAt": "2026-08-07T15:01:11.523Z",
+    "finishedAt": "2026-08-07T15:01:12.592Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T15:01:11.526Z",
+        "finishedAt": "2026-08-07T15:01:11.927Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T15:01:11.928Z",
+        "finishedAt": "2026-08-07T15:01:12.216Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T15:01:12.216Z",
+        "finishedAt": "2026-08-07T15:01:12.592Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786118535319",
+    "startedAt": "2026-08-07T16:02:15.319Z",
+    "finishedAt": "2026-08-07T16:02:15.935Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T16:02:15.322Z",
+        "finishedAt": "2026-08-07T16:02:15.527Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T16:02:15.528Z",
+        "finishedAt": "2026-08-07T16:02:15.710Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T16:02:15.710Z",
+        "finishedAt": "2026-08-07T16:02:15.935Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786124611497",
+    "startedAt": "2026-08-07T17:43:31.497Z",
+    "finishedAt": "2026-08-07T17:43:32.065Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T17:43:31.499Z",
+        "finishedAt": "2026-08-07T17:43:31.677Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T17:43:31.677Z",
+        "finishedAt": "2026-08-07T17:43:31.851Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T17:43:31.851Z",
+        "finishedAt": "2026-08-07T17:43:32.065Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786126070591",
+    "startedAt": "2026-08-07T18:07:50.591Z",
+    "finishedAt": "2026-08-07T18:07:51.158Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T18:07:50.593Z",
+        "finishedAt": "2026-08-07T18:07:50.774Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T18:07:50.774Z",
+        "finishedAt": "2026-08-07T18:07:50.947Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T18:07:50.947Z",
+        "finishedAt": "2026-08-07T18:07:51.158Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786129389219",
+    "startedAt": "2026-08-07T19:03:09.219Z",
+    "finishedAt": "2026-08-07T19:03:09.891Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T19:03:09.225Z",
+        "finishedAt": "2026-08-07T19:03:09.424Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T19:03:09.424Z",
+        "finishedAt": "2026-08-07T19:03:09.608Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T19:03:09.608Z",
+        "finishedAt": "2026-08-07T19:03:09.891Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786133240045",
+    "startedAt": "2026-08-07T20:07:20.045Z",
+    "finishedAt": "2026-08-07T20:07:20.603Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T20:07:20.047Z",
+        "finishedAt": "2026-08-07T20:07:20.224Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T20:07:20.224Z",
+        "finishedAt": "2026-08-07T20:07:20.395Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T20:07:20.395Z",
+        "finishedAt": "2026-08-07T20:07:20.603Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786137261893",
+    "startedAt": "2026-08-07T21:14:21.893Z",
+    "finishedAt": "2026-08-07T21:14:22.470Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T21:14:21.896Z",
+        "finishedAt": "2026-08-07T21:14:22.080Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T21:14:22.080Z",
+        "finishedAt": "2026-08-07T21:14:22.257Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T21:14:22.257Z",
+        "finishedAt": "2026-08-07T21:14:22.470Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786140957983",
+    "startedAt": "2026-08-07T22:15:57.983Z",
+    "finishedAt": "2026-08-07T22:15:58.569Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T22:15:57.985Z",
+        "finishedAt": "2026-08-07T22:15:58.172Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T22:15:58.172Z",
+        "finishedAt": "2026-08-07T22:15:58.353Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T22:15:58.353Z",
+        "finishedAt": "2026-08-07T22:15:58.569Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786143658344",
+    "startedAt": "2026-08-07T23:00:58.344Z",
+    "finishedAt": "2026-08-07T23:00:58.913Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T23:00:58.346Z",
+        "finishedAt": "2026-08-07T23:00:58.525Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T23:00:58.525Z",
+        "finishedAt": "2026-08-07T23:00:58.696Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-07T23:00:58.696Z",
+        "finishedAt": "2026-08-07T23:00:58.913Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786147311055",
+    "startedAt": "2026-08-08T00:01:51.055Z",
+    "finishedAt": "2026-08-08T00:01:51.642Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T00:01:51.058Z",
+        "finishedAt": "2026-08-08T00:01:51.237Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T00:01:51.237Z",
+        "finishedAt": "2026-08-08T00:01:51.414Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T00:01:51.414Z",
+        "finishedAt": "2026-08-08T00:01:51.642Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786151793252",
+    "startedAt": "2026-08-08T01:16:33.252Z",
+    "finishedAt": "2026-08-08T01:16:33.837Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T01:16:33.254Z",
+        "finishedAt": "2026-08-08T01:16:33.447Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T01:16:33.447Z",
+        "finishedAt": "2026-08-08T01:16:33.622Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T01:16:33.622Z",
+        "finishedAt": "2026-08-08T01:16:33.837Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786154891900",
+    "startedAt": "2026-08-08T02:08:11.900Z",
+    "finishedAt": "2026-08-08T02:08:12.870Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T02:08:11.903Z",
+        "finishedAt": "2026-08-08T02:08:12.167Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T02:08:12.168Z",
+        "finishedAt": "2026-08-08T02:08:12.457Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T02:08:12.457Z",
+        "finishedAt": "2026-08-08T02:08:12.870Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786159107830",
+    "startedAt": "2026-08-08T03:18:27.830Z",
+    "finishedAt": "2026-08-08T03:18:29.097Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T03:18:27.836Z",
+        "finishedAt": "2026-08-08T03:18:28.328Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T03:18:28.329Z",
+        "finishedAt": "2026-08-08T03:18:28.723Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T03:18:28.724Z",
+        "finishedAt": "2026-08-08T03:18:29.097Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786162150984",
+    "startedAt": "2026-08-08T04:09:10.984Z",
+    "finishedAt": "2026-08-08T04:09:11.761Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T04:09:10.987Z",
+        "finishedAt": "2026-08-08T04:09:11.249Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T04:09:11.249Z",
+        "finishedAt": "2026-08-08T04:09:11.490Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T04:09:11.490Z",
+        "finishedAt": "2026-08-08T04:09:11.761Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786165657385",
+    "startedAt": "2026-08-08T05:07:37.385Z",
+    "finishedAt": "2026-08-08T05:07:38.014Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T05:07:37.387Z",
+        "finishedAt": "2026-08-08T05:07:37.582Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T05:07:37.582Z",
+        "finishedAt": "2026-08-08T05:07:37.768Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T05:07:37.768Z",
+        "finishedAt": "2026-08-08T05:07:38.014Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786169956386",
+    "startedAt": "2026-08-08T06:19:16.386Z",
+    "finishedAt": "2026-08-08T06:19:18.528Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T06:19:16.395Z",
+        "finishedAt": "2026-08-08T06:19:17.365Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T06:19:17.369Z",
+        "finishedAt": "2026-08-08T06:19:17.883Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T06:19:17.883Z",
+        "finishedAt": "2026-08-08T06:19:18.528Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786172992107",
+    "startedAt": "2026-08-08T07:09:52.107Z",
+    "finishedAt": "2026-08-08T07:09:52.849Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T07:09:52.109Z",
+        "finishedAt": "2026-08-08T07:09:52.309Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T07:09:52.309Z",
+        "finishedAt": "2026-08-08T07:09:52.580Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T07:09:52.580Z",
+        "finishedAt": "2026-08-08T07:09:52.849Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786178581206",
+    "startedAt": "2026-08-08T08:43:01.206Z",
+    "finishedAt": "2026-08-08T08:43:01.931Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T08:43:01.209Z",
+        "finishedAt": "2026-08-08T08:43:01.461Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T08:43:01.462Z",
+        "finishedAt": "2026-08-08T08:43:01.671Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T08:43:01.671Z",
+        "finishedAt": "2026-08-08T08:43:01.931Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786180813440",
+    "startedAt": "2026-08-08T09:20:13.440Z",
+    "finishedAt": "2026-08-08T09:20:14.644Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T09:20:13.447Z",
+        "finishedAt": "2026-08-08T09:20:13.842Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T09:20:13.842Z",
+        "finishedAt": "2026-08-08T09:20:14.256Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T09:20:14.256Z",
+        "finishedAt": "2026-08-08T09:20:14.644Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786183800677",
+    "startedAt": "2026-08-08T10:10:00.677Z",
+    "finishedAt": "2026-08-08T10:10:01.305Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T10:10:00.679Z",
+        "finishedAt": "2026-08-08T10:10:00.882Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T10:10:00.882Z",
+        "finishedAt": "2026-08-08T10:10:01.072Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T10:10:01.072Z",
+        "finishedAt": "2026-08-08T10:10:01.305Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786188145728",
+    "startedAt": "2026-08-08T11:22:25.728Z",
+    "finishedAt": "2026-08-08T11:22:26.302Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T11:22:25.730Z",
+        "finishedAt": "2026-08-08T11:22:25.908Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T11:22:25.908Z",
+        "finishedAt": "2026-08-08T11:22:26.083Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T11:22:26.083Z",
+        "finishedAt": "2026-08-08T11:22:26.302Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786191174247",
+    "startedAt": "2026-08-08T12:12:54.247Z",
+    "finishedAt": "2026-08-08T12:12:55.499Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T12:12:54.252Z",
+        "finishedAt": "2026-08-08T12:12:54.656Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T12:12:54.657Z",
+        "finishedAt": "2026-08-08T12:12:54.988Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T12:12:54.989Z",
+        "finishedAt": "2026-08-08T12:12:55.499Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786194029553",
+    "startedAt": "2026-08-08T13:00:29.553Z",
+    "finishedAt": "2026-08-08T13:00:30.164Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T13:00:29.556Z",
+        "finishedAt": "2026-08-08T13:00:29.745Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T13:00:29.746Z",
+        "finishedAt": "2026-08-08T13:00:29.925Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T13:00:29.925Z",
+        "finishedAt": "2026-08-08T13:00:30.163Z",
+        "outputSummary": "通过数量：18\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786197717266",
+    "startedAt": "2026-08-08T14:01:57.266Z",
+    "finishedAt": "2026-08-08T14:01:57.882Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T14:01:57.269Z",
+        "finishedAt": "2026-08-08T14:01:57.471Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T14:01:57.471Z",
+        "finishedAt": "2026-08-08T14:01:57.644Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T14:01:57.644Z",
+        "finishedAt": "2026-08-08T14:01:57.882Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786201850409",
+    "startedAt": "2026-08-08T15:10:50.409Z",
+    "finishedAt": "2026-08-08T15:10:50.775Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T15:10:50.411Z",
+        "finishedAt": "2026-08-08T15:10:50.531Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T15:10:50.531Z",
+        "finishedAt": "2026-08-08T15:10:50.639Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T15:10:50.639Z",
+        "finishedAt": "2026-08-08T15:10:50.775Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786204881153",
+    "startedAt": "2026-08-08T16:01:21.153Z",
+    "finishedAt": "2026-08-08T16:01:21.525Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T16:01:21.154Z",
+        "finishedAt": "2026-08-08T16:01:21.273Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T16:01:21.273Z",
+        "finishedAt": "2026-08-08T16:01:21.389Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T16:01:21.389Z",
+        "finishedAt": "2026-08-08T16:01:21.525Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786208954973",
+    "startedAt": "2026-08-08T17:09:14.973Z",
+    "finishedAt": "2026-08-08T17:09:15.321Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T17:09:14.974Z",
+        "finishedAt": "2026-08-08T17:09:15.085Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T17:09:15.085Z",
+        "finishedAt": "2026-08-08T17:09:15.190Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T17:09:15.190Z",
+        "finishedAt": "2026-08-08T17:09:15.321Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786212640389",
+    "startedAt": "2026-08-08T18:10:40.389Z",
+    "finishedAt": "2026-08-08T18:10:40.737Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T18:10:40.391Z",
+        "finishedAt": "2026-08-08T18:10:40.502Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T18:10:40.502Z",
+        "finishedAt": "2026-08-08T18:10:40.606Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T18:10:40.606Z",
+        "finishedAt": "2026-08-08T18:10:40.737Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786216398059",
+    "startedAt": "2026-08-08T19:13:18.059Z",
+    "finishedAt": "2026-08-08T19:13:18.402Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T19:13:18.061Z",
+        "finishedAt": "2026-08-08T19:13:18.172Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T19:13:18.172Z",
+        "finishedAt": "2026-08-08T19:13:18.273Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T19:13:18.273Z",
+        "finishedAt": "2026-08-08T19:13:18.402Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786219400911",
+    "startedAt": "2026-08-08T20:03:20.911Z",
+    "finishedAt": "2026-08-08T20:03:21.277Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T20:03:20.912Z",
+        "finishedAt": "2026-08-08T20:03:21.040Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T20:03:21.040Z",
+        "finishedAt": "2026-08-08T20:03:21.148Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T20:03:21.148Z",
+        "finishedAt": "2026-08-08T20:03:21.277Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786223521096",
+    "startedAt": "2026-08-08T21:12:01.096Z",
+    "finishedAt": "2026-08-08T21:12:01.445Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T21:12:01.098Z",
+        "finishedAt": "2026-08-08T21:12:01.211Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T21:12:01.211Z",
+        "finishedAt": "2026-08-08T21:12:01.318Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T21:12:01.318Z",
+        "finishedAt": "2026-08-08T21:12:01.445Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786226563195",
+    "startedAt": "2026-08-08T22:02:43.195Z",
+    "finishedAt": "2026-08-08T22:02:43.538Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T22:02:43.197Z",
+        "finishedAt": "2026-08-08T22:02:43.305Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T22:02:43.305Z",
+        "finishedAt": "2026-08-08T22:02:43.408Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T22:02:43.408Z",
+        "finishedAt": "2026-08-08T22:02:43.538Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786230561743",
+    "startedAt": "2026-08-08T23:09:21.743Z",
+    "finishedAt": "2026-08-08T23:09:22.142Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T23:09:21.745Z",
+        "finishedAt": "2026-08-08T23:09:21.870Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T23:09:21.870Z",
+        "finishedAt": "2026-08-08T23:09:22.004Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-08T23:09:22.004Z",
+        "finishedAt": "2026-08-08T23:09:22.142Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786233638163",
+    "startedAt": "2026-08-09T00:00:38.163Z",
+    "finishedAt": "2026-08-09T00:00:38.519Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T00:00:38.164Z",
+        "finishedAt": "2026-08-09T00:00:38.282Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T00:00:38.282Z",
+        "finishedAt": "2026-08-09T00:00:38.388Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T00:00:38.388Z",
+        "finishedAt": "2026-08-09T00:00:38.519Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786237512631",
+    "startedAt": "2026-08-09T01:05:12.631Z",
+    "finishedAt": "2026-08-09T01:05:13.018Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T01:05:12.633Z",
+        "finishedAt": "2026-08-09T01:05:12.773Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T01:05:12.773Z",
+        "finishedAt": "2026-08-09T01:05:12.882Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T01:05:12.882Z",
+        "finishedAt": "2026-08-09T01:05:13.018Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786241476250",
+    "startedAt": "2026-08-09T02:11:16.250Z",
+    "finishedAt": "2026-08-09T02:11:16.594Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T02:11:16.252Z",
+        "finishedAt": "2026-08-09T02:11:16.363Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T02:11:16.363Z",
+        "finishedAt": "2026-08-09T02:11:16.467Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T02:11:16.467Z",
+        "finishedAt": "2026-08-09T02:11:16.594Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786244902609",
+    "startedAt": "2026-08-09T03:08:22.609Z",
+    "finishedAt": "2026-08-09T03:08:22.976Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T03:08:22.610Z",
+        "finishedAt": "2026-08-09T03:08:22.732Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T03:08:22.732Z",
+        "finishedAt": "2026-08-09T03:08:22.839Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T03:08:22.840Z",
+        "finishedAt": "2026-08-09T03:08:22.976Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786252928832",
+    "startedAt": "2026-08-09T05:22:08.832Z",
+    "finishedAt": "2026-08-09T05:22:10.249Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:08.836Z",
+        "finishedAt": "2026-08-09T05:22:09.277Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:09.277Z",
+        "finishedAt": "2026-08-09T05:22:09.771Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:09.771Z",
+        "finishedAt": "2026-08-09T05:22:10.249Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786252929149",
+    "startedAt": "2026-08-09T05:22:09.149Z",
+    "finishedAt": "2026-08-09T05:22:10.868Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:09.154Z",
+        "finishedAt": "2026-08-09T05:22:09.709Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:09.710Z",
+        "finishedAt": "2026-08-09T05:22:10.102Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T05:22:10.103Z",
+        "finishedAt": "2026-08-09T05:22:10.868Z",
+        "outputSummary": "通过数量：20\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786255337544",
+    "startedAt": "2026-08-09T06:02:17.544Z",
+    "finishedAt": "2026-08-09T06:02:18.176Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T06:02:17.546Z",
+        "finishedAt": "2026-08-09T06:02:17.755Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T06:02:17.755Z",
+        "finishedAt": "2026-08-09T06:02:17.942Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T06:02:17.943Z",
+        "finishedAt": "2026-08-09T06:02:18.176Z",
+        "outputSummary": "通过数量：29\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786258909237",
+    "startedAt": "2026-08-09T07:01:49.237Z",
+    "finishedAt": "2026-08-09T07:01:49.842Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T07:01:49.239Z",
+        "finishedAt": "2026-08-09T07:01:49.445Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T07:01:49.445Z",
+        "finishedAt": "2026-08-09T07:01:49.619Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T07:01:49.619Z",
+        "finishedAt": "2026-08-09T07:01:49.842Z",
+        "outputSummary": "通过数量：30\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786262469976",
+    "startedAt": "2026-08-09T08:01:09.976Z",
+    "finishedAt": "2026-08-09T08:01:10.820Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T08:01:09.979Z",
+        "finishedAt": "2026-08-09T08:01:10.260Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T08:01:10.261Z",
+        "finishedAt": "2026-08-09T08:01:10.500Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T08:01:10.500Z",
+        "finishedAt": "2026-08-09T08:01:10.820Z",
+        "outputSummary": "通过数量：30\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "archive-discovery-1786266020457",
+    "startedAt": "2026-08-09T09:00:20.457Z",
+    "finishedAt": "2026-08-09T09:00:21.338Z",
+    "batchSize": 8,
+    "resourceLimit": 8,
+    "institutionLimit": 8,
+    "dryRun": false,
+    "success": true,
+    "resourcesAdded": 0,
+    "institutionsAdded": 0,
+    "stoppedReason": "no_new_candidates",
+    "commands": [
+      {
+        "command": "npm run agent:resource-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T09:00:20.462Z",
+        "finishedAt": "2026-08-09T09:00:20.756Z",
+        "outputSummary": "安全官方资料扩充 Agent\n可新增候选数量：0\n本次新增资料数量：0\n本次新增中文介绍数量：0\n本次新增官方文件入口数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:institution-discovery:autopublish -- --limit 8",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T09:00:20.757Z",
+        "finishedAt": "2026-08-09T09:00:21.015Z",
+        "outputSummary": "安全机构扩充 Agent\n可新增候选数量：0\n本次新增机构数量：0",
+        "errorMessage": ""
+      },
+      {
+        "command": "npm run agent:resource-quality",
+        "success": true,
+        "exitCode": 0,
+        "startedAt": "2026-08-09T09:00:21.015Z",
+        "finishedAt": "2026-08-09T09:00:21.338Z",
+        "outputSummary": "通过数量：30\n需补全内容数量：0",
+        "errorMessage": ""
+      }
+    ]
+  }
+]

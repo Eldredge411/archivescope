@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "nara-web-records-mgmt",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Federal Records Management | National Archives",
+    "titleZh": "NARA 记录管理",
+    "slug": "federal-records-management-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "NARA",
+      "records management",
+      "联邦记录管理",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-07-09",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "records-mgmt",
+        "url": "https://www.archives.gov/records-mgmt",
+        "titleHintZh": "NARA 记录管理",
+        "titleHintEn": "NARA Records Management",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "records management",
+          "联邦记录管理"
+        ],
+        "note": "NARA 记录管理核心入口页。"
+      },
+      "fetchedTitle": "Federal Records Management | National Archives",
+      "fetchedDescription": "Office of the Chief Records Officer for the U.S.",
+      "rawExcerpt": "ARCIS (Archives and Records Centers Information System)\n\nERA (Electronic Records Archives)\n\nGRS (General Records Schedules)\n\nRCS (Agency Records Control Schedules)\n\nInventory, Scheduling, and Disposition Guide and Resources",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-records-mgmt-policy",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Records Management Regulations and Guidance | National Archives",
+    "titleZh": "NARA 记录管理政策",
+    "slug": "records-management-regulations-and-guidance-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "strategy",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "NARA",
+      "records management",
+      "policy",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-05-01",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "records-mgmt-policy",
+        "url": "https://www.archives.gov/records-mgmt/policy",
+        "titleHintZh": "NARA 记录管理政策",
+        "titleHintEn": "NARA Records Management Policy",
+        "institutionId": "nara",
+        "suggestedResourceType": "strategy",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "records management",
+          "policy"
+        ],
+        "note": "NARA 记录管理政策资料入口。"
+      },
+      "fetchedTitle": "Records Management Regulations and Guidance | National Archives",
+      "fetchedDescription": "The Office of the Chief Records Officer for the U.S. Government is responsible for developing Federal records management guidance related to records creation, management, and disposition with an emphasis on electronic records. The Office of the Chief Records Officer champions the critical importance of federal records management across the Federal Government. Contact",
+      "rawExcerpt": "The Office of the Chief Records Officer for the U.S. Government is responsible for developing Federal records management guidance related to records creation, management, and disposition with an emphasis on electronic records. The Office of the Chief Records Officer champions the critical importance of federal records management across the Federal Government.\n\nContact records.management@nara.gov with any questions about this page and NARA's federal records management guidance.\n\nRecords Management Laws and Authorities\n\nRecords Management Regulations\n\nMemos to Agency Records Officers",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-records-mgmt-bulletins",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "NARA Bulletins | National Archives",
+    "titleZh": "NARA 记录管理公告",
+    "slug": "nara-bulletins-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "NARA",
+      "bulletins",
+      "records management",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-05-30",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "records-mgmt-bulletins",
+        "url": "https://www.archives.gov/records-mgmt/bulletins",
+        "titleHintZh": "NARA 记录管理公告",
+        "titleHintEn": "NARA Records Management Bulletins",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "bulletins",
+          "records management"
+        ],
+        "note": "NARA 记录管理公告入口。"
+      },
+      "fetchedTitle": "NARA Bulletins | National Archives",
+      "fetchedDescription": "The National Archives and Records Administration (NARA) issues NARA bulletins to Federal agencies to provide guidance and assistance on the management and disposition of Federal records. NARA bulletins clarify and explain Federal records management requirements found in the Federal Records Act and the Code of Federal Regulations. NARA bulletins provide records management",
+      "rawExcerpt": "The National Archives and Records Administration (NARA) issues NARA bulletins to Federal agencies to provide guidance and assistance on the management and disposition of Federal records.\n\nNARA bulletins clarify and explain Federal records management requirements found in the Federal Records Act and the Code of Federal Regulations. NARA bulletins provide records management guidance for agencies, who can then determine the most appropriate way to incorporate NARA guidance into their business processes and agency programs.\n\nThis section contains NARA bulletins that are no longer in effect.\n\nThis page was last reviewed on May 30, 2025. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-electronic-records-preservation",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Digital Preservation - Home | National Archives",
+    "titleZh": "NARA 电子记录保存",
+    "slug": "digital-preservation-home-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "digital-resources-preservation",
+    "topicIds": [
+      "digital-resources-preservation",
+      "electronic-records-management"
+    ],
+    "tags": [
+      "NARA",
+      "digital preservation",
+      "electronic records",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2024-11-12",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "electronic-records-preservation",
+        "url": "https://www.archives.gov/preservation/electronic-records",
+        "titleHintZh": "NARA 电子记录保存",
+        "titleHintEn": "NARA Electronic Records Preservation",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "digital-resources-preservation",
+        "suggestedTopicIds": [
+          "digital-resources-preservation",
+          "electronic-records-management"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "digital preservation",
+          "electronic records"
+        ],
+        "note": "NARA 电子记录保存与数字保存资料入口。"
+      },
+      "fetchedTitle": "Digital Preservation - Home | National Archives",
+      "fetchedDescription": "Two units at the National Archives and Records Administration (NARA) have responsibility for maintaining the records in its holdings: Preservation, with the mandate to care for the physical holdings and perform preservation reformatting digitization of physical items, and Digital Preservation, with the mandate to support electronic records processing archivists, perform audits",
+      "rawExcerpt": "About the Digital Preservation Program\n\nDigital Preservation Framework\n\nDigital Preservation Framework Linked Open Data\n\nTwo units at the National Archives and Records Administration (NARA) have responsibility for maintaining the records in its holdings: Preservation , with the mandate to care for the physical holdings and perform preservation reformatting digitization of physical items, and Digital Preservation , with the mandate to support electronic records processing archivists, perform audits of the holdings, and assess the need to perform preservation actions.\n\nThe goal for digital preservation at NARA is to enable the continued, ongoing usability of these records, retaining the qualities of authenticity, accuracy, and functionality deemed to be essential and feasible. This is accomplished through risk assessment and planning, staff training, ongoing improvement of its processes and infrastructure, and internal and external collaboration.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-nara-catalog",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "NARA Catalog",
+    "titleZh": "NARA 档案目录",
+    "slug": "nara-catalog",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "system",
+    "primaryTopicId": "digital-resources-preservation",
+    "topicIds": [
+      "digital-resources-preservation",
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "NARA Catalog",
+      "online access",
+      "metadata",
+      "数字资源",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/research/catalog",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-07-16",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "nara-catalog",
+        "url": "https://www.archives.gov/research/catalog",
+        "titleHintZh": "NARA 档案目录",
+        "titleHintEn": "NARA Catalog",
+        "institutionId": "nara",
+        "suggestedResourceType": "system",
+        "suggestedPrimaryTopicId": "digital-resources-preservation",
+        "suggestedTopicIds": [
+          "digital-resources-preservation",
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "NARA Catalog",
+          "online access",
+          "metadata",
+          "数字资源"
+        ],
+        "note": "NARA Catalog 平台介绍与使用入口。"
+      },
+      "fetchedTitle": "NARA Catalog",
+      "fetchedDescription": "The online portal to the records held at the National Archives, and information about those records.",
+      "rawExcerpt": "",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-citizen-archivist",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Citizen Archivist | National Archives",
+    "titleZh": "公民档案员项目",
+    "slug": "citizen-archivist-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "program",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation",
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "Citizen Archivist",
+      "crowdsourcing",
+      "公众参与",
+      "转录",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/citizen-archivist",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-03-30",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "citizen-archivist",
+        "url": "https://www.archives.gov/citizen-archivist",
+        "titleHintZh": "公民档案员项目",
+        "titleHintEn": "Citizen Archivist",
+        "institutionId": "nara",
+        "suggestedResourceType": "project",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation",
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "Citizen Archivist",
+          "crowdsourcing",
+          "公众参与",
+          "转录"
+        ],
+        "note": "NARA 公众参与与众包转录项目入口。"
+      },
+      "fetchedTitle": "Citizen Archivist | National Archives",
+      "fetchedDescription": "One day all of our records will be online. You can help make it happen. You can become a citizen archivist — just click one of the options below to get started. You Can Tag It! Add tags to images and records of the National Archives. Previous Next Welcome to our Citizen Archivist program. You can make contributions to the National Archives Catalog to enhance access and",
+      "rawExcerpt": "You can become a citizen archivist — just click one of the options below to get started.\n\nAdd tags to images and records of the National Archives.\n\nWelcome to our Citizen Archivist program. You can make contributions to the National Archives Catalog to enhance access and discoverability. Transcribe historical documents, tag archival photographs, or share comments with other community members. Join us! Every contribution you make helps unlock history.\n\nJoin our community of Citizen Archivists. Learn how to Register and Get Started.\n\nSubscribe to our Catalog newsletter! Learn about newly added records, transcription missions, and receive tips on using the Catalog's features and functionality. This email newsletter is delivered on a biweekly basis.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-strategic-plan",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "National Archives Strategic Plan | National Archives",
+    "titleZh": "NARA 战略规划",
+    "slug": "national-archives-strategic-plan-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "strategy",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance",
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "NARA",
+      "strategic plan",
+      "战略规划",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/about/plans-reports/strategic-plan",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-04-03",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "strategic-plan",
+        "url": "https://www.archives.gov/about/plans-reports/strategic-plan",
+        "titleHintZh": "NARA 战略规划",
+        "titleHintEn": "NARA Strategic Plan",
+        "institutionId": "nara",
+        "suggestedResourceType": "strategy",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance",
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "strategic plan",
+          "战略规划"
+        ],
+        "note": "NARA 战略规划与机构发展资料入口。"
+      },
+      "fetchedTitle": "National Archives Strategic Plan | National Archives",
+      "fetchedDescription": "FY 2026-2030 Strategic Plan Framework The National Archives is drafting its 2026-2030 Strategic Plan. This Strategic Plan Framework articulates clearly our mission, vision, values, and high-level goals. This document is the starting point for the development of the full plan and our roadmap for the future. Our Past Strategic Plans 2022-2026 Plan (HTML version) 2018-2022 Plan",
+      "rawExcerpt": "Learn why Democracy Starts Here\n\nFY 2026-2030 Strategic Plan Framework\n\nThe National Archives is drafting its 2026-2030 Strategic Plan. This Strategic Plan Framework articulates clearly our mission, vision, values, and high-level goals. This document is the starting point for the development of the full plan and our roadmap for the future.\n\nThis page was last reviewed on April 3, 2026. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-foia",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Freedom of Information Act (FOIA) | National Archives",
+    "titleZh": "NARA 信息自由法",
+    "slug": "freedom-of-information-act-foia-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "FOIA",
+      "信息公开",
+      "public access",
+      "NARA",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/foia",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2022-12-20",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "foia",
+        "url": "https://www.archives.gov/foia",
+        "titleHintZh": "NARA 信息自由法",
+        "titleHintEn": "NARA FOIA",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "FOIA",
+          "信息公开",
+          "public access",
+          "NARA"
+        ],
+        "note": "NARA FOIA 与信息公开资料入口。"
+      },
+      "fetchedTitle": "Freedom of Information Act (FOIA) | National Archives",
+      "fetchedDescription": "The Freedom of Information Act (FOIA) gives any person the right to request access to records of the executive branch of the U.S. Government. Federal agencies are required to disclose any information requested under the FOIA unless it falls under one of nine exemptions. How to Make a FOIA Request Select Record Type: Archival or Operational The National Archives and Records",
+      "rawExcerpt": "Freedom of Information Act (FOIA)\n\nThe Freedom of Information Act (FOIA) gives any person the right to request access to records of the executive branch of the U.S. Government. Federal agencies are required to disclose any information requested under the FOIA unless it falls under one of nine exemptions .\n\nThe National Archives and Records Administration (NARA) processes Freedom of Information Act (FOIA) requests for two distinct types of records: archival and operational . There are a few ways to make FOIA requests for archival and operational records — it starts with selecting the right type of record.\n\nare records created by executive branch agencies and the White House that have been transferred into the legal custody of the National Archives.\n\nLearn how to file your Archival FOIA request\" data-version=\"1\" href=\"https://www.archives.gov/foia/foia-guide#how\"> Learn how to file your Archival FOIA request",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-presidential-libraries",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Presidential Libraries and Museums of the National Archives | National Archives",
+    "titleZh": "美国总统图书馆",
+    "slug": "presidential-libraries-and-museums-of-the-national-archives-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance",
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "Presidential Libraries",
+      "总统图书馆",
+      "presidential records",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/presidential-libraries",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-11-14",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "targetEntityType": "institution",
+    "entityTypeConfidence": "high",
+    "classificationReason": "由 seed 配置指定",
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "presidential-libraries",
+        "url": "https://www.archives.gov/presidential-libraries",
+        "titleHintZh": "美国总统图书馆",
+        "titleHintEn": "Presidential Libraries",
+        "institutionId": "nara",
+        "suggestedResourceType": "institution_resource",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance",
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "Presidential Libraries",
+          "总统图书馆",
+          "presidential records"
+        ],
+        "note": "NARA 总统图书馆体系入口。"
+      },
+      "fetchedTitle": "Presidential Libraries and Museums of the National Archives | National Archives",
+      "fetchedDescription": "Education Resources Presidential Libraries offer programs that provide different perspectives on history and the Presidency. The Libraries offer everyone opportunities to learn about our Presidents' leadership. Discover Education Resources Our Records Every day the President, the Vice President, and their staff generate thousands of textual, electronic, and",
+      "rawExcerpt": "Presidential Libraries offer programs that provide different perspectives on history and the Presidency. The Libraries offer everyone opportunities to learn about our Presidents' leadership.\n\nEvery day the President, the Vice President, and their staff generate thousands of textual, electronic, and audiovisual records that can provide insight into the issues confronting our nation.\n\nExplore the history of our nation at the Presidential Libraries! See, hear, and participate in the events that changed our lives and made us who we are as a nation. Find virtual and in-person events to attend\n\nPresidential Libraries offer thought-provoking and entertaining permanent exhibits that use these artifacts, as well as documents, photographs and film, to immerse you in the sights and sounds of the past and to introduce you to the people, places, and events that shaped the Presidents' lives.\n\nThe Presidential Libraries and Museums contain nearly 800,000 objects given to Presidents, their families, and administrations. Currently, only a selection of these artifacts are available to search from three Presidential Libraries and Museums within the Digital Artifact Collections. Additional records and images of artifacts are added to each Library’s digital artifact collection regularly.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-education",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Educator Resources | National Archives",
+    "titleZh": "NARA 教育资源",
+    "slug": "educator-resources-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "education",
+      "教育资源",
+      "public programs",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/education",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2023-10-23",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "education",
+        "url": "https://www.archives.gov/education",
+        "titleHintZh": "NARA 教育资源",
+        "titleHintEn": "NARA Education",
+        "institutionId": "nara",
+        "suggestedResourceType": "course",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "education",
+          "教育资源",
+          "public programs"
+        ],
+        "note": "NARA 教育资源与公共教育入口。"
+      },
+      "fetchedTitle": "Educator Resources | National Archives",
+      "fetchedDescription": "Civics for All of US Civics for All of US is the new education initiative from the National Archives that promotes civic literacy and engagement. DocsTeach Teach with documents using our online tool. Explore primary sources. Discover fun and engaging teaching activities. Create your own online or print activities for your students! Distance Learning Visit the",
+      "rawExcerpt": "Civics for All of US is the new education initiative from the National Archives that promotes civic literacy and engagement.\n\nTeach with documents using our online tool. Explore primary sources. Discover fun and engaging teaching activities. Create your own online or print activities for your students!\n\nVisit the National Archives without leaving your home or school through our free distance learning programs for students and educators.\n\nTeach students how to analyze primary sources using our worksheets for a variety of media types.\n\nAccess primary sources related to pivotal moments in American history and government, including images, historical context, and transcriptions.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-research",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Research Our Records | National Archives",
+    "titleZh": "NARA 研究与利用",
+    "slug": "research-our-records-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation",
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "research",
+      "档案利用",
+      "public access",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/research",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-01-14",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "research",
+        "url": "https://www.archives.gov/research",
+        "titleHintZh": "NARA 研究与利用",
+        "titleHintEn": "NARA Research",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation",
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "research",
+          "档案利用",
+          "public access"
+        ],
+        "note": "NARA 档案研究、检索与利用入口。"
+      },
+      "fetchedTitle": "Research Our Records | National Archives",
+      "fetchedDescription": "Learn about our records and how to use them to research and discover your family history. Research military records at the National Archives from the Revolutionary War to the present.",
+      "rawExcerpt": "Learn about our records and how to use them to research and discover your family history.\n\nResearch military records at the National Archives from the Revolutionary War to the present.\n\nPerform research on people, places, events and other popular topics of interest.\n\nExplore records highlights from National Archives locations across the United States.\n\nCheck our Facebook pages and Twitter or call 301-837-0700 in the DC area. Nationwide Federal government operating status updates are available on the OPM website .",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-grs",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "What are the General Records Schedules (GRS) | National Archives",
+    "titleZh": "通用记录处置表",
+    "slug": "what-are-the-general-records-schedules-grs-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "GRS",
+      "records schedule",
+      "records disposition",
+      "保存期限",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-06-12",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "grs",
+        "url": "https://www.archives.gov/records-mgmt/grs",
+        "titleHintZh": "通用记录处置表",
+        "titleHintEn": "General Records Schedules",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "GRS",
+          "records schedule",
+          "records disposition",
+          "保存期限"
+        ],
+        "note": "NARA 通用记录处置表与保存期限管理入口。"
+      },
+      "fetchedTitle": "What are the General Records Schedules (GRS) | National Archives",
+      "fetchedDescription": "The National Archives and Records Administration (NARA) issues General Records Schedules (GRS) that provide disposition authority for common federal records. This way agencies do not have to request disposition themselves. NARA expects agencies to use the GRS except in limited circumstances. The GRS covers records documenting administrative or support functions. They typically",
+      "rawExcerpt": "The National Archives and Records Administration (NARA) issues General Records Schedules (GRS) that provide disposition authority for common federal records. This way agencies do not have to request disposition themselves. NARA expects agencies to use the GRS except in limited circumstances.\n\nThe GRS covers records documenting administrative or support functions. They typically do not cover records documenting the mission of an agency.\n\nUse of the GRS is mandatory. Agencies must use the GRS unless they can justify the use of an agency-specific schedule. For more information see Requesting a Deviation from a Current GRS Item.\n\nNARA issues new and revised GRS through GRS Transmittals. If your agency wants to continue using your existing disposition item, you must submit a GRS Notification. For more information see Submitting a GRS Notification to Use an Existing Agency-Specific Authority.\n\nThe General Records Schedules (GRS)",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-records-scheduling",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+    "titleZh": "记录排程与处置",
+    "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "records scheduling",
+      "records disposition",
+      "记录处置",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-07-28",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "records-scheduling",
+        "url": "https://www.archives.gov/records-mgmt/scheduling",
+        "titleHintZh": "记录排程与处置",
+        "titleHintEn": "Records Scheduling",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "records scheduling",
+          "records disposition",
+          "记录处置"
+        ],
+        "note": "联邦机构记录排程、保存期限和处置管理指南入口。"
+      },
+      "fetchedTitle": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
+      "fetchedDescription": "This guide is for federal agency records management staff. It contains information to help agencies schedule and dispose of their records. It also provides information on the process for approving records schedules. Contact your agency's appraiser if you have further questions.",
+      "rawExcerpt": "This guide is for federal agency records management staff. It contains information to help agencies schedule and dispose of their records. It also provides information on the process for approving records schedules. Contact your agency's appraiser if you have further questions.\n\nScheduling and appraisal is a process that takes place in a certain order:\n\nThis page was last reviewed on July 28, 2025. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov\n\nThe U.S. National Archives and Records Administration 1-86-NARA-NARA or 1-866-272-6272",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-email-management",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "E-mail Management | National Archives",
+    "titleZh": "电子邮件记录管理",
+    "slug": "e-mail-management-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management"
+    ],
+    "tags": [
+      "email records",
+      "electronic records",
+      "电子邮件归档",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2017-03-06",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "email-management",
+        "url": "https://www.archives.gov/records-mgmt/email-management",
+        "titleHintZh": "电子邮件记录管理",
+        "titleHintEn": "Email Management",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management"
+        ],
+        "suggestedTags": [
+          "email records",
+          "electronic records",
+          "电子邮件归档"
+        ],
+        "note": "NARA 面向联邦机构的电子邮件记录管理指南入口。"
+      },
+      "fetchedTitle": "E-mail Management | National Archives",
+      "fetchedDescription": "ATTENTION! This page has been superseded. The information listed below is no longer accurate. Please visit our current page at: http://www.archives.gov/records-mgmt/records-mgmt/email-mgmt. Please note that this page is available only as a technical and historical reference. Federal agencies are required to manage their email records in accordance with the Federal",
+      "rawExcerpt": "ATTENTION! This page has been superseded. The information listed below is no longer accurate. Please visit our current page at: http://www.archives.gov/records-mgmt/records-mgmt/email-mgmt . Please note that this page is available only as a technical and historical reference.\n\nFederal agencies are required to manage their email records in accordance with the Federal Records Act and 36 CFR Chapter XII Sub-chapter B .\n\nWith the issuance of the Managing Government Records Directive (M-12-18) , Goal 1.2, agencies are required to manage both permanent and temporary email records in an accessible electronic format by December 31, 2016. The issuance of NARA Bulletin 2013-2 established “the Capstone Approach” as an alternative means of managing email, while the transmittal of GRS 6.1 provides disposition authority for the approach. Both issuances provide one way in which Federal agencies can meet the requirements of Goal 1.2 of M-12-18.\n\nThis page was last reviewed on March 6, 2017. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-digitization",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Digitization at the National Archives | National Archives",
+    "titleZh": "NARA 数字化",
+    "slug": "digitization-at-the-national-archives-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "strategy",
+    "primaryTopicId": "digital-resources-preservation",
+    "topicIds": [
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "digitization",
+      "数字化",
+      "digital resources",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/digitization",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2024-10-08",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "digitization",
+        "url": "https://www.archives.gov/digitization",
+        "titleHintZh": "NARA 数字化",
+        "titleHintEn": "NARA Digitization",
+        "institutionId": "nara",
+        "suggestedResourceType": "strategy",
+        "suggestedPrimaryTopicId": "digital-resources-preservation",
+        "suggestedTopicIds": [
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "digitization",
+          "数字化",
+          "digital resources"
+        ],
+        "note": "NARA 档案数字化与数字资源建设相关资料入口。"
+      },
+      "fetchedTitle": "Digitization at the National Archives | National Archives",
+      "fetchedDescription": "With NARA’s strategic plan 2022-2026, NARA has committed to digitize 500 million pages of records and make them available online to the public through the National Archives Catalog by September 30, 2026. This goal will be accomplished, in part, by integrating digitization into the responsibilities of archival units nationwide and through entering into new public-private",
+      "rawExcerpt": "Digitization at the National Archives\n\nWith NARA’s strategic plan 2022-2026 , NARA has committed to digitize 500 million pages of records and make them available online to the public through the National Archives Catalog by September 30, 2026. This goal will be accomplished, in part, by integrating digitization into the responsibilities of archival units nationwide and through entering into new public-private digitization partnerships.\n\nIn this section of our website, you will find:\n\nThis page was last reviewed on October 8, 2024. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-preservation",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Preservation | National Archives",
+    "titleZh": "NARA 保存工作",
+    "slug": "preservation-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "digital-resources-preservation",
+    "topicIds": [
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "preservation",
+      "保存",
+      "digital preservation",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/preservation",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-02-13",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "preservation",
+        "url": "https://www.archives.gov/preservation",
+        "titleHintZh": "NARA 保存工作",
+        "titleHintEn": "Preservation at NARA",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "digital-resources-preservation",
+        "suggestedTopicIds": [
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "preservation",
+          "保存",
+          "digital preservation"
+        ],
+        "note": "NARA 保存、保护和长期保存工作入口。"
+      },
+      "fetchedTitle": "Preservation | National Archives",
+      "fetchedDescription": "What Do You Want to Preserve?",
+      "rawExcerpt": "This page was last reviewed on February 13, 2025. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov\n\nThe U.S. National Archives and Records Administration 1-86-NARA-NARA or 1-866-272-6272",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-research-start",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Getting Started Overview | National Archives",
+    "titleZh": "开始使用 NARA 馆藏",
+    "slug": "getting-started-overview-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "research",
+      "public access",
+      "档案利用",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/research/start",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-01-15",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "research-start",
+        "url": "https://www.archives.gov/research/start",
+        "titleHintZh": "开始使用 NARA 馆藏",
+        "titleHintEn": "Start Your Research",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "research",
+          "public access",
+          "档案利用"
+        ],
+        "note": "面向公众和研究者的 NARA 馆藏利用入门指南。"
+      },
+      "fetchedTitle": "Getting Started Overview | National Archives",
+      "fetchedDescription": "Here's how to start researching records at the National Archives: Get Started Step 1 Determine your Topic of Interest Step 2 Gather Information about your Topic Step 3 Find Records and Information about Records Step 4 Decide if you Should Visit and Plan Your Visit About the Records at the National Archives Of all documents and materials created in the course of business",
+      "rawExcerpt": "Of all documents and materials created in the course of business conducted by the United States Federal government, only 1%-3% are so important for legal or historical reasons that they are kept forever. Those valuable records are preserved in the National Archives and are available to you, whether you want to see if they contain clues about your family's history, need to prove a veteran's military service, or are researching a historical topic that interests you.\n\nThis video addresses procedures and security measures at the National Archives in Washington, DC, as well as how to use the research room and records.\n\nThis page was last reviewed on January 15, 2026. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov\n\nThe U.S. National Archives and Records Administration 1-86-NARA-NARA or 1-866-272-6272",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-alic",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Archives Library Information Center (ALIC) | National Archives",
+    "titleZh": "档案图书馆信息中心",
+    "slug": "archives-library-information-center-alic-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation",
+      "digital-resources-preservation"
+    ],
+    "tags": [
+      "ALIC",
+      "research",
+      "library",
+      "档案利用",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/research/alic",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-05-22",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "targetEntityType": "institution",
+    "entityTypeConfidence": "high",
+    "classificationReason": "由 seed 配置指定",
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "alic",
+        "url": "https://www.archives.gov/research/alic",
+        "titleHintZh": "档案图书馆信息中心",
+        "titleHintEn": "Archives Library Information Center",
+        "institutionId": "nara",
+        "suggestedResourceType": "institution_resource",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation",
+          "digital-resources-preservation"
+        ],
+        "suggestedTags": [
+          "ALIC",
+          "research",
+          "library",
+          "档案利用"
+        ],
+        "note": "NARA 档案图书馆信息中心与研究支持资源入口。"
+      },
+      "fetchedTitle": "Archives Library Information Center (ALIC) | National Archives",
+      "fetchedDescription": "The Archives Library Information Center (ALIC) is more than a traditional library. Recognizing that our customers no longer expect to work within the walls of a library, these pages are designed to provide NARA staff and researchers nationwide with convenient access to content beyond the physical holdings of our traditional library. ALIC provides access to information on",
+      "rawExcerpt": "Archives Library Information Center (ALIC)\n\nThe Archives Library Information Center (ALIC) is more than a traditional library. Recognizing that our customers no longer expect to work within the walls of a library, these pages are designed to provide NARA staff and researchers nationwide with convenient access to content beyond the physical holdings of our traditional library. ALIC provides access to information on American history and government, archival administration, information management, and government documents to NARA staff, archives and records management professionals, and the general public.\n\nOur physical library location is in the National Archives Building in College Park, MD.\n\nThis page was last reviewed on May 22, 2025. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-exhibits",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Online Exhibits | National Archives",
+    "titleZh": "NARA 在线展览",
+    "slug": "online-exhibits-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "exhibits",
+      "online exhibits",
+      "在线展览",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/exhibits",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2020-01-10",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "exhibits",
+        "url": "https://www.archives.gov/exhibits",
+        "titleHintZh": "NARA 在线展览",
+        "titleHintEn": "NARA Exhibits",
+        "institutionId": "nara",
+        "suggestedResourceType": "exhibition",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "exhibits",
+          "online exhibits",
+          "在线展览"
+        ],
+        "note": "NARA 展览与在线展示资源入口。"
+      },
+      "fetchedTitle": "Online Exhibits | National Archives",
+      "fetchedDescription": "Featured Exhibits",
+      "rawExcerpt": "Visit the National Archives Permission to Use Images Snippet Learn why Democracy Starts Here\n\nDocuments about the earthquake aftermath, from our archives located in San Francisco.\n\nA unique selection of artwork, documents, and photographs highlighting Depression era Federal arts projects\n\nThe contributions of Americans, both military and civilian, who served their country during World War II.\n\n2016 marks the 225th anniversary of the Bill of Rights, one of our nation's early attempts to form \"a more perfect union.\"  In honor of this milestone, the National Archives encourages the nation to engage in thoughtful debate and discussion of how our ancestors sought to create a more just society and how we do so today.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-calendar",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Calendar of Events | National Archives",
+    "titleZh": "NARA 活动日历",
+    "slug": "calendar-of-events-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "events",
+      "public programs",
+      "公众活动",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/calendar",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2017-03-28",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "calendar",
+        "url": "https://www.archives.gov/calendar",
+        "titleHintZh": "NARA 活动日历",
+        "titleHintEn": "NARA Calendar",
+        "institutionId": "nara",
+        "suggestedResourceType": "event",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "events",
+          "public programs",
+          "公众活动"
+        ],
+        "note": "NARA 公众活动、讲座、展览和教育项目日历入口。"
+      },
+      "fetchedTitle": "Calendar of Events | National Archives",
+      "fetchedDescription": "View the National Archives Operating Status Join the education team at the Gerald R. Ford Presidential Museum this summer for a free three-hour program of discussion and activities, including a guided tour of the museum!",
+      "rawExcerpt": "View the National Archives Operating Status\n\nJoin the education team at the Gerald R. Ford Presidential Museum this summer for a free three-hour program of discussion and activities, including a guided tour of the museum!\n\nLearn about the federal FOIA Ombuds work in the last year and share your thoughts.\n\nRibbon cutting ceremony for the reopening the museum will occur from 1-2 pm sponsored by the Hoover Presidential Foundation.\n\nRegular museum hours of operation and admission begin. The museum hours are 9 am to 5 pm seven days a week.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-open-government",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Open Government Initiative | National Archives",
+    "titleZh": "NARA 开放政府",
+    "slug": "open-government-initiative-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "strategy",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance",
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "open government",
+      "开放政府",
+      "public access",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/open",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-07-24",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "open-government",
+        "url": "https://www.archives.gov/open",
+        "titleHintZh": "NARA 开放政府",
+        "titleHintEn": "NARA Open Government",
+        "institutionId": "nara",
+        "suggestedResourceType": "strategy",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance",
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "open government",
+          "开放政府",
+          "public access"
+        ],
+        "note": "NARA 开放政府、透明度和公众获取相关资料入口。"
+      },
+      "fetchedTitle": "Open Government Initiative | National Archives",
+      "fetchedDescription": "Updates on Transparency, Participation, and Collaboration September 27, 2024 - The National Archives releases its Open Government Plan for 2025-2027. The public can send their feedback to opengov@nara.gov. August 5, 2024 - The U.S. Open Government Secretariat publishes the mid-term self-assessment of the United States’ 5th Open Government National Action Plan. July 12, 2024 -",
+      "rawExcerpt": "Open Government at the National Archives\n\nSeptember 27, 2024 - The National Archives releases its Open Government Plan for 2025-2027. The public can send their feedback to opengov@nara.gov .\n\nAugust 5, 2024 - The U.S. Open Government Secretariat publishes the mid-term self-assessment of the United States’ 5th Open Government National Action Plan.\n\nJuly 12, 2024 - NARA requests public suggestions for its upcoming Open Government plan. Please send your comments and ideas that will help us increase participation, collaboration, and transparency to opengov@nara.gov by July 31, 2024. Read more in our NARAtions blog .\n\nMarch 14, 2024 - Celebrating access to public information, NARA hosts a Sunshine Week panel discussion on “Artificial Intelligence: The Intersection of Public Access and Open Government'' with Pamela Wright, Chief Innovation Officer at NARA, moderating. The panel includes Gulam Shakir, NARA’s Chief Data Officer; Abigail Potter, Senior Innovation Specialist at the Library of Congress Digital Innovation Lab; Eric Stein, Deputy Assistant Secretary for the Office of Global Information Services at the U.S. Department of State; and Bobak Talebian, Director of the Office of Information Policy of the U.S. Department of Justice. Jay Bosanko, Deputy Archivist of the United States, and Alina Semo, Director of OGIS , provide opening remarks.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-plans-reports",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "NARA Reports | National Archives",
+    "titleZh": "NARA 规划与报告",
+    "slug": "nara-reports-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "plans",
+      "reports",
+      "annual report",
+      "绩效报告",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/about/plans-reports",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-04-03",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "plans-reports",
+        "url": "https://www.archives.gov/about/plans-reports",
+        "titleHintZh": "NARA 规划与报告",
+        "titleHintEn": "NARA Plans and Reports",
+        "institutionId": "nara",
+        "suggestedResourceType": "report",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "plans",
+          "reports",
+          "annual report",
+          "绩效报告"
+        ],
+        "note": "NARA 机构规划、年度报告和绩效报告资料入口。"
+      },
+      "fetchedTitle": "NARA Reports | National Archives",
+      "fetchedDescription": "Strategic Plan NARA's Strategic Plan describes where we are headed. We use the 4-year Strategic Plan as our guide for aligning priorities and assigning resources. With the help of our staff and stakeholders, we take stock of accomplishments, make adjustments when needed, and improve the way we measure our success along the way. Performance Budgets NARA's Performance Budget is",
+      "rawExcerpt": "Learn why Democracy Starts Here\n\nStrategic Plan NARA's Strategic Plan describes where we are headed. We use the 4-year Strategic Plan as our guide for aligning priorities and assigning resources. With the help of our staff and stakeholders, we take stock of accomplishments, make adjustments when needed, and improve the way we measure our success along the way.\n\nPerformance Budgets NARA's Performance Budget is submitted to Congress with the President's budget in early February each year. Included with this transmittal are our budget justification and tables, as well as our performance plan, providing a direct link between strategic goals, annual accomplishments, and funding levels.\n\nAnnual Performance Plans & Reports NARA's Performance Plan links the agency's strategic goals to what we plan to accomplish in a fiscal year. Our Annual Performance Report describes NARA's performance results toward achieving our strategic goals and objectives.\n\nCapital Planning The Federal Acquisition Streamlining Act of 1994 and the Clinger-Cohen Act of 1996 require a business case for investments to ensure that those investments are tied to the mission, goals, and objectives of the agency. Exhibit 300 is designed to document this relationship, as well as implement other requirements such as the Government Paperwork Elimination Act and E-Gov Act implementation and overall investment project management.",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-performance-accountability",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Annual Performance Plan and Report | National Archives",
+    "titleZh": "NARA 绩效与问责报告",
+    "slug": "annual-performance-plan-and-report-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "performance",
+      "accountability",
+      "annual report",
+      "绩效问责",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/about/plans-reports/performance-accountability",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2026-04-17",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "performance-accountability",
+        "url": "https://www.archives.gov/about/plans-reports/performance-accountability",
+        "titleHintZh": "NARA 绩效与问责报告",
+        "titleHintEn": "NARA Performance and Accountability Reports",
+        "institutionId": "nara",
+        "suggestedResourceType": "report",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "performance",
+          "accountability",
+          "annual report",
+          "绩效问责"
+        ],
+        "note": "NARA 绩效与问责报告入口，用于跟踪机构年度目标、预算和执行情况。"
+      },
+      "fetchedTitle": "Annual Performance Plan and Report | National Archives",
+      "fetchedDescription": "The Government Performance and Results Modernization Act of 2010 (GPRA Modernization Act) requires each agency to report on work planned for the current and subsequent fiscal year. This plan provides the direct linkage between long-term strategic goals outlined in agencies' strategic plans and what managers and employees are expected to accomplish. The act also requires each",
+      "rawExcerpt": "Learn why Democracy Starts Here\n\nThe Government Performance and Results Modernization Act of 2010 (GPRA Modernization Act) requires each agency to report on work planned for the current and subsequent fiscal year. This plan provides the direct linkage between long-term strategic goals outlined in agencies' strategic plans and what managers and employees are expected to accomplish. The act also requires each agency to report on progress made in the previous fiscal year toward achieving the strategic goals and objectives in their Strategic Plan and Annual Performance Plan.\n\nPrevious Annual Plans and Reports\n\nThis page was last reviewed on April 17, 2026. Contact us with questions or comments .\n\nContact Us · Accessibility · Privacy Policy · Freedom of Information Act · No FEAR Act · USA.gov",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-records-mgmt-training",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "Records Management Training Program | National Archives",
+    "titleZh": "NARA 记录管理培训",
+    "slug": "records-management-training-program-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "electronic-records-management",
+    "topicIds": [
+      "electronic-records-management",
+      "access-outreach-public-participation"
+    ],
+    "tags": [
+      "training",
+      "records management training",
+      "培训",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/training",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-12-01",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "records-mgmt-training",
+        "url": "https://www.archives.gov/records-mgmt/training",
+        "titleHintZh": "NARA 记录管理培训",
+        "titleHintEn": "Records Management Training",
+        "institutionId": "nara",
+        "suggestedResourceType": "course",
+        "suggestedPrimaryTopicId": "electronic-records-management",
+        "suggestedTopicIds": [
+          "electronic-records-management",
+          "access-outreach-public-participation"
+        ],
+        "suggestedTags": [
+          "training",
+          "records management training",
+          "培训"
+        ],
+        "note": "NARA 面向联邦机构的记录管理培训课程与学习资源入口。"
+      },
+      "fetchedTitle": "Records Management Training Program | National Archives",
+      "fetchedDescription": "Supporting the Development of Records and Information Management Professionals Training Materials Catalog Our Training Materials Catalog contains most of the training materials that we develop, including all of the new online lessons that are part of the new training curriculum that we call Curriculum 2.0.",
+      "rawExcerpt": "Our Training Materials Catalog contains most of the training materials that we develop, including all of the new online lessons that are part of the new training curriculum that we call Curriculum 2.0.\n\nERA 2.0 eLearning Training Materials\n\nNARA Bulletins: Reformatted for Training\n\nIn 2020, the Records Management Training Program ended its in-person workshops and moved to an all-online, self-paced format. Now, you can take our records management training on your own schedule, for free.\n\nOur Online Learning page Online Lessons gives you access to all of the training lessons we have developed. While we no longer offer the Certificate of Federal Records Management Training, everyone can explore training content on a variety of records management topics found in our Training Catalog .",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-declassification",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "National Archives and Declassification | National Archives",
+    "titleZh": "NARA 解密工作",
+    "slug": "national-archives-and-declassification-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "access-outreach-public-participation",
+    "topicIds": [
+      "access-outreach-public-participation",
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "declassification",
+      "解密",
+      "public access",
+      "archives.gov",
+      "NARA"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/declassification",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2020-08-13",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": true,
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "declassification",
+        "url": "https://www.archives.gov/declassification",
+        "titleHintZh": "NARA 解密工作",
+        "titleHintEn": "Declassification",
+        "institutionId": "nara",
+        "suggestedResourceType": "guide",
+        "suggestedPrimaryTopicId": "access-outreach-public-participation",
+        "suggestedTopicIds": [
+          "access-outreach-public-participation",
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "declassification",
+          "解密",
+          "public access"
+        ],
+        "note": "NARA 解密、开放利用与政府记录公开相关资料入口。"
+      },
+      "fetchedTitle": "National Archives and Declassification | National Archives",
+      "fetchedDescription": "Protecting information critical to our Nation's security and demonstrating our commitment to open Government and effective declassification.",
+      "rawExcerpt": "Protecting information critical to our Nation's security and demonstrating our commitment to open Government and effective declassification.\n\nView the ISCAP MDR Forum held on November 18th, 2019\n\nView the presentation slides for the ISCAP MDR Forum\n\nPublic Interest Declassification Board to Host a Public Meeting at the National Archives on December 8, 2016\n\nInteragency Security Classification Appeals Panel",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  },
+  {
+    "id": "nara-web-about-nara",
+    "sourceId": "source-nara-web",
+    "sourceType": "webpage",
+    "titleEn": "What is the National Archives and Records Administration? | National Archives",
+    "titleZh": "NARA 机构介绍",
+    "slug": "what-is-the-national-archives-and-records-administration-national-archives",
+    "countryId": "usa",
+    "institutionId": "nara",
+    "resourceType": "guidance",
+    "primaryTopicId": "laws-policies-governance",
+    "topicIds": [
+      "laws-policies-governance"
+    ],
+    "tags": [
+      "NARA",
+      "institution",
+      "国家档案馆",
+      "archives.gov"
+    ],
+    "language": "English",
+    "summaryZh": "",
+    "keyPoints": [],
+    "researchValue": "",
+    "sourceUrl": "https://www.archives.gov/about",
+    "sourceDomain": "archives.gov",
+    "publishDate": "",
+    "updatedDate": "2025-02-08",
+    "accessDate": "2026-07-28",
+    "linkStatus": "ok",
+    "hasBackup": false,
+    "backupVisibility": "private",
+    "archivedUrl": "",
+    "versioningApplicable": false,
+    "targetEntityType": "institution",
+    "entityTypeConfidence": "high",
+    "classificationReason": "由 seed 配置指定",
+    "reviewStatus": "accepted",
+    "duplicateOf": "",
+    "rawData": {
+      "seed": {
+        "id": "about-nara",
+        "url": "https://www.archives.gov/about",
+        "titleHintZh": "NARA 机构介绍",
+        "titleHintEn": "About the National Archives",
+        "institutionId": "nara",
+        "suggestedResourceType": "institution_resource",
+        "suggestedPrimaryTopicId": "laws-policies-governance",
+        "suggestedTopicIds": [
+          "laws-policies-governance"
+        ],
+        "suggestedTags": [
+          "NARA",
+          "institution",
+          "国家档案馆"
+        ],
+        "note": "NARA 机构使命、职责与组织介绍入口。"
+      },
+      "fetchedTitle": "What is the National Archives and Records Administration? | National Archives",
+      "fetchedDescription": "En Español The National Archives and Records Administration (NARA) is the nation's record keeper. Of all documents and materials created in the course of business conducted by the United States federal government, only 1%-3% are so important for legal or historical reasons that they are kept by us forever. Those valuable records are preserved and are available to you, whether",
+      "rawExcerpt": "Learn why Democracy Starts Here\n\nThe National Archives and Records Administration (NARA) is the nation's record keeper. Of all documents and materials created in the course of business conducted by the United States federal government, only 1%-3% are so important for legal or historical reasons that they are kept by us forever.\n\nThose valuable records are preserved and are available to you, whether you want to see if they contain clues about your family’s history, need to prove a veteran’s military service, or are researching a historical topic that interests you. Learn more\n\nThe National Archives and Records Administration became an independent federal agency in 1985. Learn about how the archives came into independence in a video panel discussion about our journey.\n\nJoin us for an exhibit, film, lecture, or book signing and more. More events",
+      "httpStatus": 200
+    },
+    "createdAt": "2026-07-28T07:44:07.225Z",
+    "updatedAt": "2026-07-30T09:36:01.765Z"
+  }
+]

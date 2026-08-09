@@ -1,0 +1,215 @@
+[
+  {
+    "id": "resource-quality-loop-1785735124929-o0wu8m",
+    "startedAt": "2026-08-03T05:32:04.928Z",
+    "finishedAt": "2026-08-03T05:32:04.932Z",
+    "roundsRequested": 0,
+    "roundsCompleted": 0,
+    "batchSize": 5,
+    "autoSafe": false,
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "rounds_zero",
+    "rounds": []
+  },
+  {
+    "id": "resource-quality-loop-1785735371775-vt7tsm",
+    "startedAt": "2026-08-03T05:36:11.774Z",
+    "finishedAt": "2026-08-03T05:38:04.784Z",
+    "roundsRequested": 2,
+    "roundsCompleted": 0,
+    "batchSize": 2,
+    "autoSafe": true,
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "command_failed",
+    "rounds": [
+      {
+        "round": 1,
+        "beforeNeedsEnrichment": 157,
+        "afterNeedsEnrichment": null,
+        "commands": [
+          {
+            "command": "npm run agent:resource-quality",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json",
+            "errorMessage": ""
+          },
+          {
+            "command": "npm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe",
+            "success": false,
+            "exitCode": 1,
+            "output": "...erate 未生成新的 AI enrichment 草稿。\n当前处理 resourceId：fr-2017-15250\n标题：Records Management; General Records Schedule (GRS); GRS Transmittal 28\n是否已有 AI 草稿：否\n是否调用 enrich:generate：是\n传递给 enrich:generate 的 AI 超时：60 秒\n\n> archivescope@0.1.0 enrich:generate\n> node scripts/enrich/generateResourceEnrichments.mjs --force-id fr-2017-15250 --ai-timeout 60\n\n正在读取 AI API 配置……\n使用的 baseUrl：https://ooiioo.xyz/api/v1\n使用的 model：DeepSeek-V4-Pro\nFirecrawl API Key：已检测到\nFirecrawl baseUrl：https://api.firecrawl.dev\n本次最多处理 3 条资料。\n来源域名筛选：全部\n是否只处理内容不完整资料：否\n是否刷新 Firecrawl 缓存：否\n是否强制覆盖已有草稿：否\nAI 请求超时：60 秒\nFirecrawl 请求超时：45 秒\n单条资料总超时：120 秒\n强制生成 resourceId：fr-2017-15250\n正在读取 acceptedResources.json……\nacceptedResources 数量：226\n正在读取 resourceEnrichments.ts……\n已完善资料数量：70\n正在读取 resourceAdminEdits（如存在）……\n人工编辑记录数量：0\n正在读取 resourceCurationDecisions……\n资料人工取舍记录数量：14\n正在读取已有 AI enrichment 草稿……\n已有 AI 草稿数量：75\n已有未拒绝 AI 草稿数量：75\n正在读取 resourceOfficialFiles.ts……\n官方文本/文件记录数量：4\n包含官方文本/文件的资料数量：1\n外部搜索摘要：未接入，不使用 Google AI Overview。\n前台可见资料总数：220\nsourceDomain 筛选后资料数量：220\n内容不完整资料数量：157\n本次 limit：3\n已启用 --force-id，将忽略 resourceEnrichments.ts 和已有 AI 草稿筛选。\n\n[1/1] 正在处理：fr-2017-15250 Records Management; General Records Schedule (GRS); GRS Transmittal 28\n当前标题：Records Management; General Records Schedule (GRS); GRS Transmittal 28\n不完整原因：缺少中文标题；缺少卡片简介 summaryShort；缺少中文摘要；缺少内容要点；缺少研究价值；资料仍处于自动导入状态\n未配置该资料的 officialFiles，将使用 resource.sourceUrl/rawData。\nFirecrawl 缓存文件：/Users/jovia/Desktop/档案网站/archivescope/src/data/cache/firecrawl/fr-2017-15250.md\n是否存在缓存：是\nFederal Register rawData 不足，将继续尝试网页正文提取。\n使用 Firecrawl 缓存。\n是否调用 Firecrawl：否，已使用缓存。\n本次摘要依据 sourceBasis：firecrawl_markdown\n是否使用 Firecrawl 缓存：是\n已提取来源文本 6002 个字符。\n正在调用 AI 生成 enrichment 草稿……\nresourceId: fr-2017-15250\nmodel: DeepSeek-V4-Pro\nsourceText 字符数: 6002\n实际发送字符数: 6000\nprompt 总字符数: 8742\nAI enrichment 草稿生成成功。\n\n本次成功生成数量：1\n本次失败或跳过数量：0\n\n新生成草稿数量：1\n最终写入 resourceEnrichmentDrafts.json 数量：76\n已写入：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/resourceEnrichmentDrafts.json\n请人工审核后，再将合格条目复制到 resourceEnrichments.ts。\n成功生成或更新 AI 草稿：fr-2017-15250\n自动安全判断：需人工审核\n安全判断原因：来源不是 archives.gov。；该资料缺少官方文件且需要人工判断官方入口。；该资料版本沿革需复核，不能自动应用。\n本次处理数量：2\n本次实际成功生成数量：1\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：1\n高风险跳过数量：1\n失败数量：1\n高风险跳过原因统计：\n- 来源不是 archives.gov。：1\n- 该资料缺少官方文件且需要人工判断官方入口。：1\n- 该资料版本沿革需复核，不能自动应用。：1\n剩余仍未生成草稿的 needs_enrichment 数量：144\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+            "errorMessage": "命令退出码为 1。"
+          }
+        ],
+        "success": false,
+        "outputSummary": "npm run agent:resource-quality\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json\n\n---\n\nnpm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe\n状态：失败；退出码：1；错误：命令退出码为 1。\n...erate 未生成新的 AI enrichment 草稿。\n当前处理 resourceId：fr-2017-15250\n标题：Records Management; General Records Schedule (GRS); GRS Transmittal 28\n是否已有 AI 草稿：否\n是否调用 enrich:generate：是\n传递给 enrich:generate 的 AI 超时：60 秒\n\n> archivescope@0.1.0 enrich:generate\n> node scripts/enrich/generateResourceEnrichments.mjs --force-id fr-2017-15250 --ai-timeout 60\n\n正在读取 AI API 配置……\n使用的 baseUrl：https://ooiioo.xyz/api/v1\n使用的 model：DeepSeek-V4-Pro\nFirecrawl API Key：已检测到\nFirecrawl baseUrl：https://api.firecrawl.dev\n本次最多处理 3 条资料。\n来源域名筛选：全部\n是否只处理内容不完整资料：否\n是否刷新 Firecrawl 缓存：否\n是否强制覆盖已有草稿：否\nAI 请求超时：60 秒\nFirecrawl 请求超时：45 秒\n单条资料总超时：120 秒\n强制生成 resourceId：fr-2017-15250\n正在读取 acceptedResources.json……\nacceptedResources 数量：226\n正在读取 resourceEnrichments.ts……\n已完善资料数量：70\n正在读取 resourceAdminEdits（如存在）……\n人工编辑记录数量：0\n正在读取 resourceCurationDecisions……\n资料人工取舍记录数量：14\n正在读取已有 AI enrichment 草稿……\n已有 AI 草稿数量：75\n已有未拒绝 AI 草稿数量：75\n正在读取 resourceOfficialFiles.ts……\n官方文本/文件记录数量：4\n包含官方文本/文件的资料数量：1\n外部搜索摘要：未接入，不使用 Google AI Overview。\n前台可见资料总数：220\nsourceDomain 筛选后资料数量：220\n内容不完整资料数量：157\n本次 limit：3\n已启用 --force-id，将忽略 resourceEnrichments.ts 和已有 AI 草稿筛选。\n\n[1/1] 正在处理：fr-2017-15250 Records Management; General Records Schedule (GRS); GRS Transmittal 28\n当前标题：Records Management; General Records Schedule (GRS); GRS Transmittal 28\n不完整原因：缺少中文标题；缺少卡片简介 summaryShort；缺少中文摘要；缺少内容要点；缺少研究价值；资料仍处于自动导入状态\n未配置该资料的 officialFiles，将使用 resource.sourceUrl/rawData。\nFirecrawl 缓存文件：/Users/jovia/Desktop/档案网站/archivescope/src/data/cache/firecrawl/fr-2017-15250.md\n是否存在缓存：是\nFederal Register rawData 不足，将继续尝试网页正文提取。\n使用 Firecrawl 缓存。\n是否调用 Firecrawl：否，已使用缓存。\n本次摘要依据 sourceBasis：firecrawl_markdown\n是否使用 Firecrawl 缓存：是\n已提取来源文本 6002 个字符。\n正在调用 AI 生成 enrichment 草稿……\nresourceId: fr-2017-15250\nmodel: DeepSeek-V4-Pro\nsourceText 字符数: 6002\n实际发送字符数: 6000\nprompt 总字符数: 8742\nAI enrichment 草稿生成成功。\n\n本次成功生成数量：1\n本次失败或跳过数量：0\n\n新生成草稿数量：1\n最终写入 resourceEnrichmentDrafts.json 数量：76\n已写入：/Users/jovia/Desktop/档案网站/archivescope/src/data/imports/us/resourceEnrichmentDrafts.json\n请人工审核后，再将合格条目复制到 resourceEnrichments.ts。\n成功生成或更新 AI 草稿：fr-2017-15250\n自动安全判断：需人工审核\n安全判断原因：来源不是 archives.gov。；该资料缺少官方文件且需要人工判断官方入口。；该资料版本沿革需复核，不能自动应用。\n本次处理数量：2\n本次实际成功生成数量：1\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：1\n高风险跳过数量：1\n失败数量：1\n高风险跳过原因统计：\n- 来源不是 archives.gov。：1\n- 该资料缺少官方文件且需要人工判断官方入口。：1\n- 该资料版本沿革需复核，不能自动应用。：1\n剩余仍未生成草稿的 needs_enrichment 数量：144\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+        "errorMessage": "命令退出码为 1。"
+      }
+    ]
+  },
+  {
+    "id": "resource-quality-loop-1785735946092-2yo45h",
+    "startedAt": "2026-08-03T05:45:46.091Z",
+    "finishedAt": "2026-08-03T05:45:46.665Z",
+    "roundsRequested": 1,
+    "roundsCompleted": 1,
+    "batchSize": 2,
+    "autoSafe": true,
+    "sourceDomain": "federalregister.gov",
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "no_safe_candidates",
+    "rounds": [
+      {
+        "round": 1,
+        "beforeNeedsEnrichment": 157,
+        "afterNeedsEnrichment": 157,
+        "commands": [
+          {
+            "command": "npm run agent:resource-quality",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json",
+            "errorMessage": ""
+          },
+          {
+            "command": "npm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain federalregister.gov",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain federalregister.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：federalregister.gov\nsourceDomain 筛选后待补全资料数量：144\n已有未拒绝 AI 草稿数量：12\n因已有草稿跳过数量：12\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：144\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+            "errorMessage": ""
+          }
+        ],
+        "success": true,
+        "outputSummary": "npm run agent:resource-quality\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json\n\n---\n\nnpm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain federalregister.gov\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain federalregister.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：federalregister.gov\nsourceDomain 筛选后待补全资料数量：144\n已有未拒绝 AI 草稿数量：12\n因已有草稿跳过数量：12\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：144\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "resource-quality-loop-1785736009662-ztrp2b",
+    "startedAt": "2026-08-03T05:46:49.661Z",
+    "finishedAt": "2026-08-03T05:46:50.444Z",
+    "roundsRequested": 2,
+    "roundsCompleted": 1,
+    "batchSize": 2,
+    "autoSafe": true,
+    "sourceDomain": "archives.gov",
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "no_safe_candidates",
+    "rounds": [
+      {
+        "round": 1,
+        "beforeNeedsEnrichment": 157,
+        "afterNeedsEnrichment": 157,
+        "commands": [
+          {
+            "command": "npm run agent:resource-quality",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json",
+            "errorMessage": ""
+          },
+          {
+            "command": "npm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+            "errorMessage": ""
+          }
+        ],
+        "success": true,
+        "outputSummary": "npm run agent:resource-quality\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json\n\n---\n\nnpm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "resource-quality-loop-1785736481343-47uvyb",
+    "startedAt": "2026-08-03T05:54:41.342Z",
+    "finishedAt": "2026-08-03T05:54:41.795Z",
+    "roundsRequested": 2,
+    "roundsCompleted": 1,
+    "batchSize": 2,
+    "autoSafe": true,
+    "sourceDomain": "archives.gov",
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "no_safe_candidates",
+    "rounds": [
+      {
+        "round": 1,
+        "beforeNeedsEnrichment": 157,
+        "afterNeedsEnrichment": 157,
+        "commands": [
+          {
+            "command": "npm run agent:resource-quality",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json",
+            "errorMessage": ""
+          },
+          {
+            "command": "npm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+            "errorMessage": ""
+          }
+        ],
+        "success": true,
+        "outputSummary": "npm run agent:resource-quality\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json\n\n---\n\nnpm run agent:resource-quality:fix -- --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 2 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：2\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+        "errorMessage": ""
+      }
+    ]
+  },
+  {
+    "id": "resource-quality-loop-1785736540917-taw8fd",
+    "startedAt": "2026-08-03T05:55:40.915Z",
+    "finishedAt": "2026-08-03T05:55:41.323Z",
+    "roundsRequested": 3,
+    "roundsCompleted": 1,
+    "batchSize": 5,
+    "autoSafe": true,
+    "sourceDomain": "archives.gov",
+    "aiTimeout": 60,
+    "initialNeedsEnrichment": 157,
+    "finalNeedsEnrichment": 157,
+    "stoppedReason": "no_safe_candidates",
+    "rounds": [
+      {
+        "round": 1,
+        "beforeNeedsEnrichment": 157,
+        "afterNeedsEnrichment": 157,
+        "commands": [
+          {
+            "command": "npm run agent:resource-quality",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json",
+            "errorMessage": ""
+          },
+          {
+            "command": "npm run agent:resource-quality:fix -- --limit 5 --ai-timeout 60 --auto-safe --sourceDomain archives.gov",
+            "success": true,
+            "exitCode": 0,
+            "output": "> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 5 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：5\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+            "errorMessage": ""
+          }
+        ],
+        "success": true,
+        "outputSummary": "npm run agent:resource-quality\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality\n> node scripts/agents/resourceQualityAgent.mjs\n\nacceptedResources 总数：226\n前台可见资料检查数量：220\n通过数量：17\n需补全内容数量：157\n需分类复核数量：43\n缺少快照数量：188\n缺少官方文件数量：190\n需版本复核数量：192\n疑似低价值数量：0\n需人工复核数量：11\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentLogs.json\n报告写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAgentReport.json\n\n---\n\nnpm run agent:resource-quality:fix -- --limit 5 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n状态：成功；退出码：0\n> archivescope@0.1.0 agent:resource-quality:fix\n> node scripts/agents/resourceQualityAutoFix.mjs --limit 5 --ai-timeout 60 --auto-safe --sourceDomain archives.gov\n\nneeds_enrichment 总数：157\n来源域名筛选：archives.gov\nsourceDomain 筛选后待补全资料数量：0\n已有未拒绝 AI 草稿数量：1\n因已有草稿跳过数量：1\n符合 auto-safe 预筛选的低风险资料数量：0\n本次实际待生成数量：0\n指定 resourceId：未指定\n本次 limit：5\nAI 请求超时：60 秒\n是否启用自动安全模式：是\n是否允许覆盖已有 pending 草稿：否\n没有符合 auto-safe 规则的低风险资料，剩余资料需要人工审核。\n本次处理数量：0\n成功生成草稿数量：0\n自动接受数量：0\n自动应用数量：0\n保留人工审核数量：0\n高风险跳过数量：0\n需人工复核数量：0\n真实失败数量：0\n剩余仍未生成草稿的 needs_enrichment 数量：0\n跳过数量：0\n日志写入路径：/Users/jovia/Desktop/档案网站/archivescope/src/data/admin/resourceQualityAutoFixLog.json",
+        "errorMessage": ""
+      }
+    ]
+  }
+]

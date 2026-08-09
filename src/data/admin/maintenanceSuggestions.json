@@ -1,0 +1,62 @@
+[
+  {
+    "id": "suggestion-institution_website_needs_manual_search-louisiana-state-archives-f193de7539",
+    "type": "institution_website_needs_manual_search",
+    "status": "pending",
+    "priority": "high",
+    "targetType": "institution",
+    "targetId": "louisiana-state-archives",
+    "title": "人工搜索机构官网：路易斯安那州档案馆",
+    "currentValue": "https://www.sos.la.gov/HistoricalResources",
+    "suggestedValue": "",
+    "confidence": "low",
+    "evidence": {
+      "source": "firecrawl_search",
+      "query": "Louisiana State Archives official website state archives",
+      "error": "Firecrawl Search 请求异常：fetch failed"
+    },
+    "reason": "未找到高可信候选链接，需要人工搜索。Firecrawl Search 请求异常：fetch failed",
+    "createdAt": "2026-07-29T09:47:45.299Z",
+    "updatedAt": "2026-07-29T09:47:45.299Z"
+  },
+  {
+    "id": "suggestion-institution_website_needs_manual_search-minnesota-state-archives-e262c14b8b",
+    "type": "institution_website_needs_manual_search",
+    "status": "pending",
+    "priority": "high",
+    "targetType": "institution",
+    "targetId": "minnesota-state-archives",
+    "title": "人工搜索机构官网：明尼苏达州档案馆",
+    "currentValue": "https://www.mnhs.org/preserve/records",
+    "suggestedValue": "",
+    "confidence": "low",
+    "evidence": {
+      "source": "firecrawl_search",
+      "query": "Minnesota State Archives official website state archives",
+      "error": "Firecrawl Search 请求异常：fetch failed"
+    },
+    "reason": "未找到高可信候选链接，需要人工搜索。Firecrawl Search 请求异常：fetch failed",
+    "createdAt": "2026-07-29T09:47:45.299Z",
+    "updatedAt": "2026-07-29T09:47:45.299Z"
+  },
+  {
+    "id": "suggestion-institution_website_needs_manual_search-new-hampshire-state-archives-63cd0dbc53",
+    "type": "institution_website_needs_manual_search",
+    "status": "pending",
+    "priority": "high",
+    "targetType": "institution",
+    "targetId": "new-hampshire-state-archives",
+    "title": "人工搜索机构官网：新罕布什尔州档案馆",
+    "currentValue": "https://www.sos.nh.gov/archives-vital-records-records-management/archives",
+    "suggestedValue": "",
+    "confidence": "low",
+    "evidence": {
+      "source": "firecrawl_search",
+      "query": "New Hampshire State Archives official website state archives",
+      "error": "Firecrawl Search 请求异常：fetch failed"
+    },
+    "reason": "未找到高可信候选链接，需要人工搜索。Firecrawl Search 请求异常：fetch failed",
+    "createdAt": "2026-07-29T09:47:45.299Z",
+    "updatedAt": "2026-07-29T09:47:45.299Z"
+  }
+]

@@ -1,0 +1,1354 @@
+[
+  {
+    "resourceId": "nara-web-records-mgmt-policy",
+    "titleEn": "Records Management Regulations and Guidance | National Archives",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T02:47:25.022Z"
+  },
+  {
+    "resourceId": "nara-web-records-mgmt-policy",
+    "titleEn": "Records Management Regulations and Guidance | National Archives",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T02:47:25.024Z"
+  },
+  {
+    "resourceId": "nara-web-records-mgmt-policy",
+    "titleEn": "Records Management Regulations and Guidance | National Archives",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T02:49:09.866Z"
+  },
+  {
+    "resourceId": "nara-web-records-mgmt-policy",
+    "titleEn": "Records Management Regulations and Guidance | National Archives",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T02:49:09.868Z"
+  },
+  {
+    "resourceId": "fr-2024-06406",
+    "titleEn": "Federal Records Management: Digital Photographs",
+    "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T02:49:14.958Z"
+  },
+  {
+    "resourceId": "fr-2024-06406",
+    "titleEn": "Federal Records Management: Digital Photographs",
+    "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T03:42:53.810Z"
+  },
+  {
+    "resourceId": "fr-2024-06406",
+    "titleEn": "Federal Records Management: Digital Photographs",
+    "sourceUrl": "https://www.federalregister.gov/documents/2024/03/28/2024-06406/federal-records-management-digital-photographs",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-07-31T03:43:14.272Z"
+  },
+  {
+    "resourceId": "nara-web-nara-catalog",
+    "titleEn": "NARA Catalog",
+    "sourceUrl": "https://www.archives.gov/research/catalog",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T06:47:35.094Z"
+  },
+  {
+    "resourceId": "nara-web-email-management",
+    "titleEn": "E-mail Management | National Archives",
+    "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:11:37.105Z"
+  },
+  {
+    "resourceId": "nara-web-research-start",
+    "titleEn": "Getting Started Overview | National Archives",
+    "sourceUrl": "https://www.archives.gov/research/start",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:14:17.779Z"
+  },
+  {
+    "resourceId": "nara-web-plans-reports",
+    "titleEn": "NARA Reports | National Archives",
+    "sourceUrl": "https://www.archives.gov/about/plans-reports",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:19:44.041Z"
+  },
+  {
+    "resourceId": "fr-2026-11899",
+    "titleEn": "Agency Information Collection Activities; Proposals, Submissions, and Approvals",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/06/12/2026-11899/agency-information-collection-activities-proposals-submissions-and-approvals",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:25:49.773Z"
+  },
+  {
+    "resourceId": "fr-2026-06424",
+    "titleEn": "Consent To Make Inquiries and Release of Information and Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/04/02/2026-06424/consent-to-make-inquiries-and-release-of-information-and-records",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:50:06.913Z"
+  },
+  {
+    "resourceId": "fr-2026-03830",
+    "titleEn": "Records Schedules; Administrative Correction Notice",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/02/26/2026-03830/records-schedules-administrative-correction-notice",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:51:58.977Z"
+  },
+  {
+    "resourceId": "fr-2025-21835",
+    "titleEn": "Advisory Committee on the Records of Congress",
+    "sourceUrl": "https://www.federalregister.gov/documents/2025/12/03/2025-21835/advisory-committee-on-the-records-of-congress",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:53:01.402Z"
+  },
+  {
+    "resourceId": "fr-2026-06424",
+    "titleEn": "Consent To Make Inquiries and Release of Information and Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/04/02/2026-06424/consent-to-make-inquiries-and-release-of-information-and-records",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:56:20.010Z"
+  },
+  {
+    "resourceId": "fr-2026-03830",
+    "titleEn": "Records Schedules; Administrative Correction Notice",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/02/26/2026-03830/records-schedules-administrative-correction-notice",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T07:57:20.358Z"
+  },
+  {
+    "resourceId": "fr-2023-18465",
+    "titleEn": "Use of NARA Facilities: Rules for Filming, Photographing, or Videotaping on NARA Property for Personal Use",
+    "sourceUrl": "https://www.federalregister.gov/documents/2023/08/28/2023-18465/use-of-nara-facilities-rules-for-filming-photographing-or-videotaping-on-nara-property-for-personal",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T08:01:40.805Z"
+  },
+  {
+    "resourceId": "fr-2023-00379",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 33",
+    "sourceUrl": "https://www.federalregister.gov/documents/2023/01/11/2023-00379/records-management-general-records-schedule-grs-grs-transmittal-33",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-07-31T08:04:16.657Z"
+  },
+  {
+    "resourceId": "fr-2019-06916",
+    "titleEn": "Electronic Records Management",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/04/10/2019-06916/electronic-records-management",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T04:24:52.224Z"
+  },
+  {
+    "resourceId": "fr-2021-15319",
+    "titleEn": "Senior Executive Service (SES) Performance Review Board members",
+    "sourceUrl": "https://www.federalregister.gov/documents/2021/07/20/2021-15319/senior-executive-service-ses-performance-review-board-members",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T04:46:23.090Z"
+  },
+  {
+    "resourceId": "fr-2017-27462",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 29",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/12/21/2017-27462/records-management-general-records-schedule-grs-grs-transmittal-29",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:08:39.043Z"
+  },
+  {
+    "resourceId": "fr-2017-15250",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 28",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/07/20/2017-15250/records-management-general-records-schedule-grs-grs-transmittal-28",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:09:41.677Z"
+  },
+  {
+    "resourceId": "fr-2016-31010",
+    "titleEn": "Office of Government Information Services",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/28/2016-31010/office-of-government-information-services",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:11:37.428Z"
+  },
+  {
+    "resourceId": "fr-2016-26696",
+    "titleEn": "Privacy Act of 1974, as Amended; System of Records Notice",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/11/04/2016-26696/privacy-act-of-1974-as-amended-system-of-records-notice",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:12:40.306Z"
+  },
+  {
+    "resourceId": "fr-2016-21361",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 26",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/09/07/2016-21361/records-management-general-records-schedule-grs-grs-transmittal-26",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:14:22.758Z"
+  },
+  {
+    "resourceId": "fr-2016-13599",
+    "titleEn": "Privacy Act of 1974; Exemptions",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/06/08/2016-13599/privacy-act-of-1974-exemptions",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:15:25.462Z"
+  },
+  {
+    "resourceId": "fr-2015-23245",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 25; Email Managed Under a Capstone Approach",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/09/16/2015-23245/records-management-general-records-schedule-grs-grs-transmittal-25-email-managed-under-a-capstone",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:16:28.941Z"
+  },
+  {
+    "resourceId": "fr-2015-20363",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 24",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/18/2015-20363/records-management-general-records-schedule-grs-grs-transmittal-24",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:17:31.725Z"
+  },
+  {
+    "resourceId": "fr-2015-07184",
+    "titleEn": "Open Meeting on General Records Schedule (GRS) 6.1, Email Managed Under a Capstone Approach",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/04/01/2015-07184/open-meeting-on-general-records-schedule-grs-61-email-managed-under-a-capstone-approach",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:18:34.443Z"
+  },
+  {
+    "resourceId": "fr-2014-29854",
+    "titleEn": "Agency Information Collection Activities: Proposed Collection; Cancellation",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/12/22/2014-29854/agency-information-collection-activities-proposed-collection-cancellation",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:20:33.563Z"
+  },
+  {
+    "resourceId": "fr-2014-28697",
+    "titleEn": "Federal Awarding Agency Regulatory Implementation of Office of Management and Budget's Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/12/19/2014-28697/federal-awarding-agency-regulatory-implementation-of-office-of-management-and-budgets-uniform",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:21:57.718Z"
+  },
+  {
+    "resourceId": "fr-2014-07854",
+    "titleEn": "Agency Information Collection Activities: Proposed Extension of Collection; Comment Request",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/04/09/2014-07854/agency-information-collection-activities-proposed-extension-of-collection-comment-request",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:24:00.546Z"
+  },
+  {
+    "resourceId": "fr-2013-30371",
+    "titleEn": "Proposed Disposal of George H.W. Bush and Clinton Administration Electronic Backup Tapes",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/12/20/2013-30371/proposed-disposal-of-george-hw-bush-and-clinton-administration-electronic-backup-tapes",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:25:03.440Z"
+  },
+  {
+    "resourceId": "fr-2013-30311",
+    "titleEn": "Privacy Act of 1974; Notice of Republication and Alteration of Systems of Records Notices (SORNs)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/12/20/2013-30311/privacy-act-of-1974-notice-of-republication-and-alteration-of-systems-of-records-notices-sorns",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:26:06.962Z"
+  },
+  {
+    "resourceId": "fr-2017-27462",
+    "titleEn": "Records Management; General Records Schedule (GRS); GRS Transmittal 29",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/12/21/2017-27462/records-management-general-records-schedule-grs-grs-transmittal-29",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T05:37:12.744Z"
+  },
+  {
+    "resourceId": "fr-2013-30311",
+    "titleEn": "Privacy Act of 1974; Notice of Republication and Alteration of Systems of Records Notices (SORNs)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/12/20/2013-30311/privacy-act-of-1974-notice-of-republication-and-alteration-of-systems-of-records-notices-sorns",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T06:15:13.008Z"
+  },
+  {
+    "resourceId": "fr-2013-13037",
+    "titleEn": "Agency Information Collection Activities; Proposed Collection; Comment Request",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/06/03/2013-13037/agency-information-collection-activities-proposed-collection-comment-request",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T06:17:05.471Z"
+  },
+  {
+    "resourceId": "fr-95-24024",
+    "titleEn": "Audiovisual Records Management",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/09/28/95-24024/audiovisual-records-management",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T06:49:33.984Z"
+  },
+  {
+    "resourceId": "fr-2022-23030",
+    "titleEn": "Chief Freedom of Information Act (FOIA) Officers Council Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2022/10/28/2022-23030/chief-freedom-of-information-act-foia-officers-council-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T07:12:48.304Z"
+  },
+  {
+    "resourceId": "fr-2019-11521",
+    "titleEn": "Office of Government Information Services Annual Open Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/06/04/2019-11521/office-of-government-information-services-annual-open-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T07:21:15.123Z"
+  },
+  {
+    "resourceId": "fr-2018-07798",
+    "titleEn": "FOIA Advisory Committee; Solicitation for Committee Member Nominations",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/04/16/2018-07798/foia-advisory-committee-solicitation-for-committee-member-nominations",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T07:24:00.634Z"
+  },
+  {
+    "resourceId": "fr-2013-08773",
+    "titleEn": "Advisory Committee on the Electronic Records Archives (ACERA)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2013/04/15/2013-08773/advisory-committee-on-the-electronic-records-archives-acera",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T08:01:34.607Z"
+  },
+  {
+    "resourceId": "fr-E7-17729",
+    "titleEn": "NARA Draft Plan for Digitizing Archival Materials for Public Access; Request for Comment and Public Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2007/09/10/E7-17729/nara-draft-plan-for-digitizing-archival-materials-for-public-access-request-for-comment-and-public",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T08:31:22.214Z"
+  },
+  {
+    "resourceId": "fr-99-26611",
+    "titleEn": "Advisory Committee on Presidential Libraries Meeting; Partial Closed Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/10/13/99-26611/advisory-committee-on-presidential-libraries-meeting-partial-closed-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T08:32:22.689Z"
+  },
+  {
+    "resourceId": "fr-2024-23877",
+    "titleEn": "Meeting Announcement; Chief Freedom of Information Act Officers Council",
+    "sourceUrl": "https://www.federalregister.gov/documents/2024/10/17/2024-23877/meeting-announcement-chief-freedom-of-information-act-officers-council",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T08:43:24.913Z"
+  },
+  {
+    "resourceId": "fr-2022-23030",
+    "titleEn": "Chief Freedom of Information Act (FOIA) Officers Council Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2022/10/28/2022-23030/chief-freedom-of-information-act-foia-officers-council-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T08:46:11.080Z"
+  },
+  {
+    "resourceId": "fr-2014-18565",
+    "titleEn": "Office of Government Information Services (OGIS), Freedom of Information Act (FOIA) Advisory Committee Special Notice; Correction",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/08/06/2014-18565/office-of-government-information-services-ogis-freedom-of-information-act-foia-advisory-committee",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:03:21.664Z"
+  },
+  {
+    "resourceId": "fr-2014-12146",
+    "titleEn": "Office of Government Information Services (OGIS), Freedom of Information Act Advisory Committee Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/05/27/2014-12146/office-of-government-information-services-ogis-freedom-of-information-act-advisory-committee-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:04:27.292Z"
+  },
+  {
+    "resourceId": "fr-2014-10225",
+    "titleEn": "Creation of Freedom of Information Act Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/05/05/2014-10225/creation-of-freedom-of-information-act-advisory-committee",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:05:38.199Z"
+  },
+  {
+    "resourceId": "fr-2014-10225",
+    "titleEn": "Creation of Freedom of Information Act Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/05/05/2014-10225/creation-of-freedom-of-information-act-advisory-committee",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:08:57.555Z"
+  },
+  {
+    "resourceId": "fr-2014-10225",
+    "titleEn": "Creation of Freedom of Information Act Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/05/05/2014-10225/creation-of-freedom-of-information-act-advisory-committee",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:11:12.450Z"
+  },
+  {
+    "resourceId": "fr-2012-4399",
+    "titleEn": "Incorporation by Reference",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/27/2012-4399/incorporation-by-reference",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:12:12.877Z"
+  },
+  {
+    "resourceId": "fr-2011-33284",
+    "titleEn": "Declassification of National Security Information",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/12/29/2011-33284/declassification-of-national-security-information",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:13:13.305Z"
+  },
+  {
+    "resourceId": "fr-03-24047",
+    "titleEn": "Classified National Security Information Directive No. 1",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/09/22/03-24047/classified-national-security-information-directive-no-1",
+    "stage": "firecrawl_request",
+    "errorMessage": "HTTP 502: Bad Gateway",
+    "createdAt": "2026-08-03T09:14:31.986Z"
+  },
+  {
+    "resourceId": "fr-98-33685",
+    "titleEn": "Privacy Act Regulations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/12/21/98-33685/privacy-act-regulations",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:20:56.189Z"
+  },
+  {
+    "resourceId": "fr-98-32521",
+    "titleEn": "Privacy Act of 1974; Transfer of Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/12/08/98-32521/privacy-act-of-1974-transfer-of-records",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:21:56.646Z"
+  },
+  {
+    "resourceId": "fr-98-21023",
+    "titleEn": "Changes to the General Records Schedules; Request for Comments",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/08/05/98-21023/changes-to-the-general-records-schedules-request-for-comments",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:22:57.094Z"
+  },
+  {
+    "resourceId": "fr-2026-13590",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC); Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/07/06/2026-13590/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:23:10.947Z"
+  },
+  {
+    "resourceId": "fr-95-21125",
+    "titleEn": "Electronic Mail Systems",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/08/28/95-21125/electronic-mail-systems",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:23:57.607Z"
+  },
+  {
+    "resourceId": "fr-2020-12495",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee (NISPPAC); Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/09/2020-12495/national-industrial-security-program-policy-advisory-committee-nisppac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:24:13.706Z"
+  },
+  {
+    "resourceId": "fr-2026-13590",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC); Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2026/07/06/2026-13590/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:24:58.047Z"
+  },
+  {
+    "resourceId": "fr-2020-12364",
+    "titleEn": "Public Interest Declassification Board; Revised Bylaws",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/08/2020-12364/public-interest-declassification-board-revised-bylaws",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:25:23.468Z"
+  },
+  {
+    "resourceId": "fr-2020-12495",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee (NISPPAC); Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/09/2020-12495/national-industrial-security-program-policy-advisory-committee-nisppac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:25:58.494Z"
+  },
+  {
+    "resourceId": "fr-2020-04157",
+    "titleEn": "Agency Guidance; Portal",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/02/28/2020-04157/agency-guidance-portal",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:26:25.946Z"
+  },
+  {
+    "resourceId": "fr-2020-12364",
+    "titleEn": "Public Interest Declassification Board; Revised Bylaws",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/08/2020-12364/public-interest-declassification-board-revised-bylaws",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:26:58.993Z"
+  },
+  {
+    "resourceId": "fr-2020-12364",
+    "titleEn": "Public Interest Declassification Board; Revised Bylaws",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/06/08/2020-12364/public-interest-declassification-board-revised-bylaws",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:27:34.189Z"
+  },
+  {
+    "resourceId": "fr-2020-04157",
+    "titleEn": "Agency Guidance; Portal",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/02/28/2020-04157/agency-guidance-portal",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:27:59.506Z"
+  },
+  {
+    "resourceId": "fr-2020-04157",
+    "titleEn": "Agency Guidance; Portal",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/02/28/2020-04157/agency-guidance-portal",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:28:36.494Z"
+  },
+  {
+    "resourceId": "fr-2019-02402",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee Meeting (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/02/15/2019-02402/national-industrial-security-program-policy-advisory-committee-meeting-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:29:02.216Z"
+  },
+  {
+    "resourceId": "fr-2020-04157",
+    "titleEn": "Agency Guidance; Portal",
+    "sourceUrl": "https://www.federalregister.gov/documents/2020/02/28/2020-04157/agency-guidance-portal",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:29:15.636Z"
+  },
+  {
+    "resourceId": "fr-2019-02402",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee Meeting (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/02/15/2019-02402/national-industrial-security-program-policy-advisory-committee-meeting-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:29:36.939Z"
+  },
+  {
+    "resourceId": "fr-2018-27964",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/12/27/2018-27964/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:30:04.898Z"
+  },
+  {
+    "resourceId": "fr-2018-27964",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/12/27/2018-27964/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:30:37.299Z"
+  },
+  {
+    "resourceId": "fr-2018-27964",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/12/27/2018-27964/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:31:05.281Z"
+  },
+  {
+    "resourceId": "fr-2018-22323",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/10/15/2018-22323/national-industrial-security-program-policy-advisory-committee-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:31:40.097Z"
+  },
+  {
+    "resourceId": "fr-2018-08315",
+    "titleEn": "Meeting of the Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/04/20/2018-08315/meeting-of-the-advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:33:33.524Z"
+  },
+  {
+    "resourceId": "fr-2018-08315",
+    "titleEn": "Meeting of the Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/04/20/2018-08315/meeting-of-the-advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:33:46.349Z"
+  },
+  {
+    "resourceId": "fr-2017-19721",
+    "titleEn": "National Industrial Security Program Policy Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/09/18/2017-19721/national-industrial-security-program-policy-advisory-committee",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:34:46.707Z"
+  },
+  {
+    "resourceId": "fr-2017-02151",
+    "titleEn": "Meeting of the National Industrial Security Program Policy Advisory Committee (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-02151/meeting-of-the-national-industrial-security-program-policy-advisory-committee-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:36:45.257Z"
+  },
+  {
+    "resourceId": "fr-2018-08315",
+    "titleEn": "Meeting of the Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/04/20/2018-08315/meeting-of-the-advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:39:49.468Z"
+  },
+  {
+    "resourceId": "fr-2017-02151",
+    "titleEn": "Meeting of the National Industrial Security Program Policy Advisory Committee (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-02151/meeting-of-the-national-industrial-security-program-policy-advisory-committee-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:40:49.900Z"
+  },
+  {
+    "resourceId": "fr-2016-30949",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/23/2016-30949/state-local-tribal-and-private-sector-policy-advisory-committee-meeting",
+    "stage": "ai_request",
+    "errorMessage": "AI 响应缺少 choices[0].message.content：{\"id\":\"b3660f08-4169-4054-bc47-f9054dd6207a\",\"object\":\"chat.completion\",\"created\":1785750053,\"model\":\"DeepSeek-V4-Pro\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"我们需要为给定的英文资料生成中文的 JSON 草稿。资料元数据：resource.id: fr-2016-30949，titleEn: State, Local, Tribal, and Private Sector Policy Advisory Committee Meeting，resourceType: strategy，primaryTopicId: access-outreach-public-participation。topicIds: 只有 access-outreach-public-participation。需要输出 JSON，字段要求严格。\\n\\n首先分析来源文本：这是联邦公报上的一则通知（Notice），由 NARA 的信息安全监督办公室（ISOO）发布，关于 State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC) 的一次会议。会议时间 2017年1月25日，10:00-12:00。公开会议，可以亲自参加或通过电话会议参加。会议讨论与《关于国家安全信息的第 13526 号行政命令》(Executive Order 13526) 相关的州、地方、部落和私营部门的议题。来源显示是 Notice，Document Type Notice。但元数据给的 resourceType 是 strategy，但根据要求，resourceType 只能从列表中选择：law, regulation, policy, strategy, guidance, portal, catalog, database, program, system, report。这则联邦公报通知实际上是会议通知，可能不属于 strategy。根据要求：resourceType：优先沿用原值；如确需修正，只能使用上方允许的类型。原值 strategy，但这是一则会议通知，并非战略规划。按照定义，strategy 是战略、规划或政策方向文件。这则通知只是一个会议公告，不是战略文件。可能需要修正。但要求说“优先沿用原值”，如果原值明显不符合，可能需要改为合适的类型。查看列表，有一个“program”可能适用？program 是项目计划。但是这是一个咨询委员会的会议通知，并不是一个项目计划。也有“policy”但不完全。也可以用“guidance”？不。也许最好设为“notice”，但 notice 不在列表中。列表包括：law, regulation, policy, strategy, guidance, portal, catalog, database, program, system, report。会议通知可能归类为“policy”？或者“report”？都不是。鉴于该通知是联邦公报上的机构通知，关于政策咨询委员会的会议，可以理解为与政策制定相关，但文件本身是会议通知，并非政策文件。也许可以选择“policy”，因为该委员会是政策咨询委员会，通知告知公众会议，其实质是透明度参与。但是文档类型是 Notice，不是政策文件。或者可以算作“guidance”？不。\\n\\n再看，该委员会是“State, Local, Tribal, and Private Sector Policy Advisory Committee”，目的是就行政命令 13526 相关的政策问题提供咨询。会议通知属于行政公开的一部分。在 primaryTopicId 中，它属于 access-outreach-public-participation。那么 resourceType 应该反映其作为公告的性质。列表中没有“notice”，但有一个“report”？不合适。也许可以保留 strategy，但 strategy 不符合。检查要求：“如果资料是入口页或栏目页，要明确说明‘该资料为入口页/栏目页’。如果资料是法规或规则，要说明它涉及的制度问题。如果资料是平台系统，要说明该平台的功能和用户用途。如果资料是项目或活动，要说明项目目标、参与方式或服务对象。”这里资料是会议通知，可以视为活动。但 resourceType 仍需要从给定的值中选。可能“program”可以用于活动？program 是项目计划。但会议通知只是宣布一个会议，不是项目。不行。或许“portal”？不是。也许我们只能勉强用“strategy”，但说明这实际上是一个会议通知，但类型体系里没有 notice，所以可能保留原值。但是要求中说“优先沿用原值；如确需修正，只能使用上方允许的类型。”原值是 strategy，修正的话只能用允许类型。没有 notice，所以最好保留 strategy，并在 summary 中说明这是一则会议通知。但 resourceType 为 strategy 会误导。我再想想，有没有可能这被当作“strategy”是因为该委员会可能涉及战略政策？但该文档本身不是战略。还是按要求，如果能修正，改为“policy”？该通知涉及政策咨询委员会会议，可以说是政策事务，但通知本身不是政策。改为“policy”也有问题。也许“report”？不。最好的办法是，保留原值 strategy，但在 keyPoints 和 summary 中指出这是一则联邦公报通知，旨在宣布会议。因为 resourceType 字段只能从给定值中选择，原值 strategy 是提供者给出的，那就沿用 strategy，尽管不合理，但要求“优先沿用原值”，而不是我们随意改。检查要求：“resourceType：优先沿用原值；如确需修正，只能使用上方允许的类型。如果资料是官网栏目页、主题入口页、资源集合页或信息门户，应设置为 portal，不要误写为 guidance、policy 或 system。”这里没有指明这种情况。如果原值是 strategy，沿用。所以就用 strategy。那么 titleZh 为“州、地方、部落和私营部门政策咨询委员会会议通知”。summaryShort 说明这是一则联邦公报通知，宣布该委员会将于 2017年1月25日举行公开会议，讨论第13526号行政命令相关问题。summaryZh 更详细。\\n\\nkeyPoints 需要 3-5 条中文要点：1. 发布机构：国家档案与文件署（NARA）下属信息安全监督办公室（ISOO）。2. 会议日期和方式：2017年1月25日上午10点至中午12点（东部夏令时），公众可亲自到国家档案馆大楼参加或通过电话会议参与。3. 委员会职责：就州、地方、部落和私营部门实体在执行第13526号行政命令《国家安全信息》相关政策中面临的问题提供咨询。4. 会议性质：公开会议，需提前提交姓名等信息进行注册。5. 会议主题：讨论与行政命令实施相关的政策事宜。这些都可以从原文提取。\\n\\nresearchValue：面向中文档案学，研究美国联邦咨询委员会制度、公众参与政策制定、国家安全信息政策中的政府部门间合作与私营部门参与等，可用于比较研究。\\n\\ntags: 可以包括 Federal Register, NARA, ISOO, 第13526号行政命令, 咨询委员会, 公开会议, 公众参与, 国家安全信息, SLTPS-PAC 等。\\n\\nversioningApplicable: 会议通知是一次性公告，所以 false。status published_draft。sourceBasis: firecrawl_markdown。aiGenerated: true。reviewStatus: pending。\\n\\n现在构造 JSON。注意 primaryTopicId 是该 access-outreach-public-participation，topicIds 必须包含 primaryTopicId，也包含这个。其它 topicIds 可能依据相关主题，可以从列表选，但列表只有六个大类。we 可以再加 electronic-records-management 或 laws-policies-governance？这个委员会处理国家安全信息相关政策，可能涉及 laws-policies-governance，但主要还公众参与。就这样吧。\\n\\ntitleZh：我建议“州、地方、部落和私营部门政策咨询委员会会议通知”。也许“州、地方、部落和私营部门政策咨询委员会（SLTPS-PAC）会议公告”。\\n\\nsummaryShort：50-100字中文。例如：“这是美国国家档案与文件署（NARA）信息安全监督办公室在《联邦公报》发布的通知，宣布将于2017年1月25日举行州、地方、部落和私营部门政策咨询委员会公开会议，讨论第13526号行政命令相关的国家安全信息政策事宜，公众可现场或通过电话参与。”\\n\\nsummaryZh：120-250字。解释这是公告，说明委员会背景和会议目的，公众参与方式。\\n\\nkeyPoints: 四点即可。\\n\\n确保不编造信息。所有信息来自原文，包括日期、地址、联系人等。原文说：The meeting will be on January 25, 2017, from 10:00 a.m. to 12:00 p.m. EDT. 地点是 National Archives and Records Administration, 700 Pennsylvania Avenue NW., Washington, DC 20408。可以亲自参加或电话会议（dial-in instructions）。联系人是 David Best。公众如需参加，须在1月20日前提交姓名、联系方式等发送至 Slampts@nara.gov。在 keyPoints 可以包含这些。\\n\\n这样，输出 JSON。```json\\n{\\n \\\"resourceId\\\": \\\"fr-2016-30949\\\",\\n \\\"titleZh\\\": \\\"州、地方、部落和私营部门政策咨询委员会会议通知\\\",\\n \\\"summaryShort\\\": \\\"本则《联邦公报》通知由国家档案与文件署（NARA）下属信息安全监督办公室发布，宣布州、地方、部落和私营部门政策咨询委员会将于2017年1月25日举行公开会议，讨论第13526号行政命令相关国家安全信息政策议题，公众可通过现场或电话方式参与。\\\",\\n \\\"summaryZh\\\": \\\"该资料为美国国家档案与文件署（NARA）信息安全监督办公室（ISOO）于2016年12月23日发布的联邦公报通知，正式公告州、地方、部落和私营部门政策咨询委员会（SLTPS-PAC）的公开会议安排。会议定于2017年1月25日10:00至12:00（东部夏令时）在国家档案馆大楼举行，并提供电话会议接入方式。委员会依据第13526号行政命令《国家安全信息》设立，负责就州、地方、部落和私营部门实体在国家安全信息政策实施中遇到的问题提供咨询。通知明确了会议目的、公众参与方式及注册要求，体现了美国档案与信息安全领域决策过程中公众参与和透明度的重要机制。\\\",\\n \\\"keyPoints\\\": [\\n \\\"发布机构为美国国家档案与文件署（NARA）下属的信息安全监督办公室（ISOO），通知在《联邦公报》上刊登。\\\",\\n \\\"会议时间为2017年1月25日上午10点至中午12点（东部夏令时），地点在华盛顿特区国家档案馆大楼，同时提供电话会议拨入方式，公众可远程参与。\\\",\\n \\\"该委员会负责就州、地方、部落和私营部门在执行第13526号行政命令《国家安全信息》中出现的政策问题进行咨询并提出建议。\\\",\\n \\\"会议面向公众开放，但需在2017年1月20日前将姓名、联系方式等信息发送至Slampts@nara.gov进行预注册，个人和团体均可参加。\\\",\\n \\\"会议将讨论与行政命令实施相关的政策事项，旨在促进各级政府和私营部门之间的信息政策协调。\\\"\\n ],\\n \\\"researchValue\\\": \\\"该资料可用于研究美国联邦咨询委员会制度设计、公众参与档案与信息安全政策制定的实践机制，以及联邦政府与州、地方、部落和私营部门在国家安全信息政策上的协作模式，适合从事比较档案学、信息治理、政府透明度与公共参与研究的中文学习者与研究者。\\\",\\n \\\"resourceType\\\": \\\"strategy\\\",\\n \\\"primaryTopicId\\\": \\\"access-outreach-public-participation\\\",\\n \\\"topicIds\\\": [\\\"access-outreach-public-participation\\\"],\\n \\\"tags\\\": [\\\"联邦公报\\\", \\\"Federal Register\\\", \\\"NARA\\\", \\\"ISOO\\\", \\\"第13526号行政命令\\\", \\\"咨询委员会\\\", \\\"公开会议\\\", \\\"公众参与\\\", \\\"国家安全信息\\\", \\\"SLTPS-PAC\\\"],\\n \\\"status\\\": \\\"published_draft\\\",\\n \\\"versioningApplicable\\\": false,\\n \\\"versionNote\\\": \\\"\\\",\\n \\\"sourceBasis\\\": \\\"firecrawl_markdown\\\",\\n \\\"aiGenerated\\\": true,\\n \\\"reviewStatus\\\": \\\"pending\\\"\\n}\\n```\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":2537,\"completion_tokens\":2405,\"total_tokens\":4942,\"prompt_tokens_details\":{\"cached_tokens\":256},\"completion_tokens_details\":{\"reasoning_tokens\":2405},\"prompt_cache_hit_tokens\":256,\"prompt_cache_miss_tokens\":2281},\"system_fingerprint\":\"fp_9954b31ca7_prod0820_fp8_kvcache_20260402\",\"provider\":\"-\",\"is_fallback\":false,\"aiping_id\":\"d1075554-71f0-4ae7-9687-bf065674c83f\"}",
+    "createdAt": "2026-08-03T09:41:47.280Z"
+  },
+  {
+    "resourceId": "fr-2015-31526",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC) Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/12/15/2015-31526/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:43:35.626Z"
+  },
+  {
+    "resourceId": "fr-2019-03826",
+    "titleEn": "Change in Comment Process for Records Schedules",
+    "sourceUrl": "https://www.federalregister.gov/documents/2019/03/04/2019-03826/change-in-comment-process-for-records-schedules",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:44:38.427Z"
+  },
+  {
+    "resourceId": "fr-2018-20007",
+    "titleEn": "Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/09/14/2018-20007/advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:46:18.986Z"
+  },
+  {
+    "resourceId": "fr-2018-08315",
+    "titleEn": "Meeting of the Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/04/20/2018-08315/meeting-of-the-advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:58:01.056Z"
+  },
+  {
+    "resourceId": "fr-2017-02151",
+    "titleEn": "Meeting of the National Industrial Security Program Policy Advisory Committee (NISPPAC)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2017/02/01/2017-02151/meeting-of-the-national-industrial-security-program-policy-advisory-committee-nisppac",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T09:59:01.374Z"
+  },
+  {
+    "resourceId": "fr-2015-31526",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC) Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/12/15/2015-31526/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:00:21.464Z"
+  },
+  {
+    "resourceId": "fr-2015-31526",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC) Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/12/15/2015-31526/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:00:43.255Z"
+  },
+  {
+    "resourceId": "fr-2018-20007",
+    "titleEn": "Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/09/14/2018-20007/advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:01:50.068Z"
+  },
+  {
+    "resourceId": "fr-2018-20007",
+    "titleEn": "Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/09/14/2018-20007/advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:02:14.450Z"
+  },
+  {
+    "resourceId": "fr-2016-30948",
+    "titleEn": "Advisory Committee on the Presidential Library-Foundation Partnerships Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/23/2016-30948/advisory-committee-on-the-presidential-library-foundation-partnerships-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:03:52.291Z"
+  },
+  {
+    "resourceId": "fr-2016-30948",
+    "titleEn": "Advisory Committee on the Presidential Library-Foundation Partnerships Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/23/2016-30948/advisory-committee-on-the-presidential-library-foundation-partnerships-meeting",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:04:06.658Z"
+  },
+  {
+    "resourceId": "fr-2016-26952",
+    "titleEn": "George W. Bush Presidential Library; Disposal of Presidential Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/11/08/2016-26952/george-w-bush-presidential-library-disposal-of-presidential-records",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:04:55.157Z"
+  },
+  {
+    "resourceId": "fr-2016-26952",
+    "titleEn": "George W. Bush Presidential Library; Disposal of Presidential Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/11/08/2016-26952/george-w-bush-presidential-library-disposal-of-presidential-records",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:05:07.003Z"
+  },
+  {
+    "resourceId": "fr-2015-27339",
+    "titleEn": "Nixon Presidential Historical Materials: Opening of Materials",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/10/28/2015-27339/nixon-presidential-historical-materials-opening-of-materials",
+    "stage": "ai_timeout",
+    "errorMessage": "AI 请求超时（60 秒）。",
+    "createdAt": "2026-08-03T10:05:58.328Z"
+  },
+  {
+    "resourceId": "fr-2015-31526",
+    "titleEn": "State, Local, Tribal, and Private Sector Policy Advisory Committee (SLTPS-PAC) Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/12/15/2015-31526/state-local-tribal-and-private-sector-policy-advisory-committee-sltps-pac-meeting",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:43.562Z"
+  },
+  {
+    "resourceId": "fr-2018-20007",
+    "titleEn": "Advisory Committee on Presidential Library-Foundation Partnerships",
+    "sourceUrl": "https://www.federalregister.gov/documents/2018/09/14/2018-20007/advisory-committee-on-presidential-library-foundation-partnerships",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:44.112Z"
+  },
+  {
+    "resourceId": "fr-2016-30948",
+    "titleEn": "Advisory Committee on the Presidential Library-Foundation Partnerships Meeting",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/12/23/2016-30948/advisory-committee-on-the-presidential-library-foundation-partnerships-meeting",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:45.071Z"
+  },
+  {
+    "resourceId": "fr-2016-26952",
+    "titleEn": "George W. Bush Presidential Library; Disposal of Presidential Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2016/11/08/2016-26952/george-w-bush-presidential-library-disposal-of-presidential-records",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:45.744Z"
+  },
+  {
+    "resourceId": "fr-2015-21077",
+    "titleEn": "Implementation of Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/25/2015-21077/implementation-of-uniform-administrative-requirements-cost-principles-and-audit-requirements-for",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:46.294Z"
+  },
+  {
+    "resourceId": "fr-2015-21077",
+    "titleEn": "Implementation of Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/25/2015-21077/implementation-of-uniform-administrative-requirements-cost-principles-and-audit-requirements-for",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:46.301Z"
+  },
+  {
+    "resourceId": "fr-2015-19844",
+    "titleEn": "Nixon Presidential Historical Materials; Opening of Materials",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/12/2015-19844/nixon-presidential-historical-materials-opening-of-materials",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:46.960Z"
+  },
+  {
+    "resourceId": "fr-2015-19844",
+    "titleEn": "Nixon Presidential Historical Materials; Opening of Materials",
+    "sourceUrl": "https://www.federalregister.gov/documents/2015/08/12/2015-19844/nixon-presidential-historical-materials-opening-of-materials",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:46.966Z"
+  },
+  {
+    "resourceId": "fr-2014-19533",
+    "titleEn": "Location of NARA Facilities and Hours of Use",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/08/21/2014-19533/location-of-nara-facilities-and-hours-of-use",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:47.802Z"
+  },
+  {
+    "resourceId": "fr-2014-19533",
+    "titleEn": "Location of NARA Facilities and Hours of Use",
+    "sourceUrl": "https://www.federalregister.gov/documents/2014/08/21/2014-19533/location-of-nara-facilities-and-hours-of-use",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:47.809Z"
+  },
+  {
+    "resourceId": "fr-2012-4213",
+    "titleEn": "Public Meeting To Solicit Comments in Response to the Presidential Memorandum, Managing Government Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/23/2012-4213/public-meeting-to-solicit-comments-in-response-to-the-presidential-memorandum-managing-government",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:48.330Z"
+  },
+  {
+    "resourceId": "fr-2012-4213",
+    "titleEn": "Public Meeting To Solicit Comments in Response to the Presidential Memorandum, Managing Government Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/23/2012-4213/public-meeting-to-solicit-comments-in-response-to-the-presidential-memorandum-managing-government",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:48.339Z"
+  },
+  {
+    "resourceId": "fr-2012-2366",
+    "titleEn": "Founding Fathers Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/03/2012-2366/founding-fathers-advisory-committee",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:48.936Z"
+  },
+  {
+    "resourceId": "fr-2012-2366",
+    "titleEn": "Founding Fathers Advisory Committee",
+    "sourceUrl": "https://www.federalregister.gov/documents/2012/02/03/2012-2366/founding-fathers-advisory-committee",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:48.941Z"
+  },
+  {
+    "resourceId": "fr-2011-4612",
+    "titleEn": "Presidential Library Facilities; Correction",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/03/02/2011-4612/presidential-library-facilities-correction",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:49.593Z"
+  },
+  {
+    "resourceId": "fr-2011-4612",
+    "titleEn": "Presidential Library Facilities; Correction",
+    "sourceUrl": "https://www.federalregister.gov/documents/2011/03/02/2011-4612/presidential-library-facilities-correction",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T12:30:49.599Z"
+  },
+  {
+    "resourceId": "fr-E8-17316",
+    "titleEn": "Renewal of Advisory Committee on Presidential Libraries",
+    "sourceUrl": "https://www.federalregister.gov/documents/2008/07/28/E8-17316/renewal-of-advisory-committee-on-presidential-libraries",
+    "stage": "firecrawl_request",
+    "errorMessage": "HTTP 502: Bad Gateway",
+    "createdAt": "2026-08-05T13:12:13.649Z"
+  },
+  {
+    "resourceId": "fr-E6-11763",
+    "titleEn": "Changes in NARA Research Room and Museum Hours",
+    "sourceUrl": "https://www.federalregister.gov/documents/2006/07/25/E6-11763/changes-in-nara-research-room-and-museum-hours",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:36.343Z"
+  },
+  {
+    "resourceId": "fr-E6-2641",
+    "titleEn": "Electronic Backup Tapes",
+    "sourceUrl": "https://www.federalregister.gov/documents/2006/02/24/E6-2641/electronic-backup-tapes",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:41.133Z"
+  },
+  {
+    "resourceId": "fr-05-8768",
+    "titleEn": "NARA Facility Locations and Hours",
+    "sourceUrl": "https://www.federalregister.gov/documents/2005/05/03/05-8768/nara-facility-locations-and-hours",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:46.136Z"
+  },
+  {
+    "resourceId": "fr-05-8765",
+    "titleEn": "Office of Presidential Libraries; Proposed Disposal of Clinton Administration Electronic Backup Tapes",
+    "sourceUrl": "https://www.federalregister.gov/documents/2005/05/03/05-8765/office-of-presidential-libraries-proposed-disposal-of-clinton-administration-electronic-backup-tapes",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:47.721Z"
+  },
+  {
+    "resourceId": "fr-05-8765",
+    "titleEn": "Office of Presidential Libraries; Proposed Disposal of Clinton Administration Electronic Backup Tapes",
+    "sourceUrl": "https://www.federalregister.gov/documents/2005/05/03/05-8765/office-of-presidential-libraries-proposed-disposal-of-clinton-administration-electronic-backup-tapes",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:47.728Z"
+  },
+  {
+    "resourceId": "fr-2010-7776",
+    "titleEn": "National Industrial Security Program Directive No. 1",
+    "sourceUrl": "https://www.federalregister.gov/documents/2010/04/06/2010-7776/national-industrial-security-program-directive-no-1",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:48.983Z"
+  },
+  {
+    "resourceId": "fr-2010-7776",
+    "titleEn": "National Industrial Security Program Directive No. 1",
+    "sourceUrl": "https://www.federalregister.gov/documents/2010/04/06/2010-7776/national-industrial-security-program-directive-no-1",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:48.992Z"
+  },
+  {
+    "resourceId": "fr-04-5625",
+    "titleEn": "Federal Records Management; Proposed Regulatory Framework",
+    "sourceUrl": "https://www.federalregister.gov/documents/2004/03/15/04-5625/federal-records-management-proposed-regulatory-framework",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:50.175Z"
+  },
+  {
+    "resourceId": "fr-04-5625",
+    "titleEn": "Federal Records Management; Proposed Regulatory Framework",
+    "sourceUrl": "https://www.federalregister.gov/documents/2004/03/15/04-5625/federal-records-management-proposed-regulatory-framework",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:50.195Z"
+  },
+  {
+    "resourceId": "fr-03-28454",
+    "titleEn": "Governmentwide Debarment and Suspension (Nonprocurement) and Governmentwide Requirements for Drug-Free Workplace (Grants)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/11/26/03-28454/governmentwide-debarment-and-suspension-nonprocurement-and-governmentwide-requirements-for-drug-free",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:51.523Z"
+  },
+  {
+    "resourceId": "fr-03-28454",
+    "titleEn": "Governmentwide Debarment and Suspension (Nonprocurement) and Governmentwide Requirements for Drug-Free Workplace (Grants)",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/11/26/03-28454/governmentwide-debarment-and-suspension-nonprocurement-and-governmentwide-requirements-for-drug-free",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:51.530Z"
+  },
+  {
+    "resourceId": "fr-03-26614",
+    "titleEn": "Nondiscrimination in Federally Assisted Programs-Implementation of Section 504 of the Rehabilitation Act of 1973",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/10/22/03-26614/nondiscrimination-in-federally-assisted-programs-implementation-of-section-504-of-the-rehabilitation",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:52.388Z"
+  },
+  {
+    "resourceId": "fr-03-26614",
+    "titleEn": "Nondiscrimination in Federally Assisted Programs-Implementation of Section 504 of the Rehabilitation Act of 1973",
+    "sourceUrl": "https://www.federalregister.gov/documents/2003/10/22/03-26614/nondiscrimination-in-federally-assisted-programs-implementation-of-section-504-of-the-rehabilitation",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:52.401Z"
+  },
+  {
+    "resourceId": "fr-02-16158",
+    "titleEn": "General Records Schedule 24, Information Technology Operations and Management Records; Request for Comments",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/06/27/02-16158/general-records-schedule-24-information-technology-operations-and-management-records-request-for",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:53.093Z"
+  },
+  {
+    "resourceId": "fr-02-16158",
+    "titleEn": "General Records Schedule 24, Information Technology Operations and Management Records; Request for Comments",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/06/27/02-16158/general-records-schedule-24-information-technology-operations-and-management-records-request-for",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:53.099Z"
+  },
+  {
+    "resourceId": "fr-02-15861",
+    "titleEn": "National Historical Publications and Records Commission Grant Regulations",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/06/24/02-15861/national-historical-publications-and-records-commission-grant-regulations",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:53.903Z"
+  },
+  {
+    "resourceId": "fr-02-15861",
+    "titleEn": "National Historical Publications and Records Commission Grant Regulations",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/06/24/02-15861/national-historical-publications-and-records-commission-grant-regulations",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:53.911Z"
+  },
+  {
+    "resourceId": "fr-01-12265",
+    "titleEn": "Records Disposition; Technical Amendments",
+    "sourceUrl": "https://www.federalregister.gov/documents/2001/05/16/01-12265/records-disposition-technical-amendments",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:54.854Z"
+  },
+  {
+    "resourceId": "fr-01-12265",
+    "titleEn": "Records Disposition; Technical Amendments",
+    "sourceUrl": "https://www.federalregister.gov/documents/2001/05/16/01-12265/records-disposition-technical-amendments",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:54.867Z"
+  },
+  {
+    "resourceId": "fr-01-8993",
+    "titleEn": "John F. Kennedy Assassination Records Collection Rules, Correction",
+    "sourceUrl": "https://www.federalregister.gov/documents/2001/04/12/01-8993/john-f-kennedy-assassination-records-collection-rules-correction",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:55.312Z"
+  },
+  {
+    "resourceId": "fr-01-8993",
+    "titleEn": "John F. Kennedy Assassination Records Collection Rules, Correction",
+    "sourceUrl": "https://www.federalregister.gov/documents/2001/04/12/01-8993/john-f-kennedy-assassination-records-collection-rules-correction",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:55.316Z"
+  },
+  {
+    "resourceId": "fr-00-20916",
+    "titleEn": "Nondiscrimination on the Basis of Sex in Education Programs or Activities Receiving Federal Financial Assistance",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/08/30/00-20916/nondiscrimination-on-the-basis-of-sex-in-education-programs-or-activities-receiving-federal",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:55.697Z"
+  },
+  {
+    "resourceId": "fr-00-20916",
+    "titleEn": "Nondiscrimination on the Basis of Sex in Education Programs or Activities Receiving Federal Financial Assistance",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/08/30/00-20916/nondiscrimination-on-the-basis-of-sex-in-education-programs-or-activities-receiving-federal",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:55.701Z"
+  },
+  {
+    "resourceId": "fr-99-30973",
+    "titleEn": "Agency Records Centers",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30973/agency-records-centers",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.098Z"
+  },
+  {
+    "resourceId": "fr-99-30973",
+    "titleEn": "Agency Records Centers",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/12/02/99-30973/agency-records-centers",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.102Z"
+  },
+  {
+    "resourceId": "fr-99-27372",
+    "titleEn": "Nondiscrimination on the Basis of Sex in Education Programs and Activities Receiving Federal Financial Assistance",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/10/29/99-27372/nondiscrimination-on-the-basis-of-sex-in-education-programs-and-activities-receiving-federal",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.562Z"
+  },
+  {
+    "resourceId": "fr-99-27372",
+    "titleEn": "Nondiscrimination on the Basis of Sex in Education Programs and Activities Receiving Federal Financial Assistance",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/10/29/99-27372/nondiscrimination-on-the-basis-of-sex-in-education-programs-and-activities-receiving-federal",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.568Z"
+  },
+  {
+    "resourceId": "fr-99-24813",
+    "titleEn": "Safeguarding Classified National Security Information",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/09/24/99-24813/safeguarding-classified-national-security-information",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.911Z"
+  },
+  {
+    "resourceId": "fr-99-24813",
+    "titleEn": "Safeguarding Classified National Security Information",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/09/24/99-24813/safeguarding-classified-national-security-information",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:56.914Z"
+  },
+  {
+    "resourceId": "fr-99-14382",
+    "titleEn": "Records Schedules for Electronic Copies Previously Covered by General Records Schedule 20; Availability and Request for Comments",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/06/08/99-14382/records-schedules-for-electronic-copies-previously-covered-by-general-records-schedule-20",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.257Z"
+  },
+  {
+    "resourceId": "fr-99-14382",
+    "titleEn": "Records Schedules for Electronic Copies Previously Covered by General Records Schedule 20; Availability and Request for Comments",
+    "sourceUrl": "https://www.federalregister.gov/documents/1999/06/08/99-14382/records-schedules-for-electronic-copies-previously-covered-by-general-records-schedule-20",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.261Z"
+  },
+  {
+    "resourceId": "fr-98-19469",
+    "titleEn": "Electronic Records Work Group Draft Report; Comments Requested",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/07/21/98-19469/electronic-records-work-group-draft-report-comments-requested",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.629Z"
+  },
+  {
+    "resourceId": "fr-98-19469",
+    "titleEn": "Electronic Records Work Group Draft Report; Comments Requested",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/07/21/98-19469/electronic-records-work-group-draft-report-comments-requested",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.633Z"
+  },
+  {
+    "resourceId": "fr-98-19466",
+    "titleEn": "Electronic Records Work Group Draft Report; Appendix C",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/07/21/98-19466/electronic-records-work-group-draft-report-appendix-c",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.982Z"
+  },
+  {
+    "resourceId": "fr-98-19466",
+    "titleEn": "Electronic Records Work Group Draft Report; Appendix C",
+    "sourceUrl": "https://www.federalregister.gov/documents/1998/07/21/98-19466/electronic-records-work-group-draft-report-appendix-c",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:57.985Z"
+  },
+  {
+    "resourceId": "fr-96-3097",
+    "titleEn": "National Historical Publications and Records Commission; Grant Program Procedures",
+    "sourceUrl": "https://www.federalregister.gov/documents/1996/02/13/96-3097/national-historical-publications-and-records-commission-grant-program-procedures",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:58.609Z"
+  },
+  {
+    "resourceId": "fr-96-3097",
+    "titleEn": "National Historical Publications and Records Commission; Grant Program Procedures",
+    "sourceUrl": "https://www.federalregister.gov/documents/1996/02/13/96-3097/national-historical-publications-and-records-commission-grant-program-procedures",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:58.618Z"
+  },
+  {
+    "resourceId": "fr-95-23818",
+    "titleEn": "Disposition of Federal Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/09/26/95-23818/disposition-of-federal-records",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:59.211Z"
+  },
+  {
+    "resourceId": "fr-95-23818",
+    "titleEn": "Disposition of Federal Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/09/26/95-23818/disposition-of-federal-records",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:59.221Z"
+  },
+  {
+    "resourceId": "fr-95-13951",
+    "titleEn": "Management of Vital Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/06/07/95-13951/management-of-vital-records",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:59.920Z"
+  },
+  {
+    "resourceId": "fr-95-13951",
+    "titleEn": "Management of Vital Records",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/06/07/95-13951/management-of-vital-records",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:17:59.926Z"
+  },
+  {
+    "resourceId": "fr-94-13517",
+    "titleEn": "Agency Program Evaluations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/06/03/94-13517/agency-program-evaluations",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:00.532Z"
+  },
+  {
+    "resourceId": "fr-94-13517",
+    "titleEn": "Agency Program Evaluations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/06/03/94-13517/agency-program-evaluations",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:00.542Z"
+  },
+  {
+    "resourceId": "fr-94-13180",
+    "titleEn": "Vital Records; Records Disaster Mitigation and Recovery",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/05/31/94-13180/vital-records-records-disaster-mitigation-and-recovery",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:01.077Z"
+  },
+  {
+    "resourceId": "fr-94-13180",
+    "titleEn": "Vital Records; Records Disaster Mitigation and Recovery",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/05/31/94-13180/vital-records-records-disaster-mitigation-and-recovery",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:01.082Z"
+  },
+  {
+    "resourceId": "fr-94-7187",
+    "titleEn": "Preservation and Protection of and Access to the Presidential Historical Materials of the Nixon Administration; Amendment of Public Access Regulations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/03/25/94-7187/preservation-and-protection-of-and-access-to-the-presidential-historical-materials-of-the-nixon",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:01.541Z"
+  },
+  {
+    "resourceId": "fr-94-7187",
+    "titleEn": "Preservation and Protection of and Access to the Presidential Historical Materials of the Nixon Administration; Amendment of Public Access Regulations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1994/03/25/94-7187/preservation-and-protection-of-and-access-to-the-presidential-historical-materials-of-the-nixon",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:01.545Z"
+  },
+  {
+    "resourceId": "fr-04-10317",
+    "titleEn": "Official Seals and Logos",
+    "sourceUrl": "https://www.federalregister.gov/documents/2004/05/11/04-10317/official-seals-and-logos",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:02.047Z"
+  },
+  {
+    "resourceId": "fr-04-10317",
+    "titleEn": "Official Seals and Logos",
+    "sourceUrl": "https://www.federalregister.gov/documents/2004/05/11/04-10317/official-seals-and-logos",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:02.051Z"
+  },
+  {
+    "resourceId": "fr-02-4211",
+    "titleEn": "Research Room Procedures",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/02/22/02-4211/research-room-procedures",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:02.377Z"
+  },
+  {
+    "resourceId": "fr-02-4211",
+    "titleEn": "Research Room Procedures",
+    "sourceUrl": "https://www.federalregister.gov/documents/2002/02/22/02-4211/research-room-procedures",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:02.385Z"
+  },
+  {
+    "resourceId": "fr-00-30178",
+    "titleEn": "National Historical Publications and Records Commission; Programs Subject to Title IX",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/11/28/00-30178/national-historical-publications-and-records-commission-programs-subject-to-title-ix",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:03.635Z"
+  },
+  {
+    "resourceId": "fr-00-30178",
+    "titleEn": "National Historical Publications and Records Commission; Programs Subject to Title IX",
+    "sourceUrl": "https://www.federalregister.gov/documents/2000/11/28/00-30178/national-historical-publications-and-records-commission-programs-subject-to-title-ix",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:03.639Z"
+  },
+  {
+    "resourceId": "fr-95-25548",
+    "titleEn": "Uniform Administrative Requirements for Grants and Agreements With Institutions of Higher Education, Hospitals and Other Non-Profit Organizations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/10/16/95-25548/uniform-administrative-requirements-for-grants-and-agreements-with-institutions-of-higher-education",
+    "stage": "firecrawl_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:03.973Z"
+  },
+  {
+    "resourceId": "fr-95-25548",
+    "titleEn": "Uniform Administrative Requirements for Grants and Agreements With Institutions of Higher Education, Hospitals and Other Non-Profit Organizations",
+    "sourceUrl": "https://www.federalregister.gov/documents/1995/10/16/95-25548/uniform-administrative-requirements-for-grants-and-agreements-with-institutions-of-higher-education",
+    "stage": "ai_request",
+    "errorMessage": "fetch failed",
+    "createdAt": "2026-08-05T13:18:03.977Z"
+  }
+]

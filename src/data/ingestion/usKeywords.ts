@@ -1,0 +1,67 @@
+export const usIngestionKeywords = [
+  {
+    topicId: "laws-policies-governance",
+    topicTitleZh: "法规政策与制度治理",
+    keywords: [
+      "Federal Records Act",
+      "Presidential Records Act",
+      "Freedom of Information Act",
+      "FOIA",
+      "open government",
+      "public records",
+      "federal records",
+    ],
+  },
+  {
+    topicId: "electronic-records-management",
+    topicTitleZh: "电子文件与记录管理",
+    keywords: [
+      "records management",
+      "electronic records",
+      "records schedule",
+      "records disposition",
+      "email records",
+      "Capstone Approach",
+      "transfer guidance",
+      "Electronic Records Archives",
+    ],
+  },
+  {
+    topicId: "digital-resources-preservation",
+    topicTitleZh: "数字资源建设与长期保存",
+    keywords: [
+      "digital preservation",
+      "digitization",
+      "metadata",
+      "NARA Catalog",
+      "online public access",
+      "digital collections",
+      "archival description",
+    ],
+  },
+  {
+    topicId: "access-outreach-public-participation",
+    topicTitleZh: "开放利用、展览教育与公众参与",
+    keywords: [
+      "Citizen Archivist",
+      "public access",
+      "online exhibits",
+      "education resources",
+      "public programs",
+      "crowdsourcing",
+      "transcription",
+    ],
+  },
+  {
+    topicId: "ai-emerging-technologies",
+    topicTitleZh: "AI 与新兴技术实践",
+    keywords: [
+      "artificial intelligence",
+      "AI",
+      "OCR",
+      "machine learning",
+      "automated description",
+      "handwritten text recognition",
+    ],
+  },
+];
