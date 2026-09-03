@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -53,9 +54,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-10 border-b border-[#c8b99d]/55 bg-[#efeadf]/92 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/85">
       <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-3">
         <Link href="/" className="flex items-center gap-3">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#8f7555]/35 bg-[#4b3d31] font-bold text-[#fffaf0]">
-            A
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="ArchiveScope 标识"
+            width={36}
+            height={36}
+            priority
+            className="h-9 w-9 rounded-sm object-cover"
+          />
           <span>
             <span className="block font-semibold text-[#3b3027] dark:text-zinc-50">
               ArchiveScope
