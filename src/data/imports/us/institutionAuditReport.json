@@ -296,7 +296,7 @@
       },
       {
         "institutionId": "indiana-archives-and-records-administration",
-        "nameZh": "印第安纳州档案与记录管理局",
+        "nameZh": "印第安纳州档案与文件管理局",
         "nameEn": "Indiana Archives and Records Administration",
         "website": "https://www.in.gov/iara/",
         "method": "recorded_status",
@@ -517,7 +517,7 @@
       },
       {
         "institutionId": "new-mexico-state-records-center-and-archives",
-        "nameZh": "新墨西哥州记录中心与档案馆",
+        "nameZh": "新墨西哥州文件中心与档案馆",
         "nameEn": "New Mexico State Records Center and Archives",
         "website": "https://www.srca.nm.gov",
         "method": "recorded_status",
@@ -569,7 +569,7 @@
       },
       {
         "institutionId": "oklahoma-department-of-libraries-archives-and-records",
-        "nameZh": "俄克拉荷马州图书馆部档案与记录",
+        "nameZh": "俄克拉荷马州图书馆部档案与文件",
         "nameEn": "Oklahoma Department of Libraries Archives and Records",
         "website": "https://libraries.ok.gov/state-archives/",
         "method": "recorded_status",
@@ -660,7 +660,7 @@
       },
       {
         "institutionId": "utah-division-of-archives-and-records-service",
-        "nameZh": "犹他州档案与记录服务处",
+        "nameZh": "犹他州档案与文件服务处",
         "nameEn": "Utah Division of Archives and Records Service",
         "website": "https://archives.utah.gov",
         "method": "recorded_status",
@@ -673,7 +673,7 @@
       },
       {
         "institutionId": "vermont-state-archives-and-records-administration",
-        "nameZh": "佛蒙特州档案与记录管理局",
+        "nameZh": "佛蒙特州档案与文件管理局",
         "nameEn": "Vermont State Archives and Records Administration",
         "website": "https://sos.vermont.gov/vsara/",
         "method": "recorded_status",

@@ -803,7 +803,7 @@ function SearchResultsPanel({
     return (
       <div className="country-dossier-empty">
         <strong>没有找到匹配内容</strong>
-        <p>可以换一个关键词，例如“电子记录”“隐私法”“NARA”或“开放数据”。</p>
+        <p>可以换一个关键词，例如“电子文件”“隐私法”“NARA”或“开放数据”。</p>
       </div>
     );
   }

@@ -84,7 +84,7 @@ export default async function TopicDetailPage({ params }: TopicDetailPageProps) 
     {
       label: "已有备份",
       value: backupCount,
-      description: "已保存来源快照或备份记录",
+      description: "已保存来源快照或备份文件",
     },
   ];
   const topicIndex = Math.max(

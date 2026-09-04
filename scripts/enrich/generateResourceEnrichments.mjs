@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normalizeRecordTerminology } from "../terminology/normalizeRecordTerminology.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -2179,7 +2180,7 @@ async function main() {
     return;
   }
 
-  const outputDrafts = options.forceId
+  const outputDrafts = normalizeRecordTerminology(options.forceId
     ? mergeDraftsByResourceId(
         existingDrafts,
         generatedDrafts,
@@ -2199,7 +2200,7 @@ async function main() {
               return existingDraftByResourceId.get(resourceId)?.reviewStatus === "rejected";
             }),
         ),
-      );
+      ));
 
   await mkdir(path.dirname(enrichmentDraftsPath), { recursive: true });
   await writeFile(

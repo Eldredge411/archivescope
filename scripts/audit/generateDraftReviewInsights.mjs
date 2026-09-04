@@ -150,12 +150,12 @@ function translateTitle(titleEn) {
     [/Renewal of Collection/gi, "收集授权续期"],
     [/Comment Request/gi, "征求意见"],
     [/Generic Clearance/gi, "通用许可"],
-    [/Federal Records Management/gi, "联邦记录管理"],
+    [/Federal Records Management/gi, "联邦文件管理"],
     [/National Archives/gi, "国家档案馆"],
-    [/Presidential Records/gi, "总统记录"],
+    [/Presidential Records/gi, "总统文件"],
     [/Freedom of Information Act|FOIA/gi, "信息自由法"],
-    [/Records Management/gi, "记录管理"],
-    [/Electronic Records/gi, "电子记录"],
+    [/Records Management/gi, "文件管理"],
+    [/Electronic Records/gi, "电子文件"],
     [/Library/gi, "图书馆"],
     [/Museum/gi, "博物馆"],
     [/Center/gi, "中心"],
@@ -321,7 +321,7 @@ function makeSummary({ draft, source, suggestedEntityType, recommendation, flags
   }
 
   if (source.draftSourceKey === "nara-web") {
-    return `该页面来自 NARA 官网，属于档案法规、记录管理、数字资源或公众服务相关资料，通常建议收录。`;
+    return `该页面来自 NARA 官网，属于档案法规、文件管理、数字资源或公众服务相关资料，通常建议收录。`;
   }
 
   return `该条目来自${source.labelZh}，涉及 ${title}，建议结合来源正文和专题价值决定是否收录。`;
@@ -390,7 +390,7 @@ function generateInsight(draft, source, now) {
 
     if (warningFlags.length === 0) {
       reason =
-        "标题或标签显示该条目涉及法规、规则、记录管理、联邦记录、总统记录或 FOIA，具备资料库收录价值。";
+        "标题或标签显示该条目涉及法规、规则、文件管理、联邦文件、总统文件或 FOIA，具备资料库收录价值。";
     }
   }
 
@@ -398,7 +398,7 @@ function generateInsight(draft, source, now) {
     relevanceScore += 20;
     recommendation = "accept";
     reason =
-      "该草稿来自 NARA 官网，通常与美国档案法规、记录管理、数字资源或公众服务直接相关，建议收录。";
+      "该草稿来自 NARA 官网，通常与美国档案法规、文件管理、数字资源或公众服务直接相关，建议收录。";
   }
 
   if (warningFlags.length > 0) {

@@ -73,8 +73,8 @@ const topicMilestoneTerms: Record<string, string[]> = {
     "policy",
     "法律",
     "法规",
-    "记录法",
-    "总统记录",
+    "文件法",
+    "总统文件",
     "信息自由",
     "隐私",
     "制度",
@@ -90,7 +90,7 @@ const topicMilestoneTerms: Record<string, string[]> = {
     "digitization",
     "m-19-21",
     "m-23-07",
-    "电子记录",
+    "电子文件",
     "电子文件",
     "电子邮件",
     "移交",
@@ -193,7 +193,7 @@ const lowSignalTerms = [
 
 const topicAlias: Record<string, string> = {
   "laws-policies-governance": "制度治理",
-  "electronic-records-management": "电子记录",
+  "electronic-records-management": "电子文件",
   "digital-resources-preservation": "数字保存",
   "access-outreach-public-participation": "数据开放与公众获取",
   "ai-emerging-technologies": "AI 与新技术",
@@ -391,7 +391,7 @@ function getTimelinePhase(topic: Topic, year: string) {
 
   if (topic.id === "electronic-records-management") {
     if (numericYear < 2000) {
-      return "电子记录问题浮现";
+      return "电子文件问题浮现";
     }
 
     if (numericYear < 2010) {
@@ -843,7 +843,7 @@ export function KnowledgeAtlas({
 
               {missingTopicDateCount > 0 || inferredTimelineDateCount > 0 ? (
                 <div className="atlas-timeline-date-note">
-                  当前专题中有 {missingTopicDateCount} 条资料未在元数据中明确记录发布日期。
+                  当前专题中有 {missingTopicDateCount} 条资料未在元数据中明确文件发布日期。
                   时间轴优先使用官方发布日期；必要时会根据标题、简介或版本说明中的年份推断，并在节点上标注“推断日期”。尚无可靠日期线索的资料暂不作为关键发展节点展示，可在专题页继续查看。
                 </div>
               ) : null}

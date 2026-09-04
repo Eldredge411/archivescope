@@ -469,7 +469,7 @@ export function VersionDetailModal({
               本站来源快照
             </h3>
             <p className="version-detail-modal__paragraph">
-              本站快照用于记录采集时页面状态，仅供来源核验和防止链接失效，不替代官方正式文本。
+              本站快照用于保存采集时页面状态，仅供来源核验和防止链接失效，不替代官方正式文本。
             </p>
             {siteSnapshotFiles.length > 0 ? (
               <div className="version-detail-modal__stack">

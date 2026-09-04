@@ -42,7 +42,7 @@ const interpretationSummaryPlaceholder = "该资料的中文摘要待补充。";
 const emptyKeyPointPlaceholder = "内容要点待整理。";
 const emptyResearchValuePlaceholder = "研究价值待补充。";
 const generatedVersionTimelineDescription =
-  "当前仅整理了该资料的来源发布记录，完整历史版本沿革待后续补充。";
+  "当前仅整理了该资料的来源发布文件，完整历史版本沿革待后续补充。";
 const snapshotBackupDescription =
   "ArchiveScope 不替代官方来源。本站保存的来源快照或备份文件仅用于资料来源核验、学术研究和防止链接失效。正式引用和使用时，请优先访问官方原始链接，并以发布机构的最新版本为准。";
 const requiredSourceSnapshotFileTypes = [
@@ -756,7 +756,7 @@ export default async function ResourceDetailPage({
         <div className="resource-dossier-detail__shell">
           <div className="resource-dossier-folder">
             <span className="resource-dossier-folder__tab">
-              档案记录 · {resource.sourceDomain || "未记录来源"}
+              档案文件 · {resource.sourceDomain || "未记录来源"}
             </span>
             <span className="resource-dossier-folder__side-tab">资料索引</span>
             <div className="resource-dossier-folder__crease" />
@@ -1257,7 +1257,7 @@ export default async function ResourceDetailPage({
                       官方来源
                     </h3>
                     <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
-                      这里记录发布机构原始页面，不代表本站保存了官方全文。
+                      这里保存发布机构原始页面，不代表本站保存了官方全文。
                     </p>
                   </div>
                   {resource.sourceUrl ? (
@@ -1315,7 +1315,7 @@ export default async function ResourceDetailPage({
                   </span>
                 </div>
                 <p className="mt-2 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">
-                  本站快照用于记录采集时页面状态，仅供来源核验和防止链接失效，不替代官方正式文本。
+                  本站快照用于保存采集时页面状态，仅供来源核验和防止链接失效，不替代官方正式文本。
                 </p>
                 {resourceShapeLabel ? (
                   <p className="mt-2 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">

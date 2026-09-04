@@ -600,7 +600,7 @@ export function AdminConsole({
                 最近任务日志
               </h2>
               <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-                显示最近 20 条后台任务执行记录。
+                显示最近 20 条后台任务执行文件。
               </p>
             </div>
             <button

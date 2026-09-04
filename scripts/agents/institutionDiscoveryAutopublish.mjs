@@ -174,17 +174,17 @@ const institutionSeeds = [
     source: "federal",
     id: "nhprc",
     nameEn: "National Historical Publications and Records Commission",
-    nameZh: "国家历史出版物与记录委员会",
+    nameZh: "国家历史出版物与文件委员会",
     shortName: "NHPRC",
     group: "federal",
     typeCode: "government",
-    subType: "NARA 下属资助与记录项目机构",
+    subType: "NARA 下属资助与文件项目机构",
     level: "联邦",
     location: "Washington, D.C., United States",
     officialUrl: "https://www.archives.gov/nhprc",
     descriptionZh:
-      "国家历史出版物与记录委员会（NHPRC）隶属于 NARA，重点支持美国历史记录的保存、出版、数字化和开放利用项目。它对理解美国档案资助体系、地方历史记录保护和数字人文型档案项目很有价值。",
-    tags: ["NHPRC", "NARA", "资助项目", "历史记录", "数字化"],
+      "国家历史出版物与文件委员会（NHPRC）隶属于 NARA，重点支持美国历史文件的保存、出版、数字化和开放利用项目。它对理解美国档案资助体系、地方历史文件保护和数字人文型档案项目很有价值。",
+    tags: ["NHPRC", "NARA", "资助项目", "历史文件", "数字化"],
     relatedTopicIds: [
       "digital-resources-preservation",
       "access-outreach-public-participation",
@@ -205,7 +205,7 @@ const institutionSeeds = [
     location: "Washington, D.C., United States",
     officialUrl: "https://www.archives.gov/ogis",
     descriptionZh:
-      "政府信息服务办公室（OGIS）设在 NARA，负责信息自由法（FOIA）争议调解、政策观察和政府信息公开服务支持。它适合用于研究美国政府透明度、公众获取政府记录和档案机构参与信息公开治理的机制。",
+      "政府信息服务办公室（OGIS）设在 NARA，负责信息自由法（FOIA）争议调解、政策观察和政府信息公开服务支持。它适合用于研究美国政府透明度、公众获取政府文件和档案机构参与信息公开治理的机制。",
     tags: ["OGIS", "FOIA", "信息公开", "调解", "NARA"],
     relatedTopicIds: [
       "access-outreach-public-participation",
@@ -249,8 +249,8 @@ const institutionSeeds = [
     location: "United States",
     officialUrl: "https://www.statearchivists.org",
     descriptionZh:
-      "美国州档案馆馆长委员会（CoSA）连接各州档案馆，关注电子记录、紧急准备、州级档案政策和跨州协作。它有助于补足 ArchiveScope 中联邦之外的州级档案治理视角。",
-    tags: ["CoSA", "州档案馆", "电子记录", "专业协作", "美国州级档案"],
+      "美国州档案馆馆长委员会（CoSA）连接各州档案馆，关注电子文件、紧急准备、州级档案政策和跨州协作。它有助于补足 ArchiveScope 中联邦之外的州级档案治理视角。",
+    tags: ["CoSA", "州档案馆", "电子文件", "专业协作", "美国州级档案"],
     relatedTopicIds: [
       "social-actors-service-ecosystem",
       "electronic-records-management",
@@ -262,17 +262,17 @@ const institutionSeeds = [
     source: "association",
     id: "arma-international",
     nameEn: "ARMA International",
-    nameZh: "ARMA 国际记录与信息管理协会",
+    nameZh: "ARMA 国际文件与信息管理协会",
     shortName: "ARMA",
     group: "social",
     typeCode: "association",
-    subType: "记录与信息管理专业协会",
+    subType: "文件与信息管理专业协会",
     level: "专业组织",
     location: "United States",
     officialUrl: "https://www.arma.org",
     descriptionZh:
-      "ARMA International 是记录与信息管理领域的重要专业组织，关注信息治理、记录合规、保留期限、隐私和企业信息管理。它能帮助资料库覆盖政府档案之外的组织记录管理和信息治理实践。",
-    tags: ["ARMA", "records management", "信息治理", "合规", "记录管理"],
+      "ARMA International 是文件与信息管理领域的重要专业组织，关注信息治理、文件合规、保留期限、隐私和企业信息管理。它能帮助资料库覆盖政府档案之外的组织文件管理和信息治理实践。",
+    tags: ["ARMA", "records management", "信息治理", "合规", "文件管理"],
     relatedTopicIds: [
       "electronic-records-management",
       "social-actors-service-ecosystem",
@@ -359,7 +359,7 @@ const institutionSeeds = [
     location: "United States",
     officialUrl: "https://www.docnow.io",
     descriptionZh:
-      "Documenting the Now 关注社会媒体记录、社会运动资料和社区参与式档案实践，强调伦理采集、共同管理和研究者责任。它有助于展示新型社会主体如何参与数字时代的档案保存。",
+      "Documenting the Now 关注社会媒体文件、社会运动资料和社区参与式档案实践，强调伦理采集、共同管理和研究者责任。它有助于展示新型社会主体如何参与数字时代的档案保存。",
     tags: ["DocNow", "社会媒体档案", "社区档案", "伦理采集", "数字人文"],
     relatedTopicIds: [
       "social-actors-service-ecosystem",
@@ -381,7 +381,7 @@ const institutionSeeds = [
     location: "Cambridge, Massachusetts, United States",
     officialUrl: "https://library.harvard.edu/libraries/harvard-university-archives",
     descriptionZh:
-      "哈佛大学档案馆保存哈佛大学行政记录、教师与校友相关资料以及大学历史档案，是观察美国高校档案制度、大学治理记录和校园记忆建设的重要案例。",
+      "哈佛大学档案馆保存哈佛大学行政文件、教师与校友相关资料以及大学历史档案，是观察美国高校档案制度、大学治理文件和校园记忆建设的重要案例。",
     tags: ["Harvard", "大学档案", "高校档案", "校史档案", "特殊馆藏"],
     relatedTopicIds: [
       "social-actors-service-ecosystem",
@@ -427,7 +427,7 @@ const institutionSeeds = [
     location: "Stanford, California, United States",
     officialUrl: "https://library.stanford.edu/spc/university-archives",
     descriptionZh:
-      "斯坦福大学档案馆保存大学行政记录、校园历史资料和相关个人文献，并与特殊馆藏服务结合。它适合作为美国西海岸研究型大学档案管理和数字展示实践的样本。",
+      "斯坦福大学档案馆保存大学行政文件、校园历史资料和相关个人文献，并与特殊馆藏服务结合。它适合作为美国西海岸研究型大学档案管理和数字展示实践的样本。",
     tags: ["Stanford", "大学档案", "特殊馆藏", "校史档案", "数字展示"],
     relatedTopicIds: [
       "social-actors-service-ecosystem",
@@ -450,7 +450,7 @@ const institutionSeeds = [
     location: "Ann Arbor, Michigan, United States",
     officialUrl: "https://bentley.umich.edu",
     descriptionZh:
-      "本特利历史图书馆保存密歇根大学档案和密歇根地区历史记录，兼具大学档案馆和地方历史研究馆藏功能。它是研究高校档案、区域历史档案和公共利用服务的典型机构。",
+      "本特利历史图书馆保存密歇根大学档案和密歇根地区历史文件，兼具大学档案馆和地方历史研究馆藏功能。它是研究高校档案、区域历史档案和公共利用服务的典型机构。",
     tags: ["University of Michigan", "大学档案", "地方历史", "研究图书馆"],
     relatedTopicIds: [
       "access-outreach-public-participation",

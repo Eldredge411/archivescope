@@ -707,8 +707,8 @@ function buildTasks({
       id: "suspicious-files",
       label:
         suspiciousSmallFiles > 0
-          ? `有 ${suspiciousSmallFiles} 个快照文件疑似异常`
-          : "没有疑似异常快照文件",
+          ? `有 ${suspiciousSmallFiles} 个快照记录疑似异常`
+          : "没有疑似异常快照记录",
       count: suspiciousSmallFiles,
       status: suspiciousSmallFiles > 0 ? "todo" : "done",
     },

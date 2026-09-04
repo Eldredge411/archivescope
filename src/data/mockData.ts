@@ -107,13 +107,13 @@ const baseInstitutions: Institution[] = [
     institutionGroup: "federal",
     institutionTypeCode: "archives",
     institutionType: "政府档案机构",
-    institutionSubType: "国家档案馆与联邦记录管理机构",
+    institutionSubType: "国家档案馆与联邦文件管理机构",
     institutionLevel: "联邦",
     location: "Washington, D.C., United States",
     descriptionZh:
-      "NARA 是美国联邦档案的保管机构，负责联邦记录的全生命周期管理、移交接收、保存与公众利用，并运营总统图书馆系统。",
+      "NARA 是美国联邦档案的保管机构，负责联邦文件的全生命周期管理、移交接收、保存与公众利用，并运营总统图书馆系统。",
     officialUrl: "https://www.archives.gov",
-    tags: ["国家档案馆", "联邦记录", "数字保存", "公众利用", "总统图书馆"],
+    tags: ["国家档案馆", "联邦文件", "数字保存", "公众利用", "总统图书馆"],
     linkStatus: "ok",
     lastCheckedAt: "2025-06-01",
     establishedYear: 1934,
@@ -174,9 +174,9 @@ const baseInstitutions: Institution[] = [
     institutionLevel: "联邦 / NARA 下属体系",
     location: "United States",
     descriptionZh:
-      "总统图书馆系统由 NARA 运营，保管历任总统及其政府的记录与文物，是研究总统档案与行政记录的重要资源体系。",
+      "总统图书馆系统由 NARA 运营，保管历任总统及其政府的文件与文物，是研究总统档案与行政文件的重要资源体系。",
     officialUrl: "https://www.archives.gov/presidential-libraries",
-    tags: ["总统档案", "总统图书馆", "行政记录", "公共利用", "NARA"],
+    tags: ["总统档案", "总统图书馆", "行政文件", "公共利用", "NARA"],
     linkStatus: "ok",
     lastCheckedAt: "2025-06-01",
     establishedYear: 1939,
@@ -194,12 +194,12 @@ export const topics: Topic[] = [
     shortDescription:
       "收录各国档案领域的法律法规、政策战略、制度框架、机构职责和治理机制。",
     description:
-      "关注各国档案工作的制度基础，包括档案法律法规、公共记录制度、信息公开制度、国家档案战略、机构职责、档案开放规则和相关治理框架。",
+      "关注各国档案工作的制度基础，包括档案法律法规、公共文件制度、信息公开制度、国家档案战略、机构职责、档案开放规则和相关治理框架。",
     examples: [
       "档案法",
-      "公共记录法",
+      "公共文件法",
       "信息自由法",
-      "总统记录法",
+      "总统文件法",
       "国家档案战略",
       "机构政策",
       "开放利用制度",
@@ -207,7 +207,7 @@ export const topics: Topic[] = [
     ],
     relatedKeywords: [
       "档案法",
-      "公共记录",
+      "公共文件",
       "信息公开",
       "政策战略",
       "制度治理",
@@ -219,28 +219,28 @@ export const topics: Topic[] = [
   {
     id: "electronic-records-management",
     slug: "electronic-records-and-records-management",
-    titleZh: "电子文件与记录管理",
+    titleZh: "电子文件与文件管理",
     titleEn: "Electronic Records and Records Management",
     plainQuestion:
-      "我想了解政府机关和组织在日常工作中产生的电子文件、电子邮件和业务记录应该如何管理、保存、处置和移交。",
+      "我想了解政府机关和组织在日常工作中产生的电子文件、电子邮件和业务文件应该如何管理、保存、处置和移交。",
     shortDescription:
-      "关注各国电子文件和记录的形成、捕获、分类、保存、处置、移交和合规管理。",
+      "关注各国电子文件和文件的形成、捕获、分类、保存、处置、移交和合规管理。",
     description:
-      "关注文件和记录在形成、办理、管理、保存期限控制、处置和移交之前的管理过程，尤其是政府机构、公共部门和组织内部产生的电子记录管理。",
+      "关注文件和文件在形成、办理、管理、保存期限控制、处置和移交之前的管理过程，尤其是政府机构、公共部门和组织内部产生的电子文件管理。",
     examples: [
       "电子文件管理政策",
-      "记录管理指南",
+      "文件管理指南",
       "保存期限表",
       "处置规则",
       "电子邮件归档",
-      "社交媒体记录管理",
-      "电子记录移交要求",
+      "社交媒体文件管理",
+      "电子文件移交要求",
       "合规评估",
     ],
     relatedKeywords: [
       "电子文件",
-      "电子记录",
-      "记录管理",
+      "电子文件",
+      "文件管理",
       "保存期限",
       "文件处置",
       "归档移交",
@@ -446,24 +446,24 @@ const baseResources: Resource[] = [
   {
     id: "res-federal-records-act",
     slug: "federal-records-act",
-    titleZh: "联邦记录法",
+    titleZh: "联邦文件法",
     titleEn: "Federal Records Act",
     countryId: "usa",
     institutionId: "nara",
     resourceType: "law",
     primaryTopicId: "laws-policies-governance",
     topicIds: ["laws-policies-governance", "electronic-records-management"],
-    tags: ["联邦记录", "记录管理", "政府文件", "NARA", "法律法规"],
+    tags: ["联邦文件", "文件管理", "政府文件", "NARA", "法律法规"],
     summaryZh:
-      "《联邦记录法》（1934 年制定、1950 年重大修订）是美国联邦文件管理的根本性法律，确立了联邦记录的定义、机构保存义务，以及国家档案与文件署（NARA）在联邦记录全生命周期中的监管职能。",
+      "《联邦文件法》（1934 年制定、1950 年重大修订）是美国联邦文件管理的根本性法律，确立了联邦文件的定义、机构保存义务，以及国家档案与文件署（NARA）在联邦文件全生命周期中的监管职能。",
     keyPoints: [
-      "定义“联邦记录”的涵盖范围，包括文件、数据及其他记录材料",
-      "要求各联邦机构建立文件管理项目并指定记录官",
-      "授权 NARA 批准记录处置申请与保管期限",
-      "规定记录的移交、保存与公开流程",
+      "定义“联邦文件”的涵盖范围，包括文件、数据及其他文件材料",
+      "要求各联邦机构建立文件管理项目并指定文件官",
+      "授权 NARA 批准文件处置申请与保管期限",
+      "规定文件的移交、保存与公开流程",
     ],
     researchValue:
-      "研究美国档案制度起点与联邦记录治理框架的必读法律文本，为理解 NARA 权力来源与机构间记录责任划分提供基础。",
+      "研究美国档案制度起点与联邦文件治理框架的必读法律文本，为理解 NARA 权力来源与机构间文件责任划分提供基础。",
     publishDate: "1934-06-19",
     updatedDate: "2014-11-26",
     collectedAt: "2025-03-12",
@@ -484,7 +484,7 @@ const baseResources: Resource[] = [
   {
     id: "res-presidential-records-act",
     slug: "presidential-records-act",
-    titleZh: "总统记录法",
+    titleZh: "总统文件法",
     titleEn: "Presidential Records Act",
     countryId: "usa",
     institutionId: "presidential-libraries",
@@ -494,11 +494,11 @@ const baseResources: Resource[] = [
       "laws-policies-governance",
       "access-outreach-public-participation",
     ],
-    tags: ["总统记录", "法律法规", "信息公开", "保存", "开放利用"],
+    tags: ["总统文件", "法律法规", "信息公开", "保存", "开放利用"],
     summaryZh:
-      "《总统记录法》（PRA，1978 年制定、1981 年生效）将总统及其团队的公务记录确立为联邦政府财产，由 NARA 通过总统图书馆系统保管，并规定了离职后公开与保密的规则。",
+      "《总统文件法》（PRA，1978 年制定、1981 年生效）将总统及其团队的公务文件确立为联邦政府财产，由 NARA 通过总统图书馆系统保管，并规定了离职后公开与保密的规则。",
     keyPoints: [
-      "明确总统公务记录属于联邦政府财产",
+      "明确总统公务文件属于联邦政府财产",
       "建立总统与 NARA 的共同管理机制",
       "规定离职后 12 年内可限制公开的类别",
       "授权总统图书馆系统接收与保管",
@@ -538,12 +538,12 @@ const baseResources: Resource[] = [
     ],
     tags: ["FOIA", "信息公开", "公众获取", "开放利用", "政府透明"],
     summaryZh:
-      "《信息自由法》（FOIA，1966 年制定）赋予公众请求获取联邦机构记录的权利，并设定了九类豁免条款，是研究美国档案开放与公共获取制度的核心法律。",
+      "《信息自由法》（FOIA，1966 年制定）赋予公众请求获取联邦机构文件的权利，并设定了九类豁免条款，是研究美国档案开放与公共获取制度的核心法律。",
     keyPoints: [
-      "赋予任何人请求联邦机构记录的权利",
+      "赋予任何人请求联邦机构文件的权利",
       "规定九类豁免公开的情形",
       "要求机构在 20 个工作日内作出回应",
-      "与《联邦记录法》共同构成开放与保密的平衡框架",
+      "与《联邦文件法》共同构成开放与保密的平衡框架",
     ],
     researchValue:
       "分析美国信息公开制度与档案利用政策关系的重要法律文本，可为比较法研究提供参照。",
@@ -614,10 +614,10 @@ const baseResources: Resource[] = [
     topicIds: ["digital-resources-preservation", "laws-policies-governance"],
     tags: ["数字保存", "长期保存", "数字资源", "保存战略", "NARA"],
     summaryZh:
-      "NARA 数字保存战略阐述了国家档案馆对原生数字与数字化记录长期保存的目标、原则与技术路径，涵盖格式管理、真实性保障与风险评估。",
+      "NARA 数字保存战略阐述了国家档案馆对原生数字与数字化文件长期保存的目标、原则与技术路径，涵盖格式管理、真实性保障与风险评估。",
     keyPoints: [
       "以格式可接受性列表（Transfer Guidance）规范移交格式",
-      "强调记录真实性与完整性保障",
+      "强调文件真实性与完整性保障",
       "采用风险管理与技术监测相结合的策略",
       "规划可持续的长期保存基础设施",
     ],
@@ -650,11 +650,11 @@ const baseResources: Resource[] = [
     resourceType: "guidance",
     primaryTopicId: "electronic-records-management",
     topicIds: ["electronic-records-management", "laws-policies-governance"],
-    tags: ["记录管理", "电子文件", "保存期限", "文件处置", "归档移交", "NARA"],
+    tags: ["文件管理", "电子文件", "保存期限", "文件处置", "归档移交", "NARA"],
     summaryZh:
-      "NARA 文件管理指南面向联邦机构提供记录全生命周期管理的方法与工具，包括保管期限表、电子文件移交与合规评估。",
+      "NARA 文件管理指南面向联邦机构提供文件全生命周期管理的方法与工具，包括保管期限表、电子文件移交与合规评估。",
     keyPoints: [
-      "提供通用记录保管期限表（GRS）与机构专属计划编制方法",
+      "提供通用文件保管期限表（GRS）与机构专属计划编制方法",
       "规范电子文件移交格式与元数据要求",
       "指导 Capstone 邮件管理方法",
       "建立年度文件管理合规自我评估机制",
@@ -720,7 +720,7 @@ const baseResources: Resource[] = [
   {
     id: "res-electronic-records-archives",
     slug: "electronic-records-archives",
-    titleZh: "电子记录档案系统",
+    titleZh: "电子文件档案系统",
     titleEn: "Electronic Records Archives (ERA)",
     countryId: "usa",
     institutionId: "nara",
@@ -730,11 +730,11 @@ const baseResources: Resource[] = [
       "electronic-records-management",
       "digital-resources-preservation",
     ],
-    tags: ["Electronic Records Archives", "电子记录", "记录移交", "数字保存", "NARA"],
+    tags: ["Electronic Records Archives", "电子文件", "文件移交", "数字保存", "NARA"],
     summaryZh:
-      "电子记录档案系统（ERA）是 NARA 接收、保存与提供联邦电子记录利用的核心系统，支持从联邦机构自动移交到长期保存的全流程。",
+      "电子文件档案系统（ERA）是 NARA 接收、保存与提供联邦电子文件利用的核心系统，支持从联邦机构自动移交到长期保存的全流程。",
     keyPoints: [
-      "实现联邦电子记录在线移交与接收",
+      "实现联邦电子文件在线移交与接收",
       "支持多种格式与元数据的保存",
       "提供机构与 NARA 之间的工作流协同",
       "作为联邦电子文件管理基础设施的核心组件",
@@ -1530,7 +1530,7 @@ const baseResourceFiles: ResourceFile[] = [
     fileUrl: "/backups/federal-records-act-page-2025-03-12.png",
     capturedAt: "2025-03-12",
     visibility: "public",
-    description: "《联邦记录法》官方页面截图（2025-03-12）。",
+    description: "《联邦文件法》官方页面截图（2025-03-12）。",
     checksum:
       "sha256:8f1c3a9e2b4d6f8a0c1e3d5b7a9c2e4f6a8b0d2c4e6f8a0b2c4d6e8f0a2c4e6",
     copyrightStatus: "government_work",
@@ -1544,7 +1544,7 @@ const baseResourceFiles: ResourceFile[] = [
     fileUrl: "/backups/federal-records-act-text.pdf",
     capturedAt: "2025-03-12",
     visibility: "public",
-    description: "《联邦记录法》条文 PDF 备份。",
+    description: "《联邦文件法》条文 PDF 备份。",
     checksum:
       "sha256:1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3",
     copyrightStatus: "public_domain",
@@ -1558,7 +1558,7 @@ const baseResourceFiles: ResourceFile[] = [
     fileUrl: "/backups/presidential-records-act-2025-03-12.png",
     capturedAt: "2025-03-12",
     visibility: "public",
-    description: "《总统记录法》官方页面截图。",
+    description: "《总统文件法》官方页面截图。",
     checksum:
       "sha256:2b4c6d8e0f2b4c6d8e0f2b4c6d8e0f2b4c6d8e0f2b4c6d8e0f2b4c6d8e0f2b4",
     copyrightStatus: "government_work",
@@ -1625,7 +1625,7 @@ const baseResourceFiles: ResourceFile[] = [
     fileUrl: "/backups/nara-era-2025-03-16.png",
     capturedAt: "2025-03-16",
     visibility: "restricted",
-    description: "电子记录档案系统（ERA）介绍页面截图。",
+    description: "电子文件档案系统（ERA）介绍页面截图。",
     checksum:
       "sha256:7a9b1c3d5e7a9b1c3d5e7a9b1c3d5e7a9b1c3d5e7a9b1c3d5e7a9b1c3d5e7a",
     copyrightStatus: "government_work",
@@ -1696,14 +1696,14 @@ const baseResourceVersions: ResourceVersion[] = [
     archivedUrl:
       "https://web.archive.org/web/2025/https://www.archives.gov/about/info/laws/fed-records.html",
     summaryZh:
-      "当前整理版本以 NARA 官方说明页面为基础，综合呈现《联邦记录法》及后续修订对联邦记录管理职责、处置授权和电子记录治理的影响。",
+      "当前整理版本以 NARA 官方说明页面为基础，综合呈现《联邦文件法》及后续修订对联邦文件管理职责、处置授权和电子文件治理的影响。",
     keyChanges: [
-      "强化联邦机构记录管理项目与 NARA 监督职责",
-      "体现电子记录与数字环境下的记录保存要求",
-      "将记录处置、移交和保存责任纳入持续监管框架",
+      "强化联邦机构文件管理项目与 NARA 监督职责",
+      "体现电子文件与数字环境下的文件保存要求",
+      "将文件处置、移交和保存责任纳入持续监管框架",
     ],
     aiSummary:
-      "模拟 AI 摘要：当前版本可作为理解美国联邦记录生命周期治理的综合入口，但正式引用仍应以官方法律文本和 NARA 最新说明为准。",
+      "模拟 AI 摘要：当前版本可作为理解美国联邦文件生命周期治理的综合入口，但正式引用仍应以官方法律文本和 NARA 最新说明为准。",
     humanNote:
       "人工整理说明：本站以 NARA 官方法规说明页作为当前版本线索，未替代正式法典文本。",
     relatedFileIds: ["file-fra-screenshot", "file-fra-pdf"],
@@ -1719,14 +1719,14 @@ const baseResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://www.archives.gov/about/info/laws/fed-records.html",
     archivedUrl: null,
     summaryZh:
-      "1976 年相关修订进一步关联联邦记录处置、记录定义和国家档案机构监管职能，是理解后续记录管理制度演进的重要节点。",
+      "1976 年相关修订进一步关联联邦文件处置、文件定义和国家档案机构监管职能，是理解后续文件管理制度演进的重要节点。",
     keyChanges: [
-      "延续并调整联邦机构记录管理义务",
-      "强化记录处置和批准程序的制度依据",
-      "为后续电子记录管理政策提供法律背景",
+      "延续并调整联邦机构文件管理义务",
+      "强化文件处置和批准程序的制度依据",
+      "为后续电子文件管理政策提供法律背景",
     ],
     aiSummary:
-      "模拟 AI 摘要：该节点体现联邦记录制度从纸质文件管理向更复杂行政记录治理过渡的制度延展。",
+      "模拟 AI 摘要：该节点体现联邦文件制度从纸质文件管理向更复杂行政文件治理过渡的制度延展。",
     humanNote: "人工整理说明：该条为历史版本节点示例，后续可补充更精确法案编号和原文链接。",
   },
   {
@@ -1740,14 +1740,14 @@ const baseResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://www.archives.gov/about/info/laws/fed-records.html",
     archivedUrl: null,
     summaryZh:
-      "1950 年版本通常被视为美国联邦记录管理制度系统化的重要起点，明确联邦机构记录管理职责和国家档案机构监管角色。",
+      "1950 年版本通常被视为美国联邦文件管理制度系统化的重要起点，明确联邦机构文件管理职责和国家档案机构监管角色。",
     keyChanges: [
-      "确立联邦记录管理的制度框架",
-      "明确机构记录保存、处置和移交责任",
-      "为 NARA 后续记录管理职责提供基础",
+      "确立联邦文件管理的制度框架",
+      "明确机构文件保存、处置和移交责任",
+      "为 NARA 后续文件管理职责提供基础",
     ],
     aiSummary:
-      "模拟 AI 摘要：该版本奠定了美国联邦记录制度的基本结构，是比较研究公共记录制度的重要节点。",
+      "模拟 AI 摘要：该版本奠定了美国联邦文件制度的基本结构，是比较研究公共文件制度的重要节点。",
     humanNote: "人工整理说明：此处以主要制度节点为线索，并非完整列举全部修订历史。",
   },
   {
@@ -1763,14 +1763,14 @@ const baseResourceVersions: ResourceVersion[] = [
     archivedUrl:
       "https://web.archive.org/web/2025/https://www.archives.gov/presidential-libraries/laws/presidential-records-act",
     summaryZh:
-      "当前整理版本围绕总统记录的政府财产属性、离任后管理、公开限制和总统图书馆系统保管机制展开。",
+      "当前整理版本围绕总统文件的政府财产属性、离任后管理、公开限制和总统图书馆系统保管机制展开。",
     keyChanges: [
-      "强调总统公务记录属于公共记录体系的一部分",
-      "说明总统离任后记录移交和限制公开规则",
+      "强调总统公务文件属于公共文件体系的一部分",
+      "说明总统离任后文件移交和限制公开规则",
       "关联总统图书馆系统的保存与利用机制",
     ],
     aiSummary:
-      "模拟 AI 摘要：当前版本有助于理解美国总统记录的归属、保管和开放之间的制度平衡。",
+      "模拟 AI 摘要：当前版本有助于理解美国总统文件的归属、保管和开放之间的制度平衡。",
     humanNote: "人工整理说明：本站以 NARA 总统图书馆系统官方页面为当前版本入口。",
     relatedFileIds: ["file-pra-screenshot"],
   },
@@ -1786,15 +1786,15 @@ const baseResourceVersions: ResourceVersion[] = [
       "https://www.archives.gov/presidential-libraries/laws/presidential-records-act",
     archivedUrl: null,
     summaryZh:
-      "1981 年生效节点标志着《总统记录法》开始适用于新一届总统任期，对总统记录的归属和移交产生实际约束。",
+      "1981 年生效节点标志着《总统文件法》开始适用于新一届总统任期，对总统文件的归属和移交产生实际约束。",
     keyChanges: [
-      "总统公务记录开始按新制度管理",
-      "强化离任后记录由公共机构保管的原则",
-      "为后续总统图书馆记录接收奠定流程基础",
+      "总统公务文件开始按新制度管理",
+      "强化离任后文件由公共机构保管的原则",
+      "为后续总统图书馆文件接收奠定流程基础",
     ],
     aiSummary:
-      "模拟 AI 摘要：该节点的研究价值在于观察法律文本如何转化为总统记录管理实践。",
-    humanNote: "人工整理说明：该版本节点适合与总统换届记录移交制度一起阅读。",
+      "模拟 AI 摘要：该节点的研究价值在于观察法律文本如何转化为总统文件管理实践。",
+    humanNote: "人工整理说明：该版本节点适合与总统换届文件移交制度一起阅读。",
   },
   {
     id: "ver-pra-1978",
@@ -1808,10 +1808,10 @@ const baseResourceVersions: ResourceVersion[] = [
       "https://www.archives.gov/presidential-libraries/laws/presidential-records-act",
     archivedUrl: null,
     summaryZh:
-      "1978 年制定版本确立总统及其工作人员公务记录不再被视为总统私人财产，而是纳入公共记录治理框架。",
+      "1978 年制定版本确立总统及其工作人员公务文件不再被视为总统私人财产，而是纳入公共文件治理框架。",
     keyChanges: [
-      "确立总统记录的公共属性",
-      "规定总统离任后的记录管理和限制公开机制",
+      "确立总统文件的公共属性",
+      "规定总统离任后的文件管理和限制公开机制",
       "回应总统档案归属与公共监督问题",
     ],
     aiSummary:
@@ -1829,9 +1829,9 @@ const baseResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://www.archives.gov/foia",
     archivedUrl: "https://web.archive.org/web/2025/https://www.archives.gov/foia",
     summaryZh:
-      "当前整理版本聚焦公众获取联邦机构记录的权利、例外豁免、办理期限和开放政府原则。",
+      "当前整理版本聚焦公众获取联邦机构文件的权利、例外豁免、办理期限和开放政府原则。",
     keyChanges: [
-      "强调公众请求获取联邦机构记录的权利",
+      "强调公众请求获取联邦机构文件的权利",
       "保留九类豁免公开情形",
       "体现开放政府和主动公开要求的持续扩展",
     ],
@@ -1851,15 +1851,15 @@ const baseResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://www.archives.gov/foia",
     archivedUrl: null,
     summaryZh:
-      "后续重要修订不断扩展 FOIA 在电子记录、主动公开和办理程序方面的适用范围，是理解信息公开制度演进的重要线索。",
+      "后续重要修订不断扩展 FOIA 在电子文件、主动公开和办理程序方面的适用范围，是理解信息公开制度演进的重要线索。",
     keyChanges: [
-      "将电子记录和在线公开纳入信息公开实践",
-      "推动机构主动公开常见记录",
+      "将电子文件和在线公开纳入信息公开实践",
+      "推动机构主动公开常见文件",
       "进一步规范请求处理和回应程序",
     ],
     aiSummary:
-      "模拟 AI 摘要：修订版本体现 FOIA 从纸质记录公开向电子政务环境下的信息获取制度延伸。",
-    humanNote: "人工整理说明：此处选取电子记录相关修订作为示例节点，后续可细分更多修订。",
+      "模拟 AI 摘要：修订版本体现 FOIA 从纸质文件公开向电子政务环境下的信息获取制度延伸。",
+    humanNote: "人工整理说明：此处选取电子文件相关修订作为示例节点，后续可细分更多修订。",
   },
   {
     id: "ver-foia-1966",
@@ -1872,15 +1872,15 @@ const baseResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://www.archives.gov/foia",
     archivedUrl: null,
     summaryZh:
-      "1966 年制定版本首次以联邦法律形式确立公众请求获取联邦机构记录的权利，是美国信息公开制度的基础。",
+      "1966 年制定版本首次以联邦法律形式确立公众请求获取联邦机构文件的权利，是美国信息公开制度的基础。",
     keyChanges: [
-      "确立公众请求联邦机构记录的法律权利",
+      "确立公众请求联邦机构文件的法律权利",
       "设置机构回应与豁免公开的基本框架",
       "为档案开放利用制度提供重要法律背景",
     ],
     aiSummary:
       "模拟 AI 摘要：该版本奠定了美国信息公开制度的基本逻辑，是研究开放政府的重要起点。",
-    humanNote: "人工整理说明：建议与《联邦记录法》共同阅读，以理解记录保存与记录获取之间的关系。",
+    humanNote: "人工整理说明：建议与《联邦文件法》共同阅读，以理解文件保存与文件获取之间的关系。",
   },
   {
     id: "ver-dps-current",
@@ -1894,7 +1894,7 @@ const baseResourceVersions: ResourceVersion[] = [
     archivedUrl:
       "https://web.archive.org/web/2025/https://www.archives.gov/preservation/digital-preservation",
     summaryZh:
-      "当前版本体现 NARA 在原生数字记录、数字化对象、格式风险管理和长期保存基础设施方面的战略重点。",
+      "当前版本体现 NARA 在原生数字文件、数字化对象、格式风险管理和长期保存基础设施方面的战略重点。",
     keyChanges: [
       "强调数字对象长期可用性和真实性保障",
       "关注格式风险、迁移策略和技术监测",
@@ -1942,7 +1942,7 @@ const baseEntityRelations: EntityRelation[] = [
     targetId: "res-federal-records-act",
     relationType: "related_to",
     relationLabelZh: "监管职责相关",
-    descriptionZh: "NARA 的联邦记录监管职责与《联邦记录法》密切相关。",
+    descriptionZh: "NARA 的联邦文件监管职责与《联邦文件法》密切相关。",
     evidenceResourceId: "res-federal-records-act",
     sourceUrl: "https://www.archives.gov/about/info/laws/fed-records.html",
     confidence: "high",
@@ -1968,7 +1968,7 @@ const baseEntityRelations: EntityRelation[] = [
     targetId: "res-nara-records-management-guidance",
     relationType: "issued_by",
     relationLabelZh: "发布",
-    descriptionZh: "NARA 面向联邦机构发布记录管理指南。",
+    descriptionZh: "NARA 面向联邦机构发布文件管理指南。",
     evidenceResourceId: "res-nara-records-management-guidance",
     sourceUrl: "https://www.archives.gov/records-mgmt",
     confidence: "high",
@@ -2007,7 +2007,7 @@ const baseEntityRelations: EntityRelation[] = [
     targetId: "res-electronic-records-archives",
     relationType: "managed_by",
     relationLabelZh: "管理",
-    descriptionZh: "NARA 管理电子记录档案系统相关业务与资料。",
+    descriptionZh: "NARA 管理电子文件档案系统相关业务与资料。",
     evidenceResourceId: "res-electronic-records-archives",
     sourceUrl: "https://www.archives.gov/era",
     confidence: "high",
@@ -2043,7 +2043,7 @@ const baseEntityRelations: EntityRelation[] = [
     targetId: "electronic-records-management",
     relationType: "belongs_to_topic",
     relationLabelZh: "关联专题",
-    descriptionZh: "NARA 负责联邦电子记录管理指导、移交与长期保存相关工作。",
+    descriptionZh: "NARA 负责联邦电子文件管理指导、移交与长期保存相关工作。",
     confidence: "high",
   },
   {

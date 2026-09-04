@@ -186,7 +186,7 @@ function canSelectDraft(draft: AdminResourceDraft) {
 
 const topicLabels: Record<string, string> = {
   "laws-policies-governance": "法规政策与制度治理",
-  "electronic-records-management": "电子文件与记录管理",
+  "electronic-records-management": "电子文件与文件管理",
   "digital-resources-preservation": "数字资源建设与长期保存",
   "access-outreach-public-participation": "开放利用、展览教育与公众参与",
   "ai-emerging-technologies": "AI 与新兴技术实践",

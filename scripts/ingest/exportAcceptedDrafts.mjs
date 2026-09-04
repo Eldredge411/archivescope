@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normalizeRecordTerminology } from "../terminology/normalizeRecordTerminology.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -500,14 +501,14 @@ async function exportAcceptedDrafts() {
     console.log("当前没有 accepted 草稿。");
   }
 
-  const uniqueResources = dedupeResources([
+  const uniqueResources = normalizeRecordTerminology(dedupeResources([
     ...existingAcceptedResources,
     ...convertedResources,
-  ]);
-  const uniqueInstitutions = dedupeInstitutions([
+  ]));
+  const uniqueInstitutions = normalizeRecordTerminology(dedupeInstitutions([
     ...existingAcceptedInstitutions,
     ...convertedInstitutions,
-  ]);
+  ]));
 
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(

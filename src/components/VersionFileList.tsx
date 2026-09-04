@@ -73,7 +73,7 @@ export function VersionFileList({ files }: VersionFileListProps) {
                 </a>
               ) : file.visibility === "public" && normalizedFileUrl ? (
                 <span className="max-w-48 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">
-                  该记录的 fileUrl 未指向当前可公开访问的快照目录
+                  该文件的 fileUrl 未指向当前可公开访问的快照目录
                 </span>
               ) : file.visibility === "public" ? (
                 <span className="max-w-48 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">

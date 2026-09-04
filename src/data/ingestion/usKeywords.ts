@@ -14,7 +14,7 @@ export const usIngestionKeywords = [
   },
   {
     topicId: "electronic-records-management",
-    topicTitleZh: "电子文件与记录管理",
+    topicTitleZh: "电子文件与文件管理",
     keywords: [
       "records management",
       "electronic records",

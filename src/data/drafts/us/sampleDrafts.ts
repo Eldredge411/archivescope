@@ -6,7 +6,7 @@ export const sampleUsResourceDrafts: ResourceDraft[] = [
     sourceId: "source-govinfo",
     sourceType: "api",
     titleEn: "Federal Records Act",
-    titleZh: "联邦记录法",
+    titleZh: "联邦文件法",
     slug: "federal-records-act",
     countryId: "usa",
     institutionId: "nara",
@@ -19,14 +19,14 @@ export const sampleUsResourceDrafts: ResourceDraft[] = [
     tags: ["Federal Records Act", "federal records", "records management"],
     language: "en",
     summaryZh:
-      "联邦记录法是美国联邦记录管理制度的重要法律基础，涉及联邦机构记录的创建、保存、处置和移交。",
+      "联邦文件法是美国联邦文件管理制度的重要法律基础，涉及联邦机构文件的创建、保存、处置和移交。",
     keyPoints: [
-      "确立联邦记录管理的基本职责。",
-      "与 NARA 对联邦记录生命周期管理的职责密切相关。",
+      "确立联邦文件管理的基本职责。",
+      "与 NARA 对联邦文件生命周期管理的职责密切相关。",
       "适合进入版本沿革与法规制度专题的人工审核流程。",
     ],
     researchValue:
-      "可作为研究美国联邦记录制度、国家档案机构职责和公共记录治理框架的基础资料。",
+      "可作为研究美国联邦文件制度、国家档案机构职责和公共文件治理框架的基础资料。",
     sourceUrl: "https://www.govinfo.gov",
     sourceDomain: "govinfo.gov",
     accessDate: "2026-07-28",

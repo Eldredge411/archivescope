@@ -26,7 +26,7 @@ const overviewStats = [
   {
     label: "版本线索",
     value: resourceVersions.length,
-    note: "记录法规、规则和重要文件的沿革节点",
+    note: "文件法规、规则和重要文件的沿革节点",
   },
 ];
 

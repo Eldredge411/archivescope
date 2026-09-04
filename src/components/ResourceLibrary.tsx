@@ -84,8 +84,8 @@ const pinyinSearchAliases: Array<{ pinyin: string; terms: string[] }> = [
   { pinyin: "zongtong", terms: ["总统", "总统档案", "总统图书馆"] },
   { pinyin: "dangan", terms: ["档案", "档案馆", "档案资料"] },
   { pinyin: "shuju", terms: ["数据", "数据资源"] },
-  { pinyin: "dianziji", terms: ["电子记录", "电子档案"] },
-  { pinyin: "jilu", terms: ["记录", "文件"] },
+  { pinyin: "dianziji", terms: ["电子文件", "电子档案"] },
+  { pinyin: "jilu", terms: ["文件", "文件"] },
   { pinyin: "kaifang", terms: ["开放", "开放政府", "开放数据"] },
   { pinyin: "baocun", terms: ["保存", "保护", "长期保存"] },
   { pinyin: "falv", terms: ["法律", "法案"] },
@@ -459,7 +459,7 @@ function interpretSnapshotAction(output: string): SnapshotActionMessage {
   if (generatedCount !== null && generatedCount > 0) {
     return {
       tone: "success",
-      text: `已写入 ${generatedCount} 条快照记录。`,
+      text: `已写入 ${generatedCount} 条快照文件。`,
     };
   }
 
@@ -473,7 +473,7 @@ function interpretSnapshotAction(output: string): SnapshotActionMessage {
   if (normalizedOutput.includes("已有快照记录")) {
     return {
       tone: "info",
-      text: "系统检测到已有快照记录，本次没有重新生成。",
+      text: "系统检测到已有快照文件，本次没有重新生成。",
     };
   }
 

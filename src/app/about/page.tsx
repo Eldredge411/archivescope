@@ -35,7 +35,7 @@ const methods = [
 ];
 
 const values = [
-  "降低中文用户理解海外档案制度和电子记录政策的门槛。",
+  "降低中文用户理解海外档案制度和电子文件政策的门槛。",
   "把分散在官方网站中的法规、指南、机构和数字资源组织为可检索知识库。",
   "展示 AI 在数字人文资料加工、跨语言导读和知识组织中的辅助作用。",
   "为后续扩展英国、加拿大、澳大利亚、日本等国家提供可复制的数据模型。",
@@ -46,7 +46,7 @@ const roadmap = [
     title: "第一期：美国样板库",
     status: "已上线",
     description:
-      "聚焦 NARA、Federal Register、eCFR、U.S. Code、LOC 等来源，覆盖联邦记录管理、电子记录、数字保存、FOIA 和机构生态。",
+      "聚焦 NARA、Federal Register、eCFR、U.S. Code、LOC 等来源，覆盖联邦文件管理、电子文件、数字保存、FOIA 和机构生态。",
   },
   {
     title: "第二期：英联邦与日本样板",
@@ -68,7 +68,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="作品说明"
         title="ArchiveScope：面向全球档案资源的智能知识组织平台"
-        description="ArchiveScope 当前以美国档案制度为第一期样板，探索如何将分散的档案法规、机构、电子记录政策和数字记忆资源转化为可检索、可理解、可持续扩展的中文知识库。"
+        description="ArchiveScope 当前以美国档案制度为第一期样板，探索如何将分散的档案法规、机构、电子文件政策和数字记忆资源转化为可检索、可理解、可持续扩展的中文知识库。"
       />
 
       <section className="border-b border-zinc-200 bg-amber-50/70 dark:border-zinc-800 dark:bg-amber-950/20">
@@ -91,7 +91,7 @@ export default function AboutPage() {
               作品背景
             </h2>
             <p className="mt-4 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
-              档案制度、公共记录政策、电子记录管理和数字保存资源往往分散在不同官方网站中，且大量内容以英文呈现。对中文档案学学习者、研究者和从业者来说，资料发现、语义理解、来源核验和跨国比较都存在门槛。
+              档案制度、公共文件政策、电子文件管理和数字保存资源往往分散在不同官方网站中，且大量内容以英文呈现。对中文档案学学习者、研究者和从业者来说，资料发现、语义理解、来源核验和跨国比较都存在门槛。
             </p>
             <p className="mt-3 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
               ArchiveScope 的目标不是简单堆积链接，而是用统一的数据模型和 AI 辅助整理流程，把官方资料转化为有中文导读、有专题关系、有机构背景、有来源凭据的数字人文知识入口。

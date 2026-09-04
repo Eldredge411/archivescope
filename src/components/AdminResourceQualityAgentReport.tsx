@@ -1126,7 +1126,7 @@ function AutoFixSection({ logs }: { logs: AutoFixLog[] }) {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-            自动修复记录
+            自动修复文件
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
             展示 Resource Quality Auto Fix 最近一次生成 AI 补全草稿的执行结果。
@@ -1152,11 +1152,11 @@ function AutoFixSection({ logs }: { logs: AutoFixLog[] }) {
 
       {logs.length === 0 ? (
         <p className="mt-4 rounded-lg bg-zinc-50 px-4 py-3 text-sm text-zinc-500 dark:bg-zinc-950 dark:text-zinc-400">
-          暂无自动修复记录。可运行 npm run agent:resource-quality:fix -- --limit 5 生成补全草稿。
+          暂无自动修复文件。可运行 npm run agent:resource-quality:fix -- --limit 5 生成补全草稿。
         </p>
       ) : filteredLogs.length === 0 ? (
         <p className="mt-4 rounded-lg bg-zinc-50 px-4 py-3 text-sm text-zinc-500 dark:bg-zinc-950 dark:text-zinc-400">
-          当前筛选下暂无记录。
+          当前筛选下暂无文件。
         </p>
       ) : (
         <div className="mt-4 space-y-3">
@@ -1216,7 +1216,7 @@ function LoopRunsSection({ runs }: { runs: LoopRun[] }) {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-            循环工作流记录
+            循环工作流文件
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
             展示最近 5 次 Resource Quality Loop 的检查、修复、应用和再检查结果。
@@ -1229,7 +1229,7 @@ function LoopRunsSection({ runs }: { runs: LoopRun[] }) {
 
       {recentRuns.length === 0 ? (
         <p className="mt-4 rounded-lg bg-zinc-50 px-4 py-3 text-sm text-zinc-500 dark:bg-zinc-950 dark:text-zinc-400">
-          暂无循环工作流记录。可运行 npm run agent:resource-quality:loop -- --rounds 3 --batchSize 5 --auto-safe --ai-timeout 60。
+          暂无循环工作流文件。可运行 npm run agent:resource-quality:loop -- --rounds 3 --batchSize 5 --auto-safe --ai-timeout 60。
         </p>
       ) : (
         <div className="mt-4 space-y-3">
@@ -1562,7 +1562,7 @@ export function AdminResourceQualityAgentReport({
           <ResourceCompletionWorkflow summary={{}} drafts={drafts} />
           <AutopilotMessagesSection messages={autopilotMessageItems} />
           <p className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm leading-relaxed text-rose-900 dark:border-rose-900/60 dark:bg-rose-950/30 dark:text-rose-100">
-            资料质量 Agent 记录读取失败：{error}
+            资料质量 Agent 文件读取失败：{error}
           </p>
         </div>
       </section>
@@ -1611,7 +1611,7 @@ export function AdminResourceQualityAgentReport({
         <AutopilotMessagesSection messages={autopilotMessageItems} />
 
         <div className="rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm leading-relaxed text-blue-900 dark:border-blue-900/60 dark:bg-blue-950/30 dark:text-blue-100">
-          Resource Quality Agent 记录中心只展示检查与修复记录，不自动修改资料。内容补全草稿生成后，请到 /admin/enrichments 审核。
+          Resource Quality Agent 文件中心只展示检查与修复文件，不自动修改资料。内容补全草稿生成后，请到 /admin/enrichments 审核。
         </div>
 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">

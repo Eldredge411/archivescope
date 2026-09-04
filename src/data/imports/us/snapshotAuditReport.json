@@ -298,7 +298,7 @@
     },
     {
       "resourceId": "nara-web-records-mgmt",
-      "title": "NARA 记录管理",
+      "title": "NARA 文件管理",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt",
       "snapshotStrategy": "playwright_snapshot",
@@ -311,7 +311,7 @@
     },
     {
       "resourceId": "nara-web-records-mgmt-policy",
-      "title": "NARA 记录管理政策",
+      "title": "NARA 文件管理政策",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/policy",
       "snapshotStrategy": "playwright_snapshot",
@@ -324,7 +324,7 @@
     },
     {
       "resourceId": "nara-web-records-mgmt-bulletins",
-      "title": "NARA 记录管理公告",
+      "title": "NARA 文件管理公告",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins",
       "snapshotStrategy": "playwright_snapshot",
@@ -337,7 +337,7 @@
     },
     {
       "resourceId": "nara-web-electronic-records-preservation",
-      "title": "NARA 电子记录保存",
+      "title": "NARA 电子文件保存",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/preservation/electronic-records",
       "snapshotStrategy": "playwright_snapshot",
@@ -428,7 +428,7 @@
     },
     {
       "resourceId": "nara-web-grs",
-      "title": "通用记录处置表",
+      "title": "通用文件处置表",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/grs",
       "snapshotStrategy": "playwright_snapshot",
@@ -441,7 +441,7 @@
     },
     {
       "resourceId": "nara-web-records-scheduling",
-      "title": "记录排程与处置",
+      "title": "文件排程与处置",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/scheduling",
       "snapshotStrategy": "playwright_snapshot",
@@ -454,7 +454,7 @@
     },
     {
       "resourceId": "nara-web-email-management",
-      "title": "电子邮件记录管理",
+      "title": "电子邮件文件管理",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/email-management",
       "snapshotStrategy": "playwright_snapshot",
@@ -584,7 +584,7 @@
     },
     {
       "resourceId": "nara-web-records-mgmt-training",
-      "title": "NARA 记录管理培训",
+      "title": "NARA 文件管理培训",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/training",
       "snapshotStrategy": "playwright_snapshot",
@@ -1377,7 +1377,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1220",
-      "title": "36 CFR 第 1220 部分：联邦记录管理总则",
+      "title": "36 CFR 第 1220 部分：联邦文件管理总则",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1220",
       "snapshotStrategy": "playwright_snapshot",
@@ -1390,7 +1390,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1222",
-      "title": "36 CFR 第 1222 部分：联邦记录的形成与维护",
+      "title": "36 CFR 第 1222 部分：联邦文件的形成与维护",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1222",
       "snapshotStrategy": "playwright_snapshot",
@@ -1403,7 +1403,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1225",
-      "title": "36 CFR 第 1225 部分：记录保管期限表编制",
+      "title": "36 CFR 第 1225 部分：文件保管期限表编制",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1225",
       "snapshotStrategy": "playwright_snapshot",
@@ -1416,7 +1416,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1226",
-      "title": "36 CFR 第 1226 部分：记录处置执行",
+      "title": "36 CFR 第 1226 部分：文件处置执行",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1226",
       "snapshotStrategy": "playwright_snapshot",
@@ -1429,7 +1429,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1227",
-      "title": "36 CFR 第 1227 部分：通用记录表",
+      "title": "36 CFR 第 1227 部分：通用文件表",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1227",
       "snapshotStrategy": "playwright_snapshot",
@@ -1442,7 +1442,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1228",
-      "title": "36 CFR 第 1228 部分：永久与未排定记录借出",
+      "title": "36 CFR 第 1228 部分：永久与未排定文件借出",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1228",
       "snapshotStrategy": "playwright_snapshot",
@@ -1455,7 +1455,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1229",
-      "title": "36 CFR 第 1229 部分：紧急销毁记录授权",
+      "title": "36 CFR 第 1229 部分：紧急销毁文件授权",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1229",
       "snapshotStrategy": "playwright_snapshot",
@@ -1468,7 +1468,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1230",
-      "title": "36 CFR 第 1230 部分：记录非法或意外移除、污损、篡改与销毁",
+      "title": "36 CFR 第 1230 部分：文件非法或意外移除、污损、篡改与销毁",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1230",
       "snapshotStrategy": "playwright_snapshot",
@@ -1481,7 +1481,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1231",
-      "title": "36 CFR 第 1231 部分：行政机构之间的记录移交",
+      "title": "36 CFR 第 1231 部分：行政机构之间的文件移交",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1231",
       "snapshotStrategy": "playwright_snapshot",
@@ -1494,7 +1494,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1232",
-      "title": "36 CFR 第 1232 部分：记录向存储设施转移",
+      "title": "36 CFR 第 1232 部分：文件向存储设施转移",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1232",
       "snapshotStrategy": "playwright_snapshot",
@@ -1507,7 +1507,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1233",
-      "title": "36 CFR 第 1233 部分：总统图书馆记录的移交、利用与处置",
+      "title": "36 CFR 第 1233 部分：总统图书馆文件的移交、利用与处置",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1233",
       "snapshotStrategy": "playwright_snapshot",
@@ -1520,7 +1520,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1234",
-      "title": "36 CFR 第 1234 部分：记录存储设施标准",
+      "title": "36 CFR 第 1234 部分：文件存储设施标准",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1234",
       "snapshotStrategy": "playwright_snapshot",
@@ -1533,7 +1533,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1235",
-      "title": "36 CFR 第 1235 部分：永久记录向国家档案馆移交",
+      "title": "36 CFR 第 1235 部分：永久文件向国家档案馆移交",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1235",
       "snapshotStrategy": "playwright_snapshot",
@@ -1546,7 +1546,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1236",
-      "title": "36 CFR 第 1236 部分：电子记录管理",
+      "title": "36 CFR 第 1236 部分：电子文件管理",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1236",
       "snapshotStrategy": "playwright_snapshot",
@@ -1559,7 +1559,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1238",
-      "title": "36 CFR 第 1238 部分：缩微记录管理",
+      "title": "36 CFR 第 1238 部分：缩微文件管理",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1238",
       "snapshotStrategy": "playwright_snapshot",
@@ -1572,7 +1572,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1239",
-      "title": "36 CFR 第 1239 部分：记录管理项目协助与检查",
+      "title": "36 CFR 第 1239 部分：文件管理项目协助与检查",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1239",
       "snapshotStrategy": "playwright_snapshot",
@@ -1585,7 +1585,7 @@
     },
     {
       "resourceId": "nara-fermi",
-      "title": "NARA 联邦电子记录现代化倡议（FERMI）",
+      "title": "NARA 联邦电子文件现代化倡议（FERMI）",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/policy/fermi",
       "snapshotStrategy": "playwright_snapshot",
@@ -1598,7 +1598,7 @@
     },
     {
       "resourceId": "nara-universal-erm-requirements",
-      "title": "NARA 通用电子记录管理需求",
+      "title": "NARA 通用电子文件管理需求",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/policy/universalermrequirements",
       "snapshotStrategy": "playwright_snapshot",
@@ -1611,7 +1611,7 @@
     },
     {
       "resourceId": "nara-records-management-self-assessment",
-      "title": "NARA 记录管理自评估",
+      "title": "NARA 文件管理自评估",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/resources/rm-assessments",
       "snapshotStrategy": "playwright_snapshot",
@@ -1624,7 +1624,7 @@
     },
     {
       "resourceId": "nara-federal-agency-reporting",
-      "title": "NARA 联邦机构记录管理报告",
+      "title": "NARA 联邦机构文件管理报告",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/resources/reporting",
       "snapshotStrategy": "playwright_snapshot",
@@ -1637,7 +1637,7 @@
     },
     {
       "resourceId": "nara-transfer-electronic-records",
-      "title": "NARA 电子记录移交指南",
+      "title": "NARA 电子文件移交指南",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html",
       "snapshotStrategy": "playwright_snapshot",
@@ -1650,7 +1650,7 @@
     },
     {
       "resourceId": "nara-records-control-schedules",
-      "title": "NARA 记录控制表",
+      "title": "NARA 文件控制表",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/rcs",
       "snapshotStrategy": "playwright_snapshot",
@@ -1663,7 +1663,7 @@
     },
     {
       "resourceId": "nara-electronic-records-archives-era",
-      "title": "NARA 电子记录档案系统（ERA）",
+      "title": "NARA 电子文件档案系统（ERA）",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/era",
       "snapshotStrategy": "playwright_snapshot",
@@ -1676,7 +1676,7 @@
     },
     {
       "resourceId": "nara-federal-records-centers",
-      "title": "NARA 联邦记录中心",
+      "title": "NARA 联邦文件中心",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/frc",
       "snapshotStrategy": "playwright_snapshot",
@@ -1728,7 +1728,7 @@
     },
     {
       "resourceId": "nara-bulletin-2014-04-format-guidance",
-      "title": "NARA Bulletin 2014-04：永久电子记录移交格式指南",
+      "title": "NARA Bulletin 2014-04：永久电子文件移交格式指南",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2014/2014-04.html",
       "snapshotStrategy": "playwright_snapshot",
@@ -1741,7 +1741,7 @@
     },
     {
       "resourceId": "nara-bulletin-2015-04-metadata-guidance",
-      "title": "NARA Bulletin 2015-04：永久电子记录移交元数据指南",
+      "title": "NARA Bulletin 2015-04：永久电子文件移交元数据指南",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2015/2015-04.html",
       "snapshotStrategy": "playwright_snapshot",
@@ -1754,7 +1754,7 @@
     },
     {
       "resourceId": "nara-bulletin-2020-01-electronic-records-transition",
-      "title": "NARA Bulletin 2020-01：向电子记录转型执行指南",
+      "title": "NARA Bulletin 2020-01：向电子文件转型执行指南",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2020/2020-01",
       "snapshotStrategy": "playwright_snapshot",
@@ -1767,7 +1767,7 @@
     },
     {
       "resourceId": "nara-bulletin-2023-04-collaboration-platforms",
-      "title": "NARA Bulletin 2023-04：协作平台中的记录管理",
+      "title": "NARA Bulletin 2023-04：协作平台中的文件管理",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2023/2023-04",
       "snapshotStrategy": "playwright_snapshot",
@@ -1780,7 +1780,7 @@
     },
     {
       "resourceId": "nara-bulletin-2025-01-classified-electronic-records-metadata",
-      "title": "NARA Bulletin 2025-01：涉密电子记录移交元数据指南",
+      "title": "NARA Bulletin 2025-01：涉密电子文件移交元数据指南",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/records-mgmt/bulletins/2025/2025-01",
       "snapshotStrategy": "playwright_snapshot",
@@ -3486,7 +3486,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1223",
-      "title": "36 CFR 第 1223 部分：重要记录管理",
+      "title": "36 CFR 第 1223 部分：重要文件管理",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1223",
       "snapshotStrategy": "playwright_snapshot",
@@ -3499,7 +3499,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1224",
-      "title": "36 CFR 第 1224 部分：记录处置项目",
+      "title": "36 CFR 第 1224 部分：文件处置项目",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1224",
       "snapshotStrategy": "playwright_snapshot",
@@ -3512,7 +3512,7 @@
     },
     {
       "resourceId": "ecfr-36-cfr-1237",
-      "title": "36 CFR 第 1237 部分：视听、地图与相关记录管理",
+      "title": "36 CFR 第 1237 部分：视听、地图与相关文件管理",
       "sourceDomain": "ecfr.gov",
       "sourceUrl": "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1237",
       "snapshotStrategy": "playwright_snapshot",
@@ -3525,7 +3525,7 @@
     },
     {
       "resourceId": "res-federal-records-act",
-      "title": "美国《联邦记录法》核心章节",
+      "title": "美国《联邦文件法》核心章节",
       "sourceDomain": "uscode.house.gov",
       "sourceUrl": "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter31&edition=prelim",
       "snapshotStrategy": "playwright_snapshot",
@@ -3538,7 +3538,7 @@
     },
     {
       "resourceId": "uscode-44-chapter-22-presidential-records",
-      "title": "美国法典第 44 编第 22 章：总统记录",
+      "title": "美国法典第 44 编第 22 章：总统文件",
       "sourceDomain": "uscode.house.gov",
       "sourceUrl": "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter22&edition=prelim",
       "snapshotStrategy": "playwright_snapshot",
@@ -3590,7 +3590,7 @@
     },
     {
       "resourceId": "omb-m-12-18-managing-government-records",
-      "title": "OMB/NARA M-12-18：政府记录管理指令",
+      "title": "OMB/NARA M-12-18：政府文件管理指令",
       "sourceDomain": "obamawhitehouse.archives.gov",
       "sourceUrl": "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2012/m-12-18.pdf",
       "snapshotStrategy": "playwright_snapshot",
@@ -3616,7 +3616,7 @@
     },
     {
       "resourceId": "omb-m-19-21-transition-to-electronic-records",
-      "title": "OMB/NARA M-19-21：向电子记录过渡",
+      "title": "OMB/NARA M-19-21：向电子文件过渡",
       "sourceDomain": "whitehouse.gov",
       "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2019/08/M-19-21-new-2.pdf",
       "snapshotStrategy": "playwright_snapshot",
@@ -3629,7 +3629,7 @@
     },
     {
       "resourceId": "omb-m-23-07-transition-update",
-      "title": "OMB/NARA M-23-07：电子记录过渡更新",
+      "title": "OMB/NARA M-23-07：电子文件过渡更新",
       "sourceDomain": "archives.gov",
       "sourceUrl": "https://www.archives.gov/files/records-mgmt/m-23-07.pdf",
       "snapshotStrategy": "playwright_snapshot",
@@ -3772,7 +3772,7 @@
     },
     {
       "resourceId": "arma-generally-accepted-recordkeeping-principles",
-      "title": "ARMA 通用记录管理原则",
+      "title": "ARMA 通用文件管理原则",
       "sourceDomain": "arma.org",
       "sourceUrl": "https://arma.org/page/GenerallyAcceptedRecordkeepingPrinciples",
       "snapshotStrategy": "playwright_snapshot",

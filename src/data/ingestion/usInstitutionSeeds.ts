@@ -68,8 +68,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Washington, D.C., United States",
     website: "https://www.archives.gov",
     descriptionZh:
-      "美国国家档案与文件署负责联邦记录管理、国家档案保存、公众利用和总统图书馆体系运营，是美国档案制度的核心联邦机构。",
-    tags: ["NARA", "国家档案馆", "联邦记录", "总统图书馆", "数字保存"],
+      "美国国家档案与文件署负责联邦文件管理、国家档案保存、公众利用和总统图书馆体系运营，是美国档案制度的核心联邦机构。",
+    tags: ["NARA", "国家档案馆", "联邦文件", "总统图书馆", "数字保存"],
     relatedTopicIds: [
       "laws-policies-governance",
       "electronic-records-management",
@@ -127,8 +127,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "United States",
     website: "https://www.archives.gov/presidential-libraries",
     descriptionZh:
-      "美国总统图书馆系统由 NARA 运营，保存总统记录、历史文物和相关研究资源，是研究总统档案与行政记录的重要体系。",
-    tags: ["总统图书馆", "总统档案", "NARA", "行政记录", "博物馆"],
+      "美国总统图书馆系统由 NARA 运营，保存总统文件、历史文物和相关研究资源，是研究总统档案与行政文件的重要体系。",
+    tags: ["总统图书馆", "总统档案", "NARA", "行政文件", "博物馆"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -185,7 +185,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "College Park, Maryland, United States",
     website: "https://www.archives.gov/research/alic",
     descriptionZh:
-      "档案图书馆信息中心是 NARA 的研究支持与信息服务入口，为档案、记录管理和历史研究提供图书馆与参考资源。",
+      "档案图书馆信息中心是 NARA 的研究支持与信息服务入口，为档案、文件管理和历史研究提供图书馆与参考资源。",
     tags: ["ALIC", "图书馆", "研究支持", "NARA", "档案利用"],
     relatedTopicIds: [
       "access-outreach-public-participation",
@@ -214,8 +214,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Montgomery, Alabama, United States",
     website: "https://archives.alabama.gov",
     descriptionZh:
-      "亚拉巴马州档案与历史部负责保存州级政府记录和历史资料，并面向公众提供档案研究与历史文化资源服务。",
-    tags: ["Alabama", "亚拉巴马州", "州档案馆", "州政府记录", "公共利用"],
+      "亚拉巴马州档案与历史部负责保存州级政府文件和历史资料，并面向公众提供档案研究与历史文化资源服务。",
+    tags: ["Alabama", "亚拉巴马州", "州档案馆", "州政府文件", "公共利用"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -243,8 +243,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Juneau, Alaska, United States",
     website: "https://archives.alaska.gov",
     descriptionZh:
-      "阿拉斯加州档案馆保存州政府记录和相关历史档案，为政府机构、研究者和公众提供州级档案利用服务。",
-    tags: ["Alaska", "阿拉斯加州", "州档案馆", "州政府记录", "档案利用"],
+      "阿拉斯加州档案馆保存州政府文件和相关历史档案，为政府机构、研究者和公众提供州级档案利用服务。",
+    tags: ["Alaska", "阿拉斯加州", "州档案馆", "州政府文件", "档案利用"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -272,8 +272,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Phoenix, Arizona, United States",
     website: "https://azlibrary.gov/arm",
     descriptionZh:
-      "亚利桑那州档案馆保存州政府记录和历史档案资源，并支持州级记录管理、研究利用和公共访问。",
-    tags: ["Arizona", "亚利桑那州", "州档案馆", "记录管理", "公共访问"],
+      "亚利桑那州档案馆保存州政府文件和历史档案资源，并支持州级文件管理、研究利用和公共访问。",
+    tags: ["Arizona", "亚利桑那州", "州档案馆", "文件管理", "公共访问"],
     relatedTopicIds: [
       "electronic-records-management",
       "access-outreach-public-participation",
@@ -301,8 +301,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Little Rock, Arkansas, United States",
     website: "https://archives.arkansas.gov",
     descriptionZh:
-      "阿肯色州档案馆保存州级历史记录和政府档案，为公众、研究者和政府机构提供档案查询与利用服务。",
-    tags: ["Arkansas", "阿肯色州", "州档案馆", "历史记录", "档案利用"],
+      "阿肯色州档案馆保存州级历史文件和政府档案，为公众、研究者和政府机构提供档案查询与利用服务。",
+    tags: ["Arkansas", "阿肯色州", "州档案馆", "历史文件", "档案利用"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -330,8 +330,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Sacramento, California, United States",
     website: "https://www.sos.ca.gov/archives",
     descriptionZh:
-      "加利福尼亚州档案馆保存州政府历史记录，并为政府、研究者和公众提供州级档案查询与利用服务。",
-    tags: ["California", "加利福尼亚州", "州档案馆", "公共记录", "州政府"],
+      "加利福尼亚州档案馆保存州政府历史文件，并为政府、研究者和公众提供州级档案查询与利用服务。",
+    tags: ["California", "加利福尼亚州", "州档案馆", "公共文件", "州政府"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -359,8 +359,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Denver, Colorado, United States",
     website: "https://archives.colorado.gov",
     descriptionZh:
-      "科罗拉多州档案馆保存州政府记录和历史档案，并提供记录管理、档案查询和公共利用服务。",
-    tags: ["Colorado", "科罗拉多州", "州档案馆", "记录管理", "公共利用"],
+      "科罗拉多州档案馆保存州政府文件和历史档案，并提供文件管理、档案查询和公共利用服务。",
+    tags: ["Colorado", "科罗拉多州", "州档案馆", "文件管理", "公共利用"],
     relatedTopicIds: [
       "electronic-records-management",
       "access-outreach-public-participation",
@@ -388,7 +388,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Hartford, Connecticut, United States",
     website: "https://ctstatelibrary.org/state-archives/",
     descriptionZh:
-      "康涅狄格州档案馆保存州级政府记录和历史资料，是州档案查询、保存和公众利用的重要入口。",
+      "康涅狄格州档案馆保存州级政府文件和历史资料，是州档案查询、保存和公众利用的重要入口。",
     tags: ["Connecticut", "康涅狄格州", "州档案馆", "州图书馆", "公共利用"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -417,8 +417,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Dover, Delaware, United States",
     website: "https://archives.delaware.gov",
     descriptionZh:
-      "特拉华公共档案馆保存州政府和地方历史记录，提供公共记录保存、档案查询和历史研究支持。",
-    tags: ["Delaware", "特拉华州", "公共档案馆", "州政府记录", "历史研究"],
+      "特拉华公共档案馆保存州政府和地方历史文件，提供公共文件保存、档案查询和历史研究支持。",
+    tags: ["Delaware", "特拉华州", "公共档案馆", "州政府文件", "历史研究"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -446,7 +446,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Tallahassee, Florida, United States",
     website: "https://dos.fl.gov/library-archives/archives/",
     descriptionZh:
-      "佛罗里达州档案馆保存佛罗里达州政府记录和历史档案，并通过图书馆与档案服务体系支持公众访问。",
+      "佛罗里达州档案馆保存佛罗里达州政府文件和历史档案，并通过图书馆与档案服务体系支持公众访问。",
     tags: ["Florida", "佛罗里达州", "州档案馆", "图书馆档案", "公共访问"],
     relatedTopicIds: [
       "digital-resources-preservation",
@@ -475,7 +475,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Morrow, Georgia, United States",
     website: "https://www.georgiaarchives.org",
     descriptionZh:
-      "佐治亚州档案馆保存州政府记录和历史档案资源，为公众研究、政府管理和历史文化利用提供支持。",
+      "佐治亚州档案馆保存州政府文件和历史档案资源，为公众研究、政府管理和历史文化利用提供支持。",
     tags: ["Georgia", "佐治亚州", "州档案馆", "历史档案", "公共利用"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -504,7 +504,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Honolulu, Hawaii, United States",
     website: "https://ags.hawaii.gov/archives/",
     descriptionZh:
-      "夏威夷州档案馆保存州政府记录、历史档案和相关文化记忆资源，支持公众查询与研究利用。",
+      "夏威夷州档案馆保存州政府文件、历史档案和相关文化记忆资源，支持公众查询与研究利用。",
     tags: ["Hawaii", "夏威夷州", "州档案馆", "文化记忆", "公共利用"],
     relatedTopicIds: [
       "digital-resources-preservation",
@@ -533,7 +533,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Boise, Idaho, United States",
     website: "https://history.idaho.gov/archives/",
     descriptionZh:
-      "爱达荷州档案馆保存州政府和历史档案资源，并为公众研究、家族史和政府记录利用提供服务。",
+      "爱达荷州档案馆保存州政府和历史档案资源，并为公众研究、家族史和政府文件利用提供服务。",
     tags: ["Idaho", "爱达荷州", "州档案馆", "历史档案", "公共利用"],
     relatedTopicIds: [
       "access-outreach-public-participation",
@@ -562,8 +562,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Springfield, Illinois, United States",
     website: "https://www.ilsos.gov/departments/archives/home.html",
     descriptionZh:
-      "伊利诺伊州档案馆保存州政府记录和公共档案资料，是州级记录保存、查询和历史研究的重要机构。",
-    tags: ["Illinois", "伊利诺伊州", "州档案馆", "公共记录", "州政府"],
+      "伊利诺伊州档案馆保存州政府文件和公共档案资料，是州级文件保存、查询和历史研究的重要机构。",
+    tags: ["Illinois", "伊利诺伊州", "州档案馆", "公共文件", "州政府"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -576,7 +576,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
   {
     id: "indiana-archives-and-records-administration",
     slug: "indiana-archives-and-records-administration",
-    nameZh: "印第安纳州档案与记录管理局",
+    nameZh: "印第安纳州档案与文件管理局",
     nameEn: "Indiana Archives and Records Administration",
     abbreviation: "IARA",
     countryId: "usa",
@@ -591,8 +591,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Indianapolis, Indiana, United States",
     website: "https://www.in.gov/iara/",
     descriptionZh:
-      "印第安纳州档案与记录管理局负责州级档案保存和记录管理，为政府机构和公众提供档案利用服务。",
-    tags: ["Indiana", "印第安纳州", "州档案馆", "记录管理", "IARA"],
+      "印第安纳州档案与文件管理局负责州级档案保存和文件管理，为政府机构和公众提供档案利用服务。",
+    tags: ["Indiana", "印第安纳州", "州档案馆", "文件管理", "IARA"],
     relatedTopicIds: [
       "electronic-records-management",
       "access-outreach-public-participation",
@@ -620,7 +620,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Des Moines, Iowa, United States",
     website: "https://iowaculture.gov/history/research/collections/state-archives",
     descriptionZh:
-      "爱荷华州档案馆保存州政府记录和历史档案集合，为研究者和公众提供州级档案资源访问。",
+      "爱荷华州档案馆保存州政府文件和历史档案集合，为研究者和公众提供州级档案资源访问。",
     tags: ["Iowa", "爱荷华州", "州档案馆", "历史档案", "公共访问"],
     relatedTopicIds: [
       "digital-resources-preservation",
@@ -649,7 +649,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Topeka, Kansas, United States",
     website: "https://www.kshs.org/archives",
     descriptionZh:
-      "堪萨斯历史学会州档案馆保存州级历史记录和政府档案，是堪萨斯州历史研究和档案利用的重要入口。",
+      "堪萨斯历史学会州档案馆保存州级历史文件和政府档案，是堪萨斯州历史研究和档案利用的重要入口。",
     tags: ["Kansas", "堪萨斯州", "州档案馆", "历史学会", "历史研究"],
     relatedTopicIds: [
       "access-outreach-public-participation",
@@ -678,7 +678,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Frankfort, Kentucky, United States",
     website: "https://kdla.ky.gov",
     descriptionZh:
-      "肯塔基州图书馆与档案部负责州级档案、图书馆服务和记录管理支持，是州政府记录利用的重要机构。",
+      "肯塔基州图书馆与档案部负责州级档案、图书馆服务和文件管理支持，是州政府文件利用的重要机构。",
     tags: ["Kentucky", "肯塔基州", "州档案馆", "州图书馆", "KDLA"],
     relatedTopicIds: [
       "electronic-records-management",
@@ -707,7 +707,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Baton Rouge, Louisiana, United States",
     website: "https://www.sos.la.gov/HistoricalResources",
     descriptionZh:
-      "路易斯安那州档案馆保存州政府记录和历史资源，为公众、研究者和政府机构提供州级档案服务。",
+      "路易斯安那州档案馆保存州政府文件和历史资源，为公众、研究者和政府机构提供州级档案服务。",
     tags: ["Louisiana", "路易斯安那州", "州档案馆", "历史资源", "公共利用"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -736,8 +736,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Augusta, Maine, United States",
     website: "https://www.maine.gov/sos/arc/",
     descriptionZh:
-      "缅因州档案馆保存州级政府记录和历史档案，并支持记录管理、历史研究和公共档案利用。",
-    tags: ["Maine", "缅因州", "州档案馆", "州政府记录", "档案利用"],
+      "缅因州档案馆保存州级政府文件和历史档案，并支持文件管理、历史研究和公共档案利用。",
+    tags: ["Maine", "缅因州", "州档案馆", "州政府文件", "档案利用"],
     relatedTopicIds: [
       "electronic-records-management",
       "access-outreach-public-participation",
@@ -765,8 +765,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Annapolis, Maryland, United States",
     website: "https://msa.maryland.gov",
     descriptionZh:
-      "马里兰州档案馆保存州政府和地方历史记录，为档案研究、公共利用和政府记录管理提供支持。",
-    tags: ["Maryland", "马里兰州", "州档案馆", "历史记录", "MSA"],
+      "马里兰州档案馆保存州政府和地方历史文件，为档案研究、公共利用和政府文件管理提供支持。",
+    tags: ["Maryland", "马里兰州", "州档案馆", "历史文件", "MSA"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -794,7 +794,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Boston, Massachusetts, United States",
     website: "https://www.sec.state.ma.us/divisions/archives/archives.htm",
     descriptionZh:
-      "马萨诸塞州档案馆保存州级政府记录和历史档案资源，并提供公共访问、研究支持和档案查询服务。",
+      "马萨诸塞州档案馆保存州级政府文件和历史档案资源，并提供公共访问、研究支持和档案查询服务。",
     tags: ["Massachusetts", "马萨诸塞州", "州档案馆", "公共访问", "历史档案"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -823,7 +823,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Lansing, Michigan, United States",
     website: "https://www.michigan.gov/mhc/archives",
     descriptionZh:
-      "密歇根州档案馆保存州政府记录和历史资料，为研究者、公众和政府机构提供档案利用与保存服务。",
+      "密歇根州档案馆保存州政府文件和历史资料，为研究者、公众和政府机构提供档案利用与保存服务。",
     tags: ["Michigan", "密歇根州", "州档案馆", "历史资料", "公共利用"],
     relatedTopicIds: [
       "digital-resources-preservation",
@@ -852,8 +852,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Saint Paul, Minnesota, United States",
     website: "https://www.mnhs.org/preserve/records",
     descriptionZh:
-      "明尼苏达州档案馆保存州级记录和历史档案，并通过历史学会体系支持记录保存、研究利用和公众访问。",
-    tags: ["Minnesota", "明尼苏达州", "州档案馆", "历史学会", "记录保存"],
+      "明尼苏达州档案馆保存州级文件和历史档案，并通过历史学会体系支持文件保存、研究利用和公众访问。",
+    tags: ["Minnesota", "明尼苏达州", "州档案馆", "历史学会", "文件保存"],
     relatedTopicIds: [
       "electronic-records-management",
       "access-outreach-public-participation",
@@ -881,7 +881,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Jackson, Mississippi, United States",
     website: "https://www.mdah.ms.gov",
     descriptionZh:
-      "密西西比州档案与历史部保存州级档案、历史记录和文化遗产资料，为研究和公众教育提供支持。",
+      "密西西比州档案与历史部保存州级档案、历史文件和文化遗产资料，为研究和公众教育提供支持。",
     tags: ["Mississippi", "密西西比州", "州档案馆", "历史部", "MDAH"],
     relatedTopicIds: [
       "access-outreach-public-participation",
@@ -910,8 +910,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Jefferson City, Missouri, United States",
     website: "https://www.sos.mo.gov/archives",
     descriptionZh:
-      "密苏里州档案馆保存州政府记录和历史档案资源，为公众查询、政府记录管理和历史研究提供支持。",
-    tags: ["Missouri", "密苏里州", "州档案馆", "州政府记录", "历史研究"],
+      "密苏里州档案馆保存州政府文件和历史档案资源，为公众查询、政府文件管理和历史研究提供支持。",
+    tags: ["Missouri", "密苏里州", "州档案馆", "州政府文件", "历史研究"],
     relatedTopicIds: [
       "laws-policies-governance",
       "access-outreach-public-participation",
@@ -939,8 +939,8 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Albany, New York, United States",
     website: "https://www.archives.nysed.gov",
     descriptionZh:
-      "纽约州档案馆负责保存和提供纽约州政府记录及相关历史档案资源，是州级记录管理和公共利用的重要机构。",
-    tags: ["New York", "纽约州", "州档案馆", "州政府记录", "公共利用"],
+      "纽约州档案馆负责保存和提供纽约州政府文件及相关历史档案资源，是州级文件管理和公共利用的重要机构。",
+    tags: ["New York", "纽约州", "州档案馆", "州政府文件", "公共利用"],
     relatedTopicIds: [
       "laws-policies-governance",
       "electronic-records-management",
@@ -969,7 +969,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Austin, Texas, United States",
     website: "https://www.tsl.texas.gov",
     descriptionZh:
-      "得克萨斯州图书馆与档案委员会提供州级档案、图书馆、记录管理和公共信息服务，支持政府机构和公众利用历史记录。",
+      "得克萨斯州图书馆与档案委员会提供州级档案、图书馆、文件管理和公共信息服务，支持政府机构和公众利用历史文件。",
     tags: ["Texas", "得克萨斯州", "州档案馆", "州图书馆", "TSLAC"],
     relatedTopicIds: [
       "electronic-records-management",
@@ -998,7 +998,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Helena, Montana, United States",
     website: "https://mhs.mt.gov/research/",
     descriptionZh:
-      "该机构负责保存和提供访问蒙大拿州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问蒙大拿州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Montana", "蒙大拿州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1027,7 +1027,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Lincoln, Nebraska, United States",
     website: "https://history.nebraska.gov/collections/research-and-reference/",
     descriptionZh:
-      "该机构负责保存和提供访问内布拉斯加州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问内布拉斯加州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Nebraska", "内布拉斯加州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1056,7 +1056,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Carson City, Nevada, United States",
     website: "https://nsla.nv.gov/Archives",
     descriptionZh:
-      "该机构负责保存和提供访问内华达州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问内华达州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Nevada", "内华达州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1086,7 +1086,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     website:
       "https://www.sos.nh.gov/archives-vital-records-records-management/archives",
     descriptionZh:
-      "该机构负责保存和提供访问新罕布什尔州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问新罕布什尔州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "New Hampshire", "新罕布什尔州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1115,7 +1115,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Trenton, New Jersey, United States",
     website: "https://www.nj.gov/state/archives/",
     descriptionZh:
-      "该机构负责保存和提供访问新泽西州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问新泽西州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "New Jersey", "新泽西州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1129,7 +1129,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
   {
     id: "new-mexico-state-records-center-and-archives",
     slug: "new-mexico-state-records-center-and-archives",
-    nameZh: "新墨西哥州记录中心与档案馆",
+    nameZh: "新墨西哥州文件中心与档案馆",
     nameEn: "New Mexico State Records Center and Archives",
     abbreviation: "SRCA",
     countryId: "usa",
@@ -1144,7 +1144,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Santa Fe, New Mexico, United States",
     website: "https://www.srca.nm.gov",
     descriptionZh:
-      "该机构负责保存和提供访问新墨西哥州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问新墨西哥州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "New Mexico", "新墨西哥州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1173,7 +1173,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Raleigh, North Carolina, United States",
     website: "https://archives.ncdcr.gov",
     descriptionZh:
-      "该机构负责保存和提供访问北卡罗来纳州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问北卡罗来纳州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "North Carolina", "北卡罗来纳州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1202,7 +1202,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Bismarck, North Dakota, United States",
     website: "https://www.history.nd.gov/archives/",
     descriptionZh:
-      "该机构负责保存和提供访问北达科他州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问北达科他州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "North Dakota", "北达科他州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1231,7 +1231,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Columbus, Ohio, United States",
     website: "https://www.ohiohistory.org/research/archives-library/",
     descriptionZh:
-      "该机构负责保存和提供访问俄亥俄州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问俄亥俄州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Ohio", "俄亥俄州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1245,7 +1245,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
   {
     id: "oklahoma-department-of-libraries-archives-and-records",
     slug: "oklahoma-department-of-libraries-archives-and-records",
-    nameZh: "俄克拉荷马州图书馆部档案与记录",
+    nameZh: "俄克拉荷马州图书馆部档案与文件",
     nameEn: "Oklahoma Department of Libraries Archives and Records",
     abbreviation: "",
     countryId: "usa",
@@ -1260,7 +1260,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Oklahoma City, Oklahoma, United States",
     website: "https://libraries.ok.gov/state-archives/",
     descriptionZh:
-      "该机构负责保存和提供访问俄克拉荷马州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问俄克拉荷马州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Oklahoma", "俄克拉荷马州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1289,7 +1289,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Salem, Oregon, United States",
     website: "https://sos.oregon.gov/archives/",
     descriptionZh:
-      "该机构负责保存和提供访问俄勒冈州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问俄勒冈州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Oregon", "俄勒冈州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1318,7 +1318,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Harrisburg, Pennsylvania, United States",
     website: "https://www.pa.gov/agencies/phmc/pa-state-archives.html",
     descriptionZh:
-      "该机构负责保存和提供访问宾夕法尼亚州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问宾夕法尼亚州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Pennsylvania", "宾夕法尼亚州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1347,7 +1347,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Providence, Rhode Island, United States",
     website: "https://www.sos.ri.gov/divisions/state-archives",
     descriptionZh:
-      "该机构负责保存和提供访问罗德岛州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问罗德岛州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Rhode Island", "罗德岛州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1376,7 +1376,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Columbia, South Carolina, United States",
     website: "https://scdah.sc.gov",
     descriptionZh:
-      "该机构负责保存和提供访问南卡罗来纳州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问南卡罗来纳州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "South Carolina", "南卡罗来纳州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1405,7 +1405,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Pierre, South Dakota, United States",
     website: "https://history.sd.gov/archives/",
     descriptionZh:
-      "该机构负责保存和提供访问南达科他州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问南达科他州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "South Dakota", "南达科他州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1434,7 +1434,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Nashville, Tennessee, United States",
     website: "https://sos.tn.gov/tsla",
     descriptionZh:
-      "该机构负责保存和提供访问田纳西州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问田纳西州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Tennessee", "田纳西州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1448,7 +1448,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
   {
     id: "utah-division-of-archives-and-records-service",
     slug: "utah-division-of-archives-and-records-service",
-    nameZh: "犹他州档案与记录服务处",
+    nameZh: "犹他州档案与文件服务处",
     nameEn: "Utah Division of Archives and Records Service",
     abbreviation: "",
     countryId: "usa",
@@ -1463,7 +1463,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Salt Lake City, Utah, United States",
     website: "https://archives.utah.gov",
     descriptionZh:
-      "该机构负责保存和提供访问犹他州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问犹他州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Utah", "犹他州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1477,7 +1477,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
   {
     id: "vermont-state-archives-and-records-administration",
     slug: "vermont-state-archives-and-records-administration",
-    nameZh: "佛蒙特州档案与记录管理局",
+    nameZh: "佛蒙特州档案与文件管理局",
     nameEn: "Vermont State Archives and Records Administration",
     abbreviation: "VSARA",
     countryId: "usa",
@@ -1492,7 +1492,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Montpelier, Vermont, United States",
     website: "https://sos.vermont.gov/vsara/",
     descriptionZh:
-      "该机构负责保存和提供访问佛蒙特州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问佛蒙特州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Vermont", "佛蒙特州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1521,7 +1521,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Richmond, Virginia, United States",
     website: "https://www.lva.virginia.gov",
     descriptionZh:
-      "该机构负责保存和提供访问弗吉尼亚州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问弗吉尼亚州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Virginia", "弗吉尼亚州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1550,7 +1550,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Olympia, Washington, United States",
     website: "https://www.sos.wa.gov/archives",
     descriptionZh:
-      "该机构负责保存和提供访问华盛顿州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问华盛顿州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Washington", "华盛顿州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1579,7 +1579,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Charleston, West Virginia, United States",
     website: "https://wvculture.org/agencies/archives-and-history/",
     descriptionZh:
-      "该机构负责保存和提供访问西弗吉尼亚州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问西弗吉尼亚州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "West Virginia", "西弗吉尼亚州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1608,7 +1608,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Madison, Wisconsin, United States",
     website: "https://www.wisconsinhistory.org/Records",
     descriptionZh:
-      "该机构负责保存和提供访问威斯康星州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问威斯康星州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Wisconsin", "威斯康星州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1637,7 +1637,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Cheyenne, Wyoming, United States",
     website: "https://wyoarchives.wyo.gov",
     descriptionZh:
-      "该机构负责保存和提供访问怀俄明州政府记录、历史档案和相关公共资料，是了解该州档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问怀俄明州政府文件、历史档案和相关公共资料，是了解该州档案管理与公共文件制度的重要机构。",
     tags: ["州档案馆", "state archives", "Wyoming", "怀俄明州"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -1666,7 +1666,7 @@ export const usInstitutionSeeds: UsInstitutionSeed[] = [
     location: "Washington, D.C., United States",
     website: "https://archives.dc.gov",
     descriptionZh:
-      "该机构负责保存和提供访问哥伦比亚特区政府记录、历史档案和相关公共资料，是了解该地区档案管理与公共记录制度的重要机构。",
+      "该机构负责保存和提供访问哥伦比亚特区政府文件、历史档案和相关公共资料，是了解该地区档案管理与公共文件制度的重要机构。",
     tags: [
       "州档案馆",
       "state archives",

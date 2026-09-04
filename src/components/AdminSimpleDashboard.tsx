@@ -566,7 +566,7 @@ function snapshotResultText(output: string, batch = false) {
   if (generatedCount !== null && generatedCount > 0) {
     return batch
       ? `本批网页快照任务已完成，实际写入 ${generatedCount} 条快照记录。`
-      : `网页快照已实际写入 ${generatedCount} 条记录。刷新页面后可在前台“来源与保存”区域查看。`;
+      : `网页快照已实际写入 ${generatedCount} 条文件。刷新页面后可在前台“来源与保存”区域查看。`;
   }
 
   if (output.includes("是否成功：部分成功")) {
@@ -574,12 +574,12 @@ function snapshotResultText(output: string, batch = false) {
   }
 
   if (output.includes("已有快照记录")) {
-    return "系统检测到已有快照记录，本次没有重新生成。若前台仍未显示，说明旧记录可能不可用，需要到高级后台强制重新生成。";
+    return "系统检测到已有快照记录，本次没有重新生成。若前台仍未显示，说明旧文件可能不可用，需要到高级后台强制重新生成。";
   }
 
   return batch
     ? "本批快照任务已结束，但没有确认写入新的快照记录。"
-    : "快照任务已结束，但没有确认写入新的 PDF 或截图记录。";
+    : "快照任务已结束，但没有确认写入新的 PDF 或截图文件。";
 }
 
 function snapshotResultSucceeded(output: string) {
@@ -1581,7 +1581,7 @@ export function AdminSimpleDashboard({
               最近检查：
               {qualityProgress.generatedAt
                 ? formatDateTime(qualityProgress.generatedAt)
-                : "还没有统计记录"}
+                : "还没有统计文件"}
             </span>
           </div>
 
@@ -1685,7 +1685,7 @@ export function AdminSimpleDashboard({
                 <p className="mt-1 text-sm font-medium text-zinc-900 dark:text-zinc-50">
                   {lastDiscoveryRun?.finishedAt
                     ? formatDateTime(stringValue(lastDiscoveryRun.finishedAt))
-                    : "还没有记录"}
+                    : "还没有文件"}
                 </p>
               </div>
               <div className="rounded-xl border border-zinc-200 bg-white p-3 dark:border-zinc-800 dark:bg-zinc-900">
@@ -1725,7 +1725,7 @@ export function AdminSimpleDashboard({
 
         <PrimaryPanel
           title="2. 手动运行一次安全巡检扩库"
-          description="如果你不想开启定时，也可以手动运行一次：系统会按白名单来源，分批补入美国档案法律法规、电子记录资料、专业学会和大学档案馆等条目。"
+          description="如果你不想开启定时，也可以手动运行一次：系统会按白名单来源，分批补入美国档案法律法规、电子文件资料、专业学会和大学档案馆等条目。"
         >
           <div className="flex flex-wrap gap-3">
             <button
@@ -1796,7 +1796,7 @@ export function AdminSimpleDashboard({
               href="/admin/quality-agent"
               className="rounded-xl border border-zinc-200 px-5 py-3 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
             >
-              查看详细记录
+              查看详细文件
             </Link>
           </div>
           <p className="mt-3 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">

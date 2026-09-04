@@ -10,7 +10,7 @@ export const usSources: SourceConfig[] = [
     sourceType: "api",
     baseUrl: "https://www.federalregister.gov/api/v1/documents.json",
     descriptionZh:
-      "用于发现 NARA 相关联邦公告、政策规则和记录管理相关文件。",
+      "用于发现 NARA 相关联邦公告、政策规则和文件管理相关文件。",
     relatedResourceTypes: ["regulation", "policy", "guidance"],
     relatedTopicIds: [
       "laws-policies-governance",
@@ -53,13 +53,13 @@ export const usSources: SourceConfig[] = [
   },
   {
     id: "source-nara-records-management",
-    nameZh: "NARA 记录管理专题页",
+    nameZh: "NARA 文件管理专题页",
     nameEn: "NARA Records Management",
     countryId: "usa",
     institutionId: "nara",
     sourceType: "webpage",
     baseUrl: "https://www.archives.gov/records-mgmt",
-    descriptionZh: "用于发现 NARA 记录管理和电子文件管理相关指南。",
+    descriptionZh: "用于发现 NARA 文件管理和电子文件管理相关指南。",
     relatedResourceTypes: ["guidance", "policy"],
     relatedTopicIds: ["electronic-records-management"],
     keywords: [
@@ -163,7 +163,7 @@ export const usSources: SourceConfig[] = [
       "agency records",
     ],
     enabled: false,
-    notes: "当前项目尚未建立 FOIA.gov 对应机构记录，因此暂不填写 institutionId。",
+    notes: "当前项目尚未建立 FOIA.gov 对应机构文件，因此暂不填写 institutionId。",
   },
   {
     id: "source-congress-gov",

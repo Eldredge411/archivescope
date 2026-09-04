@@ -118,7 +118,7 @@ function interpretSnapshotAction(output: string): SnapshotActionInterpretation {
     return {
       success: true,
       tone: "success",
-      text: `已实际写入 ${generatedCount} 条快照记录。刷新页面后可在“来源与保存”区域查看。`,
+      text: `已实际写入 ${generatedCount} 条快照文件。刷新页面后可在“来源与保存”区域查看。`,
     };
   }
 
@@ -135,7 +135,7 @@ function interpretSnapshotAction(output: string): SnapshotActionInterpretation {
       success: false,
       tone: "info",
       text:
-        "系统检测到已有快照记录，本次没有重新生成。若下方仍未显示，说明旧记录可能不可用，需要到高级后台强制重新生成。",
+        "系统检测到已有快照文件，本次没有重新生成。若下方仍未显示，说明旧文件可能不可用，需要到高级后台强制重新生成。",
     };
   }
 
@@ -144,7 +144,7 @@ function interpretSnapshotAction(output: string): SnapshotActionInterpretation {
     tone: "info",
     text:
       summary ||
-      "快照任务已结束，但没有确认写入新的 PDF 或截图记录。请查看后台输出或稍后重试。",
+      "快照任务已结束，但没有确认写入新的 PDF 或截图文件。请查看后台输出或稍后重试。",
   };
 }
 

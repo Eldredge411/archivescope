@@ -34,7 +34,8 @@
     "enrich:apply": "node scripts/enrich/applyResourceEnrichmentDrafts.mjs",
     "snapshot:generate": "node scripts/snapshots/generateSnapshots.mjs",
     "snapshot:backfill": "node scripts/snapshots/backfillSnapshots.mjs",
-    "snapshot:validate": "node scripts/snapshots/validateSnapshots.mjs"
+    "snapshot:validate": "node scripts/snapshots/validateSnapshots.mjs",
+    "terminology:normalize": "node scripts/terminology/normalizeRecordTerminologyCli.mjs"
   },
   "dependencies": {
     "next": "16.2.11",

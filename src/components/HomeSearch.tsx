@@ -14,7 +14,7 @@ const searchFields: Array<{ value: SearchField; label: string }> = [
   { value: "tag", label: "关键词标签" },
 ];
 
-const quickKeywords = ["联邦记录法", "NARA Catalog", "FOIA", "数字保存"];
+const quickKeywords = ["联邦文件法", "NARA Catalog", "FOIA", "数字保存"];
 
 function buildResourcesUrl({
   keyword,

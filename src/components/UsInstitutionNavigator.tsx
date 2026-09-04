@@ -48,14 +48,14 @@ const groupMetas: InstitutionGroupMeta[] = [
   {
     value: "federal",
     label: "联邦机构",
-    description: "国家层面的档案、记录管理、文化记忆和信息服务机构。",
+    description: "国家层面的档案、文件管理、文化记忆和信息服务机构。",
     emptyText: "该分类下的机构数据正在整理中。",
     color: "#4f46e5",
   },
   {
     value: "state",
     label: "各州机构",
-    description: "州级档案馆、图书馆、博物馆及公共记录管理机构。",
+    description: "州级档案馆、图书馆、博物馆及公共文件管理机构。",
     emptyText: "州级档案馆、图书馆和博物馆数据正在整理中。",
     color: "#0891b2",
   },
@@ -76,7 +76,7 @@ const groupMetas: InstitutionGroupMeta[] = [
   {
     value: "commercial",
     label: "商业与服务机构",
-    description: "面向档案、记录管理和数字保存的商业服务机构。",
+    description: "面向档案、文件管理和数字保存的商业服务机构。",
     emptyText: "该分类下的机构数据正在整理中。",
     color: "#ea580c",
   },
@@ -680,7 +680,7 @@ function StateInstitutionList({
                   {stateGroup.code ? ` · ${stateGroup.code}` : ""}
                 </h3>
                 <p className="mt-0.5 text-xs text-sky-700 dark:text-sky-300">
-                  州级档案馆、图书馆和公共记录机构
+                  州级档案馆、图书馆和公共文件机构
                 </p>
               </div>
             </div>

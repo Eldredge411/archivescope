@@ -4,7 +4,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "Federal Records Management | National Archives",
-    "titleZh": "NARA 记录管理",
+    "titleZh": "NARA 文件管理",
     "slug": "federal-records-management-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -17,7 +17,7 @@
     "tags": [
       "NARA",
       "records management",
-      "联邦记录管理",
+      "联邦文件管理",
       "archives.gov"
     ],
     "language": "English",
@@ -40,7 +40,7 @@
       "seed": {
         "id": "records-mgmt",
         "url": "https://www.archives.gov/records-mgmt",
-        "titleHintZh": "NARA 记录管理",
+        "titleHintZh": "NARA 文件管理",
         "titleHintEn": "NARA Records Management",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -52,9 +52,9 @@
         "suggestedTags": [
           "NARA",
           "records management",
-          "联邦记录管理"
+          "联邦文件管理"
         ],
-        "note": "NARA 记录管理核心入口页。"
+        "note": "NARA 文件管理核心入口页。"
       },
       "fetchedTitle": "Federal Records Management | National Archives",
       "fetchedDescription": "Office of the Chief Records Officer for the U.S.",
@@ -69,7 +69,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "Records Management Regulations and Guidance | National Archives",
-    "titleZh": "NARA 记录管理政策",
+    "titleZh": "NARA 文件管理政策",
     "slug": "records-management-regulations-and-guidance-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -105,7 +105,7 @@
       "seed": {
         "id": "records-mgmt-policy",
         "url": "https://www.archives.gov/records-mgmt/policy",
-        "titleHintZh": "NARA 记录管理政策",
+        "titleHintZh": "NARA 文件管理政策",
         "titleHintEn": "NARA Records Management Policy",
         "institutionId": "nara",
         "suggestedResourceType": "strategy",
@@ -119,7 +119,7 @@
           "records management",
           "policy"
         ],
-        "note": "NARA 记录管理政策资料入口。"
+        "note": "NARA 文件管理政策资料入口。"
       },
       "fetchedTitle": "Records Management Regulations and Guidance | National Archives",
       "fetchedDescription": "The Office of the Chief Records Officer for the U.S. Government is responsible for developing Federal records management guidance related to records creation, management, and disposition with an emphasis on electronic records. The Office of the Chief Records Officer champions the critical importance of federal records management across the Federal Government. Contact",
@@ -134,7 +134,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "NARA Bulletins | National Archives",
-    "titleZh": "NARA 记录管理公告",
+    "titleZh": "NARA 文件管理公告",
     "slug": "nara-bulletins-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -170,7 +170,7 @@
       "seed": {
         "id": "records-mgmt-bulletins",
         "url": "https://www.archives.gov/records-mgmt/bulletins",
-        "titleHintZh": "NARA 记录管理公告",
+        "titleHintZh": "NARA 文件管理公告",
         "titleHintEn": "NARA Records Management Bulletins",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -184,7 +184,7 @@
           "bulletins",
           "records management"
         ],
-        "note": "NARA 记录管理公告入口。"
+        "note": "NARA 文件管理公告入口。"
       },
       "fetchedTitle": "NARA Bulletins | National Archives",
       "fetchedDescription": "The National Archives and Records Administration (NARA) issues NARA bulletins to Federal agencies to provide guidance and assistance on the management and disposition of Federal records. NARA bulletins clarify and explain Federal records management requirements found in the Federal Records Act and the Code of Federal Regulations. NARA bulletins provide records management",
@@ -199,7 +199,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "Digital Preservation - Home | National Archives",
-    "titleZh": "NARA 电子记录保存",
+    "titleZh": "NARA 电子文件保存",
     "slug": "digital-preservation-home-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -235,7 +235,7 @@
       "seed": {
         "id": "electronic-records-preservation",
         "url": "https://www.archives.gov/preservation/electronic-records",
-        "titleHintZh": "NARA 电子记录保存",
+        "titleHintZh": "NARA 电子文件保存",
         "titleHintEn": "NARA Electronic Records Preservation",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -249,7 +249,7 @@
           "digital preservation",
           "electronic records"
         ],
-        "note": "NARA 电子记录保存与数字保存资料入口。"
+        "note": "NARA 电子文件保存与数字保存资料入口。"
       },
       "fetchedTitle": "Digital Preservation - Home | National Archives",
       "fetchedDescription": "Two units at the National Archives and Records Administration (NARA) have responsibility for maintaining the records in its holdings: Preservation, with the mandate to care for the physical holdings and perform preservation reformatting digitization of physical items, and Digital Preservation, with the mandate to support electronic records processing archivists, perform audits",
@@ -731,7 +731,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "What are the General Records Schedules (GRS) | National Archives",
-    "titleZh": "通用记录处置表",
+    "titleZh": "通用文件处置表",
     "slug": "what-are-the-general-records-schedules-grs-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -769,7 +769,7 @@
       "seed": {
         "id": "grs",
         "url": "https://www.archives.gov/records-mgmt/grs",
-        "titleHintZh": "通用记录处置表",
+        "titleHintZh": "通用文件处置表",
         "titleHintEn": "General Records Schedules",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -784,7 +784,7 @@
           "records disposition",
           "保存期限"
         ],
-        "note": "NARA 通用记录处置表与保存期限管理入口。"
+        "note": "NARA 通用文件处置表与保存期限管理入口。"
       },
       "fetchedTitle": "What are the General Records Schedules (GRS) | National Archives",
       "fetchedDescription": "The National Archives and Records Administration (NARA) issues General Records Schedules (GRS) that provide disposition authority for common federal records. This way agencies do not have to request disposition themselves. NARA expects agencies to use the GRS except in limited circumstances. The GRS covers records documenting administrative or support functions. They typically",
@@ -799,7 +799,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
-    "titleZh": "记录排程与处置",
+    "titleZh": "文件排程与处置",
     "slug": "guide-to-the-inventory-scheduling-and-disposition-of-federal-records-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -812,7 +812,7 @@
     "tags": [
       "records scheduling",
       "records disposition",
-      "记录处置",
+      "文件处置",
       "archives.gov",
       "NARA"
     ],
@@ -836,7 +836,7 @@
       "seed": {
         "id": "records-scheduling",
         "url": "https://www.archives.gov/records-mgmt/scheduling",
-        "titleHintZh": "记录排程与处置",
+        "titleHintZh": "文件排程与处置",
         "titleHintEn": "Records Scheduling",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -848,9 +848,9 @@
         "suggestedTags": [
           "records scheduling",
           "records disposition",
-          "记录处置"
+          "文件处置"
         ],
-        "note": "联邦机构记录排程、保存期限和处置管理指南入口。"
+        "note": "联邦机构文件排程、保存期限和处置管理指南入口。"
       },
       "fetchedTitle": "Guide to the Inventory, Scheduling, and Disposition of Federal Records | National Archives",
       "fetchedDescription": "This guide is for federal agency records management staff. It contains information to help agencies schedule and dispose of their records. It also provides information on the process for approving records schedules. Contact your agency's appraiser if you have further questions.",
@@ -865,7 +865,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "E-mail Management | National Archives",
-    "titleZh": "电子邮件记录管理",
+    "titleZh": "电子邮件文件管理",
     "slug": "e-mail-management-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -901,7 +901,7 @@
       "seed": {
         "id": "email-management",
         "url": "https://www.archives.gov/records-mgmt/email-management",
-        "titleHintZh": "电子邮件记录管理",
+        "titleHintZh": "电子邮件文件管理",
         "titleHintEn": "Email Management",
         "institutionId": "nara",
         "suggestedResourceType": "guide",
@@ -914,7 +914,7 @@
           "electronic records",
           "电子邮件归档"
         ],
-        "note": "NARA 面向联邦机构的电子邮件记录管理指南入口。"
+        "note": "NARA 面向联邦机构的电子邮件文件管理指南入口。"
       },
       "fetchedTitle": "E-mail Management | National Archives",
       "fetchedDescription": "ATTENTION! This page has been superseded. The information listed below is no longer accurate. Please visit our current page at: http://www.archives.gov/records-mgmt/records-mgmt/email-mgmt. Please note that this page is available only as a technical and historical reference. Federal agencies are required to manage their email records in accordance with the Federal",
@@ -1518,7 +1518,7 @@
     "sourceId": "source-nara-web",
     "sourceType": "webpage",
     "titleEn": "Records Management Training Program | National Archives",
-    "titleZh": "NARA 记录管理培训",
+    "titleZh": "NARA 文件管理培训",
     "slug": "records-management-training-program-national-archives",
     "countryId": "usa",
     "institutionId": "nara",
@@ -1555,7 +1555,7 @@
       "seed": {
         "id": "records-mgmt-training",
         "url": "https://www.archives.gov/records-mgmt/training",
-        "titleHintZh": "NARA 记录管理培训",
+        "titleHintZh": "NARA 文件管理培训",
         "titleHintEn": "Records Management Training",
         "institutionId": "nara",
         "suggestedResourceType": "course",
@@ -1569,7 +1569,7 @@
           "records management training",
           "培训"
         ],
-        "note": "NARA 面向联邦机构的记录管理培训课程与学习资源入口。"
+        "note": "NARA 面向联邦机构的文件管理培训课程与学习资源入口。"
       },
       "fetchedTitle": "Records Management Training Program | National Archives",
       "fetchedDescription": "Supporting the Development of Records and Information Management Professionals Training Materials Catalog Our Training Materials Catalog contains most of the training materials that we develop, including all of the new online lessons that are part of the new training curriculum that we call Curriculum 2.0.",
@@ -1635,7 +1635,7 @@
           "解密",
           "public access"
         ],
-        "note": "NARA 解密、开放利用与政府记录公开相关资料入口。"
+        "note": "NARA 解密、开放利用与政府文件公开相关资料入口。"
       },
       "fetchedTitle": "National Archives and Declassification | National Archives",
       "fetchedDescription": "Protecting information critical to our Nation's security and demonstrating our commitment to open Government and effective declassification.",

@@ -1,7 +1,7 @@
 [
   {
     "resourceId": "fr-2024-09396",
-    "title": "联邦记录管理：美国政府问责署同意程序",
+    "title": "联邦文件管理：美国政府问责署同意程序",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=accepted 的 AI 草稿，跳过生成。",
@@ -10,7 +10,7 @@
   },
   {
     "resourceId": "fr-2024-09396",
-    "title": "联邦记录管理：美国政府问责署同意程序",
+    "title": "联邦文件管理：美国政府问责署同意程序",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=accepted 的 AI 草稿，跳过生成。",
@@ -19,7 +19,7 @@
   },
   {
     "resourceId": "fr-2024-06406",
-    "title": "联邦记录管理：数字照片",
+    "title": "联邦文件管理：数字照片",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -28,7 +28,7 @@
   },
   {
     "resourceId": "fr-2022-26450",
-    "title": "联邦记录管理：管理电子记录，包括电子消息",
+    "title": "联邦文件管理：管理电子文件，包括电子消息",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -46,7 +46,7 @@
   },
   {
     "resourceId": "fr-2020-09352",
-    "title": "记录管理：通用记录处置表第 31 号传递通知",
+    "title": "文件管理：通用文件处置表第 31 号传递通知",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -55,7 +55,7 @@
   },
   {
     "resourceId": "fr-2017-11895",
-    "title": "总统记录",
+    "title": "总统文件",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -64,7 +64,7 @@
   },
   {
     "resourceId": "fr-2017-00329",
-    "title": "适用于信息自由法的 NARA 记录",
+    "title": "适用于信息自由法的 NARA 文件",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -73,7 +73,7 @@
   },
   {
     "resourceId": "fr-99-30838",
-    "title": "联邦记录存储",
+    "title": "联邦文件存储",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -82,7 +82,7 @@
   },
   {
     "resourceId": "fr-05-6410",
-    "title": "总统记录法程序",
+    "title": "总统文件法程序",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -91,7 +91,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=accepted 的 AI 草稿，跳过生成。",
@@ -100,7 +100,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -109,7 +109,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -118,7 +118,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -127,7 +127,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -190,7 +190,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -199,7 +199,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -208,7 +208,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -217,7 +217,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -280,7 +280,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -289,7 +289,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -298,7 +298,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -307,7 +307,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -370,7 +370,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -379,7 +379,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -388,7 +388,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -397,7 +397,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -460,7 +460,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -469,7 +469,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -478,7 +478,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -487,7 +487,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -550,7 +550,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -559,7 +559,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -568,7 +568,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -577,7 +577,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -640,7 +640,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -649,7 +649,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -658,7 +658,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -667,7 +667,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -730,7 +730,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -739,7 +739,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -748,7 +748,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -757,7 +757,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -766,7 +766,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -829,7 +829,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -838,7 +838,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -847,7 +847,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -856,7 +856,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -919,7 +919,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -928,7 +928,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -937,7 +937,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -946,7 +946,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1009,7 +1009,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1018,7 +1018,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1027,7 +1027,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1036,7 +1036,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1099,7 +1099,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1108,7 +1108,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1117,7 +1117,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1126,7 +1126,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1189,7 +1189,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1198,7 +1198,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1207,7 +1207,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1216,7 +1216,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1279,7 +1279,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1288,7 +1288,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-policy",
-    "title": "NARA 记录管理法规与指导",
+    "title": "NARA 文件管理法规与指导",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1297,7 +1297,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-bulletins",
-    "title": "NARA 记录管理公告",
+    "title": "NARA 文件管理公告",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1306,7 +1306,7 @@
   },
   {
     "resourceId": "nara-web-electronic-records-preservation",
-    "title": "NARA 数字保存与电子记录保存",
+    "title": "NARA 数字保存与电子文件保存",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1369,7 +1369,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1378,7 +1378,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -1387,7 +1387,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -1396,7 +1396,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "failed",
     "reason": "enrich:generate 未生成新的 AI enrichment 草稿。",
@@ -1459,7 +1459,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1468,7 +1468,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1477,7 +1477,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1486,7 +1486,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -1549,7 +1549,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1558,7 +1558,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1567,7 +1567,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1576,7 +1576,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1639,7 +1639,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1648,7 +1648,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1657,7 +1657,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1666,7 +1666,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1729,7 +1729,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1738,7 +1738,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1747,7 +1747,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1756,7 +1756,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -1819,7 +1819,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1828,7 +1828,7 @@
   },
   {
     "resourceId": "nara-web-grs",
-    "title": "通用记录处置表",
+    "title": "通用文件处置表",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1837,7 +1837,7 @@
   },
   {
     "resourceId": "nara-web-records-scheduling",
-    "title": "联邦记录清点、排程与处置指南",
+    "title": "联邦文件清点、排程与处置指南",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1846,7 +1846,7 @@
   },
   {
     "resourceId": "nara-web-email-management",
-    "title": "电子邮件记录管理",
+    "title": "电子邮件文件管理",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1909,7 +1909,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -1936,7 +1936,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-training",
-    "title": "NARA 记录管理培训",
+    "title": "NARA 文件管理培训",
     "action": "generate_enrichment_draft",
     "status": "success",
     "reason": "已调用 enrich:generate 生成 AI enrichment 草稿。",
@@ -1999,7 +1999,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -2026,7 +2026,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-training",
-    "title": "NARA 记录管理培训",
+    "title": "NARA 文件管理培训",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -2089,7 +2089,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=applied 的 AI 草稿，跳过生成。",
@@ -2116,7 +2116,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt-training",
-    "title": "NARA 记录管理培训",
+    "title": "NARA 文件管理培训",
     "action": "generate_enrichment_draft",
     "status": "skipped",
     "reason": "已有 reviewStatus=pending 的 AI 草稿，跳过生成。",
@@ -5145,7 +5145,7 @@
   },
   {
     "resourceId": "nara-web-records-mgmt",
-    "title": "美国国家档案馆（NARA）联邦记录管理综合门户",
+    "title": "美国国家档案馆（NARA）联邦文件管理综合门户",
     "action": "generate_enrichment_draft",
     "status": "generated_pending",
     "isSafe": false,

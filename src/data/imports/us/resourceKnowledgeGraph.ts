@@ -13,10 +13,10 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2024/03/08/2024-04939/making-a-privacy-act-request",
     archivedUrl: null,
     summaryZh:
-      "该直接最终规则修订 36 CFR Part 1202 中个人向 NARA 提出《隐私法》请求、访问记录和请求修正记录的程序性规定，使现行规则更贴近 NARA 的实际办理流程。",
+      "该直接最终规则修订 36 CFR Part 1202 中个人向 NARA 提出《隐私法》请求、访问文件和请求修正文件的程序性规定，使现行规则更贴近 NARA 的实际办理流程。",
     keyChanges: [
       "更新个人向 NARA 提出 Privacy Act 请求的程序说明。",
-      "强调个人访问和修正自身记录的路径与处理要求。",
+      "强调个人访问和修正自身文件的路径与处理要求。",
       "应与 36 CFR Part 1202 当前有效文本和 2001 年整体实施规则一起阅读。",
     ],
     aiSummary:
@@ -36,14 +36,14 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2016/06/08/2016-13599/privacy-act-of-1974-exemptions",
     archivedUrl: null,
     summaryZh:
-      "该最终规则修订 36 CFR Part 1202 的豁免条款，将 NARA 特定记录系统纳入《1974年隐私法》允许的豁免范围，用于说明档案机构在执法、内部安全或敏感记录场景中如何限制个人访问和修正权。",
+      "该最终规则修订 36 CFR Part 1202 的豁免条款，将 NARA 特定文件系统纳入《1974年隐私法》允许的豁免范围，用于说明档案机构在执法、内部安全或敏感文件场景中如何限制个人访问和修正权。",
     keyChanges: [
-      "在 36 CFR Part 1202 的豁免框架下补充特定 NARA 记录系统。",
-      "说明隐私法权利与执法、内部安全、敏感记录管理之间的制度平衡。",
+      "在 36 CFR Part 1202 的豁免框架下补充特定 NARA 文件系统。",
+      "说明隐私法权利与执法、内部安全、敏感文件管理之间的制度平衡。",
       "与 2001 年 NARA 隐私法实施规则和当前 eCFR 文本构成同一法规演进链条。",
     ],
     aiSummary:
-      "该节点适合用于研究 NARA 如何通过 Federal Register 修订 CFR 条文，把抽象的 Privacy Act 豁免机制落实到具体记录系统。",
+      "该节点适合用于研究 NARA 如何通过 Federal Register 修订 CFR 条文，把抽象的 Privacy Act 豁免机制落实到具体文件系统。",
     humanNote:
       "人工整理：本节点重点解释截图所示页面为何应有版本沿革和相关资料。",
   },
@@ -59,7 +59,7 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2001/12/20/01-31340/privacy-act-implementation",
     archivedUrl: null,
     summaryZh:
-      "该规则系统修订 36 CFR Part 1202，集中规定 NARA 如何执行《1974年隐私法》，包括个人信息收集、个人访问记录、记录披露、修正请求和记录系统豁免等内容。",
+      "该规则系统修订 36 CFR Part 1202，集中规定 NARA 如何执行《1974年隐私法》，包括个人信息收集、个人访问文件、文件披露、修正请求和文件系统豁免等内容。",
     keyChanges: [
       "把《1974年隐私法》的要求落实为 NARA 的机构操作规则。",
       "形成 36 CFR Part 1202 的完整制度框架。",
@@ -102,20 +102,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1236",
     archivedUrl: null,
     summaryZh:
-      "36 CFR Part 1236 是 NARA 电子记录管理要求的当前有效法规文本，覆盖电子记录、电子邮件、数字化副本和电子系统中的记录管理要求。Federal Register 公告用于理解该部分条文的修订过程。",
+      "36 CFR Part 1236 是 NARA 电子文件管理要求的当前有效法规文本，覆盖电子文件、电子邮件、数字化副本和电子系统中的文件管理要求。Federal Register 公告用于理解该部分条文的修订过程。",
     keyChanges: [
-      "作为电子记录管理法规的当前文本入口。",
-      "汇总历次修订后对电子记录和数字化副本的管理要求。",
+      "作为电子文件管理法规的当前文本入口。",
+      "汇总历次修订后对电子文件和数字化副本的管理要求。",
       "适合与 2018 拟议规则、2019 最终规则、2023/2024 数字化规则对照阅读。",
     ],
     aiSummary:
-      "该节点是电子记录管理制度链条的当前文本锚点，帮助用户区分当前有效规则和历史修订公告。",
-    humanNote: "人工整理：正式引用电子记录管理要求时应优先核对 eCFR 当前文本。",
+      "该节点是电子文件管理制度链条的当前文本锚点，帮助用户区分当前有效规则和历史修订公告。",
+    humanNote: "人工整理：正式引用电子文件管理要求时应优先核对 eCFR 当前文本。",
   },
   {
     id: "ver-electronic-records-2018-proposed",
     resourceId: "fr-2018-19497",
-    versionTitle: "2018 年：电子记录拟议规则",
+    versionTitle: "2018 年：电子文件拟议规则",
     versionNumber: "2018 proposed",
     versionStatus: "historical",
     publishDate: "2018-09-10",
@@ -123,20 +123,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2018/09/10/2018-19497/electronic-records",
     archivedUrl: null,
     summaryZh:
-      "该拟议规则提出修订 36 CFR Part 1236，围绕联邦机构数字化临时记录、真实性完整性保障和公众评论程序展开，是后续 2019 年最终规则的前置节点。",
+      "该拟议规则提出修订 36 CFR Part 1236，围绕联邦机构数字化临时文件、真实性完整性保障和公众评论程序展开，是后续 2019 年最终规则的前置节点。",
     keyChanges: [
-      "提出新增或调整电子记录管理规则。",
-      "围绕临时记录数字化和电子记录管理设置公众评论期。",
+      "提出新增或调整电子文件管理规则。",
+      "围绕临时文件数字化和电子文件管理设置公众评论期。",
       "与 2019 年最终规则构成从提案到生效的法规制定链条。",
     ],
     aiSummary:
-      "该节点适合用于观察美国电子记录法规如何通过拟议规则、公众评论和最终规则逐步成形。",
+      "该节点适合用于观察美国电子文件法规如何通过拟议规则、公众评论和最终规则逐步成形。",
     humanNote: "人工整理：建议与 2019 年最终规则和 36 CFR Part 1236 当前文本一起阅读。",
   },
   {
     id: "ver-electronic-records-2019-final",
     resourceId: "fr-2019-06916",
-    versionTitle: "2019 年：电子记录管理最终规则",
+    versionTitle: "2019 年：电子文件管理最终规则",
     versionNumber: "2019 final",
     versionStatus: "historical",
     publishDate: "2019-04-10",
@@ -145,20 +145,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2019/04/10/2019-06916/electronic-records-management",
     archivedUrl: null,
     summaryZh:
-      "该最终规则修订 36 CFR Part 1236，将临时记录数字化等要求纳入电子记录管理法规，是美国联邦机构电子记录管理制度现代化的重要节点。",
+      "该最终规则修订 36 CFR Part 1236，将临时文件数字化等要求纳入电子文件管理法规，是美国联邦机构电子文件管理制度现代化的重要节点。",
     keyChanges: [
       "将 2018 年拟议规则推进为最终规则。",
-      "修订 36 CFR Part 1236，明确临时记录数字化管理要求。",
-      "为后续永久记录数字化和电子消息管理规则提供基础。",
+      "修订 36 CFR Part 1236，明确临时文件数字化管理要求。",
+      "为后续永久文件数字化和电子消息管理规则提供基础。",
     ],
     aiSummary:
-      "该节点是电子记录管理法规链条中的关键落地节点，可用于研究数字化临时记录的合规要求。",
+      "该节点是电子文件管理法规链条中的关键落地节点，可用于研究数字化临时文件的合规要求。",
     humanNote: "人工整理：该节点与 2018 拟议规则和当前 eCFR 文本构成完整阅读链。",
   },
   {
     id: "ver-electronic-records-2022-messages",
     resourceId: "fr-2022-26450",
-    versionTitle: "2022 年：电子记录与电子消息管理",
+    versionTitle: "2022 年：电子文件与电子消息管理",
     versionNumber: "2022",
     versionStatus: "historical",
     publishDate: "2022-12-12",
@@ -166,20 +166,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
     archivedUrl: null,
     summaryZh:
-      "该规则节点围绕电子记录和电子消息管理展开，体现 NARA 将聊天、电子消息和数字办公环境中的记录纳入联邦记录管理框架的趋势。",
+      "该规则节点围绕电子文件和电子消息管理展开，体现 NARA 将聊天、电子消息和数字办公环境中的文件纳入联邦文件管理框架的趋势。",
     keyChanges: [
-      "把电子消息纳入电子记录管理讨论范围。",
-      "延伸 36 CFR Part 1236 对数字办公环境中记录捕获和保存的要求。",
-      "适合与 2023 年协作平台记录管理公告和 Capstone 电子消息指南一起阅读。",
+      "把电子消息纳入电子文件管理讨论范围。",
+      "延伸 36 CFR Part 1236 对数字办公环境中文件捕获和保存的要求。",
+      "适合与 2023 年协作平台文件管理公告和 Capstone 电子消息指南一起阅读。",
     ],
     aiSummary:
-      "该节点反映电子记录管理从电子邮件扩展到更广泛电子消息和协作平台的制度变化。",
-    humanNote: "人工整理：该节点用于连接电子记录法规与协作平台、电子消息实践资料。",
+      "该节点反映电子文件管理从电子邮件扩展到更广泛电子消息和协作平台的制度变化。",
+    humanNote: "人工整理：该节点用于连接电子文件法规与协作平台、电子消息实践资料。",
   },
   {
     id: "ver-digitization-2023-permanent-records",
     resourceId: "fr-2023-09050",
-    versionTitle: "2023 年：永久记录数字化与处置表审查规则",
+    versionTitle: "2023 年：永久文件数字化与处置表审查规则",
     versionNumber: "2023 permanent",
     versionStatus: "historical",
     publishDate: "2023-05-04",
@@ -188,20 +188,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2023/05/04/2023-09050/federal-records-management-digitizing-permanent-records-and-reviewing-records-schedules",
     archivedUrl: null,
     summaryZh:
-      "该最终规则修订 36 CFR 1224、1225 和 1236，围绕永久记录数字化、质量控制、元数据和记录处置期限表审查程序提出要求。",
+      "该最终规则修订 36 CFR 1224、1225 和 1236，围绕永久文件数字化、质量控制、元数据和文件处置期限表审查程序提出要求。",
     keyChanges: [
-      "将永久记录数字化要求纳入联邦记录管理法规。",
+      "将永久文件数字化要求纳入联邦文件管理法规。",
       "把数字化质量、格式、元数据和长期保存要求与处置表审查相连接。",
-      "同时关联 36 CFR 1225 的记录处置表程序和 36 CFR 1236 的电子记录管理要求。",
+      "同时关联 36 CFR 1225 的文件处置表程序和 36 CFR 1236 的电子文件管理要求。",
     ],
     aiSummary:
-      "该节点体现美国从临时记录数字化转向永久记录数字化合规框架的制度深化。",
+      "该节点体现美国从临时文件数字化转向永久文件数字化合规框架的制度深化。",
     humanNote: "人工整理：该节点应与当前 36 CFR Part 1236、Part 1225 和 NARA 数字化资源一起阅读。",
   },
   {
     id: "ver-digitization-2024-temporary-records",
     resourceId: "fr-2024-11910",
-    versionTitle: "2024 年：临时记录数字化规则",
+    versionTitle: "2024 年：临时文件数字化规则",
     versionNumber: "2024 temporary",
     versionStatus: "historical",
     publishDate: "2024-05-30",
@@ -209,15 +209,15 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
     archivedUrl: null,
     summaryZh:
-      "该规则围绕临时联邦记录数字化管理展开，说明机构在将临时记录数字化后如何满足记录管理、保存和处置要求。",
+      "该规则围绕临时联邦文件数字化管理展开，说明机构在将临时文件数字化后如何满足文件管理、保存和处置要求。",
     keyChanges: [
-      "聚焦临时记录数字化后的合规管理。",
-      "延续 36 CFR Part 1236 中电子记录和数字化副本的管理框架。",
-      "可与 2019 年临时记录数字化最终规则和 2023 年永久记录数字化规则比较阅读。",
+      "聚焦临时文件数字化后的合规管理。",
+      "延续 36 CFR Part 1236 中电子文件和数字化副本的管理框架。",
+      "可与 2019 年临时文件数字化最终规则和 2023 年永久文件数字化规则比较阅读。",
     ],
     aiSummary:
-      "该节点帮助用户区分永久记录数字化和临时记录数字化两个不同但相关的制度方向。",
-    humanNote: "人工整理：该节点用于补充数字化记录管理链条。",
+      "该节点帮助用户区分永久文件数字化和临时文件数字化两个不同但相关的制度方向。",
+    humanNote: "人工整理：该节点用于补充数字化文件管理链条。",
   },
   {
     id: "ver-gao-current-ecfr-1225",
@@ -230,14 +230,14 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1225",
     archivedUrl: null,
     summaryZh:
-      "36 CFR Part 1225 是记录保管期限表编制、审批和处置授权机制的当前有效法规文本。涉及 GAO 同意程序的 Federal Register 公告应与该当前文本对照阅读。",
+      "36 CFR Part 1225 是文件保管期限表编制、审批和处置授权机制的当前有效法规文本。涉及 GAO 同意程序的 Federal Register 公告应与该当前文本对照阅读。",
     keyChanges: [
-      "作为记录保管期限表和处置授权程序的当前法规入口。",
+      "作为文件保管期限表和处置授权程序的当前法规入口。",
       "承接 2024 年 GAO 同意程序规则及其更正规则后的现行条文。",
-      "适合用于理解记录处置审批中的 NARA 与 GAO 权责变化。",
+      "适合用于理解文件处置审批中的 NARA 与 GAO 权责变化。",
     ],
     aiSummary:
-      "该节点是 GAO 同意程序和记录保管期限表制度的当前文本锚点。",
+      "该节点是 GAO 同意程序和文件保管期限表制度的当前文本锚点。",
     humanNote: "人工整理：正式引用处置表编制与审批要求时应核对 eCFR 当前文本。",
   },
   {
@@ -251,14 +251,14 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2024/05/01/2024-09396/federal-records-management-gao-concurrence",
     archivedUrl: null,
     summaryZh:
-      "该规则修订 36 CFR Part 1225，调整联邦机构记录处置计划中 GAO 同意程序，反映记录处置审批流程的行政简化。",
+      "该规则修订 36 CFR Part 1225，调整联邦机构文件处置计划中 GAO 同意程序，反映文件处置审批流程的行政简化。",
     keyChanges: [
-      "修订记录处置期限表编制和审批相关条款。",
-      "围绕 GAO 对记录处置计划的同意要求进行调整。",
+      "修订文件处置期限表编制和审批相关条款。",
+      "围绕 GAO 对文件处置计划的同意要求进行调整。",
       "后续由 2024 年更正规则修正文本错误或技术细节。",
     ],
     aiSummary:
-      "该节点适合研究 NARA 与 GAO 在联邦记录处置审批中的职能边界变化。",
+      "该节点适合研究 NARA 与 GAO 在联邦文件处置审批中的职能边界变化。",
     humanNote: "人工整理：应与 2024 年更正规则和当前 36 CFR Part 1225 一并阅读。",
   },
   {
@@ -286,14 +286,14 @@ export const importedResourceVersions: ResourceVersion[] = [
   {
     id: "ver-grs-current-nara",
     resourceId: "nara-web-grs",
-    versionTitle: "当前入口：NARA 通用记录处置表（GRS）",
+    versionTitle: "当前入口：NARA 通用文件处置表（GRS）",
     versionNumber: "current portal",
     versionStatus: "current",
     publishDate: "",
     sourceUrl: "https://www.archives.gov/records-mgmt/grs",
     archivedUrl: null,
     summaryZh:
-      "NARA GRS 页面是查看通用记录处置表当前资源、说明和下载入口的官方页面。各 GRS Transmittal 是对该制度的阶段性更新通知。",
+      "NARA GRS 页面是查看通用文件处置表当前资源、说明和下载入口的官方页面。各 GRS Transmittal 是对该制度的阶段性更新通知。",
     keyChanges: [
       "提供当前 GRS 资料入口。",
       "用于理解各次 GRS Transmittal 更新后的实际可用资源。",
@@ -314,9 +314,9 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1227",
     archivedUrl: null,
     summaryZh:
-      "36 CFR Part 1227 是通用记录表适用、使用和机构执行责任的当前有效法规文本，是理解 GRS Transmittal 法规背景的基础。",
+      "36 CFR Part 1227 是通用文件表适用、使用和机构执行责任的当前有效法规文本，是理解 GRS Transmittal 法规背景的基础。",
     keyChanges: [
-      "规定通用记录表的适用和使用规则。",
+      "规定通用文件表的适用和使用规则。",
       "为各次 GRS Transmittal 的制度效力提供法规背景。",
       "适合与 NARA GRS 当前入口和 Federal Register 传送通知一起阅读。",
     ],
@@ -335,9 +335,9 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2024/08/16/2024-18393/records-management-general-records-schedule-grs-grs-transmittal-36",
     archivedUrl: null,
     summaryZh:
-      "该通知宣布 GRS Transmittal 36 生效，是通用记录表制度的阶段性更新节点。",
+      "该通知宣布 GRS Transmittal 36 生效，是通用文件表制度的阶段性更新节点。",
     keyChanges: [
-      "发布通用记录表第 36 号传送更新。",
+      "发布通用文件表第 36 号传送更新。",
       "说明联邦机构如何引用和执行更新后的 GRS 条目。",
       "应与 NARA GRS 当前入口和前序传送通知对照阅读。",
     ],
@@ -356,10 +356,10 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2024/06/14/2024-13176/records-management-general-records-schedule-grs-grs-transmittal-35",
     archivedUrl: null,
     summaryZh:
-      "该通知发布 GRS Transmittal 35，体现通用记录表在 2024 年的连续更新机制。",
+      "该通知发布 GRS Transmittal 35，体现通用文件表在 2024 年的连续更新机制。",
     keyChanges: [
       "发布第 35 号 GRS 更新。",
-      "为联邦机构提供更新后的记录处置授权。",
+      "为联邦机构提供更新后的文件处置授权。",
       "与第 36 号和第 34 号传送通知构成连续更新链条。",
     ],
     aiSummary:
@@ -377,14 +377,14 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2023/06/23/2023-13369/records-management-general-records-schedule-grs-grs-transmittal-34",
     archivedUrl: null,
     summaryZh:
-      "该通知发布 GRS Transmittal 34，涉及记录管理、信息获取与保护、临时和中间记录等通用记录表更新。",
+      "该通知发布 GRS Transmittal 34，涉及文件管理、信息获取与保护、临时和中间文件等通用文件表更新。",
     keyChanges: [
-      "更新多项通用记录表。",
-      "涉及记录管理记录、信息获取与保护记录等类别。",
+      "更新多项通用文件表。",
+      "涉及文件管理文件、信息获取与保护文件等类别。",
       "可用于研究 GRS 条目的滚动维护和联邦机构处置授权更新机制。",
     ],
     aiSummary:
-      "该节点代表 GRS 在电子记录和信息保护背景下的阶段性调整。",
+      "该节点代表 GRS 在电子文件和信息保护背景下的阶段性调整。",
     humanNote: "人工整理：建议与 GRS 当前入口和后续 35、36 号传送通知一起阅读。",
   },
   {
@@ -398,15 +398,15 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2015/09/16/2015-23245/records-management-general-records-schedule-grs-grs-transmittal-25-email-managed-under-a-capstone",
     archivedUrl: null,
     summaryZh:
-      "该通知发布 GRS Transmittal 25，重点涉及采用 Capstone 方法管理联邦机构电子邮件，是电子邮件记录处置制度化的重要节点。",
+      "该通知发布 GRS Transmittal 25，重点涉及采用 Capstone 方法管理联邦机构电子邮件，是电子邮件文件处置制度化的重要节点。",
     keyChanges: [
       "将 Capstone 电子邮件管理与 GRS 处置授权连接起来。",
-      "为联邦机构电子邮件记录保存与处置提供通用授权。",
-      "适合与后续电子消息、协作平台和电子记录管理资料一起阅读。",
+      "为联邦机构电子邮件文件保存与处置提供通用授权。",
+      "适合与后续电子消息、协作平台和电子文件管理资料一起阅读。",
     ],
     aiSummary:
-      "该节点把 GRS 制度与电子邮件记录管理连接起来，是理解 Capstone 方法的重要历史节点。",
-    humanNote: "人工整理：该节点也属于电子记录管理与 GRS 两条制度链。",
+      "该节点把 GRS 制度与电子邮件文件管理连接起来，是理解 Capstone 方法的重要历史节点。",
+    humanNote: "人工整理：该节点也属于电子文件管理与 GRS 两条制度链。",
   },
   {
     id: "ver-foia-current-uscode-552",
@@ -419,7 +419,7 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552&edition=prelim",
     archivedUrl: null,
     summaryZh:
-      "5 U.S.C. 552 是《信息自由法》（FOIA）的当前法典文本，规定公众请求联邦机构记录、主动公开、豁免公开和行政救济等基本制度。",
+      "5 U.S.C. 552 是《信息自由法》（FOIA）的当前法典文本，规定公众请求联邦机构文件、主动公开、豁免公开和行政救济等基本制度。",
     keyChanges: [
       "作为 FOIA 制度的当前法律文本入口。",
       "为 NARA FOIA 页面、机构 FOIA 程序规则和咨询委员会资料提供上位法依据。",
@@ -460,10 +460,10 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2001/03/20/01-6555/freedom-of-information-act-regulations",
     archivedUrl: null,
     summaryZh:
-      "该 Federal Register 规则修订 NARA 的 FOIA 实施法规，说明 NARA 如何处理公众信息公开请求、费用、时限、申诉和可公开记录。",
+      "该 Federal Register 规则修订 NARA 的 FOIA 实施法规，说明 NARA 如何处理公众信息公开请求、费用、时限、申诉和可公开文件。",
     keyChanges: [
       "把 FOIA 的一般法律要求落实为 NARA 的机构程序规则。",
-      "说明公众请求 NARA 记录时的办理机制。",
+      "说明公众请求 NARA 文件时的办理机制。",
       "可与当前 NARA FOIA 页面和 5 U.S.C. 552 对照阅读。",
     ],
     aiSummary:
@@ -502,15 +502,15 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter22&edition=prelim",
     archivedUrl: null,
     summaryZh:
-      "44 U.S.C. Chapter 22 是总统记录制度的当前法典文本，规定总统记录的所有权、保存、移交、公开限制和 NARA 职责。",
+      "44 U.S.C. Chapter 22 是总统文件制度的当前法典文本，规定总统文件的所有权、保存、移交、公开限制和 NARA 职责。",
     keyChanges: [
-      "作为总统记录制度的当前法律文本入口。",
-      "为 NARA 总统记录法页面、总统图书馆和程序规则提供法律依据。",
+      "作为总统文件制度的当前法律文本入口。",
+      "为 NARA 总统文件法页面、总统图书馆和程序规则提供法律依据。",
       "适合与 36 CFR Part 1233 和 NARA 总统图书馆资料一起阅读。",
     ],
     aiSummary:
-      "该节点是总统记录链条中的上位法锚点。",
-    humanNote: "人工整理：用于把总统记录介绍页和具体法规规则连接到当前法典文本。",
+      "该节点是总统文件链条中的上位法锚点。",
+    humanNote: "人工整理：用于把总统文件介绍页和具体法规规则连接到当前法典文本。",
   },
   {
     id: "ver-pra-current-ecfr-1233",
@@ -523,20 +523,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1233",
     archivedUrl: null,
     summaryZh:
-      "36 CFR Part 1233 是与转移、使用、保管设施和档案保管相关的当前法规文本，可用于理解总统记录、实体设施和记录移交的管理要求。",
+      "36 CFR Part 1233 是与转移、使用、保管设施和档案保管相关的当前法规文本，可用于理解总统文件、实体设施和文件移交的管理要求。",
     keyChanges: [
-      "作为相关记录转移和保管要求的当前法规入口。",
-      "补充总统记录法和总统图书馆页面的操作规则背景。",
-      "适合与 NARA 总统记录法页面和总统图书馆体系资料一起阅读。",
+      "作为相关文件转移和保管要求的当前法规入口。",
+      "补充总统文件法和总统图书馆页面的操作规则背景。",
+      "适合与 NARA 总统文件法页面和总统图书馆体系资料一起阅读。",
     ],
     aiSummary:
-      "该节点用于把总统记录法律框架与 NARA 保管设施和移交管理要求连接起来。",
-    humanNote: "人工整理：该节点是法规背景，不等同于总统记录法本身。",
+      "该节点用于把总统文件法律框架与 NARA 保管设施和移交管理要求连接起来。",
+    humanNote: "人工整理：该节点是法规背景，不等同于总统文件法本身。",
   },
   {
     id: "ver-pra-2005-procedures",
     resourceId: "fr-05-6410",
-    versionTitle: "2005 年：总统记录法程序规则",
+    versionTitle: "2005 年：总统文件法程序规则",
     versionNumber: "2005",
     versionStatus: "historical",
     publishDate: "2005-04-05",
@@ -544,20 +544,20 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2005/04/05/05-6410/presidential-records-act-procedures",
     archivedUrl: null,
     summaryZh:
-      "该规则说明总统记录法相关程序安排，帮助理解总统离任后记录移交、限制公开、请求访问和 NARA 管理职责如何被制度化。",
+      "该规则说明总统文件法相关程序安排，帮助理解总统离任后文件移交、限制公开、请求访问和 NARA 管理职责如何被制度化。",
     keyChanges: [
-      "把总统记录法要求转化为 NARA 的程序规则。",
-      "关联总统记录公开、限制和 NARA 保管职责。",
-      "适合与总统记录法当前法典文本和 NARA 总统图书馆页面对照阅读。",
+      "把总统文件法要求转化为 NARA 的程序规则。",
+      "关联总统文件公开、限制和 NARA 保管职责。",
+      "适合与总统文件法当前法典文本和 NARA 总统图书馆页面对照阅读。",
     ],
     aiSummary:
-      "该节点是总统记录法从法律文本进入机构办理程序的关键节点。",
-    humanNote: "人工整理：适合放入总统记录法页面的版本沿革。",
+      "该节点是总统文件法从法律文本进入机构办理程序的关键节点。",
+    humanNote: "人工整理：适合放入总统文件法页面的版本沿革。",
   },
   {
     id: "ver-pra-2017-final-rule",
     resourceId: "fr-2017-11895",
-    versionTitle: "2017 年：总统记录相关最终规则",
+    versionTitle: "2017 年：总统文件相关最终规则",
     versionNumber: "2017",
     versionStatus: "historical",
     publishDate: "2017-06-08",
@@ -565,14 +565,14 @@ export const importedResourceVersions: ResourceVersion[] = [
       "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
     archivedUrl: null,
     summaryZh:
-      "该最终规则围绕总统记录管理要求进行调整，是 NARA 总统记录制度在近年 Federal Register 中的重要规则节点。",
+      "该最终规则围绕总统文件管理要求进行调整，是 NARA 总统文件制度在近年 Federal Register 中的重要规则节点。",
     keyChanges: [
-      "更新总统记录相关法规或程序要求。",
-      "延续 2005 年程序规则和当前总统记录法框架。",
+      "更新总统文件相关法规或程序要求。",
+      "延续 2005 年程序规则和当前总统文件法框架。",
       "适合与 44 U.S.C. Chapter 22 和总统图书馆资料一起阅读。",
     ],
     aiSummary:
-      "该节点用于展示总统记录制度的后续规则更新。",
+      "该节点用于展示总统文件制度的后续规则更新。",
     humanNote: "人工整理：详情页中应把它与法律依据和总统图书馆体系连接起来。",
   },
   {
@@ -588,7 +588,7 @@ export const importedResourceVersions: ResourceVersion[] = [
       "NARA 解密页面汇集国家安全信息解密、强制解密审查、跨机构安全分类上诉和相关指导资料，是理解美国档案开放与保密平衡的重要入口。",
     keyChanges: [
       "提供解密、审查和安全分类相关资源入口。",
-      "连接 ISCAP、CUI、强制解密审查和分类电子记录元数据要求。",
+      "连接 ISCAP、CUI、强制解密审查和分类电子文件元数据要求。",
       "适合与 CUI 最终规则、国家安全信息法规和 NARA 公告一起阅读。",
     ],
     aiSummary:
@@ -611,7 +611,7 @@ export const importedResourceVersions: ResourceVersion[] = [
     keyChanges: [
       "确立 CUI 的统一管理框架。",
       "连接信息安全、开放获取和档案保存中的控制边界问题。",
-      "适合与 NARA 解密页面和分类电子记录元数据公告一起阅读。",
+      "适合与 NARA 解密页面和分类电子文件元数据公告一起阅读。",
     ],
     aiSummary:
       "该节点为研究美国信息控制与档案开放之间的制度边界提供核心规则。",
@@ -632,7 +632,7 @@ export const importedResourceVersions: ResourceVersion[] = [
     keyChanges: [
       "体现 CUI 项目的后续维护和制度延伸。",
       "补充 2016 年最终规则后的执行环境。",
-      "可与国家安全信息和分类电子记录元数据资料形成对照。",
+      "可与国家安全信息和分类电子文件元数据资料形成对照。",
     ],
     aiSummary:
       "该节点帮助用户观察 CUI 制度不是一次性规则，而是持续维护的治理项目。",
@@ -673,10 +673,10 @@ export const importedResourceVersions: ResourceVersion[] = [
     keyChanges: [
       "提供数字保存和格式策略的当前入口。",
       "与推荐格式声明、格式可持续性页面共同支撑数字资源长期保存研究。",
-      "可与 NARA 电子记录保存和永久电子记录移交指南互补阅读。",
+      "可与 NARA 电子文件保存和永久电子文件移交指南互补阅读。",
     ],
     aiSummary:
-      "该节点把档案领域的电子记录保存与图书馆领域的数字保存实践连接起来。",
+      "该节点把档案领域的电子文件保存与图书馆领域的数字保存实践连接起来。",
     humanNote: "人工整理：用于扩展资料库，不让用户只看到 NARA 的入口页。",
   },
   {
@@ -693,7 +693,7 @@ export const importedResourceVersions: ResourceVersion[] = [
     keyChanges: [
       "提供数字对象格式选择的实践标准。",
       "支撑档案、图书馆和数字人文项目中的长期可用性判断。",
-      "适合与 LOC 格式可持续性页面和 NARA 电子记录移交格式指南一起阅读。",
+      "适合与 LOC 格式可持续性页面和 NARA 电子文件移交格式指南一起阅读。",
     ],
     aiSummary:
       "该节点从实际格式选择层面补足数字保存链条。",
@@ -713,7 +713,7 @@ export const importedResourceVersions: ResourceVersion[] = [
     keyChanges: [
       "提供判断数字格式长期保存风险的维度。",
       "与推荐格式声明形成“选择格式”和“理解格式风险”的配套关系。",
-      "可用于研究 NARA 电子记录移交格式要求背后的保存逻辑。",
+      "可用于研究 NARA 电子文件移交格式要求背后的保存逻辑。",
     ],
     aiSummary:
       "该节点用于把格式清单提升为可解释的数字保存评价框架。",
@@ -749,7 +749,7 @@ export const importedResourceVersions: ResourceVersion[] = [
     sourceUrl: "https://catalog.archives.gov/citizenarchivist",
     archivedUrl: null,
     summaryZh:
-      "Citizen Archivist Missions 将公众协作拆分为具体任务，围绕特定馆藏、主题或记录集合组织转录、标签和描述工作。",
+      "Citizen Archivist Missions 将公众协作拆分为具体任务，围绕特定馆藏、主题或文件集合组织转录、标签和描述工作。",
     keyChanges: [
       "提供可直接观察的公众参与任务形态。",
       "连接 NARA Catalog 中的数字对象和公众贡献机制。",
@@ -836,7 +836,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "延伸修订",
     descriptionZh:
-      "2016 年豁免规则是在 2001 年 NARA 隐私法实施规则框架上的后续修订，重点处理特定记录系统豁免。",
+      "2016 年豁免规则是在 2001 年 NARA 隐私法实施规则框架上的后续修订，重点处理特定文件系统豁免。",
     evidenceResourceId: "fr-2016-13599",
     sourceUrl:
       "https://www.federalregister.gov/documents/2016/06/08/2016-13599/privacy-act-of-1974-exemptions",
@@ -911,7 +911,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "修订当前法规",
     descriptionZh:
-      "2019 年电子记录管理最终规则修订 36 CFR Part 1236，当前有效文本应以 eCFR 为准。",
+      "2019 年电子文件管理最终规则修订 36 CFR Part 1236，当前有效文本应以 eCFR 为准。",
     evidenceResourceId: "fr-2019-06916",
     sourceUrl:
       "https://www.federalregister.gov/documents/2019/04/10/2019-06916/electronic-records-management",
@@ -926,7 +926,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "电子消息管理延伸",
     descriptionZh:
-      "2022 年电子记录与电子消息管理资料延伸 36 CFR Part 1236 的电子记录管理主题，适合与当前法规文本一起阅读。",
+      "2022 年电子文件与电子消息管理资料延伸 36 CFR Part 1236 的电子文件管理主题，适合与当前法规文本一起阅读。",
     evidenceResourceId: "fr-2022-26450",
     sourceUrl:
       "https://www.federalregister.gov/documents/2022/12/12/2022-26450/federal-records-management-managing-electronic-records-including-electronic-messages",
@@ -941,7 +941,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "实践指南补充",
     descriptionZh:
-      "协作平台记录管理公告把电子记录管理要求落实到 Teams、Slack 等数字办公平台场景。",
+      "协作平台文件管理公告把电子文件管理要求落实到 Teams、Slack 等数字办公平台场景。",
     evidenceResourceId: "nara-bulletin-2023-04-collaboration-platforms",
     sourceUrl: "https://www.archives.gov/records-mgmt/bulletins/2023/2023-04",
     confidence: "high",
@@ -955,7 +955,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "电子消息管理补充",
     descriptionZh:
-      "Capstone 电子消息公告补充说明电子消息记录如何按职位、账户和业务角色进行识别与处置。",
+      "Capstone 电子消息公告补充说明电子消息文件如何按职位、账户和业务角色进行识别与处置。",
     evidenceResourceId: "nara-bulletin-2023-02-capstone-electronic-messages",
     sourceUrl: "https://www.archives.gov/records-mgmt/bulletins/2023/2023-02",
     confidence: "high",
@@ -967,9 +967,9 @@ export const importedEntityRelations: EntityRelation[] = [
     targetType: "resource",
     targetId: "ecfr-36-cfr-1236",
     relationType: "related_to",
-    relationLabelZh: "修订电子记录法规",
+    relationLabelZh: "修订电子文件法规",
     descriptionZh:
-      "2023 年永久记录数字化规则修订 36 CFR Part 1236，并把永久记录数字化质量、元数据和长期保存要求纳入法规框架。",
+      "2023 年永久文件数字化规则修订 36 CFR Part 1236，并把永久文件数字化质量、元数据和长期保存要求纳入法规框架。",
     evidenceResourceId: "fr-2023-09050",
     sourceUrl:
       "https://www.federalregister.gov/documents/2023/05/04/2023-09050/federal-records-management-digitizing-permanent-records-and-reviewing-records-schedules",
@@ -984,7 +984,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "关联处置表审查",
     descriptionZh:
-      "2023 年永久记录数字化规则也涉及 36 CFR Part 1225 中记录处置期限表审查程序。",
+      "2023 年永久文件数字化规则也涉及 36 CFR Part 1225 中文件处置期限表审查程序。",
     evidenceResourceId: "fr-2023-09050",
     sourceUrl:
       "https://www.federalregister.gov/documents/2023/05/04/2023-09050/federal-records-management-digitizing-permanent-records-and-reviewing-records-schedules",
@@ -999,7 +999,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "数字化规则延伸",
     descriptionZh:
-      "2024 年临时记录数字化规则与 2023 年永久记录数字化规则共同构成 NARA 对不同记录价值类型数字化要求的制度链条。",
+      "2024 年临时文件数字化规则与 2023 年永久文件数字化规则共同构成 NARA 对不同文件价值类型数字化要求的制度链条。",
     evidenceResourceId: "fr-2024-11910",
     sourceUrl:
       "https://www.federalregister.gov/documents/2024/05/30/2024-11910/federal-records-management-digitizing-temporary-records",
@@ -1014,7 +1014,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "项目背景与法规节点",
     descriptionZh:
-      "NARA 数字化页面提供项目和实践背景，2023 年规则则提供永久记录数字化的法规节点。",
+      "NARA 数字化页面提供项目和实践背景，2023 年规则则提供永久文件数字化的法规节点。",
     evidenceResourceId: "fr-2023-09050",
     sourceUrl:
       "https://www.federalregister.gov/documents/2023/05/04/2023-09050/federal-records-management-digitizing-permanent-records-and-reviewing-records-schedules",
@@ -1074,7 +1074,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "当前入口与法规依据",
     descriptionZh:
-      "NARA GRS 页面是当前资源入口，36 CFR Part 1227 是通用记录表适用和使用规则的当前法规文本。",
+      "NARA GRS 页面是当前资源入口，36 CFR Part 1227 是通用文件表适用和使用规则的当前法规文本。",
     evidenceResourceId: "ecfr-36-cfr-1227",
     sourceUrl:
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1227",
@@ -1089,7 +1089,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "GRS 更新链",
     descriptionZh:
-      "GRS Transmittal 36 是通用记录表的阶段性更新通知，当前可用表格和说明应回到 NARA GRS 页面核对。",
+      "GRS Transmittal 36 是通用文件表的阶段性更新通知，当前可用表格和说明应回到 NARA GRS 页面核对。",
     evidenceResourceId: "fr-2024-18393",
     sourceUrl:
       "https://www.federalregister.gov/documents/2024/08/16/2024-18393/records-management-general-records-schedule-grs-grs-transmittal-36",
@@ -1104,7 +1104,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "GRS 更新链",
     descriptionZh:
-      "GRS Transmittal 35 是通用记录表的阶段性更新通知，当前可用表格和说明应回到 NARA GRS 页面核对。",
+      "GRS Transmittal 35 是通用文件表的阶段性更新通知，当前可用表格和说明应回到 NARA GRS 页面核对。",
     evidenceResourceId: "fr-2024-13176",
     sourceUrl:
       "https://www.federalregister.gov/documents/2024/06/14/2024-13176/records-management-general-records-schedule-grs-grs-transmittal-35",
@@ -1119,7 +1119,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "GRS 更新链",
     descriptionZh:
-      "GRS Transmittal 34 是通用记录表的阶段性更新通知，适合与当前 GRS 页面和后续传送通知一起阅读。",
+      "GRS Transmittal 34 是通用文件表的阶段性更新通知，适合与当前 GRS 页面和后续传送通知一起阅读。",
     evidenceResourceId: "fr-2023-13369",
     sourceUrl:
       "https://www.federalregister.gov/documents/2023/06/23/2023-13369/records-management-general-records-schedule-grs-grs-transmittal-34",
@@ -1134,7 +1134,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "后续传送通知",
     descriptionZh:
-      "GRS Transmittal 36 是 Transmittal 35 之后的后续更新节点，可用于观察通用记录表的连续维护过程。",
+      "GRS Transmittal 36 是 Transmittal 35 之后的后续更新节点，可用于观察通用文件表的连续维护过程。",
     evidenceResourceId: "fr-2024-18393",
     sourceUrl:
       "https://www.federalregister.gov/documents/2024/08/16/2024-18393/records-management-general-records-schedule-grs-grs-transmittal-36",
@@ -1149,7 +1149,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "后续传送通知",
     descriptionZh:
-      "GRS Transmittal 35 承接 Transmittal 34，是通用记录表滚动更新链条中的后续节点。",
+      "GRS Transmittal 35 承接 Transmittal 34，是通用文件表滚动更新链条中的后续节点。",
     evidenceResourceId: "fr-2024-13176",
     sourceUrl:
       "https://www.federalregister.gov/documents/2024/06/14/2024-13176/records-management-general-records-schedule-grs-grs-transmittal-35",
@@ -1164,7 +1164,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "电子邮件处置基础",
     descriptionZh:
-      "GRS Transmittal 25 将 Capstone 方法纳入电子邮件记录处置授权，适合与 NARA 电子邮件记录管理页面一起阅读。",
+      "GRS Transmittal 25 将 Capstone 方法纳入电子邮件文件处置授权，适合与 NARA 电子邮件文件管理页面一起阅读。",
     evidenceResourceId: "fr-2015-23245",
     sourceUrl:
       "https://www.federalregister.gov/documents/2015/09/16/2015-23245/records-management-general-records-schedule-grs-grs-transmittal-25-email-managed-under-a-capstone",
@@ -1224,7 +1224,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "适用范围说明",
     descriptionZh:
-      "2017 年 NARA 相关规则围绕哪些 NARA 记录适用 FOIA 展开，可作为理解 NARA FOIA 页面适用范围的补充节点。",
+      "2017 年 NARA 相关规则围绕哪些 NARA 文件适用 FOIA 展开，可作为理解 NARA FOIA 页面适用范围的补充节点。",
     evidenceResourceId: "fr-2017-00329",
     sourceUrl:
       "https://www.federalregister.gov/documents/2017/01/11/2017-00329/nara-records-subject-to-foia",
@@ -1254,7 +1254,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "当前法典文本",
     descriptionZh:
-      "《总统记录法》的基础介绍应与 44 U.S.C. Chapter 22 当前法典文本对照，以核对总统记录所有权、移交和公开限制。",
+      "《总统文件法》的基础介绍应与 44 U.S.C. Chapter 22 当前法典文本对照，以核对总统文件所有权、移交和公开限制。",
     evidenceResourceId: "uscode-44-chapter-22-presidential-records",
     sourceUrl:
       "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter22&edition=prelim",
@@ -1269,7 +1269,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "法律依据",
     descriptionZh:
-      "44 U.S.C. Chapter 22 是总统记录制度的法律依据，NARA 总统记录法页面提供面向公众和研究者的解释入口。",
+      "44 U.S.C. Chapter 22 是总统文件制度的法律依据，NARA 总统文件法页面提供面向公众和研究者的解释入口。",
     evidenceResourceId: "uscode-44-chapter-22-presidential-records",
     sourceUrl:
       "https://uscode.house.gov/view.xhtml?path=/prelim@title44/chapter22&edition=prelim",
@@ -1284,7 +1284,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "机构实践",
     descriptionZh:
-      "总统记录法确立总统记录归属和管理框架，总统图书馆体系是 NARA 保存、描述和开放总统记录的重要实践载体。",
+      "总统文件法确立总统文件归属和管理框架，总统图书馆体系是 NARA 保存、描述和开放总统文件的重要实践载体。",
     evidenceResourceId: "res-presidential-records-act",
     sourceUrl:
       "https://www.archives.gov/presidential-libraries/laws/presidential-records-act",
@@ -1299,7 +1299,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "程序规则",
     descriptionZh:
-      "2005 年总统记录法程序规则把法律要求转化为 NARA 的办理流程，适合与总统记录法介绍页和当前法典文本一起阅读。",
+      "2005 年总统文件法程序规则把法律要求转化为 NARA 的办理流程，适合与总统文件法介绍页和当前法典文本一起阅读。",
     evidenceResourceId: "fr-05-6410",
     sourceUrl:
       "https://www.federalregister.gov/documents/2005/04/05/05-6410/presidential-records-act-procedures",
@@ -1314,7 +1314,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "后续规则更新",
     descriptionZh:
-      "2017 年 Presidential Records 规则是总统记录制度的后续规则节点，应回到 44 U.S.C. Chapter 22 和 NARA 页面理解其制度位置。",
+      "2017 年 Presidential Records 规则是总统文件制度的后续规则节点，应回到 44 U.S.C. Chapter 22 和 NARA 页面理解其制度位置。",
     evidenceResourceId: "fr-2017-11895",
     sourceUrl:
       "https://www.federalregister.gov/documents/2017/06/08/2017-11895/presidential-records",
@@ -1329,7 +1329,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "保管与移交规则背景",
     descriptionZh:
-      "36 CFR Part 1233 提供记录移交和保管相关法规背景，可帮助理解总统图书馆体系中的记录接收、保管和开放实践。",
+      "36 CFR Part 1233 提供文件移交和保管相关法规背景，可帮助理解总统图书馆体系中的文件接收、保管和开放实践。",
     evidenceResourceId: "ecfr-36-cfr-1233",
     sourceUrl:
       "https://www.ecfr.gov/current/title-36/chapter-XII/subchapter-B/part-1233",
@@ -1387,9 +1387,9 @@ export const importedEntityRelations: EntityRelation[] = [
     targetType: "resource",
     targetId: "nara-bulletin-2025-01-classified-electronic-records-metadata",
     relationType: "related_to",
-    relationLabelZh: "分类电子记录元数据",
+    relationLabelZh: "分类电子文件元数据",
     descriptionZh:
-      "分类电子记录元数据公告把解密和安全分类问题延伸到电子记录移交、描述和长期保存的技术层面。",
+      "分类电子文件元数据公告把解密和安全分类问题延伸到电子文件移交、描述和长期保存的技术层面。",
     evidenceResourceId: "nara-bulletin-2025-01-classified-electronic-records-metadata",
     sourceUrl: "https://www.archives.gov/records-mgmt/bulletins/2025/2025-01",
     confidence: "high",
@@ -1431,7 +1431,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "格式与长期保存支撑",
     descriptionZh:
-      "NARA 永久电子记录格式指南与 LOC 数字格式可持续性资料共同说明文件格式选择如何影响长期保存和未来可用性。",
+      "NARA 永久电子文件格式指南与 LOC 数字格式可持续性资料共同说明文件格式选择如何影响长期保存和未来可用性。",
     evidenceResourceId: "nara-bulletin-2014-04-format-guidance",
     sourceUrl: "https://www.archives.gov/records-mgmt/bulletins/2014/2014-04",
     confidence: "high",
@@ -1445,7 +1445,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "元数据与移交要求",
     descriptionZh:
-      "NARA 元数据指南解释永久电子记录移交时需要提供哪些描述和技术信息，应与电子记录移交指南一起阅读。",
+      "NARA 元数据指南解释永久电子文件移交时需要提供哪些描述和技术信息，应与电子文件移交指南一起阅读。",
     evidenceResourceId: "nara-bulletin-2015-04-metadata-guidance",
     sourceUrl: "https://www.archives.gov/records-mgmt/bulletins/2015/2015-04",
     confidence: "high",
@@ -1459,7 +1459,7 @@ export const importedEntityRelations: EntityRelation[] = [
     relationType: "related_to",
     relationLabelZh: "保存与移交实践",
     descriptionZh:
-      "NARA 电子记录保存入口提供总体背景，永久电子记录移交指南则说明机构把电子记录交给 NARA 的具体要求。",
+      "NARA 电子文件保存入口提供总体背景，永久电子文件移交指南则说明机构把电子文件交给 NARA 的具体要求。",
     evidenceResourceId: "nara-transfer-electronic-records",
     sourceUrl: "https://www.archives.gov/records-mgmt/transfer-electronic-records",
     confidence: "high",
