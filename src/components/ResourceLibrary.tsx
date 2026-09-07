@@ -564,6 +564,7 @@ export function ResourceLibrary({
   const [snapshotActionMessages, setSnapshotActionMessages] = useState<
     Record<string, SnapshotActionMessage>
   >({});
+  const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
 
   const institutionById = useMemo(
     () => new Map(institutions.map((institution) => [institution.id, institution])),
@@ -1018,42 +1019,20 @@ export function ResourceLibrary({
   return (
     <section className="archive-ledger-section">
       <div className="archive-ledger-shell">
-        <aside className="archive-ledger-sidebar">
+        <aside
+          className={`archive-ledger-sidebar ${
+            isFilterDrawerOpen ? "is-open" : ""
+          }`}
+          id="resource-filter-panel"
+          aria-label="资料筛选索引柜"
+        >
           <div className="archive-ledger-sticky">
             <section className="archive-ledger-filter-card">
-              <h2>资讯类型</h2>
+              <h2>建设分类 TYPE</h2>
+              <small>按建设过程排序</small>
               <button
                 type="button"
-                className={`archive-ledger-filter-line ${
-                  resourceType === allValue ? "is-active" : ""
-                }`}
-                onClick={() => updateState({ ...currentState, resourceType: allValue })}
-              >
-                <span>全部资料</span>
-                <b>{resources.length}</b>
-              </button>
-              {resourceTypeOptions.map((item) => (
-                <button
-                  type="button"
-                  key={item.value}
-                  className={`archive-ledger-filter-line ${
-                    resourceType === item.value ? "is-active" : ""
-                  }`}
-                  onClick={() =>
-                    updateState({ ...currentState, resourceType: item.value })
-                  }
-                >
-                  <span>{item.label}</span>
-                  <b>{item.count}</b>
-                </button>
-              ))}
-            </section>
-
-            <section className="archive-ledger-filter-card">
-              <h2>建设分类</h2>
-              <button
-                type="button"
-                className={`archive-ledger-filter-line ${
+                className={`archive-ledger-check-line ${
                   knowledgeRole === allValue ? "is-active" : ""
                 }`}
                 onClick={() =>
@@ -1067,7 +1046,7 @@ export function ResourceLibrary({
                 <button
                   type="button"
                   key={item.value}
-                  className={`archive-ledger-filter-line ${
+                  className={`archive-ledger-check-line ${
                     knowledgeRole === item.value ? "is-active" : ""
                   }`}
                   onClick={() =>
@@ -1081,7 +1060,121 @@ export function ResourceLibrary({
             </section>
 
             <section className="archive-ledger-filter-card">
-              <h2>按专题筛选</h2>
+              <h2>关键词 KEYWORD</h2>
+              <label className="archive-ledger-search-field">
+                <span>标题 / 关键词</span>
+                <input
+                  value={draftKeyword}
+                  onChange={(event) => setDraftKeyword(event.target.value)}
+                  onCompositionStart={() => setIsKeywordComposing(true)}
+                  onCompositionEnd={(event) => {
+                    setIsKeywordComposing(false);
+                    setDraftKeyword(event.currentTarget.value);
+                  }}
+                  onBlur={() => commitKeyword()}
+                  onKeyDown={(event) => {
+                    if (event.key !== "Enter" || isKeywordComposing) {
+                      return;
+                    }
+
+                    event.preventDefault();
+                    commitKeyword(event.currentTarget.value);
+                  }}
+                  placeholder="搜索标题、摘要、标签、机构、国家或专题"
+                />
+              </label>
+              <SelectField
+                id="field-filter"
+                label="检索字段"
+                value={field}
+                onChange={(value) =>
+                  updateState({ ...currentState, field: value as SearchField })
+                }
+              >
+                {Object.entries(searchFieldZh).map(([value, label]) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+              </SelectField>
+              <SelectField
+                id="mode-filter"
+                label="检索模式"
+                value={mode}
+                onChange={(value) =>
+                  updateState({ ...currentState, mode: value as SearchMode })
+                }
+              >
+                <option value="normal">{searchModeZh.normal}</option>
+                <option value="fuzzy">{searchModeZh.fuzzy}</option>
+              </SelectField>
+            </section>
+
+            <section className="archive-ledger-filter-card">
+              <h2>国家与机构 CATALOG</h2>
+              <SelectField
+                id="country-filter"
+                label="国家地区"
+                value={countryId}
+                onChange={(value) =>
+                  updateState({ ...currentState, countryId: value })
+                }
+              >
+                <option value={allValue}>全部国家地区</option>
+                {countries.map((country) => (
+                  <option key={country.id} value={country.id}>
+                    {country.nameZh}
+                  </option>
+                ))}
+              </SelectField>
+              <SelectField
+                id="institution-filter"
+                label="机构"
+                value={institutionId}
+                onChange={(value) =>
+                  updateState({ ...currentState, institutionId: value })
+                }
+              >
+                <option value={allValue}>全部机构</option>
+                {institutionOptions.map((institution) => (
+                  <option key={institution.id} value={institution.id}>
+                    {institution.nameZh}
+                  </option>
+                ))}
+              </SelectField>
+            </section>
+
+            <section className="archive-ledger-filter-card">
+              <h2>资讯类型 TYPE</h2>
+              <button
+                type="button"
+                className={`archive-ledger-check-line ${
+                  resourceType === allValue ? "is-active" : ""
+                }`}
+                onClick={() => updateState({ ...currentState, resourceType: allValue })}
+              >
+                <span>全部资料</span>
+                <b>{resources.length}</b>
+              </button>
+              {resourceTypeOptions.map((item) => (
+                <button
+                  type="button"
+                  key={item.value}
+                  className={`archive-ledger-check-line ${
+                    resourceType === item.value ? "is-active" : ""
+                  }`}
+                  onClick={() =>
+                    updateState({ ...currentState, resourceType: item.value })
+                  }
+                >
+                  <span>{item.label}</span>
+                  <b>{item.count}</b>
+                </button>
+              ))}
+            </section>
+
+            <section className="archive-ledger-filter-card">
+              <h2>研究专题 SUBJECT</h2>
               <button
                 type="button"
                 className={`archive-ledger-check-line ${
@@ -1108,39 +1201,25 @@ export function ResourceLibrary({
             </section>
 
             <section className="archive-ledger-filter-card">
-              <h2>筛选工具</h2>
+              <h2>来源状态 STATUS</h2>
               <SelectField
-                id="country-filter"
-                label="国家地区"
-                value={countryId}
+                id="link-status-filter"
+                label="链接状态"
+                value={linkStatus}
                 onChange={(value) =>
-                  updateState({ ...currentState, countryId: value })
+                  updateState({
+                    ...currentState,
+                    linkStatus: value as SelectValue<LinkStatus>,
+                  })
                 }
               >
-                <option value={allValue}>全部国家地区</option>
-                {countries.map((country) => (
-                  <option key={country.id} value={country.id}>
-                    {country.nameZh}
+                <option value={allValue}>全部链接状态</option>
+                {linkStatusOptions.map((item) => (
+                  <option key={item.value} value={item.value}>
+                    {item.label}
                   </option>
                 ))}
               </SelectField>
-
-              <SelectField
-                id="institution-filter"
-                label="机构"
-                value={institutionId}
-                onChange={(value) =>
-                  updateState({ ...currentState, institutionId: value })
-                }
-              >
-                <option value={allValue}>全部机构</option>
-                {institutionOptions.map((institution) => (
-                  <option key={institution.id} value={institution.id}>
-                    {institution.nameZh}
-                  </option>
-                ))}
-              </SelectField>
-
               <SelectField
                 id="snapshot-status-filter"
                 label="快照状态"
@@ -1160,6 +1239,15 @@ export function ResourceLibrary({
                 ))}
               </SelectField>
             </section>
+
+            <button
+              type="button"
+              onClick={resetFilters}
+              disabled={!hasActiveFilters}
+              className="archive-ledger-reset"
+            >
+              重置 RESET
+            </button>
           </div>
         </aside>
 
@@ -1177,139 +1265,15 @@ export function ResourceLibrary({
               <span>打开档案抽屉</span>
             </div>
 
-            <div className="archive-ledger-search-strip">
-              <label className="archive-ledger-search-field">
-                <span>标题 / 关键词</span>
-                <input
-                  value={draftKeyword}
-                  onChange={(event) => setDraftKeyword(event.target.value)}
-                  onCompositionStart={() => setIsKeywordComposing(true)}
-                  onCompositionEnd={(event) => {
-                    setIsKeywordComposing(false);
-                    setDraftKeyword(event.currentTarget.value);
-                  }}
-                  onBlur={() => commitKeyword()}
-                  onKeyDown={(event) => {
-                    if (event.key !== "Enter" || isKeywordComposing) {
-                      return;
-                    }
-
-                    event.preventDefault();
-                    commitKeyword(event.currentTarget.value);
-                  }}
-                  placeholder="搜索标题、摘要、标签、机构、国家或专题"
-                />
-              </label>
-
-              <SelectField
-                id="field-filter"
-                label="检索字段"
-                value={field}
-                onChange={(value) =>
-                  updateState({ ...currentState, field: value as SearchField })
-                }
-              >
-                {Object.entries(searchFieldZh).map(([value, label]) => (
-                  <option key={value} value={value}>
-                    {label}
-                  </option>
-                ))}
-              </SelectField>
-
-              <SelectField
-                id="mode-filter"
-                label="检索模式"
-                value={mode}
-                onChange={(value) =>
-                  updateState({ ...currentState, mode: value as SearchMode })
-                }
-              >
-                <option value="normal">{searchModeZh.normal}</option>
-                <option value="fuzzy">{searchModeZh.fuzzy}</option>
-              </SelectField>
-
-              <button
-                type="button"
-                onClick={resetFilters}
-                disabled={!hasActiveFilters}
-                className="archive-ledger-reset"
-              >
-                重置
-              </button>
-            </div>
-
-            <div className="archive-ledger-advanced">
-              <SelectField
-                id="resource-type-filter"
-                label="资讯类型"
-                value={resourceType}
-                onChange={(value) =>
-                  updateState({
-                    ...currentState,
-                    resourceType: value as SelectValue<ResourceType>,
-                  })
-                }
-              >
-                <option value={allValue}>全部资讯类型</option>
-                {resourceTypeOptions.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </SelectField>
-
-              <SelectField
-                id="knowledge-role-filter"
-                label="建设分类"
-                value={knowledgeRole}
-                onChange={(value) =>
-                  updateState({
-                    ...currentState,
-                    knowledgeRole: value as SelectValue<KnowledgeRole>,
-                  })
-                }
-              >
-                <option value={allValue}>全部建设分类</option>
-                {knowledgeRoleOptions.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </SelectField>
-
-              <SelectField
-                id="topic-filter"
-                label="研究专题"
-                value={topicId}
-                onChange={(value) => updateState({ ...currentState, topicId: value })}
-              >
-                <option value={allValue}>全部研究专题</option>
-                {topics.map((topic) => (
-                  <option key={topic.id} value={topic.id}>
-                    {topic.titleZh}
-                  </option>
-                ))}
-              </SelectField>
-
-              <SelectField
-                id="link-status-filter"
-                label="链接状态"
-                value={linkStatus}
-                onChange={(value) =>
-                  updateState({
-                    ...currentState,
-                    linkStatus: value as SelectValue<LinkStatus>,
-                  })
-                }
-              >
-                <option value={allValue}>全部链接状态</option>
-                {linkStatusOptions.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </SelectField>
-            </div>
+            <button
+              type="button"
+              className="archive-ledger-filter-toggle"
+              aria-expanded={isFilterDrawerOpen}
+              aria-controls="resource-filter-panel"
+              onClick={() => setIsFilterDrawerOpen((current) => !current)}
+            >
+              筛选 FILTER
+            </button>
 
             <div className="archive-ledger-snapshot-note">
               <strong>图片与快照说明</strong>

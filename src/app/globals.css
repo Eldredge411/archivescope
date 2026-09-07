@@ -14077,7 +14077,7 @@ body {
   align-items: start;
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: minmax(190px, 0.26fr) minmax(0, 1fr);
+  grid-template-columns: minmax(250px, 275px) minmax(0, 1fr);
   margin-inline: auto;
   max-width: 1320px;
 }
@@ -14103,11 +14103,15 @@ body {
 
 .archive-ledger-sidebar {
   padding: 0.62rem;
+  max-height: calc(100vh - 4.5rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .archive-ledger-sticky {
+  align-content: start;
   display: grid;
-  gap: 0.74rem;
+  gap: 0.65rem;
   position: sticky;
   top: 5.3rem;
 }
@@ -14129,6 +14133,27 @@ body {
   padding-bottom: 0.45rem;
 }
 
+.archive-ledger-filter-card small {
+  color: rgb(108 85 59);
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  margin: -0.38rem 0 0.48rem;
+}
+
+.archive-ledger-filter-card > label,
+.archive-ledger-filter-card .flex {
+  display: grid;
+  gap: 0.28rem;
+  margin-bottom: 0.62rem;
+}
+
+.archive-ledger-filter-card > label:last-child,
+.archive-ledger-filter-card .flex:last-child {
+  margin-bottom: 0;
+}
+
 .archive-ledger-filter-line,
 .archive-ledger-check-line {
   align-items: center;
@@ -14148,10 +14173,17 @@ body {
 }
 
 .archive-ledger-check-line::before {
-  border: 1px solid rgb(91 72 50 / 0.45);
-  content: "";
+  align-items: center;
+  border: 1px solid rgb(91 72 50 / 0.5);
+  color: rgb(255 252 242);
+  content: "✓";
+  display: inline-flex;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.58rem;
+  justify-content: center;
   height: 0.56rem;
   margin-right: 0.45rem;
+  opacity: 0;
   width: 0.56rem;
 }
 
@@ -14176,7 +14208,12 @@ body {
 
 .archive-ledger-check-line.is-active::before {
   background: rgb(83 65 45);
-  box-shadow: inset 0 0 0 2px rgb(245 238 224);
+  border-radius: 1px;
+  box-shadow:
+    inset 0 0 0 2px rgb(255 252 242 / 0.16),
+    0 0 0 3px rgb(83 65 45 / 0.12);
+  opacity: 1;
+  transform: rotate(-3deg);
 }
 
 .archive-ledger-field-label {
@@ -14550,8 +14587,7 @@ body {
 }
 
 .archive-ledger-reset {
-  background:
-    linear-gradient(180deg, rgb(94 72 50), rgb(59 47 37));
+  background: rgb(83 65 45);
   border: 1px solid rgb(59 47 37);
   border-radius: 2px;
   color: rgb(255 250 239);
@@ -14560,6 +14596,12 @@ body {
   font-size: 0.76rem;
   font-weight: 900;
   height: 2.35rem;
+  transform: rotate(-1deg);
+  letter-spacing: 0.08em;
+}
+
+.archive-ledger-filter-toggle {
+  display: none;
 }
 
 .archive-ledger-reset:disabled {
@@ -14980,11 +15022,46 @@ body {
   }
 
   .archive-ledger-sticky {
+    gap: 0.55rem;
     position: static;
   }
 
   .archive-ledger-sidebar {
-    order: 2;
+    border-right: 1px solid rgb(104 78 48 / 0.24);
+    box-shadow: 14px 0 30px rgb(57 40 23 / 0.28);
+    height: 100vh;
+    max-height: 100vh;
+    order: unset;
+    padding: 0.75rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-104%);
+    transition: transform 260ms cubic-bezier(0.25, 0.82, 0.28, 1);
+    width: min(86vw, 300px);
+    z-index: 100;
+  }
+
+  .archive-ledger-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .archive-ledger-filter-toggle {
+    align-items: center;
+    background: rgb(83 65 45);
+    border: 1px solid rgb(59 47 37);
+    color: rgb(255 250 239);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 0.74rem;
+    font-weight: 900;
+    justify-content: center;
+    height: 2.2rem;
+    letter-spacing: 0.08em;
+    position: relative;
+    z-index: 2;
+    width: 8.6rem;
   }
 
   .archive-ledger-main {
