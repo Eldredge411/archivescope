@@ -7,6 +7,7 @@ import type {
   AtlasGraphEdge,
   AtlasGraphEdgeType,
 } from "@/lib/atlas/atlasGraph";
+import { getInstitutionIdFromGraphNodeId } from "@/lib/atlas/atlasGraph";
 import type {
   Institution,
   Resource,
@@ -53,7 +54,10 @@ function getEntityLabel(
     }`;
   }
 
-  const institution = getInstitution(institutions, id);
+  const institution = getInstitution(
+    institutions,
+    getInstitutionIdFromGraphNodeId(id),
+  );
 
   if (institution) {
     return `${institution.nameEn || "Institution not recorded"} / ${

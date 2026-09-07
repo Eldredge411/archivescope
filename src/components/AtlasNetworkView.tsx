@@ -1,7 +1,11 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { AtlasGraph, AtlasGraphEdge } from "@/lib/atlas/atlasGraph";
+import {
+  getInstitutionIdFromGraphNodeId,
+  type AtlasGraph,
+  type AtlasGraphEdge,
+} from "@/lib/atlas/atlasGraph";
 import { getKnowledgeRole } from "@/lib/display";
 import type { Institution, KnowledgeRole, Resource } from "@/types";
 
@@ -47,7 +51,9 @@ function getNodeLabel(
       .join(" · ");
   }
 
-  const institution = institutionById.get(node.id);
+  const institution = institutionById.get(
+    getInstitutionIdFromGraphNodeId(node.id),
+  );
 
   return [
     institution?.nameZh || institution?.nameEn || node.label,

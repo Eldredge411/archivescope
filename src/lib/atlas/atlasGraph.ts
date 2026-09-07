@@ -38,6 +38,18 @@ export type AtlasGraph = {
   edges: AtlasGraphEdge[];
 };
 
+const institutionGraphNodeIdPrefix = "institution:";
+
+export function getInstitutionGraphNodeId(institutionId: string) {
+  return `${institutionGraphNodeIdPrefix}${institutionId}`;
+}
+
+export function getInstitutionIdFromGraphNodeId(nodeId: string) {
+  return nodeId.startsWith(institutionGraphNodeIdPrefix)
+    ? nodeId.slice(institutionGraphNodeIdPrefix.length)
+    : nodeId;
+}
+
 const edgeLabels: Record<AtlasGraphEdgeType, { labelZh: string; labelEn: string }> = {
   AUTHORIZE: { labelZh: "授权", labelEn: "AUTHORIZES" },
   AMEND: { labelZh: "修订", labelEn: "AMENDS" },
@@ -72,7 +84,7 @@ function normalizeInstitutionRelation(
   if (relation.relationType === "issued_by") {
     return createEdge({
       id: `graph-${relation.id}`,
-      source: relation.sourceId,
+      source: getInstitutionGraphNodeId(relation.sourceId),
       target: relation.targetId,
       type: "ISSUED_BY",
       status: "verified",
@@ -83,7 +95,7 @@ function normalizeInstitutionRelation(
   if (relation.relationType === "operated_by") {
     return createEdge({
       id: `graph-${relation.id}`,
-      source: relation.sourceId,
+      source: getInstitutionGraphNodeId(relation.sourceId),
       target: relation.targetId,
       type: "OPERATED_BY",
       status: "verified",
@@ -304,7 +316,7 @@ export function buildAtlasGraph(options: {
       label: resource.titleZh || resource.titleEn,
     })),
     ...options.institutions.map((institution) => ({
-      id: institution.id,
+      id: getInstitutionGraphNodeId(institution.id),
       kind: "institution" as const,
       label: institution.shortName || institution.nameZh,
     })),
