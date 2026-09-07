@@ -6,6 +6,7 @@ import {
   buildAtlasGraph,
   type AtlasGraphEdge,
 } from "@/lib/atlas/atlasGraph";
+import { curatedRelationsRevisionLog } from "@/lib/atlas/curatedRelations";
 import {
   entityRelations,
   resourceFiles,
@@ -116,6 +117,12 @@ type TopicConstructionChain = {
   topicResourceCount: number;
   verifiedCount: number;
   inferredCount: number;
+};
+
+type InstitutionAuthorityRecord = {
+  institution: Institution;
+  resourceCount: number;
+  roleCounts: { role: KnowledgeRole; count: number }[];
 };
 
 type PlatformItem = {
@@ -1535,6 +1542,44 @@ function getPlatformAuthorityEdges(
   );
 }
 
+function getInstitutionAuthorityRecords(
+  institutions: Institution[],
+  resources: Resource[],
+): InstitutionAuthorityRecord[] {
+  return institutions
+    .map((institution) => {
+      const institutionResources = resources.filter(
+        (resource) => resource.institutionId === institution.id,
+      );
+
+      return {
+        institution,
+        resourceCount: institutionResources.length,
+        roleCounts: Object.keys(knowledgeRoleZh).map((role) => ({
+          role: role as KnowledgeRole,
+          count: institutionResources.filter(
+            (resource) => getKnowledgeRole(resource) === role,
+          ).length,
+        })),
+      };
+    })
+    .filter((record) => record.resourceCount > 0)
+    .sort((left, right) => right.resourceCount - left.resourceCount);
+}
+
+function downloadAtlasJson(filename: string, data: unknown) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+
+  anchor.href = url;
+  anchor.download = filename;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
+
 function getTimelineVisibleEdges(
   edges: AtlasGraphEdge[],
   items: EvolutionItem[],
@@ -1768,6 +1813,16 @@ export function KnowledgeAtlas({
         : [],
     [activePlatform, atlasGraph.edges],
   );
+  const institutionAuthorityRecords = useMemo(
+    () => getInstitutionAuthorityRecords(institutions, resources),
+    [institutions, resources],
+  );
+  const verifiedEdgeCount = atlasGraph.edges.filter(
+    (edge) => edge.status === "verified",
+  ).length;
+  const inferredEdgeCount = atlasGraph.edges.filter(
+    (edge) => edge.status === "inferred",
+  ).length;
   const topicClusterItems = useMemo(
     () => getTopicClusterItems(sortedTopics, resources, institutions),
     [institutions, resources, sortedTopics],
@@ -2827,6 +2882,188 @@ export function KnowledgeAtlas({
           onClose={() => setActiveEdgeId("")}
         />
       ) : null}
+
+      <section className="atlas-authority-records">
+        <header>
+          <div>
+            <span>Authority Records</span>
+            <h2>规范档 AUTHORITY RECORDS</h2>
+            <p>机构实体按规范名称著录，未来将接入 VIAF / Wikidata 规范档标识。</p>
+          </div>
+          {institutionAuthorityRecords.length > 12 ? (
+            <Link href="/institutions">查看全部 →</Link>
+          ) : null}
+        </header>
+
+        <div className="atlas-authority-records__grid">
+          {institutionAuthorityRecords.slice(0, 12).map((record) => (
+            <details
+              key={record.institution.id}
+              className="atlas-authority-record"
+            >
+              <summary>
+                <span>AS-IN / {record.institution.id}</span>
+                <strong>
+                  {record.institution.nameEn || "English name not recorded"}
+                </strong>
+                <em>
+                  {record.institution.nameZh || "中文名称待补充"} ·{" "}
+                  {record.institution.shortName || "缩写待补充"}
+                </em>
+                <b>{record.resourceCount}</b>
+              </summary>
+              <div>
+                <dl>
+                  <div>
+                    <dt>关联资源数</dt>
+                    <dd>{record.resourceCount}</dd>
+                  </div>
+                  <div>
+                    <dt>官方链接</dt>
+                    <dd>
+                      <a
+                        href={record.institution.officialUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {record.institution.officialUrl}
+                      </a>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>链接状态</dt>
+                    <dd>{linkStatusZh[record.institution.linkStatus]}</dd>
+                  </div>
+                </dl>
+                <div className="atlas-authority-record__bar">
+                  {record.roleCounts.map((roleCount) => (
+                    <i
+                      key={roleCount.role}
+                      data-role={roleCount.role}
+                      style={{
+                        width: `${
+                          (roleCount.count / Math.max(record.resourceCount, 1)) *
+                          100
+                        }%`,
+                      }}
+                      title={`${knowledgeRoleZh[roleCount.role]} ${roleCount.count}`}
+                    />
+                  ))}
+                </div>
+                <ul>
+                  {record.roleCounts.map((roleCount) => (
+                    <li key={roleCount.role}>
+                      <span>{knowledgeRoleZh[roleCount.role]}</span>
+                      <b>{roleCount.count}</b>
+                    </li>
+                  ))}
+                </ul>
+                <Link href={`/institutions/${record.institution.slug}`}>
+                  查看机构详情
+                </Link>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <aside className="atlas-open-data">
+          <header>
+            <span>Open Data</span>
+            <h3>开放数据 OPEN DATA</h3>
+          </header>
+
+          <div className="atlas-open-data__downloads">
+            <button
+              type="button"
+              onClick={() =>
+                downloadAtlasJson("entities.json", atlasGraph.nodes)
+              }
+            >
+              entities.json
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                downloadAtlasJson("relations.json", atlasGraph.edges)
+              }
+            >
+              relations.json
+            </button>
+            <small>
+              verified {verifiedEdgeCount} · inferred {inferredEdgeCount}
+            </small>
+          </div>
+
+          <div className="atlas-open-data__ontology">
+            <section>
+              <h4>建设分类</h4>
+              <ul>
+                {(
+                  [
+                    ["institutional_norm", "构成制度与规则基础。"],
+                    ["policy_strategy", "提出建设方向与治理目标。"],
+                    ["platform_system", "提供系统、平台或数据入口。"],
+                    ["method_standard", "规定方法、流程与技术标准。"],
+                    ["project_practice", "呈现项目落地与执行实践。"],
+                    ["public_participation", "组织公众利用、参与和监督。"],
+                  ] as const
+                ).map(([role, description]) => (
+                  <li key={role}>
+                    <strong>{knowledgeRoleZh[role]}</strong>
+                    <span>{description}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h4>关系类型</h4>
+              <ul>
+                <li>
+                  <strong>AUTHORIZE 制度授权</strong>
+                  <span>上级制度或规则支撑平台、入口或实践承接。</span>
+                </li>
+                <li>
+                  <strong>AMEND 修订</strong>
+                  <span>规则条文或政策文本发生修订、延伸或更正。</span>
+                </li>
+                <li>
+                  <strong>SUPERSEDE 取代</strong>
+                  <span>后续版本替代或废止先前文本。</span>
+                </li>
+                <li>
+                  <strong>ISSUED_BY 发布</strong>
+                  <span>机构发布或维护相关资源。</span>
+                </li>
+                <li>
+                  <strong>OPERATED_BY 运营</strong>
+                  <span>机构运营平台、系统或服务入口。</span>
+                </li>
+                <li>
+                  <strong>INFERRED 研究线索</strong>
+                  <span>系统基于专题与时间推断，不构成制度因果断言。</span>
+                </li>
+              </ul>
+            </section>
+
+            <p className="atlas-open-data__rule">
+              verified 边均附证据来源，inferred 边为系统推断线索，不构成因果断言。
+            </p>
+          </div>
+
+          <section className="atlas-open-data__log">
+            <h4>修订日志</h4>
+            <ul>
+              {curatedRelationsRevisionLog.map((entry) => (
+                <li key={`${entry.date}-${entry.summary}`}>
+                  <strong>{entry.date}</strong>
+                  <span>{entry.summary}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </aside>
+      </section>
     </main>
   );
 }

@@ -1060,6 +1060,360 @@
   margin-top: 0.42rem;
 }
 
+.atlas-authority-records {
+  background: rgb(255 252 242 / 0.72);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  margin-top: 1.2rem;
+  padding: 1rem;
+}
+
+.atlas-authority-records > header {
+  align-items: end;
+  border-bottom: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-bottom: 0.75rem;
+}
+
+.atlas-authority-records span {
+  color: rgb(103 78 50);
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+}
+
+.atlas-authority-records h2 {
+  color: rgb(43 34 25);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 1.08rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-top: 0.18rem;
+}
+
+.atlas-authority-records > header p {
+  color: rgb(82 63 43);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  margin-top: 0.24rem;
+}
+
+.atlas-authority-records > header a {
+  color: rgb(67 51 34);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.atlas-authority-records__grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.9rem;
+}
+
+.atlas-authority-record {
+  background: rgb(247 241 225);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  position: relative;
+}
+
+.atlas-authority-record::before {
+  background: rgb(226 215 190);
+  border: 1px solid rgb(105 78 48 / 0.22);
+  border-bottom: 0;
+  color: rgb(82 62 40);
+  content: "INDEX";
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.52rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin: -0.42rem 0.75rem -0.1rem;
+  padding: 0.08rem 0.28rem;
+  width: fit-content;
+}
+
+.atlas-authority-record summary {
+  cursor: pointer;
+  display: grid;
+  gap: 0.2rem;
+  list-style: none;
+  padding: 0.65rem;
+}
+
+.atlas-authority-record summary::-webkit-details-marker {
+  display: none;
+}
+
+.atlas-authority-record summary span,
+.atlas-authority-record summary em {
+  color: rgb(99 77 52);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 850;
+  word-break: break-all;
+}
+
+.atlas-authority-record summary strong {
+  color: rgb(45 34 24);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.atlas-authority-record summary em {
+  font-style: normal;
+}
+
+.atlas-authority-record summary b {
+  background: rgb(83 65 45);
+  color: rgb(255 252 242);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.64rem;
+  justify-self: end;
+  padding: 0.1rem 0.28rem;
+}
+
+.atlas-authority-record[open] summary {
+  border-bottom: 1px dashed rgb(105 78 48 / 0.24);
+}
+
+.atlas-authority-record > div {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.7rem 0.65rem 0.75rem;
+}
+
+.atlas-authority-record dl div {
+  border-bottom: 1px dotted rgb(105 78 48 / 0.24);
+  display: grid;
+  gap: 0.14rem;
+  grid-template-columns: 92px minmax(0, 1fr);
+  padding: 0.24rem 0;
+}
+
+.atlas-authority-record dt {
+  color: rgb(103 78 50);
+  font-size: 0.66rem;
+  font-weight: 900;
+}
+
+.atlas-authority-record dd {
+  color: rgb(64 49 34);
+  font-size: 0.7rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.atlas-authority-record dd a {
+  color: rgb(69 87 64);
+}
+
+.atlas-authority-record__bar {
+  background: rgb(226 215 190);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  display: flex;
+  height: 0.55rem;
+}
+
+.atlas-authority-record__bar i {
+  display: block;
+  min-width: 0;
+}
+
+.atlas-authority-record__bar i[data-role="institutional_norm"] {
+  background: rgb(72 80 96);
+}
+
+.atlas-authority-record__bar i[data-role="policy_strategy"] {
+  background: rgb(96 86 54);
+}
+
+.atlas-authority-record__bar i[data-role="method_standard"] {
+  background: rgb(162 127 58);
+}
+
+.atlas-authority-record__bar i[data-role="platform_system"] {
+  background: rgb(88 105 72);
+}
+
+.atlas-authority-record__bar i[data-role="project_practice"] {
+  background: rgb(124 82 65);
+}
+
+.atlas-authority-record__bar i[data-role="public_participation"] {
+  background: rgb(108 122 82);
+}
+
+.atlas-authority-record ul {
+  border-top: 1px solid rgb(105 78 48 / 0.12);
+  display: grid;
+  gap: 0.16rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.45rem 0 0;
+}
+
+.atlas-authority-record li {
+  color: rgb(77 59 39);
+  display: flex;
+  font-size: 0.66rem;
+  justify-content: space-between;
+}
+
+.atlas-authority-record > div > a {
+  color: rgb(67 51 34);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.atlas-open-data {
+  background: rgb(255 252 242);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  border-left: 4px double rgb(105 78 48 / 0.34);
+  margin-top: 1rem;
+  padding: 0.85rem;
+}
+
+.atlas-open-data header span {
+  color: rgb(103 78 50);
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+.atlas-open-data h3 {
+  color: rgb(43 34 25);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-top: 0.16rem;
+}
+
+.atlas-open-data__downloads {
+  align-items: center;
+  border-top: 1px solid rgb(105 78 48 / 0.16);
+  border-bottom: 1px solid rgb(105 78 48 / 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.65rem;
+  padding: 0.65rem 0;
+}
+
+.atlas-open-data__downloads button {
+  background: rgb(247 241 225);
+  border: 1px solid rgb(105 78 48 / 0.26);
+  color: rgb(62 48 33);
+  cursor: pointer;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 0.32rem 0.58rem;
+  transform: rotate(-0.6deg);
+}
+
+.atlas-open-data__downloads button:hover {
+  background: rgb(255 252 242);
+  box-shadow: 0 6px 12px rgb(67 48 29 / 0.12);
+}
+
+.atlas-open-data__downloads small {
+  color: rgb(87 67 44);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+}
+
+.atlas-open-data__ontology {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.75rem;
+}
+
+.atlas-open-data__ontology h4 {
+  color: rgb(44 33 23);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.atlas-open-data__ontology ul {
+  display: grid;
+  gap: 0.2rem;
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+}
+
+.atlas-open-data__ontology li {
+  border-bottom: 1px dotted rgb(105 78 48 / 0.22);
+  display: grid;
+  gap: 0.08rem;
+  padding: 0.24rem 0;
+}
+
+.atlas-open-data__ontology strong {
+  color: rgb(58 44 31);
+  font-size: 0.7rem;
+}
+
+.atlas-open-data__ontology span {
+  color: rgb(82 63 43);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.atlas-open-data__rule {
+  border-top: 1px solid rgb(105 78 48 / 0.16);
+  color: rgb(65 50 34);
+  font-size: 0.72rem;
+  font-weight: 850;
+  grid-column: 1 / -1;
+  padding-top: 0.6rem;
+}
+
+.atlas-open-data__log {
+  border-top: 1px dashed rgb(105 78 48 / 0.24);
+  margin-top: 0.85rem;
+  padding-top: 0.65rem;
+}
+
+.atlas-open-data__log h4 {
+  color: rgb(44 33 23);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.atlas-open-data__log ul {
+  display: grid;
+  gap: 0.18rem;
+  list-style: none;
+  margin-top: 0.3rem;
+  padding: 0;
+}
+
+.atlas-open-data__log li {
+  color: rgb(79 61 40);
+  display: grid;
+  font-size: 0.7rem;
+  gap: 0.1rem;
+  grid-template-columns: 86px minmax(0, 1fr);
+}
+
+.atlas-open-data__log strong {
+  color: rgb(87 66 43);
+  font-family: "Courier New", ui-monospace, monospace;
+}
+
 .atlas-evolution-layers {
   position: relative;
   display: grid;

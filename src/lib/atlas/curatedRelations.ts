@@ -14,6 +14,14 @@ export type CuratedAuthorization = {
   judgementZh: string;
 };
 
+export const curatedRelationsRevisionLog = [
+  {
+    date: "2026-09-07",
+    summary:
+      "人工审校全部 AUTHORIZE 候选：6 条确认/升级，2 条转为 AMEND 待复核，1 条方向反转，1 条删除。",
+  },
+];
+
 /**
  * Manual review log
  * - 2026-09-07: Reviewed all AUTHORIZE candidates. Confirmed six relations as
