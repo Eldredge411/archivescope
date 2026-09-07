@@ -3309,12 +3309,14 @@ export function KnowledgeAtlas({
           <section className="atlas-open-data__log">
             <h4>修订日志</h4>
             <ul>
-              {curatedRelationsRevisionLog.map((entry) => (
+              {[...curatedRelationsRevisionLog]
+                .sort((left, right) => right.date.localeCompare(left.date))
+                .map((entry) => (
                 <li key={`${entry.date}-${entry.summary}`}>
                   <strong>{entry.date}</strong>
                   <span>{entry.summary}</span>
                 </li>
-              ))}
+                ))}
             </ul>
           </section>
         </aside>
