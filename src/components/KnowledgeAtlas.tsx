@@ -14,6 +14,7 @@ import {
   resourceVersions,
 } from "@/data/mockData";
 import { KnowledgeEvidenceDrawer } from "@/components/KnowledgeEvidenceDrawer";
+import { AtlasNetworkView } from "@/components/AtlasNetworkView";
 import {
   getKnowledgeRole,
   knowledgeRoleZh,
@@ -1696,6 +1697,9 @@ export function KnowledgeAtlas({
     "";
   const [activeTopicId, setActiveTopicId] = useState(defaultTopicId);
   const [activeView, setActiveView] = useState<AtlasView>("evolution");
+  const [activeEvolutionMode, setActiveEvolutionMode] = useState<
+    "timeline" | "network"
+  >("timeline");
   const [activeEvolutionYear, setActiveEvolutionYear] = useState("");
   const [activePlatformId, setActivePlatformId] = useState("");
   const [activePathId, setActivePathId] = useState<AtlasPathId>("researcher");
@@ -1755,6 +1759,9 @@ export function KnowledgeAtlas({
   );
   const focusedNode = evolutionItems.find(
     (item) => item.resource.id === focusedNodeId,
+  );
+  const focusedGraphNode = atlasGraph.nodes.find(
+    (node) => node.id === focusedNodeId,
   );
   const nodeRelationFileGroups = useMemo(
     () =>
@@ -2532,18 +2539,43 @@ export function KnowledgeAtlas({
             </header>
 
             <div className="atlas-evolution-guide">
-              <span>横向时间轴</span>
+              <span>
+                {activeEvolutionMode === "timeline"
+                  ? "横向时间轴"
+                  : "网络图谱"}
+              </span>
               <p>
-                从左到右查看 {evolutionYears[0]}–
-                {evolutionYears.at(-1)} 年的建设进程；点击年份筛选对应节点，再次点击可恢复全部节点。
+                {activeEvolutionMode === "timeline"
+                  ? `从左到右查看 ${evolutionYears[0]}–${evolutionYears.at(-1)} 年的建设进程；点击年份筛选对应节点，再次点击可恢复全部节点。`
+                  : "拖动纸签调整位置，滚轮缩放图谱，拖动空白处平移画面；点击节点查看关系档案，点击线条打开证据链。"}
               </p>
             </div>
 
-            {focusedNode ? (
+            <div
+              className="atlas-evolution-mode-switch"
+              role="tablist"
+              aria-label="图谱显示方式"
+            >
+              {([
+                ["timeline", "时间轴 TIMELINE"],
+                ["network", "网络 NETWORK"],
+              ] as const).map(([mode, label]) => (
+                <button
+                  key={mode}
+                  type="button"
+                  role="tab"
+                  aria-selected={activeEvolutionMode === mode}
+                  className={activeEvolutionMode === mode ? "is-active" : ""}
+                  onClick={() => setActiveEvolutionMode(mode)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {focusedGraphNode ? (
               <div className="atlas-focus-toolbar">
-                <span>
-                  聚焦：{focusedNode.resource.titleZh || focusedNode.resource.titleEn}
-                </span>
+                <span>聚焦：{focusedGraphNode.label}</span>
                 <button
                   type="button"
                   onClick={() => setFocusedNodeId("")}
@@ -2553,8 +2585,21 @@ export function KnowledgeAtlas({
               </div>
             ) : null}
 
-            <div className="atlas-evolution-layers" ref={evolutionLayersRef}>
-              <div className="atlas-evolution-year-track" aria-label="年份轴">
+            {activeEvolutionMode === "network" ? (
+              <AtlasNetworkView
+                graph={atlasGraph}
+                resources={resources}
+                institutions={institutions}
+                showResearchLeads={showResearchLeads}
+                activeEdgeId={activeEdgeId}
+                focusedNodeId={focusedNodeId}
+                onEdgeClick={setActiveEdgeId}
+                onNodeClick={setFocusedNodeId}
+                onBackgroundClick={() => setFocusedNodeId("")}
+              />
+            ) : (
+              <div className="atlas-evolution-layers" ref={evolutionLayersRef}>
+                <div className="atlas-evolution-year-track" aria-label="年份轴">
                 {atlasPeriods.map((period) => {
                   const periodYears = evolutionYears.filter((year) => {
                     const matchedPeriod = getPeriodForYear(year);
@@ -2779,8 +2824,9 @@ export function KnowledgeAtlas({
                     ];
                   })}
                 </svg>
-              ) : null}
-            </div>
+                ) : null}
+              </div>
+            )}
 
             <div className="atlas-timeline-more">
               时间轴仅呈现代表性节点，完整建设讯息可在建设资讯库中按“建设分类”筛选查看。
