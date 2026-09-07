@@ -7,7 +7,7 @@ import { HomeMinimalSearch } from "@/components/HomeMinimalSearch";
 
 const foldCards = [
   {
-    label: "资料库",
+    label: "建设资讯",
     kicker: "SEARCH",
     href: "/resources",
     className: "archive-fold-card--paper",
@@ -196,7 +196,7 @@ export function HomeArchiveDrawer() {
             <span className="archive-folder-clip" />
             <span className="archive-folder-note">
               <small>ArchiveScope</small>
-              档案数据资源
+              资源建设讯息
             </span>
             <span className="archive-folder-ticket">ARCHIVE SCOPE</span>
           </div>
@@ -286,7 +286,7 @@ export function HomeArchiveDrawer() {
         <div className="archive-folder-search">
           <HomeMinimalSearch />
           <nav className="archive-fold-links" aria-label="首页快捷入口">
-            <Link href="/resources">进入资料库</Link>
+            <Link href="/resources">进入建设资讯库</Link>
             <Link href="/atlas">查看图谱</Link>
             <Link href="/exhibit">网站说明</Link>
           </nav>

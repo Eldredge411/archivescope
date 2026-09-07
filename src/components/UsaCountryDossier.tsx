@@ -333,7 +333,7 @@ export function UsaCountryDossier({
       index: "01",
       title: "国家概览",
       eyebrow: "Country File",
-      description: "美国档案资源建设的总体收录情况、资料类型与入口。",
+      description: "美国档案数据资源建设讯息的总体收录情况、资讯类型与入口。",
       count: resources.length,
     },
     {
@@ -493,7 +493,7 @@ export function UsaCountryDossier({
             </div>
 
             <p className="country-dossier-cover__note">
-              本档案袋汇集美国档案数据资源建设中的机构、专题、法规政策、项目资料与来源快照。
+              本档案袋汇集美国档案数据资源建设相关的机构、专题、法规政策、项目讯息与来源快照。
             </p>
 
             <div className="country-dossier-cover__directory">
@@ -714,7 +714,7 @@ function OverviewPanel({
         ))}
       </div>
       <div className="country-dossier-actions">
-        <Link href="/resources?country=usa">进入美国资料库</Link>
+        <Link href="/resources?country=usa">进入美国建设资讯库</Link>
         <Link href="/institutions?country=usa">查看美国机构</Link>
       </div>
     </div>

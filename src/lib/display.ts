@@ -1,6 +1,7 @@
 import type {
   CopyrightStatus,
   CountryStatus,
+  KnowledgeRole,
   LinkStatus,
   ResourceFileType,
   ResourceStatus,
@@ -51,6 +52,15 @@ export const resourceTypeEn: Record<ResourceType, string> = {
   report: "Reports",
 };
 
+export const knowledgeRoleZh: Record<KnowledgeRole, string> = {
+  institutional_norm: "制度规范",
+  policy_strategy: "政策战略",
+  platform_system: "平台系统",
+  method_standard: "方法标准",
+  project_practice: "项目实践",
+  public_participation: "公众参与",
+};
+
 export function normalizeResourceType(type?: string | null): ResourceType {
   if (type && Object.prototype.hasOwnProperty.call(resourceTypeZh, type)) {
     return type as ResourceType;
@@ -61,6 +71,104 @@ export function normalizeResourceType(type?: string | null): ResourceType {
 
 export function getResourceTypeLabel(type?: string | null) {
   return resourceTypeZh[normalizeResourceType(type)];
+}
+
+export function getKnowledgeRole(resource: {
+  resourceType?: ResourceType | string | null;
+  knowledgeRole?: string | null;
+  topicIds?: string[];
+  titleZh?: string;
+  titleEn?: string;
+  summaryShort?: string;
+  summaryZh?: string;
+  tags?: string[];
+}): KnowledgeRole {
+  if (
+    resource.knowledgeRole &&
+    Object.prototype.hasOwnProperty.call(
+      knowledgeRoleZh,
+      resource.knowledgeRole,
+    )
+  ) {
+    return resource.knowledgeRole as KnowledgeRole;
+  }
+
+  switch (resource.resourceType) {
+    case "law":
+    case "regulation":
+      return "institutional_norm";
+    case "policy":
+    case "strategy":
+      return getParticipationOrPolicyRole(resource);
+    case "portal":
+    case "catalog":
+    case "database":
+    case "system":
+      return "platform_system";
+    case "guidance":
+      return "method_standard";
+    case "program":
+    case "report":
+      return getParticipationOrPracticeRole(resource);
+    default:
+      return "project_practice";
+  }
+}
+
+type ParticipationText = {
+  titleZh?: string;
+  titleEn?: string;
+  summaryShort?: string;
+  summaryZh?: string;
+  tags?: string[];
+};
+
+function matchesParticipationKeywords(resource: ParticipationText) {
+  const text = [
+    resource.titleZh,
+    resource.titleEn,
+    resource.summaryShort,
+    resource.summaryZh,
+    ...(resource.tags ?? []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return [
+    "advisory committee",
+    "committee",
+    "meeting",
+    "nomination",
+    "comment",
+    "public meeting",
+    "open meeting",
+    "solicitation",
+    "听证",
+    "咨询委员会",
+    "会议",
+    "提名",
+    "公开征集",
+    "公众参与",
+  ].some((keyword) => text.includes(keyword));
+}
+
+function getParticipationOrPolicyRole(
+  resource: ParticipationText & { topicIds?: string[] },
+) {
+  return resource.topicIds?.includes("access-outreach-public-participation") &&
+    matchesParticipationKeywords(resource)
+    ? "public_participation"
+    : "policy_strategy";
+}
+
+function getParticipationOrPracticeRole(
+  resource: ParticipationText & { topicIds?: string[] },
+) {
+  return resource.topicIds?.includes("access-outreach-public-participation") &&
+    matchesParticipationKeywords(resource)
+    ? "public_participation"
+    : "project_practice";
 }
 
 export type ResourceStatusMeta = {

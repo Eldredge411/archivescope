@@ -2,14 +2,14 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { ResourceLibrary } from "@/components/ResourceLibrary";
 import { countries, institutions, resources, topics } from "@/data/mockData";
-import { resourceTypeZh } from "@/lib/display";
-import type { ResourceType } from "@/types";
+import { getKnowledgeRole, knowledgeRoleZh } from "@/lib/display";
 
-const resourceTypeStats = Object.entries(resourceTypeZh)
-  .map(([type, label]) => ({
-    type: type as ResourceType,
+const knowledgeRoleStats = Object.entries(knowledgeRoleZh)
+  .map(([role, label]) => ({
+    type: role,
     label,
-    count: resources.filter((resource) => resource.resourceType === type).length,
+    count: resources.filter((resource) => getKnowledgeRole(resource) === role)
+      .length,
   }))
   .filter((item) => item.count > 0);
 
@@ -23,17 +23,17 @@ export default function ResourcesPage() {
       <section className="archive-library-hero">
         <div className="archive-library-hero-label">
           <span>ArchiveScope</span>
-          <strong>资料库</strong>
+          <strong>建设资讯库</strong>
         </div>
-        <div className="archive-library-hero-tabs" aria-label="资料类型概览">
-          {resourceTypeStats.slice(0, 5).map((item, index) => (
-            <Link key={item.type} href={`/resources?type=${item.type}`}>
+        <div className="archive-library-hero-tabs" aria-label="建设分类概览">
+          {knowledgeRoleStats.map((item, index) => (
+            <Link key={item.type} href={`/resources?role=${item.type}`}>
               {String(index + 1).padStart(2, "0")} {item.label}
               <b>{item.count}</b>
             </Link>
           ))}
         </div>
-        <div className="archive-library-mode-card" aria-label="资料库统计">
+        <div className="archive-library-mode-card" aria-label="建设资讯统计">
           <span>MODE</span>
           <strong>{resources.length}</strong>
           <small>ITEMS</small>
@@ -44,7 +44,7 @@ export default function ResourcesPage() {
         fallback={
           <section className="archive-library-loading">
             <div>
-              正在加载资料库检索条件……
+            正在加载建设资讯检索条件……
             </div>
           </section>
         }

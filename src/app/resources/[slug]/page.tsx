@@ -23,8 +23,10 @@ import {
 } from "@/lib/data";
 import {
   copyrightStatusZh,
+  getKnowledgeRole,
   linkStatusBadge,
   linkStatusZh,
+  knowledgeRoleZh,
   resourceFileTypeZh,
   resourceTypeZh,
   visibilityZh,
@@ -591,6 +593,7 @@ function getResearchFocusItems(
 ) {
   return [
     primaryTopicTitle,
+    knowledgeRoleZh[getKnowledgeRole(resource)],
     resourceTypeZh[resource.resourceType],
     resource.sourceDomain ? `来源：${resource.sourceDomain}` : null,
     "制度比较",
@@ -856,7 +859,7 @@ export default async function ResourceDetailPage({
                     <p className="resource-dossier-title-en">{resource.titleEn}</p>
                   </div>
                   <span className="resource-dossier-type-badge">
-                    {resourceTypeZh[resource.resourceType]}
+                    {knowledgeRoleZh[getKnowledgeRole(resource)]}
                   </span>
                 </div>
 

@@ -111,7 +111,9 @@
 }
 
 .atlas-topic-drawer,
-.atlas-topic-file {
+.atlas-topic-file,
+.atlas-evolution-file,
+.atlas-platform-file {
   background:
     repeating-linear-gradient(
       180deg,
@@ -125,6 +127,1051 @@
     0 22px 42px rgb(78 55 32 / 0.14),
     inset 0 1px 0 rgb(255 255 255 / 0.72);
   position: relative;
+}
+
+.atlas-view-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.atlas-view-switch button {
+  background: rgb(246 237 216 / 0.72);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  color: rgb(76 57 37);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 0.55rem 0.82rem;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.atlas-view-switch button:hover,
+.atlas-view-switch button.is-active {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.42);
+  transform: translateY(-1px);
+}
+
+.atlas-research-path {
+  background:
+    linear-gradient(135deg, rgb(87 61 36 / 0.06), transparent 42%),
+    rgb(255 252 242 / 0.74);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.75);
+  margin-top: 1rem;
+  padding: 0.95rem;
+}
+
+.atlas-research-path header {
+  align-items: start;
+  border-bottom: 1px solid rgb(105 78 48 / 0.16);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(210px, 0.34fr) minmax(0, 1fr);
+  padding-bottom: 0.75rem;
+}
+
+.atlas-research-path header span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-research-path header h2 {
+  color: rgb(39 30 22);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin-top: 0.25rem;
+}
+
+.atlas-research-path__switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+.atlas-research-path__switch button {
+  background: rgb(235 226 204 / 0.7);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  color: rgb(76 57 37);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 0.34rem 0.48rem;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-research-path__switch button:hover,
+.atlas-research-path__switch button.is-active {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.4);
+  transform: translateY(-1px);
+}
+
+.atlas-research-path header ul {
+  display: grid;
+  gap: 0.38rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.atlas-research-path header li {
+  display: grid;
+}
+
+.atlas-research-path header li button {
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  color: inherit;
+  cursor: pointer;
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  padding: 0.18rem 0.35rem;
+  text-align: left;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-research-path header li button:hover,
+.atlas-research-path header li button.is-active {
+  background: rgb(255 252 242 / 0.82);
+  border-color: rgb(105 78 48 / 0.28);
+  transform: translateX(2px);
+}
+
+.atlas-research-path header b {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.68rem;
+}
+
+.atlas-research-path header li span {
+  color: rgb(69 54 37);
+  font-size: 0.75rem;
+  line-height: 1.58;
+}
+
+.atlas-research-path header li em {
+  color: rgb(103 78 50);
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 850;
+}
+
+.atlas-research-path > p {
+  color: rgb(72 56 38);
+  font-size: 0.78rem;
+  line-height: 1.68;
+  margin-top: 0.65rem;
+}
+
+.atlas-research-path__current {
+  background: rgb(255 252 242 / 0.68);
+  border-left: 3px solid rgb(105 78 48 / 0.4);
+  display: grid;
+  gap: 0.28rem;
+  margin-top: 0.7rem;
+  padding: 0.72rem 0.8rem;
+}
+
+.atlas-research-path__current span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-research-path__current strong {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  font-weight: 900;
+}
+
+.atlas-research-path__current p {
+  color: rgb(72 56 38);
+  font-size: 0.76rem;
+  line-height: 1.66;
+}
+
+.atlas-research-path__current div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.12rem;
+}
+
+.atlas-research-path__current a {
+  color: rgb(82 61 38);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.atlas-research-path__current button {
+  background: transparent;
+  border: 1px solid rgb(105 78 48 / 0.26);
+  color: rgb(82 61 38);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.24rem 0.55rem;
+}
+
+.atlas-research-path__current button:hover {
+  background: rgb(246 237 216 / 0.82);
+}
+
+.atlas-research-path__current em {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.atlas-research-path__chain {
+  background: rgb(246 237 216 / 0.52);
+  border: 1px solid rgb(105 78 48 / 0.16);
+  margin-top: 0.75rem;
+  padding: 0.8rem;
+}
+
+.atlas-research-path__chain header {
+  border-bottom: 1px solid rgb(105 78 48 / 0.14);
+  display: grid;
+  gap: 0.18rem;
+  padding-bottom: 0.55rem;
+}
+
+.atlas-research-path__chain header span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-research-path__chain header h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.atlas-research-path__chain > p {
+  color: rgb(72 56 38);
+  font-size: 0.75rem;
+  line-height: 1.65;
+  margin-top: 0.55rem;
+}
+
+.atlas-research-path__chain ol {
+  display: grid;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+}
+
+.atlas-research-path__chain li {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 30px minmax(0, 1fr);
+}
+
+.atlas-research-path__chain li > b {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.68rem;
+}
+
+.atlas-research-path__chain li > div {
+  background: rgb(255 252 242 / 0.72);
+  border-left: 2px solid rgb(105 78 48 / 0.32);
+  display: grid;
+  gap: 0.24rem;
+  padding: 0.58rem 0.65rem;
+}
+
+.atlas-research-path__chain em {
+  color: rgb(103 78 50);
+  font-size: 0.62rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.atlas-research-path__chain strong {
+  color: rgb(43 34 25);
+  font-size: 0.84rem;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.atlas-research-path__chain li span {
+  color: rgb(103 78 50);
+  font-size: 0.68rem;
+}
+
+.atlas-research-path__chain li p {
+  color: rgb(72 56 38);
+  font-size: 0.73rem;
+  line-height: 1.62;
+}
+
+.atlas-research-path__chain li a {
+  font-size: 0.73rem;
+  font-weight: 900;
+}
+
+.atlas-research-path dl {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0.75rem;
+}
+
+.atlas-research-path dl div {
+  background: rgb(246 237 216 / 0.7);
+  border: 1px solid rgb(105 78 48 / 0.14);
+  padding: 0.6rem;
+}
+
+.atlas-research-path dt {
+  color: rgb(103 78 50);
+  font-size: 0.66rem;
+  font-weight: 900;
+}
+
+.atlas-research-path dd {
+  color: rgb(42 31 21);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0;
+}
+
+.atlas-evolution-file {
+  grid-column: 1 / -1;
+  padding: clamp(1rem, 2.2vw, 1.7rem);
+}
+
+.atlas-platform-file {
+  grid-column: 1 / -1;
+  padding: clamp(1rem, 2.2vw, 1.7rem);
+}
+
+.atlas-topic-structure {
+  background: rgb(255 252 242 / 0.48);
+  border: 1px solid rgb(105 78 48 / 0.16);
+  margin-top: 1.1rem;
+  padding: 0.9rem;
+}
+
+.atlas-topic-structure header {
+  align-items: end;
+  border-bottom: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.55fr);
+  padding-bottom: 0.65rem;
+}
+
+.atlas-topic-structure header span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-topic-structure header h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.atlas-topic-structure header p {
+  color: rgb(72 56 38);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.atlas-topic-structure__matrix {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.85rem;
+}
+
+.atlas-topic-structure__matrix button {
+  align-items: center;
+  background: rgb(255 252 242 / 0.72);
+  border: 1px solid rgb(105 78 48 / 0.15);
+  color: inherit;
+  cursor: pointer;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.65rem;
+  text-align: left;
+  transition:
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-topic-structure__matrix button:hover,
+.atlas-topic-structure__matrix button.is-active {
+  border-color: rgb(105 78 48 / 0.42);
+  transform: translateY(-1px);
+}
+
+.atlas-topic-structure__matrix button strong {
+  color: rgb(43 34 25);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.atlas-topic-structure__matrix button b {
+  color: rgb(58 44 31);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.atlas-topic-structure__roles {
+  background: rgb(224 214 188 / 0.58);
+  border: 1px solid rgb(105 78 48 / 0.14);
+  display: flex;
+  height: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.atlas-topic-structure__roles i {
+  display: block;
+  min-width: 3px;
+}
+
+.atlas-topic-structure__roles i[data-role="institutional_norm"] {
+  background: rgb(95 110 129);
+}
+
+.atlas-topic-structure__roles i[data-role="policy_strategy"] {
+  background: rgb(116 104 77);
+}
+
+.atlas-topic-structure__roles i[data-role="platform_system"] {
+  background: rgb(66 122 116);
+}
+
+.atlas-topic-structure__roles i[data-role="method_standard"] {
+  background: rgb(162 127 58);
+}
+
+.atlas-topic-structure__roles i[data-role="project_practice"] {
+  background: rgb(124 82 65);
+}
+
+.atlas-topic-structure__roles i[data-role="public_participation"] {
+  background: rgb(108 122 82);
+}
+
+.atlas-topic-structure__relations {
+  border-top: 1px solid rgb(105 78 48 / 0.16);
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.65fr);
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+}
+
+.atlas-topic-structure__relations h4 {
+  color: rgb(43 34 25);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.atlas-topic-structure__relations ul {
+  display: grid;
+  gap: 0.3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.atlas-topic-structure__relations li {
+  align-items: baseline;
+  color: rgb(65 50 34);
+  display: flex;
+  font-size: 0.76rem;
+  gap: 0.45rem;
+  justify-content: space-between;
+  line-height: 1.55;
+}
+
+.atlas-topic-structure__relations li span {
+  color: rgb(103 78 50);
+}
+
+.atlas-topic-structure__relations li b {
+  color: rgb(58 44 31);
+}
+
+.atlas-topic-structure__relations button {
+  background: transparent;
+  border: 0;
+  color: rgb(82 61 38);
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.atlas-platform-layout {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.42fr);
+  margin-top: 1.2rem;
+}
+
+.atlas-platform-clusters {
+  display: grid;
+  gap: 1rem;
+}
+
+.atlas-platform-cluster {
+  background: rgb(255 252 242 / 0.48);
+  border: 1px solid rgb(105 78 48 / 0.16);
+  min-width: 0;
+  padding: 0.85rem;
+}
+
+.atlas-platform-cluster header {
+  align-items: end;
+  border-bottom: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-bottom: 0.65rem;
+}
+
+.atlas-platform-cluster header span {
+  color: rgb(103 78 50);
+  font-size: 0.64rem;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.atlas-platform-cluster header h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.28rem;
+  font-weight: 900;
+}
+
+.atlas-platform-cluster header b {
+  color: rgb(58 44 31);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.atlas-platform-cluster ul {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.atlas-platform-cluster button {
+  align-items: start;
+  background:
+    linear-gradient(180deg, rgb(255 252 242 / 0.86), rgb(240 232 212 / 0.72)),
+    rgb(255 252 242);
+  border: 1px solid rgb(105 78 48 / 0.15);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+  color: inherit;
+  cursor: pointer;
+  display: grid;
+  gap: 0.32rem;
+  min-height: 100%;
+  padding: 0.72rem;
+  text-align: left;
+  transition:
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-platform-cluster button:hover,
+.atlas-platform-cluster button.is-active {
+  border-color: rgb(105 78 48 / 0.42);
+  transform: translateY(-1px);
+}
+
+.atlas-platform-cluster button strong {
+  color: rgb(43 34 25);
+  font-size: 0.94rem;
+  font-weight: 900;
+  line-height: 1.42;
+}
+
+.atlas-platform-cluster button span {
+  color: rgb(82 61 38);
+  font-size: 0.74rem;
+}
+
+.atlas-platform-cluster button em {
+  background: rgb(235 226 204 / 0.74);
+  border: 1px solid rgb(105 78 48 / 0.14);
+  color: rgb(82 61 38);
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 850;
+  justify-self: start;
+  padding: 0.16rem 0.32rem;
+}
+
+.atlas-platform-cluster button small {
+  color: rgb(85 66 44);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.atlas-platform-detail {
+  background: rgb(255 252 242 / 0.68);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.9rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.atlas-platform-detail header span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-platform-detail header h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.38;
+  margin-top: 0.25rem;
+}
+
+.atlas-platform-detail dl {
+  border-top: 1px solid rgb(105 78 48 / 0.16);
+}
+
+.atlas-platform-detail dl div {
+  border-bottom: 1px solid rgb(105 78 48 / 0.12);
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: 86px minmax(0, 1fr);
+  padding: 0.5rem 0;
+}
+
+.atlas-platform-detail dt {
+  color: rgb(103 78 50);
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.atlas-platform-detail dd {
+  color: rgb(65 50 34);
+  font-size: 0.78rem;
+  line-height: 1.58;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.atlas-platform-detail > p {
+  color: rgb(72 56 38);
+  font-size: 0.78rem;
+  line-height: 1.68;
+}
+
+.atlas-platform-detail section h4 {
+  color: rgb(43 34 25);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.atlas-platform-detail section ul {
+  display: grid;
+  gap: 0.35rem;
+  list-style: none;
+  margin-top: 0.42rem;
+  padding: 0;
+}
+
+.atlas-platform-detail section li {
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.atlas-platform-detail section button {
+  background: transparent;
+  border: 0;
+  color: rgb(82 61 38);
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.atlas-evolution-layers {
+  position: relative;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 1.2rem;
+}
+
+.atlas-graph-statement {
+  align-items: stretch;
+  border: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 1.2rem;
+  padding: 0.85rem;
+  background: rgb(255 252 242 / 0.72);
+}
+
+.atlas-graph-statement span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-graph-statement p {
+  color: rgb(62 47 32);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  margin-top: 0.28rem;
+  max-width: 52rem;
+}
+
+.atlas-graph-statement__legend {
+  align-items: center;
+  border-left: 1px solid rgb(105 78 48 / 0.18);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: flex-end;
+  margin-left: auto;
+  max-width: 12rem;
+}
+
+.atlas-graph-statement__legend span {
+  align-items: center;
+  color: rgb(75 57 38);
+  display: inline-flex;
+  font-size: 0.62rem;
+  gap: 0.28rem;
+}
+
+.atlas-graph-statement__legend i {
+  background: rgb(96 74 49);
+  display: block;
+  height: 0;
+  width: 2rem;
+  border-top: 2px solid rgb(96 74 49);
+}
+
+.atlas-graph-statement__legend i.is-inferred {
+  border-top-style: dashed;
+  border-top-color: rgb(120 95 64);
+}
+
+.atlas-graph-statement__legend button {
+  background: rgb(235 226 204 / 0.7);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  color: rgb(66 50 34);
+  cursor: pointer;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.64rem;
+  font-weight: 900;
+  padding: 0.24rem 0.45rem;
+}
+
+.atlas-graph-statement__legend button[aria-pressed="true"] {
+  background: rgb(218 201 167);
+  color: rgb(40 30 20);
+}
+
+.atlas-evolution-connections {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.atlas-evolution-connection path {
+  fill: none;
+  pointer-events: visibleStroke;
+  stroke: rgb(94 72 47 / 0.58);
+  stroke-width: 1.4;
+}
+
+.atlas-evolution-connection marker path {
+  fill: rgb(94 72 47 / 0.68);
+  stroke: none;
+}
+
+.atlas-evolution-connection.is-inferred path {
+  stroke: rgb(121 96 65 / 0.54);
+  stroke-dasharray: 5 5;
+  stroke-width: 1;
+}
+
+.atlas-evolution-connection:hover path,
+.atlas-evolution-connection:focus path {
+  stroke-width: 2.4;
+}
+
+.atlas-evolution-connection.is-inferred:hover path,
+.atlas-evolution-connection.is-inferred:focus path {
+  stroke-width: 1.8;
+}
+
+.atlas-evolution-guide {
+  background: rgb(255 252 242 / 0.58);
+  border: 1px solid rgb(105 78 48 / 0.16);
+  margin-top: 1.1rem;
+  padding: 0.72rem 0.85rem;
+}
+
+.atlas-evolution-guide span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atlas-evolution-guide p {
+  color: rgb(72 56 38);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  margin-top: 0.25rem;
+}
+
+.atlas-evolution-year-track {
+  background:
+    linear-gradient(90deg, transparent, rgb(105 78 48 / 0.12), transparent),
+    rgb(255 252 242 / 0.68);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  display: flex;
+  gap: 0.2rem;
+  overflow-x: auto;
+  padding: 0.55rem;
+  scrollbar-width: thin;
+}
+
+.atlas-evolution-year-track button {
+  background: rgb(235 226 204 / 0.5);
+  border: 1px solid transparent;
+  color: rgb(92 70 45);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 900;
+  height: 1.55rem;
+  min-width: 2.35rem;
+  transition:
+    background 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-evolution-year-track button.has-node {
+  background: rgb(218 201 167 / 0.82);
+  color: rgb(52 39 26);
+}
+
+.atlas-evolution-year-track button:hover,
+.atlas-evolution-year-track button.is-active {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.34);
+  transform: translateY(-1px);
+}
+
+.atlas-evolution-lanes {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.atlas-evolution-layer {
+  background: rgb(255 252 242 / 0.48);
+  border: 1px solid rgb(105 78 48 / 0.16);
+  min-width: 0;
+  padding: 0.85rem;
+}
+
+.atlas-evolution-layers > .atlas-evolution-lanes {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.atlas-evolution-layer header {
+  align-items: end;
+  border-bottom: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-bottom: 0.65rem;
+}
+
+.atlas-evolution-layer header span {
+  color: rgb(103 78 50);
+  font-size: 0.64rem;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.atlas-evolution-layer header h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.28rem;
+  font-weight: 900;
+}
+
+.atlas-evolution-layer header b {
+  color: rgb(58 44 31);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.atlas-evolution-layer ol {
+  display: flex;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 0.85rem 0 0;
+  overflow-x: auto;
+  padding: 0;
+  scrollbar-width: thin;
+}
+
+.atlas-evolution-card {
+  background:
+    linear-gradient(180deg, rgb(255 252 242 / 0.86), rgb(240 232 212 / 0.72)),
+    rgb(255 252 242);
+  border: 1px solid rgb(105 78 48 / 0.15);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+  flex: 0 0 min(260px, 82vw);
+  padding: 0.72rem;
+}
+
+.atlas-evolution-card > div:first-child {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.atlas-evolution-card strong {
+  color: rgb(42 31 21);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+.atlas-evolution-card > div:first-child span {
+  color: rgb(103 78 50);
+  font-size: 0.64rem;
+  font-weight: 850;
+}
+
+.atlas-evolution-card > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+  margin-top: 0.5rem;
+}
+
+.atlas-evolution-card em {
+  background: rgb(235 226 204 / 0.74);
+  border: 1px solid rgb(105 78 48 / 0.14);
+  color: rgb(82 61 38);
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 850;
+  padding: 0.16rem 0.32rem;
+}
+
+.atlas-evolution-card h4 {
+  color: rgb(43 34 25);
+  font-size: 0.94rem;
+  font-weight: 900;
+  line-height: 1.42;
+  margin-top: 0.52rem;
+}
+
+.atlas-evolution-card p {
+  color: rgb(72 56 38);
+  font-size: 0.78rem;
+  line-height: 1.68;
+  margin-top: 0.38rem;
+}
+
+.atlas-evolution-card a {
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.atlas-evolution-empty {
+  border: 1px dashed rgb(105 78 48 / 0.24);
+  color: rgb(81 63 42);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  margin-top: 0.85rem;
+  padding: 0.7rem;
 }
 
 .atlas-topic-drawer {
@@ -611,6 +1658,33 @@
     position: static;
   }
 
+  .atlas-platform-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-topic-structure header,
+  .atlas-topic-structure__relations,
+  .atlas-research-path header {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-research-path header li button {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .atlas-research-path header li em {
+    grid-column: 2;
+  }
+
+  .atlas-platform-detail {
+    position: static;
+  }
+
+  .atlas-evolution-lanes,
+  .atlas-evolution-layers > .atlas-evolution-lanes {
+    grid-template-columns: 1fr;
+  }
+
   .atlas-timeline-hero__stats {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -642,6 +1716,13 @@
 
   .atlas-timeline-list li {
     grid-template-columns: 88px minmax(0, 1fr);
+  }
+
+  .atlas-platform-cluster ul,
+  .atlas-platform-detail dl div,
+  .atlas-topic-structure__matrix,
+  .atlas-research-path dl {
+    grid-template-columns: 1fr;
   }
 
   .atlas-timeline-list li::before {

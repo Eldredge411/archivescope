@@ -32,6 +32,14 @@ export type ResourceType =
   | "system"
   | "report";
 
+export type KnowledgeRole =
+  | "institutional_norm"
+  | "policy_strategy"
+  | "platform_system"
+  | "method_standard"
+  | "project_practice"
+  | "public_participation";
+
 export type LinkStatus = "ok" | "redirect" | "broken" | "unknown";
 
 export type Visibility = "public" | "restricted" | "private";
@@ -156,6 +164,7 @@ export interface Resource {
   countryId: string;
   institutionId: string;
   resourceType: ResourceType;
+  knowledgeRole?: KnowledgeRole;
   primaryTopicId: string;
   topicIds: string[];
   tags: string[];

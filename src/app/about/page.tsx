@@ -25,7 +25,7 @@ const methods = [
   {
     title: "知识组织",
     description:
-      "以国家、机构、专题和资料类型组织信息，让用户可以从问题、来源机构或关键词进入档案资源。",
+      "以国家、机构、专题和资讯类型组织信息，让用户可以从问题、来源机构或关键词进入档案数据资源建设讯息。",
   },
   {
     title: "来源核验",
@@ -36,7 +36,7 @@ const methods = [
 
 const values = [
   "降低中文用户理解海外档案制度和电子文件政策的门槛。",
-  "把分散在官方网站中的法规、指南、机构和数字资源组织为可检索知识库。",
+  "把分散在官方网站中的法规、政策、指南、标准、机构和平台项目讯息组织为可检索知识库。",
   "展示 AI 在数字人文资料加工、跨语言导读和知识组织中的辅助作用。",
   "为后续扩展英国、加拿大、澳大利亚、日本等国家提供可复制的数据模型。",
 ];
@@ -67,8 +67,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="作品说明"
-        title="ArchiveScope：面向全球档案资源的智能知识组织平台"
-        description="ArchiveScope 当前以美国档案制度为第一期样板，探索如何将分散的档案法规、机构、电子文件政策和数字记忆资源转化为可检索、可理解、可持续扩展的中文知识库。"
+        title="ArchiveScope：档案数据资源建设知识库"
+        description="ArchiveScope 当前以美国为第一期样板，探索如何将分散的档案法规、机构政策、电子文件制度、平台项目和标准指南转化为可检索、可理解、可持续扩展的中文知识库。网站定位是整理档案数据资源建设制度与实践讯息，而不是直接收录开放数据集等档案数据资源本体。"
       />
 
       <section className="border-b border-zinc-200 bg-amber-50/70 dark:border-zinc-800 dark:bg-amber-950/20">
@@ -136,7 +136,7 @@ export default function AboutPage() {
               href="/resources"
               className="rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
             >
-              进入资料库检索
+              进入建设资讯库检索
             </Link>
           </div>
 

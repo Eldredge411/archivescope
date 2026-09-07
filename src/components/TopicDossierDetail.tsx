@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { linkStatusZh } from "@/lib/display";
 import type { LinkStatus, ResourceType } from "@/types";
 
@@ -56,7 +56,7 @@ const RESOURCE_PAGE_SIZE = 5;
 
 function getGroupDescription(group?: TopicDossierGroup) {
   if (!group) {
-    return "该专题下暂无已收录资料，后续扩充资料库后会在这里形成专题文件。";
+    return "该专题下暂无已收录建设讯息，后续扩充建设资讯库后会在这里形成专题文件。";
   }
 
   if (group.type === "portal") {
@@ -68,10 +68,10 @@ function getGroupDescription(group?: TopicDossierGroup) {
   }
 
   if (group.type === "program" || group.type === "system") {
-    return "这里更侧重具体项目、运行系统和建设实践，可用于观察档案资源建设的落地方式。";
+    return "这里更侧重具体项目、运行系统和建设实践，可用于观察档案数据资源建设的落地方式。";
   }
 
-  return "这里按资料类型整理相关条目，便于从同一专题下横向比较不同来源和不同文件。";
+  return "这里按资讯类型整理相关条目，便于从同一专题下横向比较不同来源和不同讯息。";
 }
 
 export function TopicDossierDetail({
@@ -126,16 +126,6 @@ export function TopicDossierDetail({
     firstResourceIndex,
     firstResourceIndex + RESOURCE_PAGE_SIZE,
   );
-
-  useEffect(() => {
-    setResourcePage(1);
-  }, [activeType, normalizedQuery]);
-
-  useEffect(() => {
-    if (resourcePage > totalResourcePages) {
-      setResourcePage(totalResourcePages);
-    }
-  }, [resourcePage, totalResourcePages]);
 
   function openGroup(type: ResourceType, shouldScroll = false) {
     setActiveType(type);
@@ -217,10 +207,19 @@ export function TopicDossierDetail({
                   type="search"
                   value={searchQuery}
                   placeholder="输入法规、项目、机构或关键词"
-                  onChange={(event) => setSearchQuery(event.target.value)}
+                  onChange={(event) => {
+                    setSearchQuery(event.target.value);
+                    setResourcePage(1);
+                  }}
                 />
                 {searchQuery ? (
-                  <button type="button" onClick={() => setSearchQuery("")}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery("");
+                      setResourcePage(1);
+                    }}
+                  >
                     清空
                   </button>
                 ) : null}
@@ -237,7 +236,7 @@ export function TopicDossierDetail({
               ))}
             </div>
 
-            <div className="topic-reader-tabs" aria-label="资料类型">
+            <div className="topic-reader-tabs" aria-label="资讯类型">
               {groups.map((group, index) => (
                 <button
                   key={group.type}
@@ -313,8 +312,8 @@ export function TopicDossierDetail({
                   <strong>{isSearching ? "没有找到匹配资料" : "暂无相关资料"}</strong>
                   <p>
                     {isSearching
-                      ? "可以换一个关键词，或返回左侧资料类型继续浏览。"
-                      : "后续扩充资料库后，这个分类会自动显示对应条目。"}
+                      ? "可以换一个关键词，或返回左侧资讯类型继续浏览。"
+                      : "后续扩充建设资讯库后，这个分类会自动显示对应条目。"}
                   </p>
                 </div>
               )}

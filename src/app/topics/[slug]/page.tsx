@@ -72,7 +72,7 @@ export default async function TopicDetailPage({ params }: TopicDetailPageProps) 
       description: "当前关联到该专题的资料总数",
     },
     {
-      label: "资料类型",
+      label: "资讯类型",
       value: resourceGroups.length,
       description: "按法律、指南、战略等类型归组",
     },

@@ -3,6 +3,7 @@ import acceptedInstitutions from "@/data/imports/us/acceptedInstitutions.json";
 import resourceSnapshotFiles from "@/data/imports/us/resourceSnapshotFiles.json";
 import resourceCurationDecisionsJson from "@/data/imports/us/resourceCurationDecisions.json";
 import resourceAdminEdits from "@/data/imports/us/resourceAdminEdits.json";
+import resourceKnowledgeRolesJson from "@/data/imports/us/resourceKnowledgeRoles.json";
 import { resourceEnrichments } from "@/data/imports/us/resourceEnrichments";
 import {
   importedEntityRelations,
@@ -18,6 +19,7 @@ import type {
   Institution,
   InstitutionGroup,
   InstitutionTypeCode,
+  KnowledgeRole,
   Topic,
   Resource,
   ResourceFile,
@@ -1500,6 +1502,17 @@ function normalizeResourceForDisplay(resource: Resource): Resource {
   };
 }
 
+function applyResourceKnowledgeRoles(resourceList: Resource[]): Resource[] {
+  const roleById = new Map(
+    Object.entries(resourceKnowledgeRolesJson) as [string, KnowledgeRole][],
+  );
+
+  return resourceList.map((resource) => ({
+    ...resource,
+    knowledgeRole: roleById.get(resource.id) ?? resource.knowledgeRole,
+  }));
+}
+
 const normalizedAcceptedInstitutions = (
   acceptedInstitutions as AcceptedInstitutionInput[]
 ).map(normalizeImportedInstitution);
@@ -1514,7 +1527,11 @@ const normalizedAcceptedResources = (acceptedResources as AcceptedResourceInput[
   .map(normalizeAcceptedResource);
 
 export const resources: Resource[] = applyResourceAdminEdits(
-  applyResourceEnrichments(mergeResources(baseResources, normalizedAcceptedResources))
+  applyResourceKnowledgeRoles(
+    applyResourceEnrichments(
+      mergeResources(baseResources, normalizedAcceptedResources),
+    ),
+  )
     .map(normalizeResourceForDisplay),
 )
   .map(normalizeResourceForDisplay)

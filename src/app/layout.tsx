@@ -14,9 +14,9 @@ const themeInitScript = `
 `;
 
 export const metadata: Metadata = {
-  title: "ArchiveScope | 全球档案知识库",
+  title: "ArchiveScope | 档案数据资源建设知识库",
   description:
-    "面向中文档案学研究者的全球档案政策、法规、项目与数字资源建设知识库。首版聚焦美国板块。",
+    "面向中文档案学研究者的全球档案数据资源建设制度、政策、平台与实践讯息知识库。首版聚焦美国板块。",
 };
 
 export default function RootLayout({

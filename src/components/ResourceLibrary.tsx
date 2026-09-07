@@ -11,6 +11,7 @@ import {
 import type {
   Country,
   Institution,
+  KnowledgeRole,
   LinkStatus,
   Resource,
   ResourceType,
@@ -18,6 +19,8 @@ import type {
 } from "@/types";
 import {
   getPublicResourceStatusMeta,
+  getKnowledgeRole,
+  knowledgeRoleZh,
   linkStatusBadge,
   linkStatusZh,
   resourceTypeZh,
@@ -45,6 +48,7 @@ type LibraryState = {
   countryId: SelectValue<string>;
   institutionId: SelectValue<string>;
   resourceType: SelectValue<ResourceType>;
+  knowledgeRole: SelectValue<KnowledgeRole>;
   topicId: SelectValue<string>;
   linkStatus: SelectValue<LinkStatus>;
   snapshotStatus: SnapshotStatusFilter;
@@ -489,6 +493,12 @@ function resolvePageParam(value: string) {
   return Number.isFinite(page) && page > 0 ? page : 1;
 }
 
+function resolveKnowledgeRole(value: string): SelectValue<KnowledgeRole> {
+  return Object.prototype.hasOwnProperty.call(knowledgeRoleZh, value)
+    ? (value as KnowledgeRole)
+    : allValue;
+}
+
 function buildQueryString(state: LibraryState, page = 1) {
   const params = new URLSearchParams();
   const keyword = state.keyword.trim();
@@ -510,6 +520,10 @@ function buildQueryString(state: LibraryState, page = 1) {
 
   if (!isAllFilterValue(state.resourceType)) {
     params.set("type", state.resourceType);
+  }
+
+  if (!isAllFilterValue(state.knowledgeRole)) {
+    params.set("role", state.knowledgeRole);
   }
 
   if (!isAllFilterValue(state.topicId)) {
@@ -640,6 +654,7 @@ export function ResourceLibrary({
       countryId: resolveCountry(firstParam(params, "country")),
       institutionId: resolveInstitution(firstParam(params, "institution")),
       resourceType: resolveResourceType(firstParam(params, "type")),
+      knowledgeRole: resolveKnowledgeRole(firstParam(params, "role")),
       topicId: resolveTopic(firstParam(params, "topic")),
       linkStatus: resolveLinkStatus(firstParam(params, "linkStatus")),
       snapshotStatus: resolveSnapshotStatus(firstParam(params, "snapshotStatus")),
@@ -672,6 +687,7 @@ export function ResourceLibrary({
     countryId,
     institutionId,
     resourceType,
+    knowledgeRole,
     topicId,
     linkStatus,
     snapshotStatus,
@@ -793,6 +809,17 @@ export function ResourceLibrary({
     [resources],
   );
 
+  const knowledgeRoleOptions = useMemo(
+    () =>
+      Object.entries(knowledgeRoleZh).map(([role, label]) => ({
+        value: role as KnowledgeRole,
+        label,
+        count: resources.filter((resource) => getKnowledgeRole(resource) === role)
+          .length,
+      })),
+    [resources],
+  );
+
   const linkStatusOptions = useMemo(
     () =>
       Object.entries(linkStatusZh)
@@ -901,6 +928,9 @@ export function ResourceLibrary({
         isAllFilterValue(institutionId) || resource.institutionId === institutionId;
       const matchesType =
         isAllFilterValue(resourceType) || resource.resourceType === resourceType;
+      const matchesKnowledgeRole =
+        isAllFilterValue(knowledgeRole) ||
+        getKnowledgeRole(resource) === knowledgeRole;
       const matchesTopic =
         isAllFilterValue(topicId) || resource.topicIds.includes(topicId);
       const matchesLinkStatus =
@@ -914,6 +944,7 @@ export function ResourceLibrary({
         matchesCountry &&
         matchesInstitution &&
         matchesType &&
+        matchesKnowledgeRole &&
         matchesTopic &&
         matchesLinkStatus &&
         matchesSnapshotStatus
@@ -926,6 +957,7 @@ export function ResourceLibrary({
     institutionById,
     institutionId,
     keyword,
+    knowledgeRole,
     linkStatus,
     mode,
     resourceType,
@@ -960,6 +992,7 @@ export function ResourceLibrary({
     !isAllFilterValue(countryId) ||
     !isAllFilterValue(institutionId) ||
     !isAllFilterValue(resourceType) ||
+    !isAllFilterValue(knowledgeRole) ||
     !isAllFilterValue(topicId) ||
     !isAllFilterValue(linkStatus) ||
     snapshotStatus !== "all" ||
@@ -971,7 +1004,10 @@ export function ResourceLibrary({
     mode === "fuzzy" ? `检索模式：${searchModeZh[mode]}` : null,
     selectedCountry ? `国家地区：${selectedCountry.nameZh}` : null,
     selectedInstitution ? `机构：${selectedInstitution.nameZh}` : null,
-    resourceType !== allValue ? `资料类型：${resourceTypeZh[resourceType]}` : null,
+    resourceType !== allValue ? `资讯类型：${resourceTypeZh[resourceType]}` : null,
+    knowledgeRole !== allValue
+      ? `建设分类：${knowledgeRoleZh[knowledgeRole]}`
+      : null,
     selectedTopic ? `研究专题：${selectedTopic.titleZh}` : null,
     linkStatus !== allValue ? `链接状态：${linkStatusZh[linkStatus]}` : null,
     snapshotStatus !== "all"
@@ -985,7 +1021,7 @@ export function ResourceLibrary({
         <aside className="archive-ledger-sidebar">
           <div className="archive-ledger-sticky">
             <section className="archive-ledger-filter-card">
-              <h2>资料类型</h2>
+              <h2>资讯类型</h2>
               <button
                 type="button"
                 className={`archive-ledger-filter-line ${
@@ -1005,6 +1041,37 @@ export function ResourceLibrary({
                   }`}
                   onClick={() =>
                     updateState({ ...currentState, resourceType: item.value })
+                  }
+                >
+                  <span>{item.label}</span>
+                  <b>{item.count}</b>
+                </button>
+              ))}
+            </section>
+
+            <section className="archive-ledger-filter-card">
+              <h2>建设分类</h2>
+              <button
+                type="button"
+                className={`archive-ledger-filter-line ${
+                  knowledgeRole === allValue ? "is-active" : ""
+                }`}
+                onClick={() =>
+                  updateState({ ...currentState, knowledgeRole: allValue })
+                }
+              >
+                <span>全部分类</span>
+                <b>{resources.length}</b>
+              </button>
+              {knowledgeRoleOptions.map((item) => (
+                <button
+                  type="button"
+                  key={item.value}
+                  className={`archive-ledger-filter-line ${
+                    knowledgeRole === item.value ? "is-active" : ""
+                  }`}
+                  onClick={() =>
+                    updateState({ ...currentState, knowledgeRole: item.value })
                   }
                 >
                   <span>{item.label}</span>
@@ -1174,7 +1241,7 @@ export function ResourceLibrary({
             <div className="archive-ledger-advanced">
               <SelectField
                 id="resource-type-filter"
-                label="资料类型"
+                label="资讯类型"
                 value={resourceType}
                 onChange={(value) =>
                   updateState({
@@ -1183,8 +1250,27 @@ export function ResourceLibrary({
                   })
                 }
               >
-                <option value={allValue}>全部资料类型</option>
+                <option value={allValue}>全部资讯类型</option>
                 {resourceTypeOptions.map((item) => (
+                  <option key={item.value} value={item.value}>
+                    {item.label}
+                  </option>
+                ))}
+              </SelectField>
+
+              <SelectField
+                id="knowledge-role-filter"
+                label="建设分类"
+                value={knowledgeRole}
+                onChange={(value) =>
+                  updateState({
+                    ...currentState,
+                    knowledgeRole: value as SelectValue<KnowledgeRole>,
+                  })
+                }
+              >
+                <option value={allValue}>全部建设分类</option>
+                {knowledgeRoleOptions.map((item) => (
                   <option key={item.value} value={item.value}>
                     {item.label}
                   </option>
@@ -1363,6 +1449,7 @@ export function ResourceLibrary({
                       <div className="archive-ledger-ref-cell" role="cell">
                         <strong>{archiveRef}</strong>
                         <span>{resourceTypeZh[resource.resourceType]}</span>
+                        <span>{knowledgeRoleZh[getKnowledgeRole(resource)]}</span>
                         <Link href={`/resources/${resource.slug}`}>查看</Link>
                         <a
                           href={resource.sourceUrl}
@@ -1390,7 +1477,7 @@ export function ResourceLibrary({
                   );
                 })}
 
-                <nav className="archive-ledger-pagination" aria-label="资料库分页">
+                <nav className="archive-ledger-pagination" aria-label="建设资讯分页">
                   <span>
                     第 {safeCurrentPage} / {totalPages} 页
                   </span>

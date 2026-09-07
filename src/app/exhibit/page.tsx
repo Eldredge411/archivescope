@@ -9,9 +9,9 @@ import {
 
 const overviewStats = [
   {
-    label: "资料条目",
+    label: "建设讯息",
     value: resources.length,
-    note: "法规、指南、系统、项目、报告与资源入口",
+    note: "法规、政策、指南、项目、平台与标准讯息",
   },
   {
     label: "机构条目",
@@ -32,10 +32,10 @@ const overviewStats = [
 
 const useCases = [
   {
-    title: "查找具体资料",
-    text: "在资料库中检索法规、政策、指南、项目、系统和数据库，查看中文简介、关键词、来源链接和快照状态。",
+    title: "查找建设讯息",
+    text: "在建设资讯库中检索法规、政策、指南、项目、平台和标准，查看中文简介、关键词、来源链接和快照状态。",
     href: "/resources",
-    action: "进入资料库",
+    action: "进入建设资讯库",
   },
   {
     title: "按问题进入专题",
@@ -60,7 +60,7 @@ const useCases = [
 const workflow = [
   ["01", "发现来源", "优先从官方机构、法规平台、图书馆和专业组织中筛选资料。"],
   ["02", "整理中文信息", "为资料补充中文标题、简介、摘要、要点、关键词和研究价值。"],
-  ["03", "归入结构", "按国家、机构、专题、资料类型和版本沿革放入统一目录。"],
+  ["03", "归入结构", "按国家、机构、专题、资讯类型和版本沿革放入统一目录。"],
   ["04", "持续修正", "保留编辑、隐藏、补充快照和重新发布入口，方便后续维护。"],
 ];
 
@@ -96,7 +96,7 @@ export default function ExhibitPage() {
             </div>
             <div>
               <small>当前范围</small>
-              <strong>美国档案资源</strong>
+              <strong>美国建设实践</strong>
             </div>
             <div>
               <small>Countries</small>
@@ -105,11 +105,11 @@ export default function ExhibitPage() {
           </div>
 
           <p className="site-note-cover__intro">
-            ArchiveScope 是一个面向中文用户整理海外档案资源的网站。当前版本以美国为主要样板，集中呈现档案法规、机构、数字资源、项目计划和相关说明资料。
+            ArchiveScope 是一个面向中文用户的档案数据资源建设知识库。当前版本以美国为主要样板，集中整理档案法规、机构政策、平台项目、标准指南和相关实践讯息。本站当前收录的是建设制度与实践讯息，不是开放数据集等档案数据资源本体。
           </p>
 
           <div className="site-note-actions">
-            <Link href="/resources">开始检索资料</Link>
+            <Link href="/resources">开始检索建设讯息</Link>
             <Link href="/topics">按专题浏览</Link>
           </div>
         </section>

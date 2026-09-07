@@ -14,6 +14,7 @@
     "drafts:export": "node scripts/ingest/exportAcceptedDrafts.mjs",
     "drafts:insights": "node scripts/audit/generateDraftReviewInsights.mjs",
     "resources:audit": "node scripts/audit/auditResources.mjs",
+    "roles:backfill": "node scripts/audit/backfillKnowledgeRoles.mjs",
     "institutions:validate": "node scripts/institutions/validateInstitutions.mjs",
     "institutions:enrich": "node scripts/institutions/enrichInstitutionDescriptions.mjs",
     "agent:maintenance": "node scripts/agents/maintenanceAgent.mjs",

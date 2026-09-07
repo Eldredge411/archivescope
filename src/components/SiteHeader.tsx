@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const navItems = [
   { href: "/", label: "首页" },
   { href: "/countries", label: "国家地区" },
-  { href: "/resources", label: "资料库" },
+  { href: "/resources", label: "建设资讯" },
   { href: "/atlas", label: "知识图谱" },
   { href: "/topics", label: "研究专题" },
   { href: "/institutions", label: "机构" },
@@ -67,7 +67,7 @@ export function SiteHeader() {
               ArchiveScope
             </span>
             <span className="block text-xs text-[#7a6a59] dark:text-zinc-400">
-              全球档案知识库
+              档案数据资源建设知识库
             </span>
           </span>
         </Link>

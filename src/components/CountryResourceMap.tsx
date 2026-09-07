@@ -99,7 +99,7 @@ const metricOptions: MetricOption[] = [
   {
     key: "digitalResources",
     label: "数字资源建设",
-    description: "统计数字资源建设与长期保存专题下的资料数量。",
+    description: "统计档案数字化、平台建设与长期保存相关讯息数量。",
   },
   {
     key: "publicAccess",
@@ -1134,7 +1134,7 @@ function CountryProfilePanel({
         <span>国家档案剖面</span>
         <h3>移动到地图国家</h3>
         <p>
-          鼠标移到地图上的国家，可查看该国家在档案资源建设领域的资料数量、机构数量与快照保存情况。
+          鼠标移到地图上的国家，可查看该国家在档案数据资源建设领域的讯息数量、机构数量与快照保存情况。
         </p>
       </aside>
     );
@@ -1339,9 +1339,9 @@ export function CountryResourceMap({
           <div className="country-map-heading">
             <div>
               <span>Global Archive Terrain</span>
-              <h2>全球档案资源地理索引</h2>
+              <h2>全球档案数据资源建设索引</h2>
               <p>
-                用地图点亮各国档案资源建设情况，切换图层可查看法规、政策、机构、快照等维度。
+                用地图点亮各国档案数据资源建设讯息，切换图层可查看法规、政策、机构、快照等维度。
               </p>
             </div>
             <p>

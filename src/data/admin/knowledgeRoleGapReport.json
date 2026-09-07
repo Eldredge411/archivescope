@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2026-09-05T08:13:59.288Z",
+  "summary": {
+    "totalResources": 292,
+    "reviewedResources": 69,
+    "explicitRoleResources": 292,
+    "missingContentResources": 0
+  },
+  "counts": {
+    "institutional_norm": {
+      "label": "制度规范",
+      "count": 111
+    },
+    "policy_strategy": {
+      "label": "政策战略",
+      "count": 40
+    },
+    "platform_system": {
+      "label": "平台系统",
+      "count": 14
+    },
+    "method_standard": {
+      "label": "方法标准",
+      "count": 34
+    },
+    "project_practice": {
+      "label": "项目实践",
+      "count": 8
+    },
+    "public_participation": {
+      "label": "公众参与",
+      "count": 85
+    }
+  },
+  "reviewDecisions": {
+    "fr-2026-14921": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Renewal of Collection; Comment Request; Generic Clearance for the Collection of Qualitative Feedback on Agency Service Delivery"
+    },
+    "fr-2026-12241": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Submission for OMB Review; Comment Request"
+    },
+    "fr-2026-11899": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities; Proposals, Submissions, and Approvals"
+    },
+    "fr-2026-10901": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Proposed Collection; Comment Request"
+    },
+    "fr-2023-21867": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Proposed Collection; Comment Request; Generic Clearance for the Collection of Qualitative Feedback on Agency Service Delivery"
+    },
+    "fr-2022-07580": {
+      "role": "method_standard",
+      "label": "方法标准",
+      "title": "Agency Guidance Procedures"
+    },
+    "fr-2016-31010": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Office of Government Information Services"
+    },
+    "fr-2015-02454": {
+      "role": "project_practice",
+      "label": "项目实践",
+      "title": "Office of Presidential Libraries; Disposal of Presidential Records"
+    },
+    "fr-2014-29854": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Proposed Collection; Cancellation"
+    },
+    "fr-2014-28697": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Federal Awarding Agency Regulatory Implementation of Office of Management and Budget's Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards"
+    },
+    "fr-2014-07854": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Agency Information Collection Activities: Proposed Extension of Collection; Comment Request"
+    },
+    "fr-2013-15564": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Presidential Libraries; Proposed Disposal of George H.W. Bush and Clinton Administration Electronic Backup Tapes"
+    },
+    "fr-99-26611": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on Presidential Libraries Meeting; Partial Closed Meeting"
+    },
+    "fr-2026-14068": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services Annual Meeting"
+    },
+    "fr-2025-21698": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Notice of Meeting; Chief Freedom of Information Act (FOIA) Officers Council"
+    },
+    "fr-2024-23877": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Meeting Announcement; Chief Freedom of Information Act Officers Council"
+    },
+    "fr-2024-05673": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief Freedom of Information Act Officers Council Meeting"
+    },
+    "fr-2023-21049": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief Freedom of Information Act Officers Council"
+    },
+    "fr-2022-23030": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief Freedom of Information Act (FOIA) Officers Council Meeting"
+    },
+    "fr-2022-01086": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Meeting; Chief Freedom of Information Act Officers Council"
+    },
+    "fr-2021-24395": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Meeting Announcement; Chief Freedom of Information Act (FOIA) Officers Council"
+    },
+    "fr-2021-07713": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Meetings; Chief Freedom of Information Act (FOIA) Officers Council"
+    },
+    "fr-2020-21373": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief Freedom of Information Act (FOIA) Officers Council; Notice of a Meeting"
+    },
+    "fr-2020-14178": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services (OGIS) Annual Open Meeting"
+    },
+    "fr-2019-14508": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief FOIA Officers' Council Meeting"
+    },
+    "fr-2019-13085": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Changes to Agency Records Schedule; Request for Comments"
+    },
+    "fr-2019-11521": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services Annual Open Meeting"
+    },
+    "fr-2018-20746": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Chief FOIA Officers Council Meeting"
+    },
+    "fr-2015-30033": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services; Freedom of Information Act (FOIA) Advisory Committee; Meeting"
+    },
+    "fr-2015-03364": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services (OGIS); Freedom of Information Act (FOIA) Advisory Committee; Meeting"
+    },
+    "fr-2014-18565": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services (OGIS), Freedom of Information Act (FOIA) Advisory Committee Special Notice; Correction"
+    },
+    "fr-2014-12146": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services (OGIS), Freedom of Information Act Advisory Committee Meeting"
+    },
+    "fr-2012-16655": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "The Interagency Security Classification Appeals Panel (ISCAP) Bylaws, Rules, and Appeal Procedures"
+    },
+    "fr-2011-492": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "New Agency Logos"
+    },
+    "fr-00-5674": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Uniform Administrative Requirements for Grants and Agreements With Institutions of Higher Education, Hospitals, and Other Non-Profit Organizations"
+    },
+    "fr-2020-04157": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "Agency Guidance; Portal"
+    },
+    "fr-2018-08315": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Meeting of the Advisory Committee on Presidential Library-Foundation Partnerships"
+    },
+    "fr-2017-03502": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Location of NARA Facilities and Hours of Use: Barack Obama Library"
+    },
+    "fr-2017-06650": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Office of Government Information Services (OGIS); Annual Open Meeting"
+    },
+    "fr-2018-20007": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on Presidential Library-Foundation Partnerships"
+    },
+    "fr-2018-20000": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on the Presidential Library-Foundation Partnerships"
+    },
+    "fr-2016-30948": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on the Presidential Library-Foundation Partnerships Meeting"
+    },
+    "fr-2016-26952": {
+      "role": "project_practice",
+      "label": "项目实践",
+      "title": "George W. Bush Presidential Library; Disposal of Presidential Records"
+    },
+    "fr-2015-19844": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Nixon Presidential Historical Materials; Opening of Materials"
+    },
+    "fr-2012-4213": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Public Meeting To Solicit Comments in Response to the Presidential Memorandum, Managing Government Records"
+    },
+    "fr-2011-4612": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Presidential Library Facilities; Correction"
+    },
+    "fr-2010-17997": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on Presidential Library-Foundation Partnerships."
+    },
+    "fr-2010-8787": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Advisory Committee on Presidential Libraries Meeting"
+    },
+    "fr-E8-30885": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Testimony by NARA Employees Relating to Agency Information and Production of Records in Legal Proceedings"
+    },
+    "fr-E8-17316": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "Renewal of Advisory Committee on Presidential Libraries"
+    },
+    "fr-E8-13465": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Presidential Library Facilities"
+    },
+    "fr-E6-11763": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Changes in NARA Research Room and Museum Hours"
+    },
+    "fr-05-8765": {
+      "role": "project_practice",
+      "label": "项目实践",
+      "title": "Office of Presidential Libraries; Proposed Disposal of Clinton Administration Electronic Backup Tapes"
+    },
+    "fr-99-30973": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Agency Records Centers"
+    },
+    "fr-94-13517": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Agency Program Evaluations"
+    },
+    "fr-95-25548": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "Uniform Administrative Requirements for Grants and Agreements With Institutions of Higher Education, Hospitals and Other Non-Profit Organizations"
+    },
+    "ecfr-36-cfr-1231": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "36 CFR 第 1231 部分：行政机构之间的文件移交"
+    },
+    "ecfr-36-cfr-1233": {
+      "role": "institutional_norm",
+      "label": "制度规范",
+      "title": "36 CFR 第 1233 部分：总统图书馆文件的移交、利用与处置"
+    },
+    "nara-federal-agency-reporting": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "NARA 联邦机构文件管理报告"
+    },
+    "nara-federal-records-centers": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "NARA 联邦文件中心"
+    },
+    "loc-digital-preservation": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "美国国会图书馆数字保存资源"
+    },
+    "loc-recommended-formats-statement": {
+      "role": "method_standard",
+      "label": "方法标准",
+      "title": "美国国会图书馆推荐格式声明"
+    },
+    "loc-sustainability-of-digital-formats": {
+      "role": "method_standard",
+      "label": "方法标准",
+      "title": "美国国会图书馆数字格式可持续性资源"
+    },
+    "loc-labs-machine-learning": {
+      "role": "project_practice",
+      "label": "项目实践",
+      "title": "美国国会图书馆实验室机器学习实验"
+    },
+    "loc-digital-scholarship": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "美国国会图书馆数字学术资源"
+    },
+    "loc-by-the-people": {
+      "role": "public_participation",
+      "label": "公众参与",
+      "title": "美国国会图书馆 By the People 众包转录项目"
+    },
+    "dpla-digital-public-library": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "美国数字公共图书馆"
+    },
+    "saa-standards-portal": {
+      "role": "method_standard",
+      "label": "方法标准",
+      "title": "美国档案工作者协会标准门户"
+    },
+    "cosa-resource-center": {
+      "role": "platform_system",
+      "label": "平台系统",
+      "title": "美国州档案馆馆长委员会资源中心"
+    }
+  },
+  "priorityOrder": [
+    "method_standard",
+    "public_participation",
+    "policy_strategy",
+    "platform_system",
+    "project_practice",
+    "institutional_norm"
+  ],
+  "missingContent": []
+}
