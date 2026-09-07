@@ -1383,6 +1383,12 @@ export default async function ResourceDetailPage({
               title="相关资料"
               description="基于相同专题、机构和资料关系自动选取，帮助继续追踪相关制度和实践。"
             >
+              <Link
+                href={`/atlas?focus=${encodeURIComponent(resource.id)}`}
+                className="atlas-evidence-entry"
+              >
+                在演进图谱中查看 IN ATLAS →
+              </Link>
               {relatedResources.length > 0 ? (
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {relatedResources.map((relatedResource) => (

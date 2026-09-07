@@ -6,7 +6,12 @@ import {
   buildAtlasGraph,
   type AtlasGraphEdge,
 } from "@/lib/atlas/atlasGraph";
-import { entityRelations, resourceVersions } from "@/data/mockData";
+import {
+  entityRelations,
+  resourceFiles,
+  resourceVersions,
+} from "@/data/mockData";
+import { KnowledgeEvidenceDrawer } from "@/components/KnowledgeEvidenceDrawer";
 import {
   getKnowledgeRole,
   knowledgeRoleZh,
@@ -22,6 +27,7 @@ import type {
 } from "@/types";
 
 export type KnowledgeAtlasProps = {
+  focusResourceId?: string;
   topics: Topic[];
   resources: Resource[];
   institutions: Institution[];
@@ -1375,6 +1381,7 @@ function getDevelopmentSummary(topic: Topic, timelineItems: TimelineItem[]) {
 }
 
 export function KnowledgeAtlas({
+  focusResourceId,
   topics,
   resources,
   institutions,
@@ -1394,6 +1401,7 @@ export function KnowledgeAtlas({
   const [activePathId, setActivePathId] = useState<AtlasPathId>("researcher");
   const [activePathStep, setActivePathStep] = useState(1);
   const [showResearchLeads, setShowResearchLeads] = useState(false);
+  const [activeEdgeId, setActiveEdgeId] = useState("");
   const [connectionViewport, setConnectionViewport] = useState({
     width: 0,
     height: 0,
@@ -1439,6 +1447,9 @@ export function KnowledgeAtlas({
         entityRelations,
       }),
     [institutions, resources],
+  );
+  const activeEvidenceEdge = atlasGraph.edges.find(
+    (edge) => edge.id === activeEdgeId,
   );
   const visibleEvolutionItems = evolutionItems.filter(
     (item) => !activeEvolutionYear || item.year === activeEvolutionYear,
@@ -1490,6 +1501,32 @@ export function KnowledgeAtlas({
 
     return () => window.removeEventListener("resize", updateConnections);
   }, [activeEvolutionYear, evolutionItems, showResearchLeads]);
+
+  useEffect(() => {
+    if (!focusResourceId) {
+      return;
+    }
+
+    const frame = window.requestAnimationFrame(() => {
+      const focusedNode = document.querySelector<HTMLElement>(
+        `[data-node-id="${CSS.escape(focusResourceId)}"]`,
+      );
+
+      focusedNode?.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      const firstVerifiedEdge = atlasGraph.edges.find(
+        (edge) =>
+          edge.status === "verified" &&
+          (edge.source === focusResourceId || edge.target === focusResourceId),
+      );
+
+      if (firstVerifiedEdge) {
+        setActiveEdgeId(firstVerifiedEdge.id);
+      }
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [atlasGraph.edges, focusResourceId]);
   const activePlatform = platformClusters
     .flatMap((cluster) => cluster.items)
     .find((item) => item.resource.id === activePlatformId);
@@ -2129,7 +2166,11 @@ export function KnowledgeAtlas({
                           {layerItems.map((item) => (
                             <li key={item.resource.id}>
                               <div
-                                className="atlas-evolution-card"
+                                className={`atlas-evolution-card ${
+                                  focusResourceId === item.resource.id
+                                    ? "is-focused"
+                                    : ""
+                                }`}
                                 data-node-id={item.resource.id}
                               >
                                 <div>
@@ -2165,9 +2206,10 @@ export function KnowledgeAtlas({
 
               {connectionViewport.width > 0 ? (
                 <svg
-                  className="atlas-evolution-connections"
+                  className={`atlas-evolution-connections ${
+                    activeEdgeId ? "has-active-edge" : ""
+                  }`}
                   viewBox={`0 0 ${connectionViewport.width} ${connectionViewport.height}`}
-                  aria-hidden="true"
                 >
                   <defs>
                     <marker
@@ -2192,9 +2234,23 @@ export function KnowledgeAtlas({
                     return [
                       <g
                         key={edge.id}
-                        className={`atlas-evolution-connection ${
-                          edge.status === "inferred" ? "is-inferred" : ""
-                        }`}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`${edge.labelZh} ${edge.labelEn}`}
+                        className={[
+                          "atlas-evolution-connection",
+                          edge.status === "inferred" ? "is-inferred" : "",
+                          activeEdgeId === edge.id ? "is-active" : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                        onClick={() => setActiveEdgeId(edge.id)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            setActiveEdgeId(edge.id);
+                          }
+                        }}
                       >
                         <path
                           d={getEvolutionConnectionPath(
@@ -2205,6 +2261,12 @@ export function KnowledgeAtlas({
                           )}
                           markerEnd="url(#atlas-relation-arrow)"
                         />
+                        <text
+                          x={(source.sourceX + target.targetX) / 2}
+                          y={(source.sourceY + target.targetY) / 2 - 6}
+                        >
+                          {`${edge.labelZh} ${edge.labelEn}`}
+                        </text>
                         <title>
                           {`${edge.labelZh} ${edge.labelEn} · ${edge.status}`}
                         </title>
@@ -2421,6 +2483,17 @@ export function KnowledgeAtlas({
           </article>
         )}
       </section>
+
+      {activeEvidenceEdge ? (
+        <KnowledgeEvidenceDrawer
+          edge={activeEvidenceEdge}
+          resources={resources}
+          institutions={institutions}
+          resourceFiles={resourceFiles}
+          resourceVersions={resourceVersions}
+          onClose={() => setActiveEdgeId("")}
+        />
+      ) : null}
     </main>
   );
 }
