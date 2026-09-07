@@ -1,5 +1,5 @@
-import { HomeArchiveDrawer } from "@/components/HomeArchiveDrawer";
+import { Lobby } from "@/components/Lobby/Lobby";
 
 export default function Home() {
-  return <HomeArchiveDrawer />;
+  return <Lobby />;
 }

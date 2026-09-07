@@ -1,0 +1,41 @@
+export const lobbyConfig = {
+  colors: {
+    scene: "#1f1f1d",
+    parchmentLight: "#e8dcc4",
+    parchmentMid: "#c9b896",
+    parchmentDark: "#8b6f4e",
+    land: "#2b2925",
+    landInk: "#1f1f1d",
+    keyLight: "#ffb74d",
+    ambientLight: "#1a1a1c",
+    rimLight: "#d7ccc8",
+    gold: "#b08d5c",
+    archive: "#f3ead8",
+  },
+  camera: {
+    fov: 45,
+    closeFov: 55,
+    z: 4,
+    closeZ: 2.5,
+  },
+  motion: {
+    entryMs: 3000,
+    usSelfDrawMs: 1200,
+    idleRotationPerSecond: (0.5 * Math.PI) / 180,
+    parallaxDegrees: 2,
+    clickSpinDegrees: 720,
+    clickTransitionMs: 800,
+    burstMs: 600,
+    inactivityMs: 2000,
+    typeIntervalMs: 70,
+  },
+  texture: {
+    desktop: [4096, 2048],
+    tablet: [2048, 1024],
+    mobile: [1024, 512],
+  },
+  particles: {
+    desktop: 100,
+    mobile: 50,
+  },
+} as const;
