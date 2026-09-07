@@ -7,6 +7,7 @@ import {
   type AtlasGraphEdge,
 } from "@/lib/atlas/atlasGraph";
 import { curatedRelationsRevisionLog } from "@/lib/atlas/curatedRelations";
+import { atlasPeriods } from "@/lib/atlas/periods";
 import {
   entityRelations,
   resourceFiles,
@@ -123,6 +124,11 @@ type InstitutionAuthorityRecord = {
   institution: Institution;
   resourceCount: number;
   roleCounts: { role: KnowledgeRole; count: number }[];
+};
+
+type NodeRelationFileGroup = {
+  type: AtlasGraphEdge["type"];
+  edges: AtlasGraphEdge[];
 };
 
 type PlatformItem = {
@@ -1580,6 +1586,38 @@ function downloadAtlasJson(filename: string, data: unknown) {
   URL.revokeObjectURL(url);
 }
 
+function getPeriodForYear(year: string) {
+  const numericYear = Number(year);
+
+  return atlasPeriods.find(
+    (period) =>
+      Number.isFinite(numericYear) &&
+      numericYear >= period.startYear &&
+      numericYear <= period.endYear,
+  );
+}
+
+function getNodeRelationFileGroups(
+  edges: AtlasGraphEdge[],
+  nodeId: string,
+): NodeRelationFileGroup[] {
+  const relationEdges = edges.filter(
+    (edge) => edge.source === nodeId || edge.target === nodeId,
+  );
+
+  return relationEdges.reduce<NodeRelationFileGroup[]>((groups, edge) => {
+    const group = groups.find((candidate) => candidate.type === edge.type);
+
+    if (group) {
+      group.edges.push(edge);
+    } else {
+      groups.push({ type: edge.type, edges: [edge] });
+    }
+
+    return groups;
+  }, []);
+}
+
 function getTimelineVisibleEdges(
   edges: AtlasGraphEdge[],
   items: EvolutionItem[],
@@ -1664,6 +1702,8 @@ export function KnowledgeAtlas({
   const [activePathStep, setActivePathStep] = useState(1);
   const [showResearchLeads, setShowResearchLeads] = useState(false);
   const [activeEdgeId, setActiveEdgeId] = useState("");
+  const [focusedNodeId, setFocusedNodeId] = useState("");
+  const [activePeriodId, setActivePeriodId] = useState("");
   const [connectionViewport, setConnectionViewport] = useState({
     width: 0,
     height: 0,
@@ -1712,6 +1752,16 @@ export function KnowledgeAtlas({
   );
   const activeEvidenceEdge = atlasGraph.edges.find(
     (edge) => edge.id === activeEdgeId,
+  );
+  const focusedNode = evolutionItems.find(
+    (item) => item.resource.id === focusedNodeId,
+  );
+  const nodeRelationFileGroups = useMemo(
+    () =>
+      focusedNodeId
+        ? getNodeRelationFileGroups(atlasGraph.edges, focusedNodeId)
+        : [],
+    [atlasGraph.edges, focusedNodeId],
   );
   const topicConstructionChain = useMemo(
     () =>
@@ -1800,6 +1850,22 @@ export function KnowledgeAtlas({
 
     return () => window.cancelAnimationFrame(frame);
   }, [atlasGraph.edges, focusResourceId]);
+
+  useEffect(() => {
+    if (!focusedNodeId) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setFocusedNodeId("");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [focusedNodeId]);
   const activePlatform = platformClusters
     .flatMap((cluster) => cluster.items)
     .find((item) => item.resource.id === activePlatformId);
@@ -2473,8 +2539,54 @@ export function KnowledgeAtlas({
               </p>
             </div>
 
+            {focusedNode ? (
+              <div className="atlas-focus-toolbar">
+                <span>
+                  聚焦：{focusedNode.resource.titleZh || focusedNode.resource.titleEn}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setFocusedNodeId("")}
+                >
+                  返回全图 BACK
+                </button>
+              </div>
+            ) : null}
+
             <div className="atlas-evolution-layers" ref={evolutionLayersRef}>
               <div className="atlas-evolution-year-track" aria-label="年份轴">
+                {atlasPeriods.map((period) => {
+                  const periodYears = evolutionYears.filter((year) => {
+                    const matchedPeriod = getPeriodForYear(year);
+
+                    return matchedPeriod?.id === period.id;
+                  });
+
+                  return (
+                    <button
+                      key={period.id}
+                      type="button"
+                      className={`atlas-period-tag ${
+                        activePeriodId === period.id ? "is-active" : ""
+                      }`}
+                      aria-pressed={activePeriodId === period.id}
+                      onClick={() =>
+                        setActivePeriodId((current) =>
+                          current === period.id ? "" : period.id,
+                        )
+                      }
+                      style={{
+                        opacity: periodYears.length > 0 ? 1 : 0.45,
+                      }}
+                    >
+                      <strong>
+                        {period.startYear}–{period.endYear}
+                      </strong>
+                      <span>{period.labelZh}</span>
+                      <em>{period.labelEn}</em>
+                    </button>
+                  );
+                })}
                 {evolutionYears.map((year) => (
                   <button
                     key={year}
@@ -2499,6 +2611,20 @@ export function KnowledgeAtlas({
                 ))}
               </div>
 
+              <div className="atlas-period-cards">
+                {atlasPeriods.map((period) => (
+                  <details key={period.id} className="atlas-period-card">
+                    <summary>
+                      <strong>{period.labelZh}</strong>
+                      <span>
+                        {period.startYear}–{period.endYear}
+                      </span>
+                    </summary>
+                    <p>{period.summaryZh}</p>
+                  </details>
+                ))}
+              </div>
+
               <div className="atlas-evolution-lanes">
                 {Object.entries(evolutionLayerMeta).map(([layer, meta]) => {
                   const layerItems = evolutionItems.filter(
@@ -2520,12 +2646,32 @@ export function KnowledgeAtlas({
                           {layerItems.map((item) => (
                             <li key={item.resource.id}>
                               <div
-                                className={`atlas-evolution-card ${
-                                  focusResourceId === item.resource.id
+                                className={[
+                                  "atlas-evolution-card",
+                                  focusResourceId === item.resource.id ||
+                                  focusedNodeId === item.resource.id
                                     ? "is-focused"
-                                    : ""
-                                }`}
+                                    : "",
+                                  activePeriodId &&
+                                    getPeriodForYear(item.year)?.id !== activePeriodId
+                                    ? "is-muted"
+                                    : "",
+                                ]
+                                  .filter(Boolean)
+                                  .join(" ")}
                                 data-node-id={item.resource.id}
+                                role="button"
+                                tabIndex={0}
+                                onClick={() => setFocusedNodeId(item.resource.id)}
+                                onKeyDown={(event) => {
+                                  if (
+                                    event.key === "Enter" ||
+                                    event.key === " "
+                                  ) {
+                                    event.preventDefault();
+                                    setFocusedNodeId(item.resource.id);
+                                  }
+                                }}
                               >
                                 <div>
                                   <strong>{item.year}</strong>
@@ -2595,6 +2741,11 @@ export function KnowledgeAtlas({
                           "atlas-evolution-connection",
                           edge.status === "inferred" ? "is-inferred" : "",
                           activeEdgeId === edge.id ? "is-active" : "",
+                          focusedNodeId &&
+                            edge.source !== focusedNodeId &&
+                            edge.target !== focusedNodeId
+                            ? "is-muted"
+                            : "",
                         ]
                           .filter(Boolean)
                           .join(" ")}
@@ -2638,6 +2789,64 @@ export function KnowledgeAtlas({
               <Link href="/resources?role=method_standard">追溯方法标准</Link>
               <Link href="/resources">查看全部建设讯息</Link>
             </div>
+
+            {focusedNode ? (
+              <aside className="atlas-relation-file" aria-label="节点关系档案">
+                <header>
+                  <div>
+                    <span>Relation File</span>
+                    <h3>关系档案</h3>
+                  </div>
+                  <b>{nodeRelationFileGroups.length} 类</b>
+                </header>
+
+                <div>
+                  {nodeRelationFileGroups.map((group) => (
+                    <section key={group.type}>
+                      <h4>
+                        {group.type === "ISSUED_BY"
+                          ? `发出 ${group.type} ${group.edges.length} 条`
+                          : group.type === "OPERATED_BY"
+                            ? `承建 OPERATES ${group.edges.length} 个平台`
+                            : `${
+                                focusedNode.resource.id === group.edges[0]?.source
+                                  ? "发出"
+                                  : "接受"
+                              } ${group.type} ${group.edges.length} 条`}
+                      </h4>
+                      <ul>
+                        {group.edges.map((edge) => (
+                          <li key={edge.id}>
+                            <button
+                              type="button"
+                              className={
+                                edge.status === "verified"
+                                  ? "is-verified"
+                                  : "is-inferred"
+                              }
+                              onClick={() => setActiveEdgeId(edge.id)}
+                            >
+                              {atlasGraph.nodes.find(
+                                (node) =>
+                                  node.id ===
+                                  (edge.source === focusedNode.resource.id
+                                    ? edge.target
+                                    : edge.source),
+                              )?.label ?? "相关节点"}
+                              <em>
+                                {edge.status === "verified"
+                                  ? "verified"
+                                  : "inferred"}
+                              </em>
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))}
+                </div>
+              </aside>
+            ) : null}
           </article>
         ) : (
           <article className="atlas-platform-file">

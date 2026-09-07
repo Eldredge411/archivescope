@@ -1060,6 +1060,214 @@
   margin-top: 0.42rem;
 }
 
+.atlas-period-tag {
+  align-items: center;
+  background: rgb(226 215 190 / 0.55);
+  border: 1px solid rgb(105 78 48 / 0.24);
+  color: rgb(75 58 39);
+  cursor: pointer;
+  display: grid;
+  flex: 0 0 auto;
+  font-family: "Courier New", ui-monospace, monospace;
+  gap: 0.08rem;
+  min-width: 7.4rem;
+  padding: 0.3rem 0.45rem;
+  text-align: left;
+}
+
+.atlas-period-tag strong,
+.atlas-period-tag span,
+.atlas-period-tag em {
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+.atlas-period-tag span,
+.atlas-period-tag em {
+  letter-spacing: 0.02em;
+}
+
+.atlas-period-tag em {
+  font-style: normal;
+  opacity: 0.75;
+}
+
+.atlas-period-tag:hover,
+.atlas-period-tag.is-active {
+  background: rgb(218 201 167);
+  border-color: rgb(105 78 48 / 0.36);
+}
+
+.atlas-period-cards {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0.6rem;
+}
+
+.atlas-period-card {
+  background: rgb(255 252 242 / 0.68);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  padding: 0.45rem 0.55rem;
+}
+
+.atlas-period-card summary {
+  cursor: pointer;
+  display: flex;
+  font-family: "Courier New", ui-monospace, monospace;
+  gap: 0.4rem;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.atlas-period-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.atlas-period-card strong {
+  color: rgb(57 43 29);
+  font-size: 0.68rem;
+}
+
+.atlas-period-card span {
+  color: rgb(97 74 49);
+  font-size: 0.64rem;
+}
+
+.atlas-period-card p {
+  border-top: 1px dotted rgb(105 78 48 / 0.24);
+  color: rgb(73 57 39);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  margin-top: 0.35rem;
+  padding-top: 0.32rem;
+}
+
+.atlas-evolution-card.is-muted {
+  opacity: 0.15;
+}
+
+.atlas-focus-toolbar {
+  align-items: center;
+  background: rgb(255 252 242 / 0.76);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  padding: 0.55rem 0.65rem;
+}
+
+.atlas-focus-toolbar span {
+  color: rgb(59 45 31);
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.atlas-focus-toolbar button {
+  background: rgb(83 65 45);
+  border: 1px solid rgb(59 47 37);
+  color: rgb(255 250 239);
+  cursor: pointer;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  padding: 0.3rem 0.48rem;
+  transform: rotate(-0.8deg);
+}
+
+.atlas-evolution-connection.is-muted {
+  opacity: 0.15;
+}
+
+.atlas-relation-file {
+  background: rgb(255 252 242 / 0.82);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  margin-top: 1rem;
+  padding: 0.85rem;
+}
+
+.atlas-relation-file header {
+  align-items: end;
+  border-bottom: 1px solid rgb(105 78 48 / 0.18);
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-bottom: 0.6rem;
+}
+
+.atlas-relation-file span {
+  color: rgb(103 78 50);
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.atlas-relation-file h3 {
+  color: rgb(43 34 25);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  margin-top: 0.15rem;
+}
+
+.atlas-relation-file b {
+  color: rgb(82 62 40);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.66rem;
+}
+
+.atlas-relation-file > div {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.65rem;
+}
+
+.atlas-relation-file h4 {
+  color: rgb(44 33 23);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.atlas-relation-file ul {
+  display: grid;
+  gap: 0.32rem;
+  list-style: none;
+  margin-top: 0.3rem;
+  padding: 0;
+}
+
+.atlas-relation-file button {
+  align-items: center;
+  background: rgb(247 241 225);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  color: rgb(58 44 31);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.7rem;
+  gap: 0.35rem;
+  justify-content: space-between;
+  padding: 0.34rem 0.42rem;
+  text-align: left;
+}
+
+.atlas-relation-file button:hover {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.34);
+}
+
+.atlas-relation-file button em {
+  color: rgb(96 74 49);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
 .atlas-authority-records {
   background: rgb(255 252 242 / 0.72);
   border: 1px solid rgb(105 78 48 / 0.18);
