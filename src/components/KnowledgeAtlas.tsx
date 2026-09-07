@@ -100,6 +100,24 @@ type EvolutionConnectionPosition = {
   targetY: number;
 };
 
+type TopicConstructionChainNode = {
+  resource: Resource;
+  role: KnowledgeRole;
+  year: string;
+};
+
+type TopicConstructionChainLink = {
+  edge: AtlasGraphEdge;
+};
+
+type TopicConstructionChain = {
+  nodes: TopicConstructionChainNode[];
+  links: TopicConstructionChainLink[];
+  topicResourceCount: number;
+  verifiedCount: number;
+  inferredCount: number;
+};
+
 type PlatformItem = {
   resource: Resource;
   institutionName: string;
@@ -1318,6 +1336,205 @@ function getEvolutionYears(items: EvolutionItem[]) {
   return Array.from(new Set(items.map((item) => item.year))).sort();
 }
 
+const constructionRoleOrder: KnowledgeRole[] = [
+  "institutional_norm",
+  "policy_strategy",
+  "method_standard",
+  "platform_system",
+  "project_practice",
+  "public_participation",
+];
+
+function getEdgeBetween(
+  edges: AtlasGraphEdge[],
+  sourceId: string,
+  targetId: string,
+) {
+  return edges.find(
+    (edge) => edge.source === sourceId && edge.target === targetId,
+  );
+}
+
+function getConstructionCandidateDegree(options: {
+  resource: Resource;
+  role: KnowledgeRole;
+  topicResourceIds: Set<string>;
+  roleByResourceId: Map<string, KnowledgeRole>;
+  edges: AtlasGraphEdge[];
+}) {
+  return options.edges.reduce((degree, edge) => {
+    const sourceRole = options.roleByResourceId.get(edge.source);
+    const targetRole = options.roleByResourceId.get(edge.target);
+
+    if (
+      edge.source === options.resource.id &&
+      options.topicResourceIds.has(edge.target) &&
+      targetRole &&
+      constructionRoleOrder.indexOf(targetRole) >
+        constructionRoleOrder.indexOf(options.role)
+    ) {
+      return degree + 1;
+    }
+
+    if (
+      edge.target === options.resource.id &&
+      options.topicResourceIds.has(edge.source) &&
+      sourceRole &&
+      constructionRoleOrder.indexOf(sourceRole) <
+        constructionRoleOrder.indexOf(options.role)
+    ) {
+      return degree + 1;
+    }
+
+    return degree;
+  }, 0);
+}
+
+function getTopicConstructionChain(options: {
+  topic: Topic;
+  resources: Resource[];
+  edges: AtlasGraphEdge[];
+}): TopicConstructionChain | null {
+  const topicResources = options.resources.filter((resource) =>
+    resource.topicIds.includes(options.topic.id),
+  );
+
+  if (topicResources.length < 3) {
+    return null;
+  }
+
+  const roleGroups = new Map<KnowledgeRole, Resource[]>();
+  const topicResourceIds = new Set(topicResources.map((resource) => resource.id));
+  const roleByResourceId = new Map(
+    topicResources.map((resource) => [resource.id, getKnowledgeRole(resource)]),
+  );
+
+  constructionRoleOrder.forEach((role) => {
+    const candidates = topicResources
+      .filter((resource) => getKnowledgeRole(resource) === role)
+      .filter((resource) => resolveTimelineDate(resource).status === "recorded")
+      .sort((left, right) => {
+        const degreeDiff =
+          getConstructionCandidateDegree({
+            resource: right,
+            role,
+            topicResourceIds,
+            roleByResourceId,
+            edges: options.edges,
+          }) -
+          getConstructionCandidateDegree({
+            resource: left,
+            role,
+            topicResourceIds,
+            roleByResourceId,
+            edges: options.edges,
+          });
+
+        if (degreeDiff !== 0) {
+          return degreeDiff;
+        }
+
+        const leftDate = resolveTimelineDate(left);
+        const rightDate = resolveTimelineDate(right);
+        const dateDiff = leftDate.sortDate.localeCompare(rightDate.sortDate);
+
+        if (dateDiff !== 0) {
+          return dateDiff;
+        }
+
+        return (
+          resourceTypePriority[left.resourceType] -
+          resourceTypePriority[right.resourceType]
+        );
+      })
+      .slice(0, 2);
+
+    if (candidates.length > 0) {
+      roleGroups.set(role, candidates);
+    }
+  });
+
+  const roleSequence = constructionRoleOrder.filter((role) =>
+    roleGroups.has(role),
+  );
+
+  if (roleSequence.length < 3) {
+    return null;
+  }
+
+  let paths: { resources: Resource[]; links: AtlasGraphEdge[] }[] = (
+    roleGroups.get(roleSequence[0]) ?? []
+  ).map((resource) => ({ resources: [resource], links: [] }));
+
+  for (let roleIndex = 1; roleIndex < roleSequence.length; roleIndex += 1) {
+    const nextCandidates = roleGroups.get(roleSequence[roleIndex]) ?? [];
+    const nextPaths: {
+      resources: Resource[];
+      links: AtlasGraphEdge[];
+    }[] = [];
+
+    paths.forEach((path) => {
+      nextCandidates.forEach((candidate) => {
+        const edge = getEdgeBetween(
+          options.edges,
+          path.resources.at(-1)?.id ?? "",
+          candidate.id,
+        );
+
+        if (edge) {
+          nextPaths.push({
+            resources: [...path.resources, candidate],
+            links: [...path.links, edge],
+          });
+        }
+      });
+    });
+
+    paths = nextPaths;
+
+    if (paths.length === 0) {
+      return null;
+    }
+  }
+
+  const bestPathIndex = paths.reduce(
+    (bestIndex, path, index) =>
+      path.resources.length > paths[bestIndex].resources.length
+        ? index
+        : bestIndex,
+    0,
+  );
+  const bestPath = paths[bestPathIndex]?.resources ?? [];
+  const bestLinks = paths[bestPathIndex]?.links ?? [];
+
+  if (bestPath.length < 3 || bestLinks.length < 2) {
+    return null;
+  }
+
+  return {
+    nodes: bestPath.map((resource) => ({
+      resource,
+      role: getKnowledgeRole(resource),
+      year: resolveTimelineDate(resource).year,
+    })),
+    links: bestLinks.map((edge) => ({ edge })),
+    topicResourceCount: topicResources.length,
+    verifiedCount: bestLinks.filter((edge) => edge.status === "verified").length,
+    inferredCount: bestLinks.filter((edge) => edge.status === "inferred").length,
+  };
+}
+
+function getPlatformAuthorityEdges(
+  edges: AtlasGraphEdge[],
+  platformResourceId: string,
+) {
+  return edges.filter(
+    (edge) =>
+      edge.type === "AUTHORIZE" &&
+      (edge.source === platformResourceId || edge.target === platformResourceId),
+  );
+}
+
 function getTimelineVisibleEdges(
   edges: AtlasGraphEdge[],
   items: EvolutionItem[],
@@ -1451,6 +1668,17 @@ export function KnowledgeAtlas({
   const activeEvidenceEdge = atlasGraph.edges.find(
     (edge) => edge.id === activeEdgeId,
   );
+  const topicConstructionChain = useMemo(
+    () =>
+      activeTopic
+        ? getTopicConstructionChain({
+            topic: activeTopic,
+            resources,
+            edges: atlasGraph.edges,
+          })
+        : null,
+    [activeTopic, atlasGraph.edges, resources],
+  );
   const visibleEvolutionItems = evolutionItems.filter(
     (item) => !activeEvolutionYear || item.year === activeEvolutionYear,
   );
@@ -1530,6 +1758,16 @@ export function KnowledgeAtlas({
   const activePlatform = platformClusters
     .flatMap((cluster) => cluster.items)
     .find((item) => item.resource.id === activePlatformId);
+  const activePlatformAuthorityEdges = useMemo(
+    () =>
+      activePlatform
+        ? getPlatformAuthorityEdges(
+            atlasGraph.edges,
+            activePlatform.resource.id,
+          )
+        : [],
+    [activePlatform, atlasGraph.edges],
+  );
   const topicClusterItems = useMemo(
     () => getTopicClusterItems(sortedTopics, resources, institutions),
     [institutions, resources, sortedTopics],
@@ -2027,6 +2265,67 @@ export function KnowledgeAtlas({
                         </ul>
                       </div>
                     ) : null}
+
+                    {topicConstructionChain ? (
+                      <section className="atlas-construction-chain">
+                        <header>
+                          <div>
+                            <h4>本专题建设链 CONSTRUCTION CHAIN</h4>
+                            <p>
+                              按“制度—政策—标准—平台—实践—参与”的建设过程串联代表性节点。
+                            </p>
+                          </div>
+                          <span>
+                            收录 {topicConstructionChain.nodes.length} 条 · 可核验关联{" "}
+                            {topicConstructionChain.verifiedCount} · 研究线索{" "}
+                            {topicConstructionChain.inferredCount}
+                          </span>
+                        </header>
+                        <ol>
+                          {topicConstructionChain.nodes.map((node, index) => {
+                            const nextLink =
+                              topicConstructionChain.links[index]?.edge ??
+                              topicConstructionChain.links[index - 1]?.edge;
+
+                            return (
+                              <li key={node.resource.id}>
+                                {index > 0 ? (
+                                  <i
+                                    className={
+                                      topicConstructionChain.links[index - 1]
+                                        ?.edge.status === "verified"
+                                        ? "is-verified"
+                                        : "is-inferred"
+                                    }
+                                    aria-hidden="true"
+                                  />
+                                ) : null}
+                                <button
+                                  type="button"
+                                  title={`${node.resource.titleZh || node.resource.titleEn} · ${node.year}`}
+                                  onClick={() => {
+                                    if (nextLink) {
+                                      setActiveEdgeId(nextLink.id);
+                                    }
+                                  }}
+                                >
+                                  <strong>{node.year}</strong>
+                                  <span>{knowledgeRoleZh[node.role]}</span>
+                                  <h5>
+                                    {node.resource.titleZh || node.resource.titleEn}
+                                  </h5>
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </section>
+                    ) : (
+                      <section className="atlas-construction-chain is-empty">
+                        <h4>本专题建设链 CONSTRUCTION CHAIN</h4>
+                        <p>该专题资料尚在积累，暂未形成完整建设链。</p>
+                      </section>
+                    )}
                   </section>
 
                   <section className="atlas-timeline-board">
@@ -2434,15 +2733,49 @@ export function KnowledgeAtlas({
 
                     <section>
                       <h4>制度依据</h4>
-                      <ul>
-                        {activePlatform.relatedNorms.map((resource) => (
-                          <li key={resource.id}>
-                            <Link href={`/resources/${resource.slug}`}>
-                              {resource.titleZh || resource.titleEn}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      {activePlatformAuthorityEdges.length > 0 ? (
+                        <ul className="atlas-authority-cards">
+                          {activePlatformAuthorityEdges.map((edge) => {
+                            const basisResourceId =
+                              edge.source === activePlatform.resource.id
+                                ? edge.target
+                                : edge.source;
+                            const basisResource = resources.find(
+                              (resource) => resource.id === basisResourceId,
+                            );
+
+                            return (
+                              <li key={edge.id}>
+                                <button
+                                  type="button"
+                                  className={
+                                    edge.status === "verified"
+                                      ? "is-verified"
+                                      : "is-inferred"
+                                  }
+                                  onClick={() => setActiveEdgeId(edge.id)}
+                                >
+                                  <span>⬆ 依据制度</span>
+                                  <strong>
+                                    {basisResource?.titleZh ||
+                                      basisResource?.titleEn ||
+                                      "制度来源待补充"}
+                                  </strong>
+                                  <em>
+                                    {edge.status === "verified"
+                                      ? "实线 · 可核验"
+                                      : "虚线 · 研究线索"}
+                                  </em>
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      ) : (
+                        <p className="atlas-authority-pending">
+                          制度依据：整理中
+                        </p>
+                      )}
                     </section>
 
                     <section>

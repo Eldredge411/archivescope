@@ -244,10 +244,10 @@ function createInferredEdges(resources: Resource[]): AtlasGraphEdge[] {
   const roleOrder = new Map([
     ["institutional_norm", 0],
     ["policy_strategy", 1],
-    ["platform_system", 2],
     ["method_standard", 2],
-    ["project_practice", 3],
-    ["public_participation", 3],
+    ["platform_system", 3],
+    ["project_practice", 4],
+    ["public_participation", 4],
   ]);
   const resourceById = new Map(resources.map((resource) => [resource.id, resource]));
   const edges: AtlasGraphEdge[] = [];

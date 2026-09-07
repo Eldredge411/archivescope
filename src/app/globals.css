@@ -653,6 +653,122 @@
   text-underline-offset: 3px;
 }
 
+.atlas-construction-chain {
+  background: rgb(255 252 242 / 0.76);
+  border: 1px solid rgb(105 78 48 / 0.18);
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+.atlas-construction-chain header {
+  align-items: start;
+  border-bottom: 1px solid rgb(105 78 48 / 0.16);
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-bottom: 0.65rem;
+}
+
+.atlas-construction-chain h4 {
+  color: rgb(43 34 25);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.atlas-construction-chain header p {
+  color: rgb(82 63 43);
+  font-size: 0.7rem;
+  line-height: 1.55;
+  margin-top: 0.24rem;
+}
+
+.atlas-construction-chain header span {
+  color: rgb(92 70 45);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.63rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.atlas-construction-chain ol {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  list-style: none;
+  margin: 0.8rem 0 0;
+  overflow-x: auto;
+  padding: 0;
+  scrollbar-width: thin;
+}
+
+.atlas-construction-chain li {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.atlas-construction-chain li > i {
+  border-top: 2px solid rgb(94 72 47 / 0.65);
+  display: block;
+  height: 0;
+  margin: 0 0.2rem;
+  width: 1.7rem;
+}
+
+.atlas-construction-chain li > i.is-inferred {
+  border-top-style: dashed;
+  border-top-color: rgb(121 96 65 / 0.6);
+}
+
+.atlas-construction-chain button {
+  background: rgb(247 241 225);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  color: rgb(58 44 31);
+  cursor: pointer;
+  display: grid;
+  gap: 0.18rem;
+  min-width: 11rem;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.atlas-construction-chain button:hover {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.35);
+}
+
+.atlas-construction-chain strong {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.64rem;
+}
+
+.atlas-construction-chain span {
+  color: rgb(84 64 43);
+  font-size: 0.64rem;
+  font-weight: 850;
+}
+
+.atlas-construction-chain h5 {
+  color: rgb(43 32 22);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.42;
+}
+
+.atlas-construction-chain.is-empty {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.atlas-construction-chain.is-empty p {
+  color: rgb(84 65 43);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
 .atlas-platform-layout {
   align-items: start;
   display: grid;
@@ -855,6 +971,93 @@
   text-align: left;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.atlas-authority-cards {
+  display: grid;
+  gap: 0.55rem;
+  list-style: none;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.atlas-authority-cards button {
+  background: rgb(247 241 225);
+  border: 1px solid rgb(105 78 48 / 0.2);
+  display: grid;
+  gap: 0.22rem;
+  min-height: 4.2rem;
+  padding: 0.62rem 0.65rem 0.58rem 1.05rem;
+  position: relative;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.atlas-authority-cards button::before {
+  background: rgb(239 231 209);
+  border: 1px solid rgb(105 78 48 / 0.28);
+  border-radius: 999px;
+  content: "";
+  height: 0.48rem;
+  left: 0.35rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 0.48rem;
+}
+
+.atlas-authority-cards button::after {
+  border-top: 2px solid rgb(94 72 47 / 0.7);
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 0.68rem;
+  top: 1.2rem;
+  width: 1.5rem;
+}
+
+.atlas-authority-cards button.is-inferred::after {
+  border-top-style: dashed;
+  border-top-color: rgb(121 96 65 / 0.65);
+}
+
+.atlas-authority-cards button:hover {
+  background: rgb(255 252 242);
+  border-color: rgb(105 78 48 / 0.36);
+  box-shadow: 0 7px 14px rgb(66 47 28 / 0.14);
+  transform: translateY(-2px);
+}
+
+.atlas-authority-cards span {
+  color: rgb(103 78 50);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.atlas-authority-cards strong {
+  color: rgb(43 32 22);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.atlas-authority-cards em {
+  color: rgb(91 70 48);
+  font-size: 0.64rem;
+  font-style: normal;
+  font-weight: 850;
+}
+
+.atlas-authority-pending {
+  color: rgb(88 68 45);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin-top: 0.42rem;
 }
 
 .atlas-evolution-layers {
