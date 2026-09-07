@@ -230,7 +230,7 @@ function normalizeCuratedAuthorizations(
         id: `graph-${draft.id}`,
         source: draft.source,
         target: draft.target,
-        type: "AUTHORIZE",
+        type: draft.type,
         status: draft.status,
         evidenceResourceIds: [
           sourceRelation.evidenceResourceId ?? draft.source,

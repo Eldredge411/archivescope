@@ -1,4 +1,5 @@
 import type { EntityRelation } from "@/types";
+import type { AtlasGraphEdgeType } from "@/lib/atlas/atlasGraph";
 
 export type CuratedRelationStatus = "inferred" | "verified";
 
@@ -7,10 +8,18 @@ export type CuratedAuthorization = {
   sourceRelationId: string;
   source: string;
   target: string;
+  type: AtlasGraphEdgeType;
   status: CuratedRelationStatus;
   confidence: "high" | "medium" | "low";
   judgementZh: string;
 };
+
+/**
+ * Manual review log
+ * - 2026-09-07: Reviewed all AUTHORIZE candidates. Confirmed six relations as
+ *   verified AUTHORIZE; converted two document-evolution candidates to inferred
+ *   AMEND; reversed the GRS relation direction; removed one invalid relation.
+ */
 
 export const curatedAuthorizationDrafts: CuratedAuthorization[] = [
   {
@@ -18,90 +27,90 @@ export const curatedAuthorizationDrafts: CuratedAuthorization[] = [
     sourceRelationId: "rel-privacy-act-uscode-to-ecfr-1202",
     source: "uscode-5-section-552a-privacy-act",
     target: "ecfr-36-cfr-1202",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "high",
-    judgementZh: "法典条文是 NARA 实施规则的上位法律依据，需确认方向后升级为 verified。",
+    judgementZh: "人工审校：5 U.S.C. 552a 为 36 CFR Part 1202 提供上位法律依据。",
   },
   {
     id: "cur-auth-privacy-2001-1202",
     sourceRelationId: "rel-privacy-2001-base-ecfr-1202",
     source: "fr-01-31340",
     target: "ecfr-36-cfr-1202",
+    type: "AMEND",
     status: "inferred",
     confidence: "medium",
-    judgementZh: "2001 年系统规则形成现行规则基础，但更接近 AMEND 而非 AUTHORIZE，需人工定边。",
-  },
-  {
-    id: "cur-auth-digitization-page-rules",
-    sourceRelationId: "rel-digitization-nara-page-to-rules",
-    source: "nara-web-digitization",
-    target: "fr-2023-09050",
-    status: "inferred",
-    confidence: "low",
-    judgementZh: "页面是规则背景入口，不一定是授权来源；审校时可能应改为 AMEND 或移除。",
+    judgementZh: "人工审校：联邦公报规则公告对 CFR 编纂条文是修订关系，不是授权。",
   },
   {
     id: "cur-auth-grs-portal-1227",
     sourceRelationId: "rel-grs-current-page-to-ecfr-1227",
-    source: "nara-web-grs",
-    target: "ecfr-36-cfr-1227",
-    status: "inferred",
+    source: "ecfr-36-cfr-1227",
+    target: "nara-web-grs",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "medium",
-    judgementZh: "入口与法规互为承接，需确认页面是否应作为平台承接方而非制度来源。",
+    judgementZh: "人工审校：法规为 GRS 服务入口提供制度背景，方向反转为法规指向服务入口。",
   },
   {
     id: "cur-auth-email-grs-practice",
     sourceRelationId: "rel-grs-25-capstone-to-er",
     source: "fr-2015-23245",
     target: "nara-web-email-management",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "medium",
-    judgementZh: "法规提供处置基础，页面提供实践承接；适合 AUTHORIZE 或 AMEND 需人工判断。",
+    judgementZh: "人工审校：法规在前、实践页面承接在后，方向成立。",
   },
   {
     id: "cur-auth-foia-law-portal",
     sourceRelationId: "rel-foia-uscode-to-nara-page",
     source: "uscode-5-section-552-foia",
     target: "nara-web-foia",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "high",
-    judgementZh: "FOIA 法典直接支撑 NARA 办理入口，是较明确的制度授权候选。",
+    judgementZh: "人工审校：FOIA 法典直接支撑 NARA 办理入口。",
   },
   {
     id: "cur-auth-foia-rule-portal",
     sourceRelationId: "rel-foia-2001-rule-to-nara-page",
     source: "fr-01-6555",
     target: "nara-web-foia",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "medium",
-    judgementZh: "程序规则支撑入口办理，但可能是规则修正而非上位授权。",
+    judgementZh: "人工审校：程序规则授权办理入口成立。",
   },
   {
     id: "cur-auth-pra-uscode-resource",
     sourceRelationId: "rel-pra-uscode-to-nara-page",
     source: "uscode-44-chapter-22-presidential-records",
     target: "res-presidential-records-act",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "high",
-    judgementZh: "法典文本与原法条目存在同一法律依据关系，需确认资源节点指向方向。",
+    judgementZh: "人工审校：法典文本为 PRA 条目提供上位法律依据。",
   },
   {
     id: "cur-auth-pra-rule-act",
     sourceRelationId: "rel-pra-2005-procedures-to-law",
     source: "fr-05-6410",
     target: "res-presidential-records-act",
+    type: "AMEND",
     status: "inferred",
     confidence: "medium",
-    judgementZh: "程序规则是法律实施规则，更可能是 AMEND 而非 AUTHORIZE。",
+    judgementZh: "人工审校：程序规则对 PRA 条目构成修订关系，暂保留待复核。",
   },
   {
     id: "cur-auth-ecfr-1233-libraries",
     sourceRelationId: "rel-pra-ecfr-1233-to-libraries",
     source: "ecfr-36-cfr-1233",
     target: "nara-web-presidential-libraries",
-    status: "inferred",
+    type: "AUTHORIZE",
+    status: "verified",
     confidence: "medium",
-    judgementZh: "法规条文为总统图书馆实践提供规则背景，适合作为制度承接候选。",
+    judgementZh: "人工审校：法规条文为总统图书馆实践提供制度背景。",
   },
 ];
 
