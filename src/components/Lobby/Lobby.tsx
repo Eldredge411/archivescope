@@ -1,15 +1,13 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Atmosphere } from "@/components/Lobby/Atmosphere";
 import { GlobeScene } from "@/components/Lobby/GlobeScene";
-import { USContour } from "@/components/Lobby/USContour";
 import { lobbyConfig } from "@/components/Lobby/lobby.config";
 
 export function Lobby() {
   const [isTextureReady, setIsTextureReady] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isRevealComplete, setIsRevealComplete] = useState(false);
   const [isReducedMotion, setIsReducedMotion] = useState(() =>
     typeof window === "undefined"
       ? false
@@ -20,13 +18,12 @@ export function Lobby() {
       ? false
       : window.matchMedia("(max-width: 700px)").matches,
   );
-  const [showPrompt, setShowPrompt] = useState(false);
-  const promptText = "EXPLORE ARCHIVE →";
+  const [now, setNow] = useState(0);
+  const isIdle = isReducedMotion || isRevealComplete;
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     const mobileMedia = window.matchMedia("(max-width: 700px)");
-
     const changeMedia = () => setIsReducedMotion(media.matches);
     const changeMobile = () => setIsMobile(mobileMedia.matches);
 
@@ -40,80 +37,138 @@ export function Lobby() {
   }, []);
 
   useEffect(() => {
-    const resetTimer = () => setShowPrompt(false);
-    const timer = window.setTimeout(
-      () => setShowPrompt(true),
-      lobbyConfig.motion.inactivityMs,
-    );
+    if (isReducedMotion) {
+      return;
+    }
 
-    window.addEventListener("pointermove", resetTimer);
-    window.addEventListener("keydown", resetTimer);
+    const startedAt = performance.now();
+    const timer = window.setInterval(() => {
+      setNow(performance.now() - startedAt);
+    }, 50);
 
-    return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener("pointermove", resetTimer);
-      window.removeEventListener("keydown", resetTimer);
-    };
+    return () => window.clearInterval(timer);
+  }, [isReducedMotion]);
+
+  const handleTextureReady = useCallback(() => setIsTextureReady(true), []);
+  const handleRevealComplete = useCallback(() => {
+    setIsRevealComplete(true);
   }, []);
 
-  const typedPrompt = useMemo(
-    () =>
-      isReducedMotion
-        ? promptText
-        : promptText.slice(
-            0,
-            Math.ceil(showPrompt ? promptText.length : 0),
-          ),
-    [isReducedMotion, showPrompt],
+  const titleLetters = useMemo(
+    () => lobbyConfig.copy.title.split(""),
+    [],
   );
 
+  const sloganTypedLength = useMemo(() => {
+    if (isReducedMotion) {
+      return lobbyConfig.copy.sloganZh.length;
+    }
+
+    return Math.max(
+      0,
+      Math.floor(
+        (now - lobbyConfig.motion.sloganStartMs) /
+          lobbyConfig.motion.sloganTypeIntervalMs,
+      ),
+    );
+  }, [isReducedMotion, now]);
+
+  const caretVisible = useMemo(() => {
+    if (isReducedMotion || isIdle) {
+      return false;
+    }
+
+    const caretElapsed =
+      (now -
+        lobbyConfig.motion.sloganStartMs -
+        lobbyConfig.copy.sloganZh.length *
+          lobbyConfig.motion.sloganTypeIntervalMs) /
+      500;
+
+    return caretElapsed >= 0 && Math.floor(caretElapsed) < lobbyConfig.motion.sloganCaretBlinks;
+  }, [isIdle, isReducedMotion, now]);
+
+  const skipAnimation = () => {
+    setNow(lobbyConfig.motion.idleStartMs + 1);
+    handleRevealComplete();
+  };
   return (
     <section className="lobby-home" aria-label="ArchiveScope 档案地球入口">
       <Atmosphere isMobile={isMobile} isReducedMotion={isReducedMotion} />
 
       <div className="lobby-home__stage">
-        <div className="lobby-home__copy">
-          <span>ArchiveScope / Lobby</span>
-          <h1>档案室中的复古地球仪</h1>
-          <p>
-            以做旧羊皮卷、墨线大陆和暖黄灯光构筑入口。点击地球，进入美国档案数据资源的建设现场。
+        <header className="lobby-title">
+          <span
+            className="lobby-title__rule"
+            style={
+              isReducedMotion || now >= lobbyConfig.motion.titleRuleStartMs
+                ? { transform: "scaleX(1)" }
+                : undefined
+            }
+          />
+          <h1 aria-label={lobbyConfig.copy.title}>
+            {titleLetters.map((letter, index) => (
+              <span
+                key={`${letter}-${index}`}
+                style={{
+                  animationDelay: `${
+                    lobbyConfig.motion.titleLetterStartMs +
+                    index * lobbyConfig.motion.titleLetterIntervalMs
+                  }ms`,
+                }}
+              >
+                {letter}
+              </span>
+            ))}
+          </h1>
+          <p
+            className="lobby-title__subtitle"
+            style={{
+              animationDelay: `${lobbyConfig.motion.subtitleStartMs}ms`,
+            }}
+          >
+            {lobbyConfig.copy.subtitle}
           </p>
-          <Link className="lobby-home__direct" href="/countries/usa">
-            直接查看美国档案卷宗
-          </Link>
-        </div>
+          <p className="lobby-title__slogan">
+            {lobbyConfig.copy.sloganZh.slice(0, sloganTypedLength)}
+            <i className={caretVisible ? "is-visible" : ""} aria-hidden="true" />
+          </p>
+          <p
+            className="lobby-title__english"
+            style={{
+              animationDelay: `${lobbyConfig.motion.sloganEnglishStartMs}ms`,
+            }}
+          >
+            {lobbyConfig.copy.sloganEn}
+          </p>
+        </header>
 
         <div className="lobby-home__globe">
           <GlobeScene
-            onTextureReady={() => setIsTextureReady(true)}
-            onTransitionStart={() => setIsTransitioning(true)}
+            isReducedMotion={isReducedMotion}
+            isMobile={isMobile}
+            onTextureReady={handleTextureReady}
+            onRevealComplete={handleRevealComplete}
           />
-          <div className="lobby-home__overlay">
-            <USContour />
-            <div
-              className={`lobby-us-marker ${
-                showPrompt ? "is-visible" : ""
-              } ${isTextureReady ? "is-ready" : ""}`}
-              aria-live="polite"
-            >
-              {typedPrompt}
-              {!isReducedMotion ? <i /> : null}
+          {!isTextureReady ? (
+            <div className="lobby-loading">
+              <span>GENERATING ARCHIVE EARTH</span>
+              <i />
             </div>
-            {!isTextureReady ? (
-              <div className="lobby-loading">
-                <span>GENERATING ARCHIVE EARTH</span>
-                <i />
-              </div>
-            ) : null}
-          </div>
-          {isTransitioning ? (
-            <div className="lobby-gold-burst" aria-hidden="true" />
           ) : null}
         </div>
 
-        <Link className="lobby-skip" href="/stacks?country=usa">
+        <p className={`lobby-cta ${isIdle ? "is-visible" : ""}`}>
+          {lobbyConfig.copy.cta}
+        </p>
+
+        <button
+          type="button"
+          className="lobby-skip"
+          onClick={skipAnimation}
+        >
           SKIP ANIMATION →
-        </Link>
+        </button>
       </div>
     </section>
   );
