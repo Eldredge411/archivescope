@@ -15,6 +15,7 @@ type AtlasNetworkViewProps = {
   institutions: Institution[];
   showResearchLeads: boolean;
   activeEdgeId: string;
+  highlightEdgeIds: string[];
   focusedNodeId: string;
   onEdgeClick: (edgeId: string) => void;
   onNodeClick: (nodeId: string) => void;
@@ -128,6 +129,7 @@ export function AtlasNetworkView({
   institutions,
   showResearchLeads,
   activeEdgeId,
+  highlightEdgeIds,
   focusedNodeId,
   onEdgeClick,
   onNodeClick,
@@ -161,6 +163,7 @@ export function AtlasNetworkView({
   const visibleEdges = graph.edges.filter((edge) =>
     isEdgeVisible(edge, showResearchLeads),
   );
+  const highlightedEdgeIds = new Set([activeEdgeId, ...highlightEdgeIds]);
   const focusedEdgeIds = new Set(
     focusedNodeId
       ? graph.edges
@@ -299,7 +302,7 @@ export function AtlasNetworkView({
                 className={[
                   "atlas-network-edge",
                   edge.status === "inferred" ? "is-inferred" : "",
-                  activeEdgeId === edge.id ? "is-active" : "",
+                  highlightedEdgeIds.has(edge.id) ? "is-active" : "",
                   focusedNodeId && !focusedEdgeIds.has(edge.id) ? "is-muted" : "",
                 ]
                   .filter(Boolean)

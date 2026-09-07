@@ -15,6 +15,9 @@ import {
 } from "@/data/mockData";
 import { KnowledgeEvidenceDrawer } from "@/components/KnowledgeEvidenceDrawer";
 import { AtlasNetworkView } from "@/components/AtlasNetworkView";
+import { CuratedStoryPlayer } from "@/components/CuratedStoryPlayer";
+import { curatedStories, type Story } from "@/lib/atlas/curatedStories";
+import type { AtlasViewState } from "@/lib/atlas/viewState";
 import {
   getKnowledgeRole,
   knowledgeRoleZh,
@@ -1708,6 +1711,17 @@ export function KnowledgeAtlas({
   const [activeEdgeId, setActiveEdgeId] = useState("");
   const [focusedNodeId, setFocusedNodeId] = useState("");
   const [activePeriodId, setActivePeriodId] = useState("");
+  const [highlightEdgeIds, setHighlightEdgeIds] = useState<string[]>([]);
+  const [isStoryMode, setIsStoryMode] = useState(false);
+  const [activeStoryId, setActiveStoryId] = useState("");
+  const [activeStoryStep, setActiveStoryStep] = useState(1);
+  const [savedViewState, setSavedViewState] = useState<AtlasViewState>({
+    view: "timeline",
+    focusNodeId: "",
+    highlightEdgeIds: [],
+    periodId: "",
+    showInferred: false,
+  });
   const [connectionViewport, setConnectionViewport] = useState({
     width: 0,
     height: 0,
@@ -2002,6 +2016,67 @@ export function KnowledgeAtlas({
     selectAtlasPathStep(pathId, 1);
   };
 
+  const setAtlasViewState = (state: AtlasViewState) => {
+    setActiveEvolutionMode(state.view);
+    setFocusedNodeId(state.focusNodeId ?? "");
+    setHighlightEdgeIds(state.highlightEdgeIds ?? []);
+    setActiveEdgeId(state.highlightEdgeIds?.[0] ?? "");
+    setActivePeriodId(state.periodId ?? "");
+    setShowResearchLeads(Boolean(state.showInferred));
+  };
+
+  const enterStory = (story: Story) => {
+    setSavedViewState({
+      view: activeEvolutionMode,
+      focusNodeId: focusedNodeId,
+      highlightEdgeIds: activeEdgeId ? [activeEdgeId, ...highlightEdgeIds] : highlightEdgeIds,
+      periodId: activePeriodId,
+      showInferred: showResearchLeads,
+    });
+    setActiveStoryId(story.id);
+    setActiveStoryStep(1);
+    setIsStoryMode(true);
+    setAtlasViewState(story.steps[0].viewState);
+  };
+
+  const selectStoryStep = (storyId: string, stepIndex: number) => {
+    const story = curatedStories.find((candidate) => candidate.id === storyId);
+    const step = story?.steps[stepIndex - 1];
+
+    if (!story || !step) {
+      return;
+    }
+
+    setActiveStoryId(story.id);
+    setActiveStoryStep(stepIndex);
+    setAtlasViewState(step.viewState);
+  };
+
+  const exitStory = () => {
+    setAtlasViewState(savedViewState);
+    setActiveStoryId("");
+    setActiveStoryStep(1);
+    setIsStoryMode(false);
+  };
+
+  const openStoryEvidence = (resourceId: string) => {
+    const edge = atlasGraph.edges.find(
+      (candidate) =>
+        candidate.evidenceResourceIds.includes(resourceId) ||
+        candidate.source === resourceId ||
+        candidate.target === resourceId,
+    );
+
+    if (edge) {
+      setActiveEdgeId(edge.id);
+      setHighlightEdgeIds([edge.id]);
+    }
+  };
+
+  const activeStory = curatedStories.find(
+    (story) => story.id === activeStoryId,
+  );
+
   return (
     <main className="atlas-timeline-page">
       <section className="atlas-timeline-hero">
@@ -2011,7 +2086,8 @@ export function KnowledgeAtlas({
           <p>
             从制度、平台、标准和实践四个层面观察美国联邦档案数据资源建设。你可以先看总体制度演进，再进入具体研究专题，理解制度要求如何转化为平台服务与实践机制。
           </p>
-          <div className="atlas-view-switch" aria-label="图谱分析视角">
+          {!isStoryMode ? (
+            <div className="atlas-view-switch" aria-label="图谱分析视角">
             {(
               [
                 ["evolution", "制度演进"],
@@ -2048,7 +2124,8 @@ export function KnowledgeAtlas({
                 {label}
               </button>
             ))}
-          </div>
+            </div>
+          ) : null}
 
           <section className="atlas-graph-statement" aria-label="知识图谱说明">
             <div>
@@ -2069,6 +2146,7 @@ export function KnowledgeAtlas({
               <button
                 type="button"
                 aria-pressed={showResearchLeads}
+                disabled={isStoryMode}
                 onClick={() => setShowResearchLeads((current) => !current)}
               >
                 {showResearchLeads ? "隐藏研究线索" : "显示研究线索"}
@@ -2076,6 +2154,49 @@ export function KnowledgeAtlas({
             </div>
           </section>
 
+          {!isStoryMode ? (
+            <section className="atlas-curated-stories" aria-label="策展故事线">
+              <header>
+                <div>
+                  <span>Curated Narratives</span>
+                  <h2>策展故事线 CURATED NARRATIVES</h2>
+                  <p>选择一条人工整理的阅读路径，图谱将随章节自动切换视角。</p>
+                </div>
+              </header>
+              <div>
+                {curatedStories.map((story) => (
+                  <article key={story.id}>
+                    <span>CURATED 人工策展</span>
+                    <h3>{story.titleZh}</h3>
+                    <p>{story.titleEn}</p>
+                    <em>{story.summary}</em>
+                    <footer>
+                      <span>{story.chapterCount} 章</span>
+                      <span>约 {story.estimatedMinutes} 分钟</span>
+                      <button type="button" onClick={() => enterStory(story)}>
+                        进入故事
+                      </button>
+                    </footer>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : activeStory ? (
+            <CuratedStoryPlayer
+              story={activeStory}
+              activeStepIndex={activeStoryStep}
+              graph={atlasGraph}
+              resources={resources}
+              resourceFiles={resourceFiles}
+              onStepChange={(stepIndex) =>
+                selectStoryStep(activeStory.id, stepIndex)
+              }
+              onExit={exitStory}
+              onEvidenceClick={openStoryEvidence}
+            />
+          ) : null}
+
+          {!isStoryMode ? (
           <section className="atlas-research-path" aria-label="动态路径">
             <header>
               <div>
@@ -2216,6 +2337,7 @@ export function KnowledgeAtlas({
               )}
             </dl>
           </section>
+          ) : null}
         </div>
         <div className="atlas-timeline-hero__stats" aria-label="知识图谱统计">
           <article>
@@ -2551,33 +2673,36 @@ export function KnowledgeAtlas({
               </p>
             </div>
 
-            <div
-              className="atlas-evolution-mode-switch"
-              role="tablist"
-              aria-label="图谱显示方式"
-            >
-              {([
-                ["timeline", "时间轴 TIMELINE"],
-                ["network", "网络 NETWORK"],
-              ] as const).map(([mode, label]) => (
-                <button
-                  key={mode}
-                  type="button"
-                  role="tab"
-                  aria-selected={activeEvolutionMode === mode}
-                  className={activeEvolutionMode === mode ? "is-active" : ""}
-                  onClick={() => setActiveEvolutionMode(mode)}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
+            {!isStoryMode ? (
+              <div
+                className="atlas-evolution-mode-switch"
+                role="tablist"
+                aria-label="图谱显示方式"
+              >
+                {([
+                  ["timeline", "时间轴 TIMELINE"],
+                  ["network", "网络 NETWORK"],
+                ] as const).map(([mode, label]) => (
+                  <button
+                    key={mode}
+                    type="button"
+                    role="tab"
+                    aria-selected={activeEvolutionMode === mode}
+                    className={activeEvolutionMode === mode ? "is-active" : ""}
+                    onClick={() => setActiveEvolutionMode(mode)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
 
             {focusedGraphNode ? (
               <div className="atlas-focus-toolbar">
                 <span>聚焦：{focusedGraphNode.label}</span>
                 <button
                   type="button"
+                  disabled={isStoryMode}
                   onClick={() => setFocusedNodeId("")}
                 >
                   返回全图 BACK
@@ -2592,6 +2717,7 @@ export function KnowledgeAtlas({
                 institutions={institutions}
                 showResearchLeads={showResearchLeads}
                 activeEdgeId={activeEdgeId}
+                highlightEdgeIds={highlightEdgeIds}
                 focusedNodeId={focusedNodeId}
                 onEdgeClick={setActiveEdgeId}
                 onNodeClick={setFocusedNodeId}
@@ -3138,6 +3264,7 @@ export function KnowledgeAtlas({
         />
       ) : null}
 
+      {!isStoryMode ? (
       <section className="atlas-authority-records">
         <header>
           <div>
@@ -3321,6 +3448,7 @@ export function KnowledgeAtlas({
           </section>
         </aside>
       </section>
+      ) : null}
     </main>
   );
 }
