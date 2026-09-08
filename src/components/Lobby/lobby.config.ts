@@ -22,14 +22,14 @@ export const lobbyConfig = {
     closeZ: 2.5,
   },
   focus: {
-    longitude: -96,
+    longitude: -97,
     latitude: 38,
   },
   texture: {
     desktop: [4096, 2048],
     tablet: [2048, 1024],
     mobile: [2048, 1024],
-    longitudeOffset: -Math.PI / 2,
+    longitudeOffset: 0,
     lineRadius: 1.005,
   },
   motion: {
@@ -39,6 +39,10 @@ export const lobbyConfig = {
     globeSpins: 1.2,
     usLineStartMs: 3000,
     usLineDurationMs: 1000,
+    clickFocusMs: 1200,
+    clickOutlineMs: 800,
+    cameraZoomMs: 600,
+    idleRotationPerFrame: (0.05 * Math.PI) / 180,
     titleRuleStartMs: 3200,
     titleRuleDurationMs: 400,
     titleLetterStartMs: 3300,
@@ -56,9 +60,9 @@ export const lobbyConfig = {
   copy: {
     title: "ArchiveScope",
     subtitle: "GLOBAL ARCHIVE KNOWLEDGE BASE",
-    sloganZh: "打开全球档案的隐秘索引",
-    sloganEn: "TRACING THE ARCHITECTURE OF GLOBAL ARCHIVES",
-    cta: "点击美国进入卷宗 / CLICK THE UNITED STATES TO ENTER",
+    sloganZh: "探索全球档案数据建设的知识脉络",
+    sloganEn: "EXPLORING THE KNOWLEDGE PATTERNS OF GLOBAL ARCHIVAL DATA CONSTRUCTION",
+    cta: "点击探索美国卷宗 · CLICK TO EXPLORE U.S. ARCHIVES",
   },
   particles: {
     desktop: 100,

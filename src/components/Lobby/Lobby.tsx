@@ -19,6 +19,7 @@ export function Lobby() {
       : window.matchMedia("(max-width: 700px)").matches,
   );
   const [now, setNow] = useState(0);
+  const [isHoveringGlobe, setIsHoveringGlobe] = useState(false);
   const isIdle = isReducedMotion || isRevealComplete;
 
   useEffect(() => {
@@ -92,6 +93,9 @@ export function Lobby() {
     setNow(lobbyConfig.motion.idleStartMs + 1);
     handleRevealComplete();
   };
+  const handleHoverChange = useCallback((isHovering: boolean) => {
+    setIsHoveringGlobe(isHovering);
+  }, []);
   return (
     <section className="lobby-home" aria-label="ArchiveScope 档案地球入口">
       <Atmosphere isMobile={isMobile} isReducedMotion={isReducedMotion} />
@@ -149,6 +153,7 @@ export function Lobby() {
             isMobile={isMobile}
             onTextureReady={handleTextureReady}
             onRevealComplete={handleRevealComplete}
+            onHoverChange={handleHoverChange}
           />
           {!isTextureReady ? (
             <div className="lobby-loading">
@@ -158,7 +163,11 @@ export function Lobby() {
           ) : null}
         </div>
 
-        <p className={`lobby-cta ${isIdle ? "is-visible" : ""}`}>
+        <p
+          className={`lobby-cta ${
+            isIdle ? "is-visible" : ""
+          } ${isHoveringGlobe ? "is-hover" : ""}`}
+        >
           {lobbyConfig.copy.cta}
         </p>
 

@@ -12,9 +12,24 @@ type GlobeSceneProps = {
   isMobile: boolean;
   onTextureReady?: () => void;
   onRevealComplete?: () => void;
+  onHoverChange?: (isHovering: boolean) => void;
 };
 
 type Mode = "entry" | "idle" | "click";
+
+type ClickRotation = { x: number; y: number };
+
+function shortestAngle(from: number, to: number) {
+  let delta = (to - from) % (Math.PI * 2);
+
+  if (delta > Math.PI) {
+    delta -= Math.PI * 2;
+  } else if (delta < -Math.PI) {
+    delta += Math.PI * 2;
+  }
+
+  return delta;
+}
 
 function getCountryGeometryLines(geometry: GeoJSON.MultiPolygon | GeoJSON.Polygon) {
   const polygons = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
@@ -37,7 +52,7 @@ function focusToRotation() {
   const { longitude, latitude } = lobbyConfig.focus;
   return {
     x: (latitude * Math.PI) / 180,
-    y: -((longitude * Math.PI) / 180) - lobbyConfig.texture.longitudeOffset,
+    y: -((longitude * Math.PI) / 180),
   };
 }
 
@@ -46,6 +61,7 @@ export function GlobeScene({
   isMobile,
   onTextureReady,
   onRevealComplete,
+  onHoverChange,
 }: GlobeSceneProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
@@ -74,7 +90,10 @@ export function GlobeScene({
     velocityY: 0,
   });
   const clickStartRef = useRef(0);
+  const clickPhaseRef = useRef<"focus" | "outline" | "zoom">("focus");
   const textureReadyRef = useRef(false);
+  const globeRotationRef = useRef({ x: 0, y: 0 });
+  const clickStartRotationRef = useRef<ClickRotation>({ x: 0, y: 0 });
 
   useEffect(() => {
     const container = containerRef.current;
@@ -123,6 +142,10 @@ export function GlobeScene({
     const finalRotation = focusToRotation();
     globe.rotation.x = finalRotation.x;
     globe.rotation.y = finalRotation.y;
+    globeRotationRef.current = {
+      x: globe.rotation.x,
+      y: globe.rotation.y,
+    };
     scene.add(globe);
 
     const keyLight = new THREE.DirectionalLight(
@@ -167,7 +190,7 @@ export function GlobeScene({
 
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
-    let isPointerOverUs = false;
+    let isPointerOverGlobe = false;
 
     const updatePointer = (event: PointerEvent) => {
       const rectangle = container.getBoundingClientRect();
@@ -176,9 +199,12 @@ export function GlobeScene({
       pointer.y = -((event.clientY - rectangle.top) / rectangle.height) * 2 + 1;
       raycaster.setFromCamera(pointer, camera);
       const intersections = raycaster.intersectObject(globe, false);
-      isPointerOverUs = intersections.length > 0;
+      isPointerOverGlobe = intersections.length > 0;
       container.style.cursor =
-        modeRef.current === "idle" && isPointerOverUs ? "pointer" : "grab";
+        modeRef.current === "idle" && isPointerOverGlobe
+          ? "pointer"
+          : "grab";
+      onHoverChange?.(isPointerOverGlobe);
     };
 
     const pointerMove = (event: PointerEvent) => {
@@ -253,7 +279,14 @@ export function GlobeScene({
     };
     window.addEventListener("resize", resize);
 
+    globeRotationRef.current = {
+      x: globe.rotation.x,
+      y: globe.rotation.y,
+    };
+
     const easeOutCubic = (value: number) => 1 - (1 - value) ** 3;
+    const easeInOutCubic = (value: number) =>
+      value < 0.5 ? 4 * value ** 3 : 1 - (-2 * value + 2) ** 3 / 2;
     const render = (time: number) => {
       if (!revealRef.current.start) {
         revealRef.current.start = time;
@@ -281,31 +314,70 @@ export function GlobeScene({
           onRevealComplete?.();
         }
       } else if (modeRef.current === "idle" && !dragRef.current.active) {
-        globe.rotation.y += dragRef.current.velocityX;
+        globe.rotation.y +=
+          lobbyConfig.motion.idleRotationPerFrame + dragRef.current.velocityX;
         globe.rotation.x = Math.max(
           -Math.PI / 6,
           Math.min(Math.PI / 6, globe.rotation.x + dragRef.current.velocityY),
         );
-        dragRef.current.velocityX *= 0.94;
-        dragRef.current.velocityY *= 0.94;
+      dragRef.current.velocityX *= 0.94;
+      dragRef.current.velocityY *= 0.94;
+      globeRotationRef.current = {
+        x: globe.rotation.x,
+        y: globe.rotation.y,
+      };
       } else if (modeRef.current === "click") {
-        const progress = Math.min(
-          1,
-          (time - clickStartRef.current) / lobbyConfig.motion.clickTransitionMs,
-        );
-        const eased = easeOutCubic(progress);
+        const elapsed = time - clickStartRef.current;
 
-        camera.position.z =
-          lobbyConfig.camera.z -
-          (lobbyConfig.camera.z - lobbyConfig.camera.closeZ) * eased;
-        camera.fov =
-          lobbyConfig.camera.fov +
-          (lobbyConfig.camera.closeFov - lobbyConfig.camera.fov) * eased;
-        camera.updateProjectionMatrix();
-        globe.rotation.y += 0.18;
+        if (clickPhaseRef.current === "focus") {
+          const progress = Math.min(
+            1,
+            elapsed / lobbyConfig.motion.clickFocusMs,
+          );
+          const eased = easeInOutCubic(progress);
+
+          const startRotation = clickStartRotationRef.current;
+
+          globe.rotation.y = startRotation.y +
+            shortestAngle(startRotation.y, finalRotation.y) * eased;
+          globe.rotation.x =
+            startRotation.x +
+            (finalRotation.x - startRotation.x) * eased;
+
+          if (progress >= 1) {
+            clickPhaseRef.current = "outline";
+            clickStartRef.current = time;
+          }
+        } else if (clickPhaseRef.current === "outline") {
+          const progress = Math.min(
+            1,
+            elapsed / lobbyConfig.motion.clickOutlineMs,
+          );
+
+          if (progress >= 1) {
+            clickPhaseRef.current = "zoom";
+            clickStartRef.current = time;
+          }
+        } else {
+          const progress = Math.min(
+            1,
+            elapsed / lobbyConfig.motion.cameraZoomMs,
+          );
+          const eased = easeOutCubic(progress);
+
+          camera.position.z =
+            lobbyConfig.camera.z -
+            (lobbyConfig.camera.z - lobbyConfig.camera.closeZ) * eased;
+          camera.fov =
+            lobbyConfig.camera.fov +
+            (lobbyConfig.camera.closeFov - lobbyConfig.camera.fov) * eased;
+          camera.updateProjectionMatrix();
+        }
       }
 
-      const lineProgress = revealRef.current.skip
+      const lineProgress =
+        revealRef.current.skip ||
+        (modeRef.current === "click" && clickPhaseRef.current !== "focus")
         ? 1
         : Math.min(
             1,
@@ -339,7 +411,7 @@ export function GlobeScene({
       renderer.dispose();
       renderer.domElement.remove();
     };
-  }, [isMobile, isReducedMotion, onRevealComplete, onTextureReady]);
+  }, [isMobile, isReducedMotion, onHoverChange, onRevealComplete, onTextureReady]);
 
   useEffect(() => {
     if (isReducedMotion && !revealRef.current.done) {
@@ -357,10 +429,12 @@ export function GlobeScene({
     }
 
     modeRef.current = "click";
+    clickPhaseRef.current = "focus";
     clickStartRef.current = performance.now();
+    clickStartRotationRef.current = { ...globeRotationRef.current };
     window.setTimeout(() => {
-      router.push("/countries/usa?country=usa");
-    }, lobbyConfig.motion.burstMs + 80);
+      router.push("/stacks?country=usa");
+    }, lobbyConfig.motion.clickFocusMs + lobbyConfig.motion.clickOutlineMs + lobbyConfig.motion.cameraZoomMs);
   };
 
   if (!isWebglAvailable) {
