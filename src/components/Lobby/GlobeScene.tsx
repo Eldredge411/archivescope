@@ -50,9 +50,10 @@ function latLngToVector3(lng: number, lat: number, radius: number) {
 
 function focusToRotation() {
   const { longitude, latitude } = lobbyConfig.focus;
+
   return {
     x: (latitude * Math.PI) / 180,
-    y: -((longitude * Math.PI) / 180),
+    y: -((longitude + 90) * Math.PI / 180),
   };
 }
 
@@ -428,18 +429,26 @@ export function GlobeScene({
         }
       }
 
-      const lineProgress =
-        revealRef.current.skip ||
-        (modeRef.current === "click" && clickPhaseRef.current !== "focus")
-        ? 1
-        : Math.min(
-            1,
-            Math.max(
-              0,
-              (elapsed - lobbyConfig.motion.usLineStartMs) /
-                lobbyConfig.motion.usLineDurationMs,
-            ),
-          );
+      const lineProgress = modeRef.current === "click"
+        ? clickPhaseRef.current === "focus"
+          ? 0
+          : clickPhaseRef.current === "outline"
+            ? Math.min(
+                1,
+                (time - clickStartRef.current) /
+                  lobbyConfig.motion.clickOutlineMs,
+              )
+            : 1
+        : revealRef.current.skip
+          ? 1
+          : Math.min(
+              1,
+              Math.max(
+                0,
+                (elapsed - lobbyConfig.motion.usLineStartMs) /
+                  lobbyConfig.motion.usLineDurationMs,
+              ),
+            );
       const easedLineProgress = easeOutCubic(lineProgress);
 
       usLines.forEach((line) => {

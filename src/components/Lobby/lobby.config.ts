@@ -22,8 +22,8 @@ export const lobbyConfig = {
     closeZ: 2.5,
   },
   focus: {
-    longitude: -97,
-    latitude: 38,
+    longitude: -98.5,
+    latitude: 38.8,
   },
   texture: {
     desktop: [4096, 2048],
