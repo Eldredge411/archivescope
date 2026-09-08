@@ -13328,6 +13328,12 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .lobby-atmosphere__particle:nth-child(n + 52) {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .archive-enter,
   .archive-panel-motion,
@@ -19008,6 +19014,10 @@ body {
     filter: none;
     opacity: 1;
     transform: none;
+  }
+
+  .lobby-atmosphere__particle {
+    display: none;
   }
 }
 

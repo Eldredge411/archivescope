@@ -3,16 +3,9 @@
 import { useMemo } from "react";
 import { lobbyConfig } from "@/components/Lobby/lobby.config";
 
-type AtmosphereProps = {
-  isMobile: boolean;
-  isReducedMotion: boolean;
-};
-
-export function Atmosphere({ isMobile, isReducedMotion }: AtmosphereProps) {
+export function Atmosphere() {
   const particles = useMemo(() => {
-    const count = isMobile
-      ? lobbyConfig.particles.mobile
-      : lobbyConfig.particles.desktop;
+    const count = lobbyConfig.particles.desktop;
 
     return Array.from({ length: count }, (_, index) => {
       const depth = index % 3;
@@ -33,7 +26,7 @@ export function Atmosphere({ isMobile, isReducedMotion }: AtmosphereProps) {
         depth,
       };
     });
-  }, [isMobile]);
+  }, []);
 
   return (
     <div className="lobby-atmosphere" aria-hidden="true">
@@ -41,24 +34,22 @@ export function Atmosphere({ isMobile, isReducedMotion }: AtmosphereProps) {
       <div className="lobby-atmosphere__cool" />
       <div className="lobby-atmosphere__astrolabe" />
       <div className="lobby-atmosphere__grain" />
-      {!isReducedMotion
-        ? particles.map((particle) => (
-            <span
-              key={particle.id}
-              className={`lobby-atmosphere__particle depth-${particle.depth}`}
-              style={
-                {
-                  left: `${particle.left}%`,
-                  top: `${particle.top}%`,
-                  width: `${particle.size}px`,
-                  height: `${particle.size}px`,
-                  animationDuration: `${particle.duration}s`,
-                  animationDelay: `${particle.delay}s`,
-                } as React.CSSProperties
-              }
-            />
-          ))
-        : null}
+      {particles.map((particle) => (
+        <span
+          key={particle.id}
+          className={`lobby-atmosphere__particle depth-${particle.depth}`}
+          style={
+            {
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
+              width: `${particle.size}px`,
+              height: `${particle.size}px`,
+              animationDuration: `${particle.duration}s`,
+              animationDelay: `${particle.delay}s`,
+            } as React.CSSProperties
+          }
+        />
+      ))}
     </div>
   );
 }

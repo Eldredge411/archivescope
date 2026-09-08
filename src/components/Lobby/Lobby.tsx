@@ -98,7 +98,7 @@ export function Lobby() {
   }, []);
   return (
     <section className="lobby-home" aria-label="ArchiveScope 档案地球入口">
-      <Atmosphere isMobile={isMobile} isReducedMotion={isReducedMotion} />
+      <Atmosphere />
 
       <div className="lobby-home__stage">
         <header className="lobby-title">
