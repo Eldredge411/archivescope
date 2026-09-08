@@ -6,19 +6,18 @@ import type { StackTopic } from "@/lib/stacks/topicsData";
 
 interface ArchiveStacksSceneProps {
   stackTopics: StackTopic[];
+  resourceCount: number;
 }
 
 const shelfAmbientCounts = [24, 26, 23];
 const highlightPositions = [[5, 17], [8, 20], [4, 15]];
 
-export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
+export function ArchiveStacksScene({
+  stackTopics,
+  resourceCount,
+}: ArchiveStacksSceneProps) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
   const activeTopic = stackTopics.find((topic) => topic.slug === activeSlug) ?? null;
-  const totalResourceCount = stackTopics.reduce(
-    (sum, topic) => sum + topic.resourceCount,
-    0,
-  );
-
   const openTopic = (topic: StackTopic) => {
     setActiveSlug(topic.slug);
   };
@@ -30,6 +29,17 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
       }`}
     >
       <section className="archive-wall" aria-label="美国档案卷宗">
+        <div className="archive-wall__lintel">
+          <div className="archive-wall__plaque" aria-label="档案架铭牌">
+            <span>STACK ROOM · UNITED STATES</span>
+            <i aria-hidden="true" />
+            <strong>{resourceCount} RECORDS FILED</strong>
+            <span className="archive-wall__rivet archive-wall__rivet--tl" aria-hidden="true" />
+            <span className="archive-wall__rivet archive-wall__rivet--tr" aria-hidden="true" />
+            <span className="archive-wall__rivet archive-wall__rivet--bl" aria-hidden="true" />
+            <span className="archive-wall__rivet archive-wall__rivet--br" aria-hidden="true" />
+          </div>
+        </div>
         <span
           className="archive-wall__column archive-wall__column--left"
           aria-hidden="true"
@@ -61,6 +71,10 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
 
                   if (isHighlight && topic) {
                     highlightCursor += 1;
+                    const volumeNo = String(
+                      shelfIndex * 2 + highlightCursor,
+                    ).padStart(2, "0");
+                    const isRight = boxIndex > totalBoxes / 2;
 
                     return (
                       <button
@@ -74,8 +88,17 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
                       >
                         <span className="archive-wall__spine-lines" aria-hidden="true" />
                         <span className="archive-wall__spine-ornament" aria-hidden="true" />
-                        <span className="archive-wall__spine-label">{topic.titleZh}</span>
-                        <span className="archive-wall__tooltip" role="tooltip">
+                        <span className="archive-wall__volume">VOL.{volumeNo}</span>
+                        <span className="archive-wall__name-tag">
+                          <i aria-hidden="true" />
+                          {topic.titleZh}
+                        </span>
+                        <span
+                          className={`archive-wall__tooltip${
+                            isRight ? " archive-wall__tooltip--left" : ""
+                          }`}
+                          role="tooltip"
+                        >
                           {topic.plainQuestion}
                         </span>
                       </button>
@@ -87,11 +110,16 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
                       aria-hidden="true"
                       className={`archive-wall__spine archive-wall__spine--ambient tone-${
                         (shelfIndex + boxIndex) % 4
-                      }`}
+                      } variation-${(shelfIndex * 7 + boxIndex * 3) % 4}`}
                       key={`ambient-${shelfIndex}-${boxIndex}`}
                     >
                       <span className="archive-wall__spine-lines" aria-hidden="true" />
-                      <span className="archive-wall__spine-ornament" aria-hidden="true" />
+                      <span
+                        className="archive-wall__spine-ornament offset-${
+                          (boxIndex + shelfIndex) % 3
+                        }"
+                        aria-hidden="true"
+                      />
                       <span className="archive-wall__spine-title">
                         ARCHIVE {String((boxIndex % 10) + 1).padStart(2, "0")}
                       </span>
@@ -109,12 +137,6 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
 
         <span className="archive-wall__lighting" aria-hidden="true" />
       </section>
-
-      <header className="archive-wall__header">
-        <span>STACK ROOM</span>
-        <strong>美国档案卷宗 UNITED STATES ARCHIVE</strong>
-        <p>收录 {totalResourceCount} 条 · 已归档</p>
-      </header>
 
       <Link className="archive-wall__back" href="/">
         ← 返回大厅 BACK TO LOBBY

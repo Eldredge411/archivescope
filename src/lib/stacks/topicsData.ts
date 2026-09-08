@@ -1,5 +1,5 @@
 import { getResourcesByTopic } from "@/lib/data";
-import { topics } from "@/data/mockData";
+import { resources, topics } from "@/data/mockData";
 
 export interface StackTopic {
   slug: string;
@@ -21,4 +21,8 @@ export function getStackTopics(): StackTopic[] {
       description: topic.description,
       resourceCount: getResourcesByTopic(topic.id).length,
     }));
+}
+
+export function getStackResourceCount() {
+  return resources.length;
 }

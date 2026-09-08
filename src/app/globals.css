@@ -19085,7 +19085,7 @@ body {
 .archive-wall-page {
   background: #1f1f1d;
   display: block;
-  height: 100vh;
+  height: calc(100vh - 64px);
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -19102,12 +19102,142 @@ body {
     ),
     linear-gradient(90deg, #3a281d, #4d3625 25%, #422e20 58%, #4c3525 78%, #352418);
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 8% repeat(3, 1fr) 18%;
   height: 100%;
   inset: 0;
   padding: 0 max(18px, calc(50vw - 780px));
   position: absolute;
   z-index: 1;
+}
+
+.archive-wall::after {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0.12) 0 1px,
+      transparent 1px 64px,
+      rgb(0 0 0 / 0.05) 64px 65px,
+      transparent 65px 132px
+    ),
+    linear-gradient(180deg, #3a2c20, #2c2118 46%, #181009);
+  bottom: 0;
+  content: "";
+  height: 18%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  box-shadow: inset 0 1.2rem 1.4rem rgb(0 0 0 / 0.35);
+}
+
+.archive-wall::before {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgb(255 172 68 / 0.18),
+    rgb(255 172 68 / 0.04) 46%,
+    transparent 72%
+  );
+  bottom: 0;
+  content: "";
+  height: 18%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+}
+
+.archive-wall__lintel {
+  align-items: center;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0.07) 0 6px,
+      transparent 6px 22px,
+      rgb(255 220 180 / 0.025) 22px 26px,
+      transparent 26px 44px
+    ),
+    linear-gradient(180deg, #563d2b, #4a3428 58%, #352418);
+  border-bottom: 1px solid #7a5c46;
+  box-shadow: 0 0.7rem 1.5rem rgb(0 0 0 / 0.45);
+  display: flex;
+  min-height: 0;
+  padding: 0 2.5rem;
+}
+
+.archive-wall__plaque {
+  background:
+    repeating-linear-gradient(
+      110deg,
+      rgb(255 255 255 / 0.035) 0 1px,
+      transparent 1px 4px,
+      rgb(0 0 0 / 0.045) 4px 5px,
+      transparent 5px 9px
+    ),
+    linear-gradient(135deg, #a98d67, #8b7355 38%, #6d573d 62%, #99805d);
+  border: 1px solid #6d573d;
+  box-shadow:
+    inset 0 1px 0 rgb(255 242 205 / 0.42),
+    inset 0 -0.2rem 0.55rem rgb(0 0 0 / 0.35),
+    0 0.22rem 0.55rem rgb(0 0 0 / 0.5);
+  color: #3a2a17;
+  min-width: 18rem;
+  padding: 0.65rem 1.6rem 0.72rem;
+  position: relative;
+  text-align: center;
+}
+
+.archive-wall__plaque span:first-child {
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.archive-wall__plaque i {
+  background: linear-gradient(90deg, transparent, #c9a227, transparent);
+  display: block;
+  height: 1px;
+  margin: 0.42rem 0;
+}
+
+.archive-wall__plaque strong {
+  display: block;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-shadow: 0 1px 0 rgb(255 240 200 / 0.35);
+}
+
+.archive-wall__rivet {
+  background: radial-gradient(circle at 35% 30%, #d9bd85, #6b5841 58%, #3d3023);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.55);
+  height: 6px;
+  position: absolute;
+  width: 6px;
+}
+
+.archive-wall__rivet--tl,
+.archive-wall__rivet--tr {
+  top: 5px;
+}
+
+.archive-wall__rivet--bl,
+.archive-wall__rivet--br {
+  bottom: 5px;
+}
+
+.archive-wall__rivet--tl,
+.archive-wall__rivet--bl {
+  left: 5px;
+}
+
+.archive-wall__rivet--tr,
+.archive-wall__rivet--br {
+  right: 5px;
 }
 
 .archive-wall__shelf {
@@ -19143,7 +19273,7 @@ body {
     ),
     linear-gradient(180deg, #6b4e3a, #4a3428 68%, #38261b);
   border-top: 1px solid #7a5c46;
-  box-shadow: 0 -0.25rem 0.8rem rgb(0 0 0 / 0.5);
+  box-shadow: 0 0.35rem 1.8rem rgb(0 0 0 / 0.4);
 }
 
 .archive-wall__column {
@@ -19158,10 +19288,13 @@ body {
     linear-gradient(90deg, #2c1e14, #5c4033 38%, #432d20 72%, #291a10);
   box-shadow: inset -0.35rem 0 0.8rem rgb(0 0 0 / 0.45);
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 8%;
+  bottom: 18%;
   width: 30px;
   z-index: 4;
+  box-shadow:
+    inset -0.35rem 0 0.8rem rgb(0 0 0 / 0.45),
+    0 1.6rem 1.8rem rgb(0 0 0 / 0.4);
 }
 
 .archive-wall__column--left {
@@ -19178,11 +19311,17 @@ body {
 }
 
 .archive-wall__lighting {
-  background: radial-gradient(
-    ellipse at 50% 45%,
-    rgb(255 178 82 / 0.14),
-    transparent 52%
-  );
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgb(255 178 82 / 0.14),
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse at 50% 48%,
+      transparent 54%,
+      rgb(0 0 0 / 0.42) 100%
+    );
   inset: 0;
   position: absolute;
   pointer-events: none;
@@ -19210,6 +19349,26 @@ body {
 
 .archive-wall__spine--ambient:nth-child(5n) {
   width: 26px;
+}
+
+.archive-wall__spine--ambient.variation-0 {
+  filter: brightness(0.96);
+  height: calc(100% - 4px);
+}
+
+.archive-wall__spine--ambient.variation-1 {
+  filter: brightness(1.03);
+  height: calc(100% - 9px);
+}
+
+.archive-wall__spine--ambient.variation-2 {
+  filter: brightness(0.99);
+  height: calc(100% - 12px);
+}
+
+.archive-wall__spine--ambient.variation-3 {
+  filter: brightness(1.05);
+  height: calc(100% - 7px);
 }
 
 .archive-wall__spine--ambient.tone-0 {
@@ -19265,6 +19424,18 @@ body {
   position: absolute;
   right: 4px;
   top: 43%;
+}
+
+.archive-wall__spine-ornament.offset-0 {
+  top: 43%;
+}
+
+.archive-wall__spine-ornament.offset-1 {
+  top: 48%;
+}
+
+.archive-wall__spine-ornament.offset-2 {
+  top: 38%;
 }
 
 .archive-wall__spine-ornament::before,
@@ -19378,25 +19549,60 @@ body {
   z-index: 6;
 }
 
-.archive-wall__spine-label {
+.archive-wall__volume {
+  bottom: 13px;
+  color: #c9a227;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  left: 3px;
+  position: absolute;
+  right: 3px;
+  text-align: center;
+  text-shadow:
+    0 1px 0 rgb(0 0 0 / 0.65),
+    0 -1px 0 rgb(255 238 180 / 0.25);
+  z-index: 2;
+}
+
+.archive-wall__name-tag {
+  align-items: center;
   background: #e8dcc4;
   border: 1px solid rgb(43 41 37 / 0.35);
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+  box-shadow: 0 0.35rem 0.8rem rgb(0 0 0 / 0.38);
   color: #2b2925;
-  display: block;
+  display: flex;
   font-family: "Courier New", ui-monospace, monospace;
-  font-size: 7.5px;
+  font-size: 8px;
   font-weight: 900;
-  height: 84%;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  max-width: 100%;
-  overflow: hidden;
-  padding: 6px 1px;
-  position: relative;
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  z-index: 1;
+  height: 34px;
+  justify-content: center;
+  left: -5px;
+  line-height: 1.25;
+  opacity: 0.75;
+  padding: 4px 3px;
+  position: absolute;
+  text-align: center;
+  top: -7px;
+  transition: opacity 100ms ease, transform 100ms ease;
+  width: 48px;
+  z-index: 7;
+}
+
+.archive-wall__name-tag i {
+  background: linear-gradient(90deg, #8b7355, #c9a227, #8b7355);
+  height: 1px;
+  left: 8px;
+  position: absolute;
+  right: 8px;
+  top: 2px;
+}
+
+.archive-wall__spine--highlight:hover .archive-wall__name-tag,
+.archive-wall__spine--highlight:focus-visible .archive-wall__name-tag {
+  opacity: 1;
+  transform: translateY(2px);
 }
 
 .archive-wall__tooltip {
@@ -19426,34 +19632,15 @@ body {
   transform: translateY(-50%) translateX(0);
 }
 
-.archive-wall__header {
-  background: rgb(22 19 15 / 0.8);
-  border: 1px solid rgb(201 162 39 / 0.28);
-  box-shadow: 0 0.6rem 1.4rem rgb(0 0 0 / 0.35);
-  left: 2rem;
-  padding: 0.75rem 1rem;
-  position: fixed;
-  top: 2rem;
-  z-index: 10;
+.archive-wall__tooltip--left {
+  left: auto;
+  right: calc(100% + 16px);
+  transform: translateY(-50%) translateX(6px);
 }
 
-.archive-wall__header span,
-.archive-wall__header p {
-  color: #b08d5c;
-  font-family: "Courier New", ui-monospace, monospace;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.2em;
-  margin: 0;
-}
-
-.archive-wall__header strong {
-  color: #f3ead8;
-  display: block;
-  font-family: "Courier New", ui-monospace, monospace;
-  font-size: 14px;
-  letter-spacing: 0.07em;
-  margin: 0.32rem 0 0.4rem;
+.archive-wall__spine--highlight:hover .archive-wall__tooltip--left,
+.archive-wall__spine--highlight:focus-visible .archive-wall__tooltip--left {
+  transform: translateY(-50%) translateX(0);
 }
 
 .archive-wall__back {
@@ -19607,6 +19794,10 @@ body {
 }
 
 @media (max-width: 780px) {
+  .archive-wall-page {
+    height: calc(100dvh - 64px);
+  }
+
   .archive-wall {
     padding: 0 8px;
   }
@@ -19635,20 +19826,31 @@ body {
     width: 34px;
   }
 
-  .archive-wall__spine-label {
+  .archive-wall__spine--ambient:nth-child(n+14) {
+    display: none;
+  }
+
+  .archive-wall__lintel {
+    padding: 0 1rem;
+  }
+
+  .archive-wall__plaque {
+    min-width: 14rem;
+    padding: 0.5rem 1.2rem 0.55rem;
+  }
+
+  .archive-wall__plaque span:first-child {
+    font-size: 8px;
+  }
+
+  .archive-wall__plaque strong {
+    font-size: 11px;
+  }
+
+  .archive-wall__name-tag {
     font-size: 7px;
-    padding: 4px 1px;
-  }
-
-  .archive-wall__header {
-    left: 1rem;
-    top: 1rem;
-    max-width: calc(100vw - 2rem);
-    padding: 0.6rem 0.75rem;
-  }
-
-  .archive-wall__header strong {
-    font-size: 12px;
+    height: 31px;
+    width: 42px;
   }
 
   .archive-wall__back {
@@ -19658,6 +19860,7 @@ body {
 
   .archive-wall__tooltip {
     left: 50%;
+    right: auto;
     top: calc(100% + 12px);
     transform: translateX(-50%) translateY(-5px);
     width: 11rem;
@@ -19666,6 +19869,11 @@ body {
 
   .archive-wall__spine--highlight:hover .archive-wall__tooltip,
   .archive-wall__spine--highlight:focus-visible .archive-wall__tooltip {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .archive-wall__spine--highlight:hover .archive-wall__tooltip--left,
+  .archive-wall__spine--highlight:focus-visible .archive-wall__tooltip--left {
     transform: translateX(-50%) translateY(0);
   }
 
