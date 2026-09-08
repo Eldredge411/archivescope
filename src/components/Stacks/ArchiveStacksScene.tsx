@@ -1,123 +1,128 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState } from "react";
+import Link from "next/link";
 import type { StackTopic } from "@/lib/stacks/topicsData";
 
 interface ArchiveStacksSceneProps {
   stackTopics: StackTopic[];
 }
 
-const ambientBoxCounts = [14, 14, 14];
-const highlightPositions = [
-  [2, 9],
-  [3, 10],
-  [4, 11],
-];
+const shelfAmbientCounts = [24, 26, 23];
+const highlightPositions = [[5, 17], [8, 20], [4, 15]];
 
 export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
-  const router = useRouter();
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
-  const navigationTimerRef = useRef<number | null>(null);
   const activeTopic = stackTopics.find((topic) => topic.slug === activeSlug) ?? null;
+  const totalResourceCount = stackTopics.reduce(
+    (sum, topic) => sum + topic.resourceCount,
+    0,
+  );
 
   const openTopic = (topic: StackTopic) => {
-    if (activeSlug) {
-      return;
-    }
-
     setActiveSlug(topic.slug);
-    navigationTimerRef.current = window.setTimeout(() => {
-      router.push(`/topics/${topic.slug}`);
-    }, 850);
   };
 
   return (
     <main
-      className={`stacks-page archive-room-page${
+      className={`stacks-page archive-wall-page${
         activeTopic ? " is-retrieving" : ""
       }`}
     >
-      <div className="archive-room" aria-label="美国档案卷宗">
-        <div className="archive-room__ceiling" aria-hidden="true" />
-        <div className="archive-room__lamp" aria-hidden="true" />
-        <div className="archive-room__light-beam" aria-hidden="true" />
-        <div className="archive-room__dust" aria-hidden="true">
-          {Array.from({ length: 18 }).map((_, index) => (
-            <span key={index} />
-          ))}
-        </div>
+      <section className="archive-wall" aria-label="美国档案卷宗">
+        <span
+          className="archive-wall__column archive-wall__column--left"
+          aria-hidden="true"
+        />
+        <span
+          className="archive-wall__column archive-wall__column--middle"
+          aria-hidden="true"
+        />
+        <span
+          className="archive-wall__column archive-wall__column--right"
+          aria-hidden="true"
+        />
 
-        <header className="archive-room__header">
-          <span>STACK ROOM</span>
-          <h1>美国档案卷宗 UNITED STATES ARCHIVE</h1>
-          <p>点击档案盒进入专题检索 · CLICK A BOX TO EXPLORE</p>
-        </header>
+        {shelfAmbientCounts.map((ambientCount, shelfIndex) => {
+          const highlightIndexes = highlightPositions[shelfIndex] ?? [];
+          const totalBoxes = ambientCount + highlightIndexes.length;
+          const highlightTopics = stackTopics.slice(
+            shelfIndex * 2,
+            shelfIndex * 2 + 2,
+          );
+          let highlightCursor = 0;
 
-        <section className="archive-room__shelves" aria-label="专题档案架">
-          {ambientBoxCounts.map((ambientBoxCount, shelfIndex) => {
-            const highlightIndexes = highlightPositions[shelfIndex] ?? [];
-            const totalBoxes = ambientBoxCount + highlightIndexes.length;
-            const highlightTopics = stackTopics.slice(
-              shelfIndex * 2,
-              shelfIndex * 2 + 2,
-            );
-            let highlightCursor = 0;
+          return (
+            <div className="archive-wall__shelf" key={shelfIndex}>
+              <div className="archive-wall__boxes">
+                {Array.from({ length: totalBoxes }).map((_, boxIndex) => {
+                  const topic = highlightTopics[highlightCursor];
+                  const isHighlight = highlightIndexes.includes(boxIndex);
 
-            return (
-              <div className="archive-room__shelf" key={shelfIndex}>
-                <div className="archive-room__shelf-rail" aria-hidden="true" />
-                <div className="archive-room__shelf-boxes">
-                  {Array.from({ length: totalBoxes }).map((_, boxIndex) => {
-                    const topic = highlightTopics[highlightCursor];
-                    const isHighlight = highlightIndexes.includes(boxIndex);
-
-                    if (isHighlight && topic) {
-                      highlightCursor += 1;
-
-                      return (
-                        <button
-                          className={`archive-room__box archive-room__box--highlight${
-                            activeSlug === topic.slug ? " is-active" : ""
-                          }`}
-                          data-topic-slug={topic.slug}
-                          key={topic.slug}
-                          onClick={() => openTopic(topic)}
-                          type="button"
-                        >
-                          <span className="archive-room__box-lid" aria-hidden="true" />
-                          <span className="archive-room__box-label">{topic.titleZh}</span>
-                          <span className="archive-room__box-tooltip" role="tooltip">
-                            {topic.plainQuestion}
-                          </span>
-                        </button>
-                      );
-                    }
+                  if (isHighlight && topic) {
+                    highlightCursor += 1;
 
                     return (
-                      <span
-                        aria-hidden="true"
-                        className="archive-room__box archive-room__box--ambient"
-                        key={`ambient-${shelfIndex}-${boxIndex}`}
+                      <button
+                        className={`archive-wall__spine archive-wall__spine--highlight${
+                          activeSlug === topic.slug ? " is-active" : ""
+                        }`}
+                        data-topic-slug={topic.slug}
+                        key={topic.slug}
+                        onClick={() => openTopic(topic)}
+                        type="button"
                       >
-                        <span className="archive-room__box-ambient-label">FILE</span>
-                      </span>
+                        <span className="archive-wall__spine-lines" aria-hidden="true" />
+                        <span className="archive-wall__spine-ornament" aria-hidden="true" />
+                        <span className="archive-wall__spine-label">{topic.titleZh}</span>
+                        <span className="archive-wall__tooltip" role="tooltip">
+                          {topic.plainQuestion}
+                        </span>
+                      </button>
                     );
-                  })}
-                </div>
-                <div className="archive-room__shelf-edge" aria-hidden="true" />
-              </div>
-            );
-          })}
-        </section>
+                  }
 
-        <div className="archive-room__desk" aria-hidden="true" />
-        <div className="archive-room__vignette" aria-hidden="true" />
-      </div>
+                  return (
+                    <span
+                      aria-hidden="true"
+                      className={`archive-wall__spine archive-wall__spine--ambient tone-${
+                        (shelfIndex + boxIndex) % 4
+                      }`}
+                      key={`ambient-${shelfIndex}-${boxIndex}`}
+                    >
+                      <span className="archive-wall__spine-lines" aria-hidden="true" />
+                      <span className="archive-wall__spine-ornament" aria-hidden="true" />
+                      <span className="archive-wall__spine-title">
+                        ARCHIVE {String((boxIndex % 10) + 1).padStart(2, "0")}
+                      </span>
+                      <span className="archive-wall__spine-number">
+                        {String((boxIndex % 10) + 1).padStart(2, "0")}
+                      </span>
+                    </span>
+                  );
+                })}
+              </div>
+              <span className="archive-wall__board" aria-hidden="true" />
+            </div>
+          );
+        })}
+
+        <span className="archive-wall__lighting" aria-hidden="true" />
+      </section>
+
+      <header className="archive-wall__header">
+        <span>STACK ROOM</span>
+        <strong>美国档案卷宗 UNITED STATES ARCHIVE</strong>
+        <p>收录 {totalResourceCount} 条 · 已归档</p>
+      </header>
+
+      <Link className="archive-wall__back" href="/">
+        ← 返回大厅 BACK TO LOBBY
+      </Link>
 
       {activeTopic ? (
-        <section className="archive-room__retrieval is-open" aria-live="polite">
-          <span className="archive-room__retrieval-stamp">RETRIEVAL</span>
+        <section className="archive-wall__retrieval is-open" aria-live="polite">
+          <span className="archive-wall__retrieval-stamp">RETRIEVAL</span>
           <small>TOPIC FILE</small>
           <h2>{activeTopic.titleZh}</h2>
           <strong>{activeTopic.titleEn}</strong>
@@ -132,6 +137,9 @@ export function ArchiveStacksScene({ stackTopics }: ArchiveStacksSceneProps) {
               <dd>/topics/{activeTopic.slug}</dd>
             </div>
           </dl>
+          <Link className="archive-wall__retrieval-link" href={`/topics/${activeTopic.slug}`}>
+            进入专题 →
+          </Link>
         </section>
       ) : null}
     </main>
