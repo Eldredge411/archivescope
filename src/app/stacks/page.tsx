@@ -8,7 +8,5 @@ export default function StacksPage() {
   const stackTopics = getStackTopics();
   const resourceCount = getStackResourceCount();
 
-  return (
-    <ArchiveStacksScene stackTopics={stackTopics} resourceCount={resourceCount} />
-  );
+  return <ArchiveStacksScene stackTopics={stackTopics} resourceCount={resourceCount} />;
 }

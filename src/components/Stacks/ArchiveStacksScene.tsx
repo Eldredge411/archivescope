@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { StackTopic } from "@/lib/stacks/topicsData";
 
@@ -9,15 +9,32 @@ interface ArchiveStacksSceneProps {
   resourceCount: number;
 }
 
-const shelfAmbientCounts = [24, 26, 23];
-const highlightPositions = [[5, 17], [8, 20], [4, 15]];
+const shelfBaseCounts = [42, 46, 40];
+const highlightRatios = [
+  [0.17, 0.73],
+  [0.3, 0.79],
+  [0.11, 0.66],
+];
 
 export function ArchiveStacksScene({
   stackTopics,
   resourceCount,
 }: ArchiveStacksSceneProps) {
+  const [isMobile, setIsMobile] = useState(false);
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
   const activeTopic = stackTopics.find((topic) => topic.slug === activeSlug) ?? null;
+
+  useEffect(() => {
+    const updateIsMobile = () => setIsMobile(window.innerWidth < 780);
+    updateIsMobile();
+    window.addEventListener("resize", updateIsMobile);
+
+    return () => window.removeEventListener("resize", updateIsMobile);
+  }, []);
+
+  const shelfCounts = shelfBaseCounts.map((baseCount) =>
+    isMobile ? Math.max(14, Math.round(baseCount / 2.8)) : baseCount,
+  );
   const openTopic = (topic: StackTopic) => {
     setActiveSlug(topic.slug);
   };
@@ -31,7 +48,7 @@ export function ArchiveStacksScene({
       <section className="archive-wall" aria-label="美国档案卷宗">
         <div className="archive-wall__lintel">
           <div className="archive-wall__plaque" aria-label="档案架铭牌">
-            <span>STACK ROOM · UNITED STATES</span>
+            <span>UNITED STATES ARCHIVE</span>
             <i aria-hidden="true" />
             <strong>{resourceCount} RECORDS FILED</strong>
             <span className="archive-wall__rivet archive-wall__rivet--tl" aria-hidden="true" />
@@ -53,8 +70,10 @@ export function ArchiveStacksScene({
           aria-hidden="true"
         />
 
-        {shelfAmbientCounts.map((ambientCount, shelfIndex) => {
-          const highlightIndexes = highlightPositions[shelfIndex] ?? [];
+        {shelfCounts.map((ambientCount, shelfIndex) => {
+          const highlightIndexes = (highlightRatios[shelfIndex] ?? [])
+            .map((ratio) => Math.floor(ambientCount * ratio))
+            .sort((current, next) => current - next);
           const totalBoxes = ambientCount + highlightIndexes.length;
           const highlightTopics = stackTopics.slice(
             shelfIndex * 2,
@@ -75,6 +94,7 @@ export function ArchiveStacksScene({
                       shelfIndex * 2 + highlightCursor,
                     ).padStart(2, "0");
                     const isRight = boxIndex > totalBoxes / 2;
+                    const isCardLeft = boxIndex % 2 === 0;
 
                     return (
                       <button
@@ -89,9 +109,14 @@ export function ArchiveStacksScene({
                         <span className="archive-wall__spine-lines" aria-hidden="true" />
                         <span className="archive-wall__spine-ornament" aria-hidden="true" />
                         <span className="archive-wall__volume">VOL.{volumeNo}</span>
-                        <span className="archive-wall__name-tag">
+                        <span
+                          className={`archive-wall__index-card${
+                            isCardLeft ? " archive-wall__index-card--left" : ""
+                          }`}
+                        >
                           <i aria-hidden="true" />
-                          {topic.titleZh}
+                          <strong>{topic.titleZh}</strong>
+                          <small>{topic.resourceCount} 条资源</small>
                         </span>
                         <span
                           className={`archive-wall__tooltip${

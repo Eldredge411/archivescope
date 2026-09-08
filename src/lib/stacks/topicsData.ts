@@ -24,5 +24,5 @@ export function getStackTopics(): StackTopic[] {
 }
 
 export function getStackResourceCount() {
-  return resources.length;
+  return resources.filter((resource) => resource.countryId === "usa").length;
 }
