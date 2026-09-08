@@ -43,6 +43,8 @@ export const lobbyConfig = {
     clickOutlineMs: 800,
     cameraZoomMs: 600,
     idleRotationPerFrame: (0.05 * Math.PI) / 180,
+    dragClickThresholdPx: 5,
+    dragDamping: 0.94,
     titleRuleStartMs: 3200,
     titleRuleDurationMs: 400,
     titleLetterStartMs: 3300,

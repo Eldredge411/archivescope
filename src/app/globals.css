@@ -18670,7 +18670,7 @@ body {
 .lobby-home__stage {
   align-items: center;
   display: grid;
-  grid-template-rows: minmax(30vh, 1fr) minmax(44vh, 55vh) auto;
+  grid-template-rows: minmax(24vh, 1fr) minmax(58vh, 62vh) auto;
   justify-items: center;
   min-height: 100vh;
   padding: 1rem 1rem 4.5rem;
@@ -18683,8 +18683,8 @@ body {
   align-items: center;
   display: grid;
   justify-items: center;
-  min-height: 18rem;
-  padding-top: 11vh;
+  min-height: 15rem;
+  padding-top: 7vh;
   pointer-events: none;
   position: relative;
   text-align: center;
@@ -18761,10 +18761,10 @@ body {
 
 .lobby-home__globe {
   aspect-ratio: 1;
-  max-height: 52vh;
-  max-width: 52vw;
+  max-height: 60vh;
+  max-width: 60vw;
   position: relative;
-  width: min(52vh, 52vw);
+  width: min(58vh, 58vw);
 }
 
 .lobby-globe-scene {
@@ -18845,13 +18845,31 @@ body {
 }
 
 .lobby-atmosphere__lamp {
-  background: radial-gradient(circle at 72% 24%, rgb(255 183 77 / 0.18), transparent 38%);
+  background: radial-gradient(circle at 72% 24%, rgb(217 140 54 / 0.08), transparent 38%);
   inset: 0;
   position: absolute;
 }
 
+.lobby-atmosphere__cool {
+  background: linear-gradient(90deg, rgb(88 96 112 / 0.18), transparent 24%);
+  inset: 0;
+  position: absolute;
+}
+
+.lobby-atmosphere__astrolabe {
+  background-image:
+    repeating-radial-gradient(circle at 52% 62%, rgb(176 141 92 / 0.045) 0 1px, transparent 1px 60px),
+    repeating-linear-gradient(90deg, rgb(176 141 92 / 0.035) 0 1px, transparent 1px 84px),
+    repeating-linear-gradient(0deg, rgb(176 141 92 / 0.028) 0 1px, transparent 1px 84px);
+  inset: -10%;
+  position: absolute;
+  transform: rotate(-8deg);
+}
+
 .lobby-atmosphere::after {
-  background: radial-gradient(circle at 50% 50%, transparent 45%, rgb(0 0 0 / 0.7));
+  background:
+    radial-gradient(circle at 50% 55%, transparent 42%, rgb(0 0 0 / 0.72) 100%),
+    radial-gradient(circle at 50% 50%, transparent 35%, rgb(0 0 0 / 0.35) 100%);
   content: "";
   inset: 0;
   position: absolute;
@@ -18878,6 +18896,21 @@ body {
 .lobby-atmosphere__particle.depth-0 { opacity: 0.38; }
 .lobby-atmosphere__particle.depth-1 { opacity: 0.25; }
 .lobby-atmosphere__particle.depth-2 { opacity: 0.14; }
+
+.lobby-atmosphere__particle.depth-0 {
+  filter: blur(0.6px);
+  opacity: 0.46;
+}
+
+.lobby-atmosphere__particle.depth-1 {
+  filter: blur(0.2px);
+  opacity: 0.26;
+}
+
+.lobby-atmosphere__particle.depth-2 {
+  filter: blur(0.1px);
+  opacity: 0.15;
+}
 
 .lobby-skip {
   background: rgb(31 31 29 / 0.8);
@@ -18944,7 +18977,7 @@ body {
 
 @media (max-width: 900px) {
   .lobby-home__stage {
-    grid-template-rows: minmax(24vh, 1fr) minmax(46vh, 54vh) auto;
+    grid-template-rows: minmax(22vh, 1fr) minmax(56vh, 60vh) auto;
     padding: 0.75rem 0.75rem 4rem;
   }
 
@@ -18954,9 +18987,9 @@ body {
   }
 
   .lobby-home__globe {
-    max-height: 46vh;
-    max-width: 88vw;
-    width: 88vw;
+    max-height: 56vh;
+    max-width: 92vw;
+    width: 92vw;
   }
 }
 

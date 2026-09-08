@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import * as THREE from "three";
 import { lobbyConfig } from "@/components/Lobby/lobby.config";
@@ -84,8 +84,12 @@ export function GlobeScene({
   });
   const dragRef = useRef({
     active: false,
+    startX: 0,
+    startY: 0,
     lastX: 0,
     lastY: 0,
+    totalDistance: 0,
+    isDragging: false,
     velocityX: 0,
     velocityY: 0,
   });
@@ -94,6 +98,23 @@ export function GlobeScene({
   const textureReadyRef = useRef(false);
   const globeRotationRef = useRef({ x: 0, y: 0 });
   const clickStartRotationRef = useRef<ClickRotation>({ x: 0, y: 0 });
+
+  const enterUnitedStates = useCallback(() => {
+    if (modeRef.current !== "idle") {
+      revealRef.current.skip = true;
+      modeRef.current = "idle";
+      onRevealComplete?.();
+      return;
+    }
+
+    modeRef.current = "click";
+    clickPhaseRef.current = "focus";
+    clickStartRef.current = performance.now();
+    clickStartRotationRef.current = { ...globeRotationRef.current };
+    window.setTimeout(() => {
+      router.push("/stacks?country=usa");
+    }, lobbyConfig.motion.clickFocusMs + lobbyConfig.motion.clickOutlineMs + lobbyConfig.motion.cameraZoomMs);
+  }, [onRevealComplete, router]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -216,6 +237,16 @@ export function GlobeScene({
 
       const deltaX = event.clientX - dragRef.current.lastX;
       const deltaY = event.clientY - dragRef.current.lastY;
+      const distanceX = event.clientX - dragRef.current.startX;
+      const distanceY = event.clientY - dragRef.current.startY;
+
+      dragRef.current.totalDistance = Math.hypot(distanceX, distanceY);
+      dragRef.current.isDragging =
+        dragRef.current.totalDistance > lobbyConfig.motion.dragClickThresholdPx;
+
+      if (!dragRef.current.isDragging) {
+        return;
+      }
 
       globe.rotation.y += deltaX * 0.005;
       globe.rotation.x = Math.max(
@@ -235,16 +266,34 @@ export function GlobeScene({
 
       dragRef.current = {
         active: true,
+        startX: event.clientX,
+        startY: event.clientY,
         lastX: event.clientX,
         lastY: event.clientY,
+        totalDistance: 0,
+        isDragging: false,
         velocityX: 0,
         velocityY: 0,
       };
       container.setPointerCapture(event.pointerId);
     };
 
-    const pointerUp = () => {
+    const pointerUp = (event: PointerEvent) => {
+      if (!dragRef.current.active) {
+        return;
+      }
+
+      const isClick =
+        !dragRef.current.isDragging &&
+        dragRef.current.totalDistance <= lobbyConfig.motion.dragClickThresholdPx;
+
       dragRef.current.active = false;
+      dragRef.current.isDragging = false;
+
+      if (isClick && isPointerOverGlobe) {
+        enterUnitedStates();
+        event.preventDefault();
+      }
     };
 
     const windowPointerMove = (event: PointerEvent) => pointerMove(event);
@@ -263,7 +312,7 @@ export function GlobeScene({
       updatePointer(event);
       pointerDown(event);
     };
-    const windowPointerUp = () => pointerUp();
+    const windowPointerUp = (event: PointerEvent) => pointerUp(event);
 
     window.addEventListener("pointermove", windowPointerMove);
     window.addEventListener("pointerdown", windowPointerDown);
@@ -313,15 +362,19 @@ export function GlobeScene({
           modeRef.current = "idle";
           onRevealComplete?.();
         }
-      } else if (modeRef.current === "idle" && !dragRef.current.active) {
+      } else if (
+        modeRef.current === "idle" &&
+        !dragRef.current.active &&
+        !dragRef.current.isDragging
+      ) {
         globe.rotation.y +=
           lobbyConfig.motion.idleRotationPerFrame + dragRef.current.velocityX;
         globe.rotation.x = Math.max(
           -Math.PI / 6,
           Math.min(Math.PI / 6, globe.rotation.x + dragRef.current.velocityY),
         );
-      dragRef.current.velocityX *= 0.94;
-      dragRef.current.velocityY *= 0.94;
+      dragRef.current.velocityX *= lobbyConfig.motion.dragDamping;
+      dragRef.current.velocityY *= lobbyConfig.motion.dragDamping;
       globeRotationRef.current = {
         x: globe.rotation.x,
         y: globe.rotation.y,
@@ -411,7 +464,14 @@ export function GlobeScene({
       renderer.dispose();
       renderer.domElement.remove();
     };
-  }, [isMobile, isReducedMotion, onHoverChange, onRevealComplete, onTextureReady]);
+  }, [
+    enterUnitedStates,
+    isMobile,
+    isReducedMotion,
+    onHoverChange,
+    onRevealComplete,
+    onTextureReady,
+  ]);
 
   useEffect(() => {
     if (isReducedMotion && !revealRef.current.done) {
@@ -419,23 +479,6 @@ export function GlobeScene({
       onRevealComplete?.();
     }
   }, [isReducedMotion, onRevealComplete]);
-
-  const enterUnitedStates = () => {
-    if (modeRef.current !== "idle") {
-      revealRef.current.skip = true;
-      modeRef.current = "idle";
-      onRevealComplete?.();
-      return;
-    }
-
-    modeRef.current = "click";
-    clickPhaseRef.current = "focus";
-    clickStartRef.current = performance.now();
-    clickStartRotationRef.current = { ...globeRotationRef.current };
-    window.setTimeout(() => {
-      router.push("/stacks?country=usa");
-    }, lobbyConfig.motion.clickFocusMs + lobbyConfig.motion.clickOutlineMs + lobbyConfig.motion.cameraZoomMs);
-  };
 
   if (!isWebglAvailable) {
     return (
@@ -454,10 +497,6 @@ export function GlobeScene({
     <div
       ref={containerRef}
       className="lobby-globe-scene"
-      onClick={(event) => {
-        if (event.clientX === 0 && event.clientY === 0) return;
-        enterUnitedStates();
-      }}
       role="button"
       tabIndex={0}
       onKeyDown={(event) => {
