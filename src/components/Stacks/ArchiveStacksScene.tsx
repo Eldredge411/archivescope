@@ -84,9 +84,12 @@ export function ArchiveStacksScene({
       >
         <div className="archive-wall__lintel">
           <div className="archive-wall__plaque" aria-label="档案架铭牌">
-            <span>UNITED STATES ARCHIVE</span>
+            <span>美国档案卷宗</span>
+            <small>UNITED STATES ARCHIVE · STACK ROOM</small>
             <i aria-hidden="true" />
-            <strong>{resourceCount} RECORDS FILED</strong>
+            <strong>
+              {resourceCount} RECORDS · {stackTopics.length} TOPICS FILED
+            </strong>
             <span className="archive-wall__rivet archive-wall__rivet--tl" aria-hidden="true" />
             <span className="archive-wall__rivet archive-wall__rivet--tr" aria-hidden="true" />
             <span className="archive-wall__rivet archive-wall__rivet--bl" aria-hidden="true" />
