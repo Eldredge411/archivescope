@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { stacksConfig } from "@/config/stacks.config";
 import type { StackTopic } from "@/lib/stacks/topicsData";
 
 interface ArchiveStacksSceneProps {
@@ -29,7 +30,12 @@ export function ArchiveStacksScene({
     const updateShelfCounts = () => {
       const capacity = Math.max(
         12,
-        Math.floor((window.innerWidth - 24) / 58),
+        Math.floor(
+          (window.innerWidth - 24) /
+            (window.innerWidth < 780
+              ? stacksConfig.boxes.mobileAmbientWidth + stacksConfig.boxes.mobileGap
+              : stacksConfig.boxes.ambientWidth + stacksConfig.boxes.gap),
+        ),
       );
       const factors = [0.96, 1.02, 0.94];
 
