@@ -9,7 +9,6 @@ interface ArchiveStacksSceneProps {
   resourceCount: number;
 }
 
-const shelfBaseCounts = [42, 46, 40];
 const highlightRatios = [
   [0.17, 0.73],
   [0.3, 0.79],
@@ -20,32 +19,69 @@ export function ArchiveStacksScene({
   stackTopics,
   resourceCount,
 }: ArchiveStacksSceneProps) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [faceOutSlug, setFaceOutSlug] = useState<string | null>(null);
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  const [shelfCounts, setShelfCounts] = useState<number[]>([42, 46, 40]);
   const activeTopic = stackTopics.find((topic) => topic.slug === activeSlug) ?? null;
+  const faceOutTopic = stackTopics.find((topic) => topic.slug === faceOutSlug) ?? null;
 
   useEffect(() => {
-    const updateIsMobile = () => setIsMobile(window.innerWidth < 780);
-    updateIsMobile();
-    window.addEventListener("resize", updateIsMobile);
+    const updateShelfCounts = () => {
+      const capacity = Math.max(
+        14,
+        Math.floor((window.innerWidth - 24) / 30),
+      );
+      const factors = [0.94, 1.02, 0.91];
 
-    return () => window.removeEventListener("resize", updateIsMobile);
+      setShelfCounts(
+        factors.map((factor) =>
+          Math.max(14, Math.floor(capacity * factor)),
+        ),
+      );
+    };
+
+    updateShelfCounts();
+    window.addEventListener("resize", updateShelfCounts);
+
+    return () => window.removeEventListener("resize", updateShelfCounts);
   }, []);
 
-  const shelfCounts = shelfBaseCounts.map((baseCount) =>
-    isMobile ? Math.max(14, Math.round(baseCount / 2.8)) : baseCount,
-  );
+  const selectTopic = (topic: StackTopic) => {
+    if (activeSlug === topic.slug) {
+      return;
+    }
+
+    setActiveSlug(null);
+    setFaceOutSlug(topic.slug);
+  };
+
   const openTopic = (topic: StackTopic) => {
+    if (faceOutSlug !== topic.slug) {
+      selectTopic(topic);
+      return;
+    }
+
     setActiveSlug(topic.slug);
+  };
+
+  const resetTopic = () => {
+    setFaceOutSlug(null);
+    setActiveSlug(null);
   };
 
   return (
     <main
       className={`stacks-page archive-wall-page${
+        faceOutTopic ? " is-facing" : ""
+      }${
         activeTopic ? " is-retrieving" : ""
       }`}
     >
-      <section className="archive-wall" aria-label="美国档案卷宗">
+      <section
+        className="archive-wall"
+        aria-label="美国档案卷宗"
+        onClick={resetTopic}
+      >
         <div className="archive-wall__lintel">
           <div className="archive-wall__plaque" aria-label="档案架铭牌">
             <span>UNITED STATES ARCHIVE</span>
@@ -94,37 +130,33 @@ export function ArchiveStacksScene({
                       shelfIndex * 2 + highlightCursor,
                     ).padStart(2, "0");
                     const isRight = boxIndex > totalBoxes / 2;
-                    const isCardLeft = boxIndex % 2 === 0;
 
                     return (
                       <button
                         className={`archive-wall__spine archive-wall__spine--highlight${
-                          activeSlug === topic.slug ? " is-active" : ""
+                          isRight ? " archive-wall__spine--right" : ""
+                        }${
+                          faceOutSlug === topic.slug ? " is-face-out" : ""
+                        }${
+                          activeSlug === topic.slug ? " is-retrieval" : ""
                         }`}
                         data-topic-slug={topic.slug}
                         key={topic.slug}
-                        onClick={() => openTopic(topic)}
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          openTopic(topic);
+                        }}
                         type="button"
                       >
                         <span className="archive-wall__spine-lines" aria-hidden="true" />
                         <span className="archive-wall__spine-ornament" aria-hidden="true" />
                         <span className="archive-wall__volume">VOL.{volumeNo}</span>
-                        <span
-                          className={`archive-wall__index-card${
-                            isCardLeft ? " archive-wall__index-card--left" : ""
-                          }`}
-                        >
-                          <i aria-hidden="true" />
+                        <span className="archive-wall__box-front">
                           <strong>{topic.titleZh}</strong>
-                          <small>{topic.resourceCount} 条资源</small>
-                        </span>
-                        <span
-                          className={`archive-wall__tooltip${
-                            isRight ? " archive-wall__tooltip--left" : ""
-                          }`}
-                          role="tooltip"
-                        >
-                          {topic.plainQuestion}
+                          <em>{topic.plainQuestion}</em>
+                          <i aria-hidden="true" />
+                          <span>{topic.resourceCount} RECORDS</span>
+                          <small>ARCHIVED</small>
                         </span>
                       </button>
                     );
