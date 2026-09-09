@@ -28,15 +28,13 @@ export function ArchiveStacksScene({
   useEffect(() => {
     const updateShelfCounts = () => {
       const capacity = Math.max(
-        14,
-        Math.floor((window.innerWidth - 24) / 30),
+        12,
+        Math.floor((window.innerWidth - 24) / 58),
       );
-      const factors = [0.94, 1.02, 0.91];
+      const factors = [0.96, 1.02, 0.94];
 
       setShelfCounts(
-        factors.map((factor) =>
-          Math.max(14, Math.floor(capacity * factor)),
-        ),
+        factors.map((factor) => Math.max(12, Math.floor(capacity * factor))),
       );
     };
 
@@ -84,7 +82,7 @@ export function ArchiveStacksScene({
       >
         <div className="archive-wall__lintel">
           <div className="archive-wall__plaque" aria-label="档案架铭牌">
-            <span>美国档案卷宗</span>
+            <span>美国档案数据资源建设专题</span>
             <small>UNITED STATES ARCHIVE · STACK ROOM</small>
             <i aria-hidden="true" />
             <strong>
@@ -151,9 +149,9 @@ export function ArchiveStacksScene({
                         }}
                         type="button"
                       >
-                        <span className="archive-wall__spine-lines" aria-hidden="true" />
-                        <span className="archive-wall__spine-ornament" aria-hidden="true" />
-                        <span className="archive-wall__volume">VOL.{volumeNo}</span>
+                        <span className="archive-wall__box-label">
+                          VOL.{volumeNo}
+                        </span>
                         <span className="archive-wall__box-front">
                           <strong>{topic.titleZh}</strong>
                           <em>{topic.plainQuestion}</em>
@@ -173,17 +171,7 @@ export function ArchiveStacksScene({
                       } variation-${(shelfIndex * 7 + boxIndex * 3) % 4}`}
                       key={`ambient-${shelfIndex}-${boxIndex}`}
                     >
-                      <span className="archive-wall__spine-lines" aria-hidden="true" />
-                      <span
-                        className="archive-wall__spine-ornament offset-${
-                          (boxIndex + shelfIndex) % 3
-                        }"
-                        aria-hidden="true"
-                      />
-                      <span className="archive-wall__spine-title">
-                        ARCHIVE {String((boxIndex % 10) + 1).padStart(2, "0")}
-                      </span>
-                      <span className="archive-wall__spine-number">
+                      <span className="archive-wall__box-label archive-wall__box-label--ambient">
                         {String((boxIndex % 10) + 1).padStart(2, "0")}
                       </span>
                     </span>
