@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 export type LineSidebarSide = "left" | "right";
@@ -7,6 +8,8 @@ export type LineSidebarSide = "left" | "right";
 export type LineSidebarItem = {
   id: string;
   label: string;
+  description?: string;
+  href?: string;
 };
 
 type LineSidebarProps = {
@@ -14,6 +17,7 @@ type LineSidebarProps = {
   activeIndex: number;
   isVisible: boolean;
   side: LineSidebarSide;
+  title: string;
   accentColor?: string;
   textColor?: string;
   markerColor?: string;
@@ -47,6 +51,7 @@ export function LineSidebar({
   activeIndex,
   isVisible,
   side,
+  title,
   accentColor = "#C79A63",
   textColor = "#D8C8B4",
   markerColor = "#7C5F43",
@@ -66,7 +71,7 @@ export function LineSidebar({
 }: LineSidebarProps) {
   const [pointer, setPointer] = useState<{ x: number; y: number } | null>(null);
   const [itemCenters, setItemCenters] = useState<number[]>([]);
-  const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const itemRefs = useRef<(HTMLElement | null)[]>([]);
   const direction = side === "left" ? 1 : -1;
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -96,6 +101,10 @@ export function LineSidebar({
       style={{ gap: `${itemGap}px`, fontSize: `${fontSize}rem` }}
       aria-hidden={!isVisible}
     >
+      <div className="line-sidebar__plate" aria-hidden={!isVisible}>
+        <span>{title}</span>
+      </div>
+
       {items.map((item, index) => {
         let shift = 0;
 
@@ -105,22 +114,13 @@ export function LineSidebar({
         }
 
         const isActive = index === activeIndex;
-
-        return (
-          <button
-            key={item.id}
-            ref={(node) => {
-              itemRefs.current[index] = node;
-            }}
-            type="button"
-            className={`line-sidebar__item ${isActive ? "is-active" : ""}`}
-            onClick={() => onItemClick?.(index, item)}
-            tabIndex={isVisible ? 0 : -1}
-            style={{
-              transform: `translateX(${shift}px)`,
-              transition: `transform ${smoothing}ms cubic-bezier(.22,.8,.24,1), color 180ms ease, opacity 180ms ease`,
-            }}
-          >
+        const itemClassName = `line-sidebar__item ${isActive ? "is-active" : ""}`;
+        const itemStyle = {
+          transform: `translateX(${shift}px)`,
+          transition: `transform ${smoothing}ms cubic-bezier(.22,.8,.24,1), color 180ms ease, opacity 180ms ease`,
+        };
+        const itemContent = (
+          <>
             {showIndex ? (
               <span className="line-sidebar__index">{String(index + 1).padStart(2, "0")}</span>
             ) : null}
@@ -144,6 +144,41 @@ export function LineSidebar({
             >
               {item.label}
             </span>
+          </>
+        );
+
+        if (item.href) {
+          return (
+            <Link
+              key={item.id}
+              href={item.href}
+              ref={(node) => {
+                itemRefs.current[index] = node;
+              }}
+              className={itemClassName}
+              onClick={() => onItemClick?.(index, item)}
+              tabIndex={isVisible ? 0 : -1}
+              style={itemStyle}
+              aria-label={item.description ? `${item.label}：${item.description}` : item.label}
+            >
+              {itemContent}
+            </Link>
+          );
+        }
+
+        return (
+          <button
+            key={item.id}
+            ref={(node) => {
+              itemRefs.current[index] = node;
+            }}
+            type="button"
+            className={itemClassName}
+            onClick={() => onItemClick?.(index, item)}
+            tabIndex={isVisible ? 0 : -1}
+            style={itemStyle}
+          >
+            {itemContent}
           </button>
         );
       })}

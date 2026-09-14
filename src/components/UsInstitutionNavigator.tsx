@@ -30,6 +30,7 @@ type UsInstitutionNavigatorProps = {
   institutions: Institution[];
   resources: Resource[];
   countryName: string;
+  initialGroup?: string;
 };
 
 type StateFilterOption = {
@@ -710,9 +711,13 @@ export function UsInstitutionNavigator({
   institutions,
   resources,
   countryName,
+  initialGroup,
 }: UsInstitutionNavigatorProps) {
   const [keyword, setKeyword] = useState("");
-  const [activeTab, setActiveTab] = useState<ActiveTab>("all");
+  const initialActiveTab = groupMetas.some((group) => group.value === initialGroup)
+    ? (initialGroup as InstitutionGroup)
+    : "all";
+  const [activeTab, setActiveTab] = useState<ActiveTab>(initialActiveTab);
   const [typeFilter, setTypeFilter] = useState(allValue);
   const [stateFilter, setStateFilter] = useState(allValue);
   const [currentIndex, setCurrentIndex] = useState(0);

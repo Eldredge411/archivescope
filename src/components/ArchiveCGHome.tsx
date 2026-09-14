@@ -1,18 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LineSidebar } from "@/components/LineSidebar";
 import { topics } from "@/data/mockData";
 
 const institutionItems = [
-  { id: "federal", label: "联邦机构" },
-  { id: "state", label: "各州机构" },
-  { id: "social", label: "社会机构" },
-  { id: "academic", label: "高校与研究机构" },
-  { id: "commercial", label: "商业与服务机构" },
-  { id: "other", label: "其他机构" },
+  { id: "federal", label: "联邦机构", href: "/institutions/usa?group=federal" },
+  { id: "state", label: "各州机构", href: "/institutions/usa?group=state" },
+  { id: "social", label: "社会机构", href: "/institutions/usa?group=social" },
+  { id: "academic", label: "高校与研究机构", href: "/institutions/usa?group=academic" },
+  { id: "commercial", label: "商业与服务机构", href: "/institutions/usa?group=commercial" },
+  { id: "other", label: "其他机构", href: "/institutions/usa?group=other" },
 ];
 
 export function ArchiveCGHome() {
@@ -28,7 +27,12 @@ export function ArchiveCGHome() {
       [...topics]
         .sort((a, b) => (a.sortIndex ?? 0) - (b.sortIndex ?? 0))
         .slice(0, 6)
-        .map((topic) => ({ id: topic.id, label: topic.titleZh })),
+        .map((topic) => ({
+          id: topic.id,
+          label: topic.titleZh,
+          description: topic.plainQuestion,
+          href: `/topics/${topic.slug}`,
+        })),
     [],
   );
 
@@ -111,17 +115,20 @@ export function ArchiveCGHome() {
       <div className={`archive-cg-home__hover-zone archive-cg-home__hover-zone--left ${activeSide === "left" ? "is-active" : ""}`} />
       <div className={`archive-cg-home__hover-zone archive-cg-home__hover-zone--right ${activeSide === "right" ? "is-active" : ""}`} />
 
-      <div className="archive-cg-home__content">
-        <span className="archive-cg-home__eyebrow">ARCHIVE SYSTEM · ONLINE</span>
-        <h1 className="archive-cg-home__title">ArchiveScope</h1>
-        <p className="archive-cg-home__subtitle">全球档案数据资源建设知识库</p>
-        <p className="archive-cg-home__description">
-          中央档案通道已开启。左侧调取研究专题，右侧调取组织机构；滚轮切换条目，点击锁定目标。
-        </p>
-        <div className="archive-cg-home__actions">
-          <Link href="/resources">进入资料库</Link>
-          <Link href="/topics">查看研究专题</Link>
-        </div>
+      <div
+        className={`archive-cg-home__prompt ${
+          activeSide === "left" ? "is-visible" : ""
+        }`}
+        aria-live="polite"
+      >
+        {activeSide === "left" && topicItems[activeTopicIndex] ? (
+          <>
+            <span>RESEARCH TOPIC</span>
+            <p key={topicItems[activeTopicIndex].id}>
+              {topicItems[activeTopicIndex].description}
+            </p>
+          </>
+        ) : null}
       </div>
 
       <LineSidebar
@@ -129,6 +136,7 @@ export function ArchiveCGHome() {
         activeIndex={activeTopicIndex}
         isVisible={displayedSide === "left"}
         side="left"
+        title="研究专题"
         accentColor="#C79A63"
         textColor="#D8C8B4"
         markerColor="#7C5F43"
@@ -152,6 +160,7 @@ export function ArchiveCGHome() {
         activeIndex={activeInstitutionIndex}
         isVisible={displayedSide === "right"}
         side="right"
+        title="组织机构"
         accentColor="#C79A63"
         textColor="#D8C8B4"
         markerColor="#7C5F43"
