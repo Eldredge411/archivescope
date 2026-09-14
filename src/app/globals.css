@@ -13503,8 +13503,9 @@ body {
 
 .archive-cg-home__actions a {
   align-items: center;
-  border: 1px solid rgb(168 85 247 / 0.42);
-  color: #ede9fe;
+  background: rgb(176 128 80 / 0.32);
+  border: 1px solid rgb(199 154 99 / 0.62);
+  color: #f4e6d2;
   display: inline-flex;
   font-size: 0.84rem;
   font-weight: 700;
@@ -13513,14 +13514,10 @@ body {
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
-.archive-cg-home__actions a:first-child {
-  background: rgb(168 85 247 / 0.18);
-}
-
 .archive-cg-home__actions a:hover {
-  background: rgb(168 85 247 / 0.28);
-  border-color: #a855f7;
-  color: #fff;
+  background: rgb(176 128 80 / 0.48);
+  border-color: #c79a63;
+  color: #fff8ef;
 }
 
 .line-sidebar {
@@ -13576,7 +13573,7 @@ body {
 }
 
 .line-sidebar__item.is-active .line-sidebar__index {
-  color: #d8b4fe;
+  color: #e2bd8c;
 }
 
 .line-sidebar__marker {
@@ -13586,7 +13583,7 @@ body {
 }
 
 .line-sidebar__item.is-active .line-sidebar__marker {
-  box-shadow: 0 0 16px rgb(168 85 247 / 0.75);
+  box-shadow: 0 0 16px rgb(199 154 99 / 0.7);
 }
 
 .line-sidebar__label {
@@ -13617,11 +13614,11 @@ body {
 
 .line-sidebar__item:hover .line-sidebar__label,
 .line-sidebar__item.is-active .line-sidebar__label {
-  text-shadow: 0 0 18px rgb(168 85 247 / 0.55);
+  text-shadow: 0 0 18px rgb(199 154 99 / 0.55);
 }
 
 .line-sidebar__item:focus-visible {
-  outline: 1px solid #a855f7;
+  outline: 1px solid #c79a63;
   outline-offset: 5px;
 }
 

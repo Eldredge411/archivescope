@@ -4,16 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LineSidebar } from "@/components/LineSidebar";
-import { institutions, topics } from "@/data/mockData";
+import { topics } from "@/data/mockData";
 
-const institutionGroupLabels: Record<string, string> = {
-  federal: "联邦档案机构",
-  state: "州级档案机构",
-  social: "社会档案组织",
-  academic: "高校与研究机构",
-  commercial: "商业服务机构",
-  other: "其他档案机构",
-};
+const institutionItems = [
+  { id: "federal", label: "联邦机构" },
+  { id: "state", label: "各州机构" },
+  { id: "social", label: "社会机构" },
+  { id: "academic", label: "高校与研究机构" },
+  { id: "commercial", label: "商业与服务机构" },
+  { id: "other", label: "其他机构" },
+];
 
 export function ArchiveCGHome() {
   const [activeTopicIndex, setActiveTopicIndex] = useState(0);
@@ -29,17 +29,6 @@ export function ArchiveCGHome() {
         .sort((a, b) => (a.sortIndex ?? 0) - (b.sortIndex ?? 0))
         .slice(0, 6)
         .map((topic) => ({ id: topic.id, label: topic.titleZh })),
-    [],
-  );
-
-  const institutionItems = useMemo(
-    () =>
-      Array.from(new Set(institutions.map((institution) => institution.group)))
-        .slice(0, 6)
-        .map((group) => ({
-          id: group,
-          label: institutionGroupLabels[group] ?? "其他档案机构",
-        })),
     [],
   );
 
@@ -99,7 +88,7 @@ export function ArchiveCGHome() {
     section.addEventListener("wheel", handleWheel, { passive: false });
 
     return () => section.removeEventListener("wheel", handleWheel);
-  }, [activeSide, institutionItems.length, topicItems.length]);
+  }, [activeSide, topicItems.length]);
 
   return (
     <section
@@ -140,9 +129,9 @@ export function ArchiveCGHome() {
         activeIndex={activeTopicIndex}
         isVisible={displayedSide === "left"}
         side="left"
-        accentColor="#A855F7"
-        textColor="#c4c4c4"
-        markerColor="#6c6c6c"
+        accentColor="#C79A63"
+        textColor="#D8C8B4"
+        markerColor="#7C5F43"
         showIndex
         showMarker
         proximityRadius={100}
@@ -163,9 +152,9 @@ export function ArchiveCGHome() {
         activeIndex={activeInstitutionIndex}
         isVisible={displayedSide === "right"}
         side="right"
-        accentColor="#A855F7"
-        textColor="#c4c4c4"
-        markerColor="#6c6c6c"
+        accentColor="#C79A63"
+        textColor="#D8C8B4"
+        markerColor="#7C5F43"
         showIndex
         showMarker
         proximityRadius={100}
