@@ -20497,3 +20497,342 @@ body:has(.atlas-room){overflow:hidden}body:has(.atlas-room)>footer{display:none}
 @media(max-width:950px){body:has(.atlas-room){overflow:auto}.atlas-room{height:auto;min-height:100svh;overflow:auto;padding:8rem 1rem 4rem}.atlas-room__background{position:fixed!important}.atlas-room__heading{top:1.5rem;width:calc(100% - 6rem)}.atlas-index,.atlas-journey,.atlas-compare{position:relative;left:auto;top:auto;transform:none;width:100%;height:auto}.atlas-index{grid-template-columns:1fr}.atlas-index__desk{margin:0}.atlas-index__folders{grid-template-columns:1fr 1fr}.atlas-journey{grid-template-columns:1fr}.atlas-journey__rail{grid-template-columns:repeat(4,1fr)}.atlas-journey__rail span{grid-column:1/-1}.atlas-folio{grid-template-columns:3rem 1fr}.atlas-evidence{grid-column:1/-1;max-height:none}.atlas-chain{grid-template-columns:1fr}.atlas-chain>header,.atlas-chain>.atlas-evidence{grid-column:1}.atlas-compare{grid-template-columns:1fr}.atlas-compare__sheet{min-height:34rem}.atlas-compare__sheet dl{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.atlas-index__folders{grid-template-columns:1fr}.atlas-folio{grid-template-columns:1fr}.atlas-folio__tabs{grid-template-columns:repeat(5,1fr)}.atlas-folio__paper{min-height:37rem}.atlas-chain__unit{grid-template-columns:1fr}.atlas-chain__link{height:3.4rem;border-top:0;border-left:1px dashed #aa8054;margin-left:2rem}.atlas-chain__link span,.atlas-chain__link small{transform:none;margin-left:1rem;text-align:left}.atlas-compare__sheet footer{left:1.5rem;right:1.5rem}}
 @media(prefers-reduced-motion:reduce){.atlas-room__lamp,.atlas-index__folders>button,.atlas-journey__rail button,.atlas-folio__paper,.atlas-chain__unit>button,.atlas-compare__spines button{animation:none;transition:none}}
+/* Modern editorial reading system: replaces paper textures and dark archive-room backgrounds. */
+.topic-workbench,
+.institution-room,
+.reading-desk,
+.atlas-room {
+  --modern-muted: #67707a;
+  --modern-border: rgb(28 35 44 / 0.14);
+  --modern-accent: #166d78;
+  --modern-accent-soft: rgb(22 109 120 / 0.10);
+  min-height: 640px;
+  background:
+    radial-gradient(circle at 18% 10%, rgb(255 255 255 / 0.92), transparent 34%),
+    linear-gradient(180deg, #f6f7f8, #e9edf0);
+  color: #22303b;
+}
+
+.topic-workbench__background,
+.institution-room__background,
+.reading-desk__background,
+.atlas-room__background {
+  display: none;
+}
+
+.topic-workbench__grade,
+.institution-room__focus,
+.reading-desk__grade,
+.atlas-room__grade,
+.atlas-room__lamp {
+  display: none;
+}
+
+.topic-workbench__back,
+.institution-room__back,
+.reading-desk__back,
+.atlas-room__back {
+  background: #ffffff;
+  border: 1px solid var(--modern-border);
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgb(28 35 44 / 0.06);
+  color: #22303b;
+  font-size: 12px;
+  padding: 0.48rem 0.75rem;
+  z-index: 20;
+}
+
+.topic-workbench__heading,
+.institution-room__heading,
+.reading-desk__heading,
+.atlas-room__heading {
+  color: #22303b;
+  text-align: center;
+  text-shadow: none;
+  width: min(88vw, 68rem);
+}
+
+.topic-workbench__heading > span,
+.institution-room__heading > span,
+.reading-desk__heading > span,
+.atlas-room__heading > span {
+  color: var(--modern-accent);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.topic-workbench__heading h1,
+.institution-room__heading h1,
+.reading-desk__heading h1,
+.atlas-room__heading h1 {
+  color: #172431;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+  margin: 0.35rem 0;
+}
+
+.topic-workbench__heading p,
+.institution-room__heading p,
+.reading-desk__heading p,
+.atlas-room__heading p {
+  color: var(--modern-muted);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: clamp(0.85rem, 1vw, 0.98rem);
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 56rem;
+}
+
+.topic-workbench__document,
+.reading-file {
+  border: 1px solid var(--modern-border);
+  box-shadow: 0 18px 45px rgb(28 35 44 / 0.12);
+  overflow: hidden;
+}
+
+.topic-workbench__under-sheet,
+.topic-workbench__document:before,
+.reading-file__under,
+.reading-file:before,
+.reading-page:before {
+  content: none;
+}
+
+.topic-workbench__document-sheet,
+.reading-page,
+.topic-workbench__core,
+.reading-file__cover {
+  animation: none;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  clip-path: none;
+  color: #22303b;
+}
+
+.topic-workbench__document-sheet,
+.reading-page {
+  padding: clamp(1.4rem, 2.4vw, 2.6rem);
+}
+
+.topic-workbench__document-sheet > header,
+.reading-page h2,
+.reading-brief,
+.reading-page__index,
+.reading-page .reading-file__seal {
+  border-color: var(--modern-border);
+}
+
+.topic-workbench__document-sheet h2,
+.reading-page h2 {
+  color: #172431;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.95rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0.2rem 0 0.9rem;
+}
+
+.topic-workbench__document-sheet header span,
+.topic-workbench__core > span,
+.reading-brief > span,
+.reading-page__index > span,
+.reading-margin-note span {
+  color: var(--modern-muted);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.topic-workbench__document-sheet header p,
+.reading-page .reading-file__lead,
+.reading-page .reading-file__value,
+.reading-page .reading-file__note,
+.reading-margin-note p {
+  color: #3b4854;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: clamp(0.86rem, 1vw, 1rem);
+  line-height: 1.8;
+  text-align: left;
+}
+
+.reading-page {
+  overflow-y: auto;
+}
+
+.reading-page--left,
+.reading-page--right {
+  border-radius: 0;
+  clip-path: none;
+}
+
+.reading-brief p,
+.reading-margin-note,
+.reading-page blockquote,
+.reading-source-actions a,
+.reading-margin-note {
+  background: #f8fafb;
+  border: 1px solid var(--modern-border);
+  border-radius: 8px;
+  color: #3b4854;
+  transform: none;
+}
+
+.reading-brief p {
+  align-items: start;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  padding: 0.55rem 0.7rem;
+}
+
+.reading-brief p b,
+.reading-file__points b,
+.reading-source-ledger dt,
+.reading-page__index b {
+  color: var(--modern-accent);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.reading-page .reading-file__points li {
+  border-bottom-color: var(--modern-border);
+}
+
+.reading-page .reading-file__points p,
+.reading-page .reading-file__related span,
+.reading-page .reading-file__related small,
+.reading-page .reading-file__related em {
+  color: #3b4854;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  text-align: left;
+}
+
+.reading-source-actions a,
+.topic-workbench__resource,
+.topic-workbench__index button,
+.reading-desk__tabs button,
+.reading-desk__tabs label,
+.atlas-index button,
+.atlas-chain__unit {
+  background: #ffffff;
+  border: 1px solid var(--modern-border);
+  border-radius: 8px;
+  box-shadow: none;
+  color: #22303b;
+  transform: none;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.topic-workbench__resource:hover,
+.topic-workbench__index button:hover,
+.reading-desk__tabs button:hover,
+.reading-desk__tabs label:hover,
+.atlas-index button:hover,
+.atlas-chain__unit:hover,
+.topic-workbench__index button.is-active,
+.reading-desk__tabs button.is-active,
+.atlas-index button.is-active {
+  background: #ffffff;
+  border-color: var(--modern-accent);
+  color: #172431;
+  transform: none;
+}
+
+.topic-workbench__index button.is-active,
+.reading-desk__tabs button.is-active,
+.atlas-index button.is-active {
+  background: var(--modern-accent-soft);
+}
+
+.reading-source-actions a.is-primary {
+  background: var(--modern-accent);
+  border-color: var(--modern-accent);
+  color: #ffffff;
+}
+
+.reading-desk__tabs,
+.topic-workbench__index,
+.institution-room__index,
+.atlas-index {
+  width: min(20vw, 15rem);
+}
+
+.reading-desk__tabs:before,
+.topic-workbench__index > span,
+.atlas-index > span {
+  color: var(--modern-muted);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.topic-workbench__index i,
+.topic-workbench__index small,
+.reading-desk__tabs i,
+.atlas-index i,
+.atlas-chain__unit small {
+  color: var(--modern-muted);
+}
+
+.topic-workbench__index strong,
+.reading-desk__tabs strong,
+.atlas-index strong,
+.atlas-chain__unit strong {
+  color: #172431;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .topic-workbench,
+  .institution-room,
+  .reading-desk,
+  .atlas-room {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .topic-workbench__heading,
+  .institution-room__heading,
+  .reading-desk__heading,
+  .atlas-room__heading {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 5.5rem auto 1rem;
+  }
+
+  .topic-workbench__document,
+  .reading-file,
+  .reading-desk__tabs,
+  .topic-workbench__index,
+  .institution-room__index,
+  .atlas-index {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .reading-file {
+    height: auto;
+  }
+
+  .reading-desk__tabs,
+  .topic-workbench__index,
+  .atlas-index {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
