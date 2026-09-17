@@ -1,4 +1,4 @@
-import { KnowledgeAtlas } from "@/components/KnowledgeAtlas";
+import { ArchiveKnowledgeRoom } from "@/components/ArchiveKnowledgeRoom";
 import { institutions, resources, topics } from "@/data/mockData";
 
 export default async function AtlasPage({
@@ -6,14 +6,9 @@ export default async function AtlasPage({
 }: {
   searchParams: Promise<{ focus?: string }>;
 }) {
-  const { focus } = await searchParams;
+  await searchParams;
 
   return (
-    <KnowledgeAtlas
-      focusResourceId={focus}
-      topics={topics}
-      resources={resources}
-      institutions={institutions}
-    />
+    <ArchiveKnowledgeRoom topics={topics} resources={resources} institutions={institutions}/>
   );
 }

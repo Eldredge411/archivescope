@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default async function UsaInstitutionsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ group?: string }>;
+  searchParams: Promise<{ group?: string; q?: string }>;
 }) {
-  const { group } = await searchParams;
+  const { group, q } = await searchParams;
   const usa = countries.find((country) => country.id === "usa");
   const usaInstitutions = institutions.filter(
     (institution) => institution.countryId === "usa",
@@ -27,6 +27,7 @@ export default async function UsaInstitutionsPage({
         resources={resources.filter((resource) => resource.countryId === "usa")}
         countryName={usa?.nameZh ?? "美国"}
         initialGroup={group}
+        initialQuery={q}
       />
     </>
   );
