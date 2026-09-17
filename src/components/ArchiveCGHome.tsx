@@ -153,6 +153,7 @@ export function ArchiveCGHome() {
         fontSize={1.1}
         smoothing={100}
         onItemClick={setActiveTopicIndex}
+        onItemHover={setActiveTopicIndex}
       />
 
       <LineSidebar
@@ -177,6 +178,7 @@ export function ArchiveCGHome() {
         fontSize={1.1}
         smoothing={100}
         onItemClick={setActiveInstitutionIndex}
+        onItemHover={setActiveInstitutionIndex}
       />
     </section>
   );

@@ -34,6 +34,7 @@ type LineSidebarProps = {
   fontSize?: number;
   smoothing?: number;
   onItemClick?: (index: number, item: LineSidebarItem) => void;
+  onItemHover?: (index: number, item: LineSidebarItem) => void;
 };
 
 function getProximity(distance: number, radius: number, falloff: "linear" | "smooth") {
@@ -68,6 +69,7 @@ export function LineSidebar({
   fontSize = 1.1,
   smoothing = 100,
   onItemClick,
+  onItemHover,
 }: LineSidebarProps) {
   const [pointer, setPointer] = useState<{ x: number; y: number } | null>(null);
   const [itemCenters, setItemCenters] = useState<number[]>([]);
@@ -157,6 +159,8 @@ export function LineSidebar({
               }}
               className={itemClassName}
               onClick={() => onItemClick?.(index, item)}
+              onMouseEnter={() => onItemHover?.(index, item)}
+              onFocus={() => onItemHover?.(index, item)}
               tabIndex={isVisible ? 0 : -1}
               style={itemStyle}
               aria-label={item.description ? `${item.label}：${item.description}` : item.label}
@@ -175,6 +179,8 @@ export function LineSidebar({
             type="button"
             className={itemClassName}
             onClick={() => onItemClick?.(index, item)}
+            onMouseEnter={() => onItemHover?.(index, item)}
+            onFocus={() => onItemHover?.(index, item)}
             tabIndex={isVisible ? 0 : -1}
             style={itemStyle}
           >
