@@ -1,5 +1,5 @@
 import { ArchiveKnowledgeRoom } from "@/components/ArchiveKnowledgeRoom";
-import { institutions, resources, topics } from "@/data/mockData";
+import { entityRelations, institutions, resources, topics } from "@/data/mockData";
 
 export default async function AtlasPage({
   searchParams,
@@ -9,6 +9,6 @@ export default async function AtlasPage({
   await searchParams;
 
   return (
-    <ArchiveKnowledgeRoom topics={topics} resources={resources} institutions={institutions}/>
+    <ArchiveKnowledgeRoom topics={topics} resources={resources} institutions={institutions} relations={entityRelations}/>
   );
 }
